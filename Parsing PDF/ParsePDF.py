@@ -1,4 +1,14 @@
 import pdfplumber
+import platform
+
+def detect_os():
+    system = platform.system()
+    if system == "Darwin":
+        return "Mac"
+    elif system == "Windows":
+        return "Windows"
+    else:
+        return "Other"
 
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
@@ -115,7 +125,7 @@ def add_to_upperclass(College, Hall, Room, Type, Sqft):
 def NCW_hall_name(words):
     Hall_name = words[3]
     if Hall_name == "ADDY":
-        return words[3], words[4], words[4], words[5]
+        return "ADDY", words[4], words[4], words[5]
     elif Hall_name == "ALIYA":
         return "ALIYA KANJI", words[5], words[6], words[7]
     elif Hall_name == "KWANZA":
@@ -156,7 +166,6 @@ def store_intoArray(starts_College, filename):
                         add_to_upperclass(is_Upperclass, words[0], words[1], words[2], words[3])
                     elif is_Underclass.find("COLLEGE") != -1:
                         add_to_underclass(words[4], words[0], words[1], words[2], words[3])
-
                     else:
                         first_word = words[0]
                         if first_word == "ADDY":
@@ -182,14 +191,29 @@ def store_intoArray(starts_College, filename):
 def Main():
     # Paths to the PDF files
 
-    pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
-    pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
-    pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
+    if detect_os() == "Windows":
+        pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
+        pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
+        pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
 
-    # Paths to the output text files
-    output22 = "Parsing PDF\\PDF\\22.txt"
-    output23 = "Parsing PDF\\PDF\\23.txt"  
-    output24 = "Parsing PDF\\PDF\\24.txt" 
+        # Paths to the output text files
+        output22 = "Parsing PDF\\PDF\\22.txt"
+        output23 = "Parsing PDF\\PDF\\23.txt"  
+        output24 = "Parsing PDF\\PDF\\24.txt" 
+
+        output = "Parsing PDF\\PDF\\24rooms.txt" 
+
+    if detect_os() == "Mac":
+        pdf_22 = "Parsing PDF/PDF/OrigAvailableRoomsList2022.pdf"
+        pdf_24 = "Parsing PDF/PDF/AvailableRoomsList2024.pdf"
+        pdf_23 = "Parsing PDF/PDF/AvailableRoomsList2023.pdf"
+
+        # Paths to the output text files
+        output22 = "Parsing PDF/PDF/22.txt"
+        output23 = "Parsing PDF/PDF/23.txt"  
+        output24 = "Parsing PDF/PDF/24.txt" 
+
+        output = "Parsing PDF/PDF/24rooms.txt" 
 
     # Clear the output files before extraction
     clear_file(output22)
@@ -221,8 +245,7 @@ def Main():
     starts_College = find_word_in_file(filename, colleges)
 
     store_intoArray(starts_College, filename)
-
-    output = "Parsing PDF\\PDF\\24rooms.txt"  
+ 
 
     countUn = 0
     with open(output, 'w') as file:
