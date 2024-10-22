@@ -1,5 +1,4 @@
 import pdfplumber
-import time
 
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
@@ -237,7 +236,6 @@ def Main():
             file.write(UpCollege[y] + " " + UpHall[y] + " " + UpRoom[y] + " " + UpType[y] + " " + UpSqft[y] + "\n")
             countUp +=1
     print("UnderClass = " + str(countUn))
-    print("UpperClass = " + str(countUp))
-    print(starts_College)  
+    print("UpperClass = " + str(countUp)) 
 
 Main()
