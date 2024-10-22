@@ -181,16 +181,16 @@ def store_intoArray(starts_College, filename):
 
 def Main():
     # Paths to the PDF files
-    pdf_22 = Path("Parsing PDF/PDF/OrigAvailableRoomsList2022.pdf")
-    pdf_24 = Path("Parsing PDF/PDF/AvailableRoomsList2024.pdf")
-    pdf_23 = Path("Parsing PDF/PDF/AvailableRoomsList2023.pdf")
+    pdf_22 = Path("PDF/OrigAvailableRoomsList2022.pdf")
+    pdf_24 = Path("PDF/AvailableRoomsList2024.pdf")
+    pdf_23 = Path("PDF/AvailableRoomsList2023.pdf")
 
     # Paths to the output text files
-    output22 = Path("Parsing PDF/PDF/22.txt")
-    output23 = Path("Parsing PDF/PDF/23.txt")
-    output24 = Path("Parsing PDF/PDF/24.txt") 
+    output22 = Path("PDF/22.txt")
+    output23 = Path("PDF/23.txt")
+    output24 = Path("PDF/24.txt") 
 
-    output = Path("Parsing PDF/PDF/24rooms.txt")
+    output = Path("PDF/24rooms.txt")
 
     # Clear the output files before extraction
     clear_file(output22)
