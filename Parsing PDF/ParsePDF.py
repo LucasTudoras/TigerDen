@@ -138,11 +138,11 @@ def store_intoArray(starts_College, filename):
                         add_to_upperclass(words[0], words[1], words[2], words[3], words[4])
                     else:
                         if first_word == "NEW":
-                            hall, room, type, sqft = NCW_hall_name(words)
-                            add_to_underclass("NCW", hall, room, type, sqft)
+                            College = "NCW"
+                            Hall, Room, Type, Sqft = NCW_hall_name(words)
                         else:
-                            College = words[0]
-                            add_to_underclass(College, words[2], words[3], words[4], words[5])
+                            College, Hall, Room, Type, Sqft = words[0], words[2], words[3], words[4], words[5]
+                        add_to_underclass(College, Hall, Room, Type, Sqft)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
     else:
@@ -162,26 +162,31 @@ def store_intoArray(starts_College, filename):
                     else:
                         first_word = words[0]
                         if first_word == "ADDY":
-                            add_to_underclass("NCW", "ADDY", words[2], words[3], words[4])
+                            College, Hall, Room, Type, Sqft = "NCW", "ADDY", words[2], words[3], words[4]
                         elif first_word == "ALIYA":
-                            add_to_underclass("NCW", "ALIYA KANJI", words[3], words[4], words[5])
+                            College, Hall, Room, Type, Sqft = "NCW", "ALIYA KANJI", words[3], words[4], words[5]
                         elif first_word == "BOSQUE":
-                            add_to_underclass("YEH", "FU", words[2], words[3], words[4])
+                            College, Hall, Room, Type, Sqft = "YEH", "FU", words[2], words[3], words[4]
                         elif first_word == "GROUSBECK":
-                            add_to_underclass("YEH", "GROUSBECK", words[2], words[3], words[4])
+                            College, Hall, Room, Type, Sqft = "YEH", "GROUSBECK", words[2], words[3], words[4]
                         elif first_word == "H":
-                            add_to_underclass("YEH", "Hariri", words[2], words[3], words[4])
+                            College, Hall, Room, Type, Sqft = "YEH", "Hariri", words[2], words[3], words[4]
                         elif first_word == "JOSE":
-                            add_to_underclass("NCW", "JOSE FELICIANO", words[4], words[5], words[6])
+                            College, Hall, Room, Type, Sqft = "NCW", "JOSE FELICIANO", words[4], words[5], words[6]
                         elif first_word == "KWANZA":
-                            add_to_underclass("NCW", "KWANZA JONES", words[4], words[5], words[6])
+                            College, Hall, Room, Type, Sqft = "NCW", "KWANZA JONES", words[4], words[5], words[6]
                         elif first_word == "MANNION":
-                            add_to_underclass("YEH", "MANNION", words[2], words[3], words[4])
+                            College, Hall, Room, Type, Sqft = "YEH", "MANNION", words[2], words[3], words[4]
+                        add_to_underclass(College, Hall, Room, Type, Sqft)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
 
+
+
+
 def Main():
     # Paths to the PDF files
+
     pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
     pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
     pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
@@ -193,8 +198,8 @@ def Main():
 
     # Clear the output files before extraction
     clear_file(output22)
-    clear_file(output23)
-    clear_file(output24)
+    #clear_file(output23)
+    #clear_file(output24)
 
     # Define the college names to look for
     college_names = {
@@ -213,8 +218,8 @@ def Main():
 
     # Extract text from both PDFs
     extract_text_from_pdf(pdf_22, output22, college_names)
-    extract_text_from_pdf(pdf_23, output23, college_names)
-    extract_text_from_pdf(pdf_24, output24, college_names)
+    #extract_text_from_pdf(pdf_23, output23, college_names)
+    #extract_text_from_pdf(pdf_24, output24, college_names)
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
     filename = output24
