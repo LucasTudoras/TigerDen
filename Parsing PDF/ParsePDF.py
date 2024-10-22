@@ -1,4 +1,5 @@
 import pdfplumber
+import time
 
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
@@ -6,7 +7,6 @@ def write_text_to_file(file_path, text):
     with open(file_path, 'a') as file:
         # Write the text to the file
         file.write(text + "\n")
-        print(f"Text successfully written to {file_path}")
 
 #filters the text to get rid of extra lines and page numbers
 def filter_text(text):
@@ -22,7 +22,6 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
     # Open the PDF file
     with pdfplumber.open(pdf_path) as pdf:
         num_pages = len(pdf.pages)  # Get the total number of pages
-        print(f"Total Pages: {num_pages}")
 
         # Variable to hold the previous line
         previous_line = None
@@ -180,9 +179,6 @@ def store_intoArray(starts_College, filename):
                         add_to_underclass(College, Hall, Room, Type, Sqft)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
-
-
-
 
 def Main():
     # Paths to the PDF files
