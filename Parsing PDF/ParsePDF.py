@@ -1,5 +1,6 @@
 import pdfplumber
 import platform
+from pathlib import Path
 
 def detect_os():
     system = platform.system()
@@ -191,7 +192,7 @@ def store_intoArray(starts_College, filename):
 def Main():
     # Paths to the PDF files
 
-    if detect_os() == "Windows":
+    """  if detect_os() == "Windows":
         pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
         pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
         pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
@@ -213,12 +214,23 @@ def Main():
         output23 = "Parsing PDF/PDF/23.txt"  
         output24 = "Parsing PDF/PDF/24.txt" 
 
-        output = "Parsing PDF/PDF/24rooms.txt" 
+        output = "Parsing PDF/PDF/24rooms.txt"  """
+   
+    pdf_22 = Path("Parsing PDF/PDF/OrigAvailableRoomsList2022.pdf")
+    pdf_24 = Path("Parsing PDF/PDF/AvailableRoomsList2024.pdf")
+    pdf_23 = Path("Parsing PDF/PDF/AvailableRoomsList2023.pdf")
+
+    # Paths to the output text files
+    output22 = Path("Parsing PDF/PDF/22.txt")
+    output23 = Path("Parsing PDF/PDF/23.txt")
+    output24 = Path("Parsing PDF/PDF/24.txt") 
+
+    output = Path("Parsing PDF/PDF/24rooms.txt")
 
     # Clear the output files before extraction
     clear_file(output22)
-    #clear_file(output23)
-    #clear_file(output24)
+    clear_file(output23)
+    clear_file(output24)
 
     # Define the college names to look for
     college_names = {
@@ -237,11 +249,11 @@ def Main():
 
     # Extract text from both PDFs
     extract_text_from_pdf(pdf_22, output22, college_names)
-    #extract_text_from_pdf(pdf_23, output23, college_names)
-    #extract_text_from_pdf(pdf_24, output24, college_names)
+    extract_text_from_pdf(pdf_23, output23, college_names)
+    extract_text_from_pdf(pdf_24, output24, college_names)
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
-    filename = output24
+    filename = output22
     starts_College = find_word_in_file(filename, colleges)
 
     store_intoArray(starts_College, filename)
