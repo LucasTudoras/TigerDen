@@ -182,14 +182,14 @@ def store_intoArray(starts_College, filename):
 
 def Main():
     # Paths to the PDF files
-    pdf_22 = "PDF\\OrigAvailableRoomsList2022.pdf"
-    pdf_24 = "PDF\\AvailableRoomsList2024.pdf"
-    pdf_23 = "PDF\\AvailableRoomsList2023.pdf"
+    pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
+    pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
+    pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
 
     # Paths to the output text files
-    output22 = "PDF\\22.txt"
-    output23 = "PDF\\23.txt"  
-    output24 = "PDF\\24.txt" 
+    output22 = "Parsing PDF\\PDF\\22.txt"
+    output23 = "Parsing PDF\\PDF\\23.txt"  
+    output24 = "Parsing PDF\\PDF\\24.txt" 
 
     # Clear the output files before extraction
     clear_file(output22)
@@ -222,7 +222,7 @@ def Main():
 
     store_intoArray(starts_College, filename)
 
-    output = "PDF\\24rooms.txt"  
+    output = "Parsing PDF\\PDF\\24rooms.txt"  
 
     countUn = 0
     with open(output, 'w') as file:

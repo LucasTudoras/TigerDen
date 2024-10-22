@@ -138,11 +138,10 @@ def store_intoArray(starts_College, filename):
                         add_to_upperclass(words[0], words[1], words[2], words[3], words[4])
                     else:
                         if first_word == "NEW":
-                            hall, room, type, sqft = NCW_hall_name(words)
-                            College, Hall, Room, Type, Sqft = "NCW", hall, room, type, sqft
+                            College = "NCW"
+                            Hall, Room, Type, Sqft = NCW_hall_name(words)
                         else:
-                            College = words[0]
-                            College, Hall, Room, Type, Sqft = College, words[2], words[3], words[4], words[5]
+                            College, Hall, Room, Type, Sqft = words[0], words[2], words[3], words[4], words[5]
                         add_to_underclass(College, Hall, Room, Type, Sqft)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
@@ -184,14 +183,14 @@ def store_intoArray(starts_College, filename):
 
 def Main():
     # Paths to the PDF files
-    pdf_22 = "PDF\\OrigAvailableRoomsList2022.pdf"
-    pdf_24 = "PDF\\AvailableRoomsList2024.pdf"
-    pdf_23 = "PDF\\AvailableRoomsList2023.pdf"
+    pdf_22 = "Parsing PDF\\PDF\\OrigAvailableRoomsList2022.pdf"
+    pdf_24 = "Parsing PDF\\PDF\\AvailableRoomsList2024.pdf"
+    pdf_23 = "Parsing PDF\\PDF\\AvailableRoomsList2023.pdf"
 
     # Paths to the output text files
-    output22 = "PDF\\22.txt"
-    output23 = "PDF\\23.txt"  
-    output24 = "PDF\\24.txt" 
+    output22 = "Parsing PDF\\PDF\\22.txt"
+    output23 = "Parsing PDF\\PDF\\23.txt"  
+    output24 = "Parsing PDF\\PDF\\24.txt" 
 
     # Clear the output files before extraction
     clear_file(output22)
@@ -214,8 +213,8 @@ def Main():
     }
 
     # Extract text from both PDFs
-    extract_text_from_pdf(pdf_22, output22, college_names)
-    extract_text_from_pdf(pdf_23, output23, college_names)
+    #extract_text_from_pdf(pdf_22, output22, college_names)
+    #extract_text_from_pdf(pdf_23, output23, college_names)
     extract_text_from_pdf(pdf_24, output24, college_names)
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
@@ -224,7 +223,7 @@ def Main():
 
     store_intoArray(starts_College, filename)
 
-    output = "PDF\\24rooms.txt"  
+    output = "Parsing PDF\\PDF\\24rooms.txt"  
 
     countUn = 0
     with open(output, 'w') as file:
