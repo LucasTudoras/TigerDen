@@ -203,14 +203,14 @@ def print_output(output, list):
 
 def Main():
     # Paths to the PDF files
-    pdf_22 = Path("Parsing PDF/PDF/OrigAvailableRoomsList2022.pdf")
-    pdf_24 = Path("Parsing PDF/PDF/AvailableRoomsList2024.pdf")
-    pdf_23 = Path("Parsing PDF/PDF/AvailableRoomsList2023.pdf")
+    pdf_22 = Path("PDF/OrigAvailableRoomsList2022.pdf")
+    pdf_24 = Path("PDF/AvailableRoomsList2024.pdf")
+    pdf_23 = Path("PDF/AvailableRoomsList2023.pdf")
 
     # Paths to the output text files
-    output22 = Path("Parsing PDF/PDF/22.txt")
-    output23 = Path("Parsing PDF/PDF/23.txt")
-    output24 = Path("Parsing PDF/PDF/24.txt") 
+    output22 = Path("PDF/22.txt")
+    output23 = Path("PDF/23.txt")
+    output24 = Path("PDF/24.txt") 
 
 
     # Clear the output files before extraction
@@ -246,16 +246,16 @@ def Main():
     
     starts_College = find_word_in_file(output22, colleges)
     store_intoArray(starts_College, output22, PDF_22)
-    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_22)
+    print_output(Path("PDF/24rooms.txt"), PDF_22)
 
     starts_College = find_word_in_file(output23, colleges)
     store_intoArray(starts_College, output23, PDF_23)
-    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_23)
+    print_output(Path("PDF/24rooms.txt"), PDF_23)
     
 
     starts_College = find_word_in_file(output24, colleges)
     store_intoArray(starts_College, output24, PDF_24)
-    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_24)
+    print_output(Path("PDF/24rooms.txt"), PDF_24)
     
 
 Main()
