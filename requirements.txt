@@ -1,0 +1,7 @@
+Flask
+SQLAlchemy
+gunicorn
+pdfplumber
+pathlib
+psycopg2
+selenium
