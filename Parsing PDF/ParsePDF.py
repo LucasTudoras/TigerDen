@@ -1,6 +1,12 @@
 import pdfplumber
 from pathlib import Path
 
+#defining underclass and upperclass lists
+class Info:
+    def __init__(self):
+        self.UpperClass = []
+        self.UnderClass = []
+
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
     # Open the file in append mode ('a')
@@ -84,34 +90,27 @@ def find_word_in_file(filename, words_to_find):
         print(f"The file {filename} does not exist.")
         return None
 
-
-#defining underclass and upperclass lists
-UpCollege = []
-UpHall = []
-UpRoom = []
-UpType = []
-UpSqft = []
-
-UnCollege = []
-UnHall = []
-UnRoom = []
-UnType = []
-UnSqft = []
-
 #adds the room information into the the underclass arrays   
-def add_to_underclass(College, Hall, Room, Type, Sqft):
-    UnCollege.append(College)
-    UnHall.append(Hall)
-    UnRoom.append(Room)
-    UnType.append(Type)
-    UnSqft.append(Sqft)
+def add_to_underclass(College, Hall, Room, Type, Sqft, info_instance):
+    UnderClass_dict = {
+        'College': College,
+        'Hall': Hall,
+        'Room': Room,
+        'Type': Type,
+        'Sqft': Sqft
+    }
 
-def add_to_upperclass(College, Hall, Room, Type, Sqft):
-    UpCollege.append(College)
-    UpHall.append(Hall)
-    UpRoom.append(Room)
-    UpType.append(Type)
-    UpSqft.append(Sqft)
+    info_instance.UnderClass.append(UnderClass_dict)
+
+def add_to_upperclass(College, Hall, Room, Type, Sqft, info_instance):
+    UpperClass_dict = {
+            'College': College,
+            'Hall': Hall,
+            'Room': Room,
+            'Type': Type,
+            'Sqft': Sqft
+        }
+    info_instance.UpperClass.append(UpperClass_dict)
 
 def NCW_hall_name(words):
     Hall_name = words[3]
@@ -124,7 +123,7 @@ def NCW_hall_name(words):
     elif Hall_name == "JOSE":
         return "JOSE FELICIANO", words[5], words[6], words[7]
 
-def store_intoArray(starts_College, filename):
+def store_intoArray(starts_College, filename, info_instance):
     if starts_College:
         try:
             with open(filename, 'r') as file:
@@ -134,14 +133,14 @@ def store_intoArray(starts_College, filename):
                     words = [word.upper() for word in words]
                     first_word = words[0]
                     if first_word == "UPPERCLASS":
-                        add_to_upperclass(words[0], words[1], words[2], words[3], words[4])
+                        add_to_upperclass(words[0], words[1], words[2], words[3], words[4], info_instance)
                     else:
                         if first_word == "NEW":
                             College = "NCW"
                             Hall, Room, Type, Sqft = NCW_hall_name(words)
                         else:
                             College, Hall, Room, Type, Sqft = words[0], words[2], words[3], words[4], words[5]
-                        add_to_underclass(College, Hall, Room, Type, Sqft)
+                        add_to_underclass(College, Hall, Room, Type, Sqft, info_instance)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
     else:
@@ -154,9 +153,9 @@ def store_intoArray(starts_College, filename):
                     is_Upperclass = words[4]
                     is_Underclass = words[5]
                     if is_Upperclass.find("UPPERCLASS") != -1:
-                        add_to_upperclass(is_Upperclass, words[0], words[1], words[2], words[3])
+                        add_to_upperclass(is_Upperclass, words[0], words[1], words[2], words[3], info_instance)
                     elif is_Underclass.find("COLLEGE") != -1:
-                        add_to_underclass(words[4], words[0], words[1], words[2], words[3])
+                        add_to_underclass(words[4], words[0], words[1], words[2], words[3], info_instance)
                     else:
                         first_word = words[0]
                         if first_word == "ADDY":
@@ -175,27 +174,53 @@ def store_intoArray(starts_College, filename):
                             College, Hall, Room, Type, Sqft = "NCW", "KWANZA JONES", words[4], words[5], words[6]
                         elif first_word == "MANNION":
                             College, Hall, Room, Type, Sqft = "YEH", "MANNION", words[2], words[3], words[4]
-                        add_to_underclass(College, Hall, Room, Type, Sqft)
+                        add_to_underclass(College, Hall, Room, Type, Sqft, info_instance)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
 
+def print_output(output, list):
+    countUn = 0
+    countUp = 0
+    with open(output, 'w') as file:
+        file.write("") 
+    with open(output, 'a') as file:
+        for x in list.UnderClass:
+            file.write(x["College"] + " ")
+            file.write(x["Hall"] + " ")
+            file.write(x["Room"] + " ")
+            file.write(x["Type"] + " ")
+            file.write(x["Sqft"] + " \n")
+            countUn +=1
+        for y in list.UpperClass:
+            file.write(y["College"] + " ")
+            file.write(y["Hall"] + " ")
+            file.write(y["Room"] + " ")
+            file.write(y["Type"] + " ")
+            file.write(y["Sqft"] + " \n")
+            countUp +=1
+    print("UnderClass = " + str(countUn))
+    print("UpperClass = " + str(countUp))
+
 def Main():
     # Paths to the PDF files
-    pdf_22 = Path("PDF/OrigAvailableRoomsList2022.pdf")
-    pdf_24 = Path("PDF/AvailableRoomsList2024.pdf")
-    pdf_23 = Path("PDF/AvailableRoomsList2023.pdf")
+    pdf_22 = Path("Parsing PDF/PDF/OrigAvailableRoomsList2022.pdf")
+    pdf_24 = Path("Parsing PDF/PDF/AvailableRoomsList2024.pdf")
+    pdf_23 = Path("Parsing PDF/PDF/AvailableRoomsList2023.pdf")
 
     # Paths to the output text files
-    output22 = Path("PDF/22.txt")
-    output23 = Path("PDF/23.txt")
-    output24 = Path("PDF/24.txt") 
+    output22 = Path("Parsing PDF/PDF/22.txt")
+    output23 = Path("Parsing PDF/PDF/23.txt")
+    output24 = Path("Parsing PDF/PDF/24.txt") 
 
-    output = Path("PDF/24rooms.txt")
 
     # Clear the output files before extraction
     clear_file(output22)
     clear_file(output23)
     clear_file(output24)
+
+    PDF_22 = Info()
+    PDF_23 = Info()
+    PDF_24 = Info()
 
     # Define the college names to look for
     college_names = {
@@ -218,24 +243,19 @@ def Main():
     extract_text_from_pdf(pdf_24, output24, college_names)
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
-    filename = output22
-    starts_College = find_word_in_file(filename, colleges)
+    
+    starts_College = find_word_in_file(output22, colleges)
+    store_intoArray(starts_College, output22, PDF_22)
+    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_22)
 
-    store_intoArray(starts_College, filename)
- 
+    starts_College = find_word_in_file(output23, colleges)
+    store_intoArray(starts_College, output23, PDF_23)
+    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_23)
+    
 
-    countUn = 0
-    with open(output, 'w') as file:
-        file.write("") 
-    with open(output, 'a') as file:
-        for x in range(len(UnCollege)):
-            file.write(UnCollege[x] + " " + UnHall[x] + " " + UnRoom[x] + " " + UnType[x] + " " + UnSqft[x] + "\n")
-            countUn +=1
-        countUp = 0
-        for y in range(len(UpCollege)):
-            file.write(UpCollege[y] + " " + UpHall[y] + " " + UpRoom[y] + " " + UpType[y] + " " + UpSqft[y] + "\n")
-            countUp +=1
-    print("UnderClass = " + str(countUn))
-    print("UpperClass = " + str(countUp)) 
+    starts_College = find_word_in_file(output24, colleges)
+    store_intoArray(starts_College, output24, PDF_24)
+    print_output(Path("Parsing PDF/PDF/24rooms.txt"), PDF_24)
+    
 
 Main()
