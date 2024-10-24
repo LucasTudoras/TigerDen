@@ -201,7 +201,7 @@ def print_output(output, list):
     print("UnderClass = " + str(countUn))
     print("UpperClass = " + str(countUp))
 
-def Main():
+def main():
     # Paths to the PDF files
     pdf_22 = Path("PDF/OrigAvailableRoomsList2022.pdf")
     pdf_24 = Path("PDF/AvailableRoomsList2024.pdf")
@@ -211,7 +211,6 @@ def Main():
     output22 = Path("PDF/22.txt")
     output23 = Path("PDF/23.txt")
     output24 = Path("PDF/24.txt") 
-
 
     # Clear the output files before extraction
     clear_file(output22)
@@ -256,6 +255,5 @@ def Main():
     starts_College = find_word_in_file(output24, colleges)
     store_intoArray(starts_College, output24, PDF_24)
     print_output(Path("PDF/24rooms.txt"), PDF_24)
-    
 
-Main()
+main()
