@@ -54,7 +54,7 @@ def main():
     dictionaried = handle_floor_plans()
 
     output_file = os.path.join(os.path.dirname(__file__),
-        'floor_plans_path_output.txt')
+        'floor_plans_paths.txt')
     
     write_plans(dictionaried, output_file)
 
