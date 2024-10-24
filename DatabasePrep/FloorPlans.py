@@ -4,8 +4,9 @@
 
 import os
 import sys
+from pathlib import Path
 
-FLOOR_PLAN_DIRECTORY = os.path.join(os.path.dirname(__file__), 'FloorPlan')
+FLOOR_PLAN_ROOT = Path('FloorPlan')
 
 def read_floor_plan_path(root, file_name):
     try:
@@ -32,7 +33,7 @@ def read_floor_plan_path(root, file_name):
 def handle_floor_plans():
     floor_plans = []
 
-    for root, dirs, files in os.walk(FLOOR_PLAN_DIRECTORY):
+    for root, dirs, files in os.walk(FLOOR_PLAN_ROOT):
         for file_name in files:
             college, hall, floor = read_floor_plan_path(root, file_name)
             floor_dict = {
