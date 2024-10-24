@@ -243,15 +243,21 @@ def main():
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
     
+    print("2022 data:")
     starts_College = find_word_in_file(output22, colleges)
     store_intoArray(starts_College, output22, PDF_22)
     print_output(Path("PDF/24rooms.txt"), PDF_22)
+    # newline
+    print("")
 
+    print("2023 data:")
     starts_College = find_word_in_file(output23, colleges)
     store_intoArray(starts_College, output23, PDF_23)
     print_output(Path("PDF/24rooms.txt"), PDF_23)
+    # newline
+    print("")
     
-
+    print("2024 data:")
     starts_College = find_word_in_file(output24, colleges)
     store_intoArray(starts_College, output24, PDF_24)
     print_output(Path("PDF/24rooms.txt"), PDF_24)
