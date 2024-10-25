@@ -15,7 +15,7 @@ def login():
     print(username)
     return render_template('inland.html', username=username)
 
-@app.route('/testtest')
+@app.route('/logout')
 def logout():
     flask.session.clear()
     return redirect('/')
