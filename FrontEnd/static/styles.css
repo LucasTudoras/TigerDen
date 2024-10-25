@@ -1,0 +1,93 @@
+
+/* Style for the logo and name container */
+.logo-container {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style for the logo image */
+.logo {
+    height: 130px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 10px; /* Space between logo and name */
+}
+
+/* Style for the website name */
+.site-name {
+    font-size: 30px;
+    font: 'Raleway';
+    color: #824f0d; 
+}
+
+.welcome {
+    font-size: 50px;
+    font-weight: normal;
+    font: 'Raleway';
+    text-align: center;
+    color: #824f0d;
+}
+
+
+.loginButton {
+    display: inline-block; /* Make the link behave like a block element */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: #007bff; /* Set the background color */
+    color: white; /* Set the text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-align: center;
+    align-items: center;
+    width:60px;
+}
+
+.loginButton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.logoutContainer {
+    position: fixed; /* Fixes the position to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+}
+
+.loginContainer {
+    position: fixed;
+    flex-direction: column; /* Stack elements vertically */
+    display: flex; /* Use fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to truly center */
+    background-color: white; /* Background color for the login container */
+    width: 300px;
+    align-items: center;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Ensure the header stays at the top left */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background for header */
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

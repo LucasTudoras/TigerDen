@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../static/images/logo.webp" alt="Website Logo" class="logo">
+            <span class="site-name">TigerDen</span>
+        </div>
+    </header>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="logoutContainer">
+    <footer>
+        <a href="logout" class="loginButton">Log Out</a>
+    </footer>
+    </div>
+</body>
+</html>
