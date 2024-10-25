@@ -1,16 +1,14 @@
-# Parse through the Extra Room Info 
-# Google Sheets to extract the 
-# distanceTo, AC, elevator, and
+# extract the distanceTo, AC, elevator, and
 # bathroom fields for the database
 
 import pandas as pd
-from dotenv import load_dotenv
 
-load_dotenv()
+def main():
+    extra_info_df = pd.read_excel("ExtraRoomInfo.xlsx")
 
-EXTRA_INFO_PATH = (insertfilepath.envhere)
+    room_info = extra_info_df.to_dict('records')
+    
+    print(room_info)
 
-extra_info_db = pd.read_excel(EXTRA_INFO_PATH)
-
-# Loop through each room to get its extra 
-# info and put this into a dictionary 
+if __name__ == "__main__":
+    main()
