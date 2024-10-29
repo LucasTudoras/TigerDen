@@ -2,12 +2,9 @@ import urllib.request
 import urllib.parse
 import re
 import flask
-
 from top import app
 
-
 _CAS_URL = 'https://fed.princeton.edu/cas/'
-
 
 #-----------------------------------------------------------------------
 
