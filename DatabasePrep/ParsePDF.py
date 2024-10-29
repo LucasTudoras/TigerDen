@@ -94,7 +94,7 @@ def add_to_class( Hall, Room, info_instance):
     UnderClass_dict = {
         'Hall': Hall.upper(),
         'Room': Room.upper(),
-        'RoomID': (Hall+" " + Room).upper()
+        'RoomID': (Hall+ Room).upper()
     }
 
     info_instance.Class.append(UnderClass_dict)
