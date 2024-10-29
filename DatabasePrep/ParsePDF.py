@@ -4,8 +4,7 @@ from pathlib import Path
 #defining underclass and upperclass lists
 class Info:
     def __init__(self):
-        self.UpperClass = []
-        self.UnderClass = []
+        self.Class = []
 
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
@@ -91,37 +90,25 @@ def find_word_in_file(filename, words_to_find):
         return None
 
 #adds the room information into the the underclass arrays   
-def add_to_underclass(College, Hall, Room, Type, Sqft, info_instance):
+def add_to_class( Hall, Room, info_instance):
     UnderClass_dict = {
-        'College': College,
-        'Hall': Hall,
-        'Room': Room,
-        'Type': Type,
-        'Sqft': Sqft
+        'Hall': Hall.upper(),
+        'Room': Room.upper(),
+        'RoomID': (Hall+ Room).upper()
     }
 
-    info_instance.UnderClass.append(UnderClass_dict)
-
-def add_to_upperclass(College, Hall, Room, Type, Sqft, info_instance):
-    UpperClass_dict = {
-            'College': College,
-            'Hall': Hall,
-            'Room': Room,
-            'Type': Type,
-            'Sqft': Sqft
-        }
-    info_instance.UpperClass.append(UpperClass_dict)
+    info_instance.Class.append(UnderClass_dict)
 
 def NCW_hall_name(words):
     Hall_name = words[3]
     if Hall_name == "ADDY":
-        return "ADDY", words[4], words[4], words[5]
+        return "ADDY", words[4]
     elif Hall_name == "ALIYA":
-        return "ALIYA KANJI", words[5], words[6], words[7]
+        return "ALIYA KANJI", words[5]
     elif Hall_name == "KWANZA":
-        return "KWANZA JONES", words[5], words[6], words[7]
+        return "KWANZA JONES", words[5]
     elif Hall_name == "JOSE":
-        return "JOSE FELICIANO", words[5], words[6], words[7]
+        return "JOSE FELICIANO", words[5]
 
 def store_intoArray(starts_College, filename, info_instance):
     if starts_College:
@@ -133,14 +120,13 @@ def store_intoArray(starts_College, filename, info_instance):
                     words = [word.upper() for word in words]
                     first_word = words[0]
                     if first_word == "UPPERCLASS":
-                        add_to_upperclass(words[0], words[1], words[2], words[3], words[4], info_instance)
+                        add_to_class(words[1], words[2], info_instance)
                     else:
                         if first_word == "NEW":
-                            College = "NCW"
-                            Hall, Room, Type, Sqft = NCW_hall_name(words)
+                            Hall, Room = NCW_hall_name(words)
                         else:
-                            College, Hall, Room, Type, Sqft = words[0], words[2], words[3], words[4], words[5]
-                        add_to_underclass(College, Hall, Room, Type, Sqft, info_instance)
+                            Hall, Room =words[2], words[3]
+                        add_to_class(Hall, Room, info_instance)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
     else:
@@ -153,53 +139,42 @@ def store_intoArray(starts_College, filename, info_instance):
                     is_Upperclass = words[4]
                     is_Underclass = words[5]
                     if is_Upperclass.find("UPPERCLASS") != -1:
-                        add_to_upperclass(is_Upperclass, words[0], words[1], words[2], words[3], info_instance)
+                        add_to_class(words[0], words[1], info_instance)
                     elif is_Underclass.find("COLLEGE") != -1:
-                        add_to_underclass(words[4], words[0], words[1], words[2], words[3], info_instance)
+                        add_to_class(words[0], words[1], info_instance)
                     else:
                         first_word = words[0]
                         if first_word == "ADDY":
-                            College, Hall, Room, Type, Sqft = "NCW", "ADDY", words[2], words[3], words[4]
+                            Hall, Room = "ADDY", words[2], 
                         elif first_word == "ALIYA":
-                            College, Hall, Room, Type, Sqft = "NCW", "ALIYA KANJI", words[3], words[4], words[5]
+                            Hall, Room ="ALIYA KANJI", words[3]
                         elif first_word == "BOSQUE":
-                            College, Hall, Room, Type, Sqft = "YEH", "FU", words[2], words[3], words[4]
+                            Hall, Room ="FU", words[2]
                         elif first_word == "GROUSBECK":
-                            College, Hall, Room, Type, Sqft = "YEH", "GROUSBECK", words[2], words[3], words[4]
+                            Hall, Room = "GROUSBECK", words[2]
                         elif first_word == "H":
-                            College, Hall, Room, Type, Sqft = "YEH", "Hariri", words[2], words[3], words[4]
+                            Hall, Room = "Hariri", words[2]
                         elif first_word == "JOSE":
-                            College, Hall, Room, Type, Sqft = "NCW", "JOSE FELICIANO", words[4], words[5], words[6]
+                            Hall, Room = "JOSE FELICIANO", words[4]
                         elif first_word == "KWANZA":
-                            College, Hall, Room, Type, Sqft = "NCW", "KWANZA JONES", words[4], words[5], words[6]
+                            Hall, Room = "KWANZA JONES", words[4]
                         elif first_word == "MANNION":
-                            College, Hall, Room, Type, Sqft = "YEH", "MANNION", words[2], words[3], words[4]
-                        add_to_underclass(College, Hall, Room, Type, Sqft, info_instance)
+                            Hall, Room = "MANNION", words[2]
+                        add_to_class(Hall, Room, info_instance)
         except FileNotFoundError:
             print(f"The file {filename} does not exist.")
 
 def print_output(output, list):
     countUn = 0
-    countUp = 0
     with open(output, 'w') as file:
         file.write("") 
     with open(output, 'a') as file:
-        for x in list.UnderClass:
-            file.write(x["College"] + " ")
-            file.write(x["Hall"] + " ")
-            file.write(x["Room"] + " ")
-            file.write(x["Type"] + " ")
-            file.write(x["Sqft"] + " \n")
+        for x in list.Class:
+            """ file.write(x["Hall"] + " ")
+            file.write(x["Room"] + " ") """
+            file.write(x["RoomID"] + "\n")
             countUn +=1
-        for y in list.UpperClass:
-            file.write(y["College"] + " ")
-            file.write(y["Hall"] + " ")
-            file.write(y["Room"] + " ")
-            file.write(y["Type"] + " ")
-            file.write(y["Sqft"] + " \n")
-            countUp +=1
-    print("UnderClass = " + str(countUn))
-    print("UpperClass = " + str(countUp))
+        print("Rooms: " + str(countUn))
 
 def main():
     # Paths to the PDF files
@@ -246,16 +221,16 @@ def main():
     print("2022 data:")
     starts_College = find_word_in_file(output22, colleges)
     store_intoArray(starts_College, output22, PDF_22)
-    print_output(Path("PDF/24rooms.txt"), PDF_22)
+    print_output(Path("PDF/22rooms.txt"), PDF_22)
     # newline
-    print("")
+    print("")   
 
     print("2023 data:")
     starts_College = find_word_in_file(output23, colleges)
     store_intoArray(starts_College, output23, PDF_23)
-    print_output(Path("PDF/24rooms.txt"), PDF_23)
+    print_output(Path("PDF/23rooms.txt"), PDF_23)
     # newline
-    print("")
+    print("")  
     
     print("2024 data:")
     starts_College = find_word_in_file(output24, colleges)
