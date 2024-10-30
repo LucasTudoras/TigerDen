@@ -5,9 +5,11 @@
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
 
-    <h2 style = "display: inline;">Room Search Results</h2> <a href="/login" style = "float: right" style = "display: inline;">Search another room</a>
+    <h2 style = "display: inline;">Room Search Results</h2>
+     <a href="/login" style = "float: right" style = "display: inline;">Search another room</a>
     <hr>
-    <br>
+
+    
 
     {% if results %}
     <table id= "room results" border = "1"> 

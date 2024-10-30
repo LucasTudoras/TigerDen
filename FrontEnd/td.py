@@ -35,14 +35,20 @@ def close_connection(exception):
     if db != None:
         db.close()
 
+
 # Search route
 @app.route('/search', methods=['GET'])
 def search():
-    hall = request.args.get('hall', '').strip()
-    college = request.args.get('college', '').strip()
+    first_sort = request.args.get("First Sort")
+    second_sort = request.args.get("Second Sort")
+    sort_clauses = []
+
+    if first_sort != '':
+        sort_clauses.append(f"{first_sort}")
+        if second_sort != '':
+            sort_clauses.append(f"{second_sort}")
 
     regions = []
-
     if request.args.get("Butler", '').strip() != '':
         regions.append("BUTLER")
     if request.args.get("Forbes", '').strip() != '':
@@ -59,22 +65,18 @@ def search():
         regions.append("SPELMAN")
     if request.args.get("Whitman", '').strip() != '':
         regions.append("WHIT")
-    
+
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
     
-    if hall:
-        query += " AND Hall LIKE ?"
-        params.append(f"%{hall}%")
-    if college:
-        query += " AND College LIKE ?"
-        params.append(f"%{college}%")
     if regions:
         placeholder = ', '.join(['?'] * len(regions))
         query += f" AND Region IN ({placeholder})"
         params.extend(regions)
-    print("Query:", query)
-    print("Params:", params)
+    if sort_clauses:
+        query += " ORDER BY " + ", ".join(sort_clauses)
+            
+
     cursor = get_db().execute(query, params)
     results = cursor.fetchall()
     cursor.close()

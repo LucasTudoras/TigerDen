@@ -2,13 +2,15 @@
 
 {% block content %}    
     <div class="logoutContainer">
-        <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
+        <a href="/logout" class="loginButton">Log Out</a>
     </div>
 
     <h2>Search for Rooms</h2>
     <hr>
-    <form action="{{ url_for('search') }}" method="GET">
-        <h3>Region</h3>
+    <form action="/search" method="GET">
+        <h3 style = "display: inline">Region</h3>
+        
+        
         <table>
             <tr>
                 <td>
@@ -52,13 +54,46 @@
             </tr>
 
         </table>
+        <hr>
+        <h4 style="display: inline;">Sort by</h4>
+        <label for="First Sort"></label>
+        <select name="First Sort" id="First Sort">
+            <option value="">First Sort</option>
+            <option value="Hall ASC">Hall Ascending</option>
+            <option value="Hall DESC">Hall Descending</option>
+            <option value="Room ASC">Room Ascending</option>
+            <option value="Room DESC">Room Descending</option>
+            <option value="Type ASC">Type Ascending</option>
+            <option value="Type DESC">Type Descending</option>
+            <option value="Sqft ASC">Smallest Rooms First</option>
+            <option value="Sqft DESC">Biggest Rooms First</option>
+            <option value="College ASC">College Ascending</option>
+            <option value="College DESC">College Descending</option>
+            <option value="Region ASC">Region Ascending</option>
+            <option value="Region DESC">Region Descending</option>
+        </select>
         
+        <label for="Second Sort"></label>
+        <select name="Second Sort" id="Second Sort">
+            <option value="">Second Sort</option>
+            <option value="Hall ASC">Hall Ascending</option>
+            <option value="Hall DESC">Hall Descending</option>
+            <option value="Room ASC">Room Ascending</option>
+            <option value="Room DESC">Room Descending</option>
+            <option value="Type ASC">Type Ascending</option>
+            <option value="Type DESC">Type Descending</option>
+            <option value="Sqft ASC">Smallest Rooms First</option>
+            <option value="Sqft DESC">Biggest Rooms First</option>
+            <option value="College ASC">College Ascending</option>
+            <option value="College DESC">College Descending</option>
+            <option value="Region ASC">Region Ascending</option>
+            <option value="Region DESC">Region Descending</option>
+        </select>
         
         
         
 
-        <label for="hall">Hall:</label>
-        <input type="text" id="hall" name="hall" placeholder="Enter hall name">
+        
         
         
         <button type="submit">Search</button>
