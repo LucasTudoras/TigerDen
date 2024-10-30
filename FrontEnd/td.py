@@ -66,6 +66,22 @@ def search():
     if request.args.get("Whitman", '').strip() != '':
         regions.append("WHIT")
 
+
+    types = []
+    if request.args.get("Single", '').strip() != '':
+        types.append("SINGLE")
+    if request.args.get("Double", '').strip() != '':
+        types.append("DOUBLE")
+    if request.args.get("Triple", '').strip() != '':
+        types.append("TRIPLE")
+    if request.args.get("Quad", '').strip() != '':
+        types.append("QUAD")
+    if request.args.get("Quint", '').strip() != '':
+        types.append("Quint")
+    if request.args.get("6-Person", '').strip() != '':
+        types.append("6PERSON")
+
+
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
     
@@ -73,8 +89,14 @@ def search():
         placeholder = ', '.join(['?'] * len(regions))
         query += f" AND Region IN ({placeholder})"
         params.extend(regions)
+    if types:
+        placeholder1 = ', '.join(['?'] * len(types))
+        query += f" AND Type IN ({placeholder1})"
+        params.extend(types)
     if sort_clauses:
         query += " ORDER BY " + ", ".join(sort_clauses)
+    else:
+        query += " ORDER BY College ASC, Region ASC, Hall ASC, Room ASC"
             
 
     cursor = get_db().execute(query, params)
