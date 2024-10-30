@@ -21,7 +21,7 @@ def logout():
     return flask.redirect('/')
 
 # Database setup
-DATABASE = '/Users/lucas/Princeton/Fall2024/COS333/Project/TigerDen/TigerDen/Database/rooms.db'
+DATABASE = '../Database/rooms.db'
 
 def get_db():
     db = getattr(g, '_database', None)
@@ -40,6 +40,15 @@ def close_connection(exception):
 def search():
     hall = request.args.get('hall', '').strip()
     college = request.args.get('college', '').strip()
+    Butler = request.args.get("Butler", '').strip()
+    Forbes = request.args.get("Forbes", '').strip()
+    Mid_Campus = request.args.get("Mid-Campus", '').strip()
+    New_Colleges = request.args.get("New College", '').strip()
+    Roma = request.args.get("Roma", '').strip()
+    Slums = request.args.get("Slums", '').strip()
+    Speman = request.args.get("Spelman", '').strip()
+    Whitman = request.args.get("Whitman", '').strip()
+    
     
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
@@ -50,6 +59,9 @@ def search():
     if college:
         query += " AND College LIKE ?"
         params.append(f"%{college}%")
+    if region:
+        query += " AND Region LIKE ?"
+        params.append(f"%{region}%")
 
     cursor = get_db().execute(query, params)
     results = cursor.fetchall()

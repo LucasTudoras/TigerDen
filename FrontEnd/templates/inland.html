@@ -6,22 +6,70 @@
     </div>
 
     <h2>Search for Rooms</h2>
+    <hr>
     <form action="{{ url_for('search') }}" method="GET">
+        <h3>Region</h3>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Butler" name="Butler" value="Butler">
+        <label for="Butler">Butler</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Forbes" name="Forbes" value="Forbes">
+        <label for="Forbes">Forbes</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Mid-Campus" name="Mid-Campus" value="Mid-Campus">
+        <label for="Mid-Campus">Mid-Campus</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="New Colleges" name="New Colleges" value="New Colleges">
+        <label for="New Colleges">New Colleges</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Roma" name="Roma" value="Roma">
+        <label for="Roma">Roma</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Slums" name="Slums" value="Slums">
+        <label for="Slums">Slums</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Spelman" name="Spelman" value="Spelman">
+        <label for="Spelman">Spelman</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Whitman" name="Whitman" value="Whitman">
+        <label for="Whitman">Whitman</label>
+                </td>
+            </tr>
+
+        </table>
+        
+        
+        
+        
+
         <label for="hall">Hall:</label>
         <input type="text" id="hall" name="hall" placeholder="Enter hall name">
         
-        <label for="college">College:</label>
-        <input type="text" id="college" name="college" placeholder="Enter college name">
         
         <button type="submit">Search</button>
     </form>
 
-    {% if results %}
+    <!-- {% if results %}
         <h3>Search Results</h3>
         <ul>
             {% for room in results %}
                 <li>{{ room['Hall'] }} - Room {{ room['Room'] }}, Type: {{ room['Type'] }}, Sqft: {{ room['Sqft'] }}</li>
             {% endfor %}
         </ul>
-    {% endif %}
+    {% endif %} -->
 {% endblock %}
