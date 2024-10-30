@@ -57,13 +57,37 @@ for room in room_info_dicts:
     region_name = room["Region"].upper()
     for dist in distances:
         if dist["Hall1"] == hall_name:
-            room.update(dist)
+            room["Wawa"] = dist["Wawa"]
+            room["UStore"] = dist["UStore"]
+            room["Nassau"] = dist["Nassau"]
+            room["Jadwin Gym"] = dist["Jadwin Gym"]
+            room["Frist"] = dist["Frist"]
+            room["Street"] = dist["Street"]
+            room["EQuad"] = dist["EQuad"]
+            room["Dillon"] = dist["Dillon"]
+            room["RoomID"] = str(room["Hall"] + room["Room"])
             break
         if dist["Hall1"] == region_name:
-            room.update(dist)
+            room["Wawa"] = dist["Wawa"]
+            room["UStore"] = dist["UStore"]
+            room["Nassau"] = dist["Nassau"]
+            room["Jadwin Gym"] = dist["Jadwin Gym"]
+            room["Frist"] = dist["Frist"]
+            room["Street"] = dist["Street"]
+            room["EQuad"] = dist["EQuad"]
+            room["Dillon"] = dist["Dillon"]
+            room["RoomID"] = str(room["Hall"] + room["Room"])
             break
         if dist["Hall1"] == college_name:
-            room.update(dist)
+            room["Wawa"] = dist["Wawa"]
+            room["UStore"] = dist["UStore"]
+            room["Nassau"] = dist["Nassau"]
+            room["Jadwin Gym"] = dist["Jadwin Gym"]
+            room["Frist"] = dist["Frist"]
+            room["Street"] = dist["Street"]
+            room["EQuad"] = dist["EQuad"]
+            room["Dillon"] = dist["Dillon"]
+            room["RoomID"] = str(room["Hall"] + room["Room"])
             break
 
 # write all room information to masterlist.txt
@@ -109,4 +133,6 @@ with open(file_2, "a") as file:
         file.write(room["EQuad"])
         file.write(",")
         file.write(room["Dillon"])
+        file.write(",")
+        file.write(room["RoomID"])
         file.write("\n")
