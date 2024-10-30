@@ -1,0 +1,31 @@
+{% extends "basic.html" %}
+
+{% block content %}
+    <div class="logoutContainer">
+        <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
+    </div>
+
+    <h2>Room Search Results</h2>
+
+    {% if results %}
+        <ul>
+            {% for room in results %}
+                <li>
+                    <strong>Hall:</strong> {{ room['Hall'] }}<br>
+                    <strong>Room:</strong> {{ room['Room'] }}<br>
+                    <strong>Type:</strong> {{ room['Type'] }}<br>
+                    <strong>Sqft:</strong> {{ room['Sqft'] }}<br>
+                    <strong>College:</strong> {{ room['College'] }}<br>
+                    <strong>Region:</strong> {{ room['Region'] }}<br>
+                    <strong>Elevator:</strong> {{ room['Elevator'] }}<br>
+                    <strong>Bathroom:</strong> {{ room['Bathroom'] }}<br>
+                    <strong>AC:</strong> {{ room['AC'] }}<br>
+                    <strong>Floor:</strong> {{ room['Floor'] }}
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No rooms found matching your criteria.</p>
+    {% endif %}
+{% endblock %}

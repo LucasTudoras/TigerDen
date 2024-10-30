@@ -1,7 +1,7 @@
 import flask
-import flask
 import auth
-
+from flask import Flask, render_template, request, g
+import sqlite3
 from top import app
 
 
@@ -19,3 +19,45 @@ def login():
 def logout():
     flask.session.clear()
     return flask.redirect('/')
+
+# Database setup
+DATABASE = '/Users/lucas/Princeton/Fall2024/COS333/Project/TigerDen/TigerDen/Database/rooms.db'
+
+def get_db():
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect(DATABASE)
+    return db
+
+@app.teardown_appcontext
+def close_connection(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()
+
+# Search route
+@app.route('/search', methods=['GET'])
+def search():
+    hall = request.args.get('hall', '').strip()
+    college = request.args.get('college', '').strip()
+    
+    query = "SELECT * FROM rooms WHERE 1=1"
+    params = []
+
+    if hall:
+        query += " AND Hall LIKE ?"
+        params.append(f"%{hall}%")
+    if college:
+        query += " AND College LIKE ?"
+        params.append(f"%{college}%")
+
+    cursor = get_db().execute(query, params)
+    results = cursor.fetchall()
+    cursor.close()
+
+    # Map results to dictionary for template rendering
+    column_names = [description[0] for description in cursor.description]
+    rooms = [dict(zip(column_names, row)) for row in results]
+
+    return render_template('search.html', results=rooms)
+

@@ -2,7 +2,26 @@
 
 {% block content %}    
     <div class="logoutContainer">
-        <a href="out" class="loginButton">Log Out</a>
+        <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
-<p> search page here, might take inspo from futbin. just browsing show all rooms should be on separate page? is cas ticket info gonna stay in the url at the top? how do templates work exactly? who to reach out to for debugging? </p>
+
+    <h2>Search for Rooms</h2>
+    <form action="{{ url_for('search') }}" method="GET">
+        <label for="hall">Hall:</label>
+        <input type="text" id="hall" name="hall" placeholder="Enter hall name">
+        
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" placeholder="Enter college name">
+        
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+        <h3>Search Results</h3>
+        <ul>
+            {% for room in results %}
+                <li>{{ room['Hall'] }} - Room {{ room['Room'] }}, Type: {{ room['Type'] }}, Sqft: {{ room['Sqft'] }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 {% endblock %}
