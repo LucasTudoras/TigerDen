@@ -41,6 +41,7 @@ def close_connection(exception):
 def search():
     first_sort = request.args.get("First Sort")
     second_sort = request.args.get("Second Sort")
+
     sort_clauses = []
 
     if first_sort != '':
@@ -48,37 +49,52 @@ def search():
         if second_sort != '':
             sort_clauses.append(f"{second_sort}")
 
+    Butler = request.args.get("Butler")
+    Forbes = request.args.get("Forbes")
+    MidCampus = request.args.get("Mid-Campus")
+    NewCollege = request.args.get("New College")
+    Roma = request.args.get("Roma")
+    Slums = request.args.get("Slums")
+    Spelman = request.args.get("Spelman")
+    Whitman = request.args.get("Whitman")
+
     regions = []
-    if request.args.get("Butler", '').strip() != '':
+    if Butler:
         regions.append("BUTLER")
-    if request.args.get("Forbes", '').strip() != '':
+    if Forbes:
         regions.append("FORBES")
-    if request.args.get("Mid-Campus", '').strip() != '':
+    if MidCampus:
         regions.append("MID-CAMPUS")
-    if request.args.get("New College", '').strip() != '':
+    if NewCollege:
         regions.append("NEW COLLEGE")
-    if request.args.get("Roma", '').strip() != '':
+    if Roma:
         regions.append("ROMA")
-    if request.args.get("Slums", '').strip() != '':
+    if Slums:
         regions.append("SLUMS")
-    if request.args.get("Spelman", '').strip() != '':
+    if Spelman:
         regions.append("SPELMAN")
-    if request.args.get("Whitman", '').strip() != '':
+    if Whitman:
         regions.append("WHIT")
 
-
+    Single = request.args.get("Single")
+    Double = request.args.get("Double")
+    Triple = request.args.get("Triple")
+    Quad = request.args.get("Quad")
+    Quint = request.args.get("Quint")
+    SixPerson = request.args.get("6-Person")
+    
     types = []
-    if request.args.get("Single", '').strip() != '':
+    if Single:
         types.append("SINGLE")
-    if request.args.get("Double", '').strip() != '':
+    if Double:
         types.append("DOUBLE")
-    if request.args.get("Triple", '').strip() != '':
+    if Triple:
         types.append("TRIPLE")
-    if request.args.get("Quad", '').strip() != '':
+    if Quad:
         types.append("QUAD")
-    if request.args.get("Quint", '').strip() != '':
+    if Quint:
         types.append("Quint")
-    if request.args.get("6-Person", '').strip() != '':
+    if SixPerson:
         types.append("6PERSON")
 
 
