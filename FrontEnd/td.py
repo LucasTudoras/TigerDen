@@ -32,7 +32,7 @@ def get_db():
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, '_database', None)
-    if db is not None:
+    if db != None:
         db.close()
 
 # Search route
@@ -40,29 +40,41 @@ def close_connection(exception):
 def search():
     hall = request.args.get('hall', '').strip()
     college = request.args.get('college', '').strip()
-    Butler = request.args.get("Butler", '').strip()
-    Forbes = request.args.get("Forbes", '').strip()
-    Mid_Campus = request.args.get("Mid-Campus", '').strip()
-    New_Colleges = request.args.get("New College", '').strip()
-    Roma = request.args.get("Roma", '').strip()
-    Slums = request.args.get("Slums", '').strip()
-    Speman = request.args.get("Spelman", '').strip()
-    Whitman = request.args.get("Whitman", '').strip()
-    
+
+    regions = []
+
+    if request.args.get("Butler", '').strip() != '':
+        regions.append("BUTLER")
+    if request.args.get("Forbes", '').strip() != '':
+        regions.append("FORBES")
+    if request.args.get("Mid-Campus", '').strip() != '':
+        regions.append("MID-CAMPUS")
+    if request.args.get("New College", '').strip() != '':
+        regions.append("NEW COLLEGE")
+    if request.args.get("Roma", '').strip() != '':
+        regions.append("ROMA")
+    if request.args.get("Slums", '').strip() != '':
+        regions.append("SLUMS")
+    if request.args.get("Spelman", '').strip() != '':
+        regions.append("SPELMAN")
+    if request.args.get("Whitman", '').strip() != '':
+        regions.append("WHIT")
     
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
-
+    
     if hall:
         query += " AND Hall LIKE ?"
         params.append(f"%{hall}%")
     if college:
         query += " AND College LIKE ?"
         params.append(f"%{college}%")
-    if region:
-        query += " AND Region LIKE ?"
-        params.append(f"%{region}%")
-
+    if regions:
+        placeholder = ', '.join(['?'] * len(regions))
+        query += f" AND Region IN ({placeholder})"
+        params.extend(regions)
+    print("Query:", query)
+    print("Params:", params)
     cursor = get_db().execute(query, params)
     results = cursor.fetchall()
     cursor.close()
