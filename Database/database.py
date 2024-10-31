@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS rooms (
 # Read List.csv and parse room information
 room_info_dicts = []
 
-with open(Path("DatabasePrep/List.csv")) as file:
+with open(Path("../DatabasePrep/List.csv")) as file:
     room_list = csv.reader(file, delimiter=',')
     header = True
     for room in room_list:
@@ -60,7 +60,7 @@ with open(Path("DatabasePrep/List.csv")) as file:
 # Read Distance.csv and populate distances
 distances = []
 
-with open(Path("DatabasePrep/Distance.csv")) as file_1:
+with open(Path("../DatabasePrep/Distance.csv")) as file_1:
     hall_distances = csv.reader(file_1, delimiter=',')
     for hall in hall_distances:
         distance_to = {
