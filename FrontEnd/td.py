@@ -82,8 +82,9 @@ def login():
     rooms = [dict(zip(column_names, row)) for row in results]
     print(search_data)
     response = make_response(render_template('inland.html', username=username, user_data=search_data, results=rooms))
-    # for key, value in search_data.items():
-    #     response.set_cookie(key, value)
+    for key, value in search_data.items():
+        if type(value)!=list:
+            response.set_cookie(key, value)
     return response
 
 @app.route('/logout')

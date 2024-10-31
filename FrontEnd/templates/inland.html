@@ -40,7 +40,6 @@
         <h4 style="display: inline;">Sort by</h4>
         <label for="FirstSort"></label>
         <select name="FirstSort" id="FirstSort" onchange="sendSelectedValue1()">
-            <option value="{{ firstSort }}">First Sort</option>
             <option value="Hall" {% if user_data.FirstSort == "Hall" %}selected{% endif %}>Hall</option>
             <option value="Room" {% if user_data.FirstSort == "Room" %}selected{% endif %}>Room Number</option>
             <option value="Type" {% if user_data.FirstSort == "Type" %}selected{% endif %}>Type</option>
@@ -55,7 +54,6 @@
         <hr>
         <label for="SecondSort"></label>
         <select name="SecondSort" id="SecondSort" onchange="sendSelectedValue2()">
-            <option value="{{ secondSort }}">Second Sort</option>
             <option value="Hall" {% if user_data.SecondSort == "Hall" %}selected{% endif %}>Hall</option>
             <option value="Room" {% if user_data.SecondSort == "Room" %}selected{% endif %}>Room Number</option>
             <option value="Type" {% if user_data.SecondSort == "Type" %}selected{% endif %}>Type</option>
