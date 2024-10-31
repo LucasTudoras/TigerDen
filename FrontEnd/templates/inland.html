@@ -8,136 +8,230 @@
     <h2>Search for Rooms</h2>
     Filter a search query to find the rooms that fit your desires.
     <hr>
-    <form action="/search" method="GET">
-        
-        <table >
-            <th >
-                <tr>
-                    <td align="center"><h3>College</h3></td>
-                    <td></td>
-                    <td>&emsp;</td>
-                    <td>&emsp;</td>
-                    <td align="center"><h3>Type</h3></td>
-                </tr>
-            </th>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Butler" name="Butler" value="Butler">
-                    <label for="Butler">Butler</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Forbes" name="Forbes" value="Forbes">
-                    <label for="Forbes">Forbes</label>
-                </td>
-                <td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="Single" name="Single" value="Single">
-                    <label for="Single">Single</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Double" name="Double" value="Double">
-                    <label for="Double">Double</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Mathey" name="Mathey" value="Mathey">
-                    <label for="Mathey">Mathey</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="New College West" name="New College West" value="New College West">
-                    <label for="New College West">New College West</label>
-                </td><td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="Triple" name="Triple" value="Triple">
-                    <label for="Triple">Triple</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Quad" name="Quad" value="Quad">
-                    <label for="Quad">Quad</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Rocky" name="Rocky" value="Rocky">
-                    <label for="Rocky">Rocky</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Upperclass" name="Upperclass" value="Upperclass">
-                    <label for="Upperclass">Upperclass</label>
-                </td><td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="Quint" name="Quint" value="Quint">
-                    <label for="Quint">5-Person</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="6-Person" name="6-Person" value="6-Person">
-                    <label for="6-Person">6-Person</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Whitman" name="Whitman" value="Whitman">
-                    <label for="Whitman">Whitman</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College">
-                    <label for="Yeh College">Yeh College</label>
-                </td>
-            </tr>
+    <form action="/login" method="POST">
+                {% for option in ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky', 
+                'Upperclass', 'Whitman', 'Yeh'] %}
+    <label>
+          <input type="checkbox" name="CollegeOptions" value="{{ option }}"
+                 {% if option in user_data['selected_colleges'] %} checked {% endif %}>
+        {{ option }}
+    </label><br>
+    {% endfor %}
+<button onclick="selectAllColleges()">Select All Colleges</button>
+<button onclick="deselectAllColleges()">Deselect All Colleges</button>
+<button onclick="fetchCheckedColleges()">Filter</button>
+<br><br><hr>
+{% for option in ['Single', 'Double', 'Triple', 'Quad', 'Quint', '6-Person'] %}
+    <label>
+          <input type="checkbox" name="TypeOptions" value="{{ option }}"
+                 {% if option in user_data['selected_types'] %} checked {% endif %}>
+        {{ option }}
+    </label><br>
+{% endfor %}
 
-        </table>
+<button onclick="selectAllTypes()">Select All Room Types</button>
+<button onclick="deselectAllTypes()">Deselect All Room Types</button>
+<button onclick="fetchCheckedTypes()">Filter</button>
+
+        </form>
+
+        <form action="/login" method="GET">
         <hr>
         <h4 style="display: inline;">Sort by</h4>
-        <label for="First Sort"></label>
-        <select name="First Sort" id="First Sort">
+        <label for="FirstSort"></label>
+        <select name="FirstSort" id="FirstSort" onchange="sendSelectedValue1()">
             <option value="{{ firstSort }}">First Sort</option>
-            <option value="Hall ASC">Hall Ascending</option>
-            <option value="Hall DESC">Hall Descending</option>
-            <option value="Room ASC">Room Ascending</option>
-            <option value="Room DESC">Room Descending</option>
-            <option value="Type ASC">Type Ascending</option>
-            <option value="Type DESC">Type Descending</option>
-            <option value="Sqft ASC">Smallest Rooms First</option>
-            <option value="Sqft DESC">Biggest Rooms First</option>
-            <option value="College ASC">College Ascending</option>
-            <option value="College DESC">College Descending</option>
-            <option value="Region ASC">Region Ascending</option>
-            <option value="Region DESC">Region Descending</option>
+            <option value="Hall" {% if user_data.FirstSort == "Hall" %}selected{% endif %}>Hall</option>
+            <option value="Room" {% if user_data.FirstSort == "Room" %}selected{% endif %}>Room Number</option>
+            <option value="Type" {% if user_data.FirstSort == "Type" %}selected{% endif %}>Type</option>
+            <option value="Sqft" {% if user_data.FirstSort == "Sqft" %}selected{% endif %}>Size</option>
+            <option value="College" {% if user_data.FirstSort == "College" %}selected{% endif %}>College</option>
+            <option value="Region" {% if user_data.FirstSort == "Region" %}selected{% endif %}>Region</option>
         </select>
-        
-        <label for="Second Sort"></label>
-        <select name="Second Sort" id="Second Sort">
+        <select name="FirstOrder" id="FirstOrder" onchange="sendOrder2()">
+            <option value="ASC" {% if user_data.FirstOrder == "ASC" %}selected{% endif %}>Ascending</option>
+            <option value="DESC" {% if user_data.FirstOrder == "DESC" %}selected{% endif %}>Descending</option>
+        </select>
+        <hr>
+        <label for="SecondSort"></label>
+        <select name="SecondSort" id="SecondSort" onchange="sendSelectedValue2()">
             <option value="{{ secondSort }}">Second Sort</option>
-            <option value="Hall ASC">Hall Ascending</option>
-            <option value="Hall DESC">Hall Descending</option>
-            <option value="Room ASC">Room Ascending</option>
-            <option value="Room DESC">Room Descending</option>
-            <option value="Type ASC">Type Ascending</option>
-            <option value="Type DESC">Type Descending</option>
-            <option value="Sqft ASC">Smallest Rooms First</option>
-            <option value="Sqft DESC">Biggest Rooms First</option>
-            <option value="College ASC">College Ascending</option>
-            <option value="College DESC">College Descending</option>
-            <option value="Region ASC">Region Ascending</option>
-            <option value="Region DESC">Region Descending</option>
+            <option value="Hall" {% if user_data.SecondSort == "Hall" %}selected{% endif %}>Hall</option>
+            <option value="Room" {% if user_data.SecondSort == "Room" %}selected{% endif %}>Room Number</option>
+            <option value="Type" {% if user_data.SecondSort == "Type" %}selected{% endif %}>Type</option>
+            <option value="Sqft" {% if user_data.SecondSort == "Sqft" %}selected{% endif %}>Size</option>
+            <option value="College" {% if user_data.SecondSort == "College" %}selected{% endif %}>College</option>
+            <option value="Region" {% if user_data.SecondSort == "Region" %}selected{% endif %}>Region</option>
         </select>
-        
-        
-        
-
-        
-        
+        <select name="SecondOrder" id="SecondOrder" onchange="sendOrder2()">
+            <option value="ASC" {% if user_data.SecondOrder == "ASC" %}selected{% endif %}>Ascending</option>
+            <option value="DESC" {% if user_data.SecondOrder == "DESC" %}selected{% endif %}>Descending</option>
+        </select>
         
         <button type="submit">Search</button>
     </form>
 
-    <!-- {% if results %}
-        <h3>Search Results</h3>
-        <ul>
-            {% for room in results %}
-                <li>{{ room['Hall'] }} - Room {{ room['Room'] }}, Type: {{ room['Type'] }}, Sqft: {{ room['Sqft'] }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %} -->
+
+    <hr>
+    <h2 style="display: inline;">Room Search Results</h2>
+    <a href="/login" style="float: right" style="display: inline;">Search another room</a>
+    <hr>
+
+    {% if results %}
+    <table id="room results" border="1">
+        <tr>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>Region</strong></td>
+            <td><strong>Floor Plan</strong></td>
+            <td><strong>More Info</strong></td>
+        </tr>
+
+        {% for room in results %}
+        <tr>
+            <td align="center" class="special">{{ room['Hall'] }}</td>
+            <td align="center" class="special">{{ room['Room'] }}</td>
+            <td align="center" class="special">{{ room['Type'] }}</td>
+            <td align="center" class="special">{{ room['Sqft'] }}</td>
+            <td align="center" class="special">{{ room['College'] }}</td>
+            <td align="center" class="special">{{ room['Region'] }}</td>
+            <td align="center" class="special">
+                {% if room['FilePath'] %}
+                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No rooms found matching your criteria.</p>
+    {% endif %}
+
+
+<script>
+function getCookies() {
+const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
+    const [key, value] = cookie.split('=');
+    acc[key] = decodeURIComponent(value);
+    return acc;
+}, {});
+
+return cookies;
+}
+document.addEventListener('DOMContentLoaded', function() {
+    function sendSelectedValue1() {
+        const selectedValue1 = document.getElementById("FirstSort").value;
+        fetch(`/get_selected_value?selectedValue1=${encodeURIComponent(selectedValue1)}`)
+        .then(response => response.json())
+    }
+
+    function sendSelectedValue2() {
+        const selectedValue2 = document.getElementById("SecondSort").value;
+        fetch(`/get_selected_value?selectedValue2=${encodeURIComponent(selectedValue2)}`)
+        .then(response => response.json())
+    }
+
+    function sendOrder1() {
+        const selectedOrder1 = document.getElementById("FirstOrder").value;
+        fetch(`/get_order?selectedOrder1=${encodeURIComponent(selectedOrder1)}`)
+        .then(response => response.json())
+    }
+
+    function sendOrder2() {
+        const selectedOrder2 = document.getElementById("SecondOrder").value;
+        fetch(`/get_order?selectedOrder2=${encodeURIComponent(selectedOrder2)}`)
+        .then(response => response.json())
+    }
+
+
+
+    function fetchCheckedColleges() {
+        console.log("Filter button clicked!");
+        const checkboxes = document.querySelectorAll('input[name="CollegeOptions"]:checked');
+        const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+        fetch('/apply-colleges', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ selectedOptions: selectedValues })
+        })
+        .then(response => response.json())
+        .then(data => {
+        document.getElementById('results').innerHTML = data.results;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function fetchCheckedFilters() {
+        console.log("Filter button clicked!");
+        const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
+        const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+        fetch('/apply-types', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ selectedOptions: selectedValues })
+        })
+        .then(response => response.json())
+        .then(data => {
+        document.getElementById('results').innerHTML = data.results;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function selectAllColleges() {
+        console.log("Select All button clicked")
+        document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
+            try {
+            checkbox.checked = true;
+        } catch (error) {
+            console.error("Error setting checkbox:", error);
+        }
+        });
+    }
+
+    function deselectAllColleges() {
+        document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    }
+
+    function selectAllTypes() {
+        document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
+            try {
+            checkbox.checked = true;
+        } catch (error) {
+            console.error("Error setting checkbox:", error);
+        }
+        });
+    }
+
+
+    function deselectAllTypes() {
+        document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    }
+
+
+    window.fetchCheckedColleges = fetchCheckedColleges;
+    window.fetchCheckedFilters = fetchCheckedFilters;
+    window.selectAllColleges = selectAllColleges;
+    window.deselectAllColleges = deselectAllColleges;
+    window.selectAllTypes = selectAllTypes;
+    window.deselectAllTypes = deselectAllTypes;
+    window.fetchCheckedFilters = fetchCheckedFilters;
+    window.sendSelectedValue1 = sendSelectedValue1;
+    window.sendOrder1 = sendOrder1; 
+    window.sendSelectedValue2 = sendSelectedValue2;
+    window.sendOrder2 = sendOrder2; 
+});
+
+</script>
 {% endblock %}

@@ -1,6 +1,6 @@
 import flask
 import auth
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, make_response
 import sqlite3
 from top import app
 
@@ -9,11 +9,82 @@ from top import app
 def home():
     return flask.render_template('index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     username = auth.authenticate()
-    print(username)
-    return flask.render_template('inland.html', username=username)
+    selected_colleges = ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky',
+                        'Upperclass', 'Whitman', 'Yeh',]
+    
+    selected_types = ['Single', 'Double','Triple', 'Quad', 'Quint', '6-Person']
+    
+    if request.method == 'POST':
+        print("REQUEST ARRIVED")
+        content_type = request.headers.get('Content-Type')
+        if content_type == 'application/x-www-form-urlencoded':
+            selected_colleges = request.form.getlist('CollegeOptions')
+            selected_types = request.form.getlist('TypeOptions')
+
+    search_data = {
+        'FirstSort': request.args.get('FirstSort', 'Sqft'),
+        'SecondSort': request.args.get('SecondSort', 'College'),
+        'FirstOrder': request.args.get('FirstOrder', 'DESC'),
+        'SecondOrder': request.args.get('SecondOrder', 'ASC'),
+        'selected_colleges': selected_colleges,
+        'selected_types': selected_types
+    }
+    name_discreptancies = {
+        'Butler': 'Butler College',
+        'Forbes': 'Forbes College',
+        'Mathey': 'Mathey College',
+        'New College West': 'New College West',
+        'Rocky': 'Rockefeller College',    
+        'Upperclass': 'UPPERCLASS',    
+        'Whitman': 'Whitman College',    
+        'Yeh': 'Yeh College',    
+        'Single': 'SINGLE',
+        'Double': 'DOUBLE',
+        'Triple': 'TRIPLE',
+        'Quad': 'QUAD',
+        'Quint': 'QUINT',
+        '6-Person': '6PERSON'
+    }
+    colleges = [name_discreptancies[college] for college in selected_colleges]
+    types = [name_discreptancies[type] for type in selected_types]
+    sort_clauses = [search_data['FirstSort'] + ' ' + search_data['FirstOrder'],
+                    search_data['SecondSort'] + ' ' + search_data['SecondOrder']]
+    
+    query = "SELECT * FROM rooms WHERE 1=1"
+    params = []
+    
+    if not colleges or not types:
+        return flask.render_template('inland.html', username=username, user_data=search_data, results=[])
+
+    if colleges:
+        placeholder = ', '.join(['?'] * len(colleges))
+        query += f" AND College IN ({placeholder})"
+        params.extend(colleges)
+    if types:
+        placeholder1 = ', '.join(['?'] * len(types))
+        query += f" AND Type IN ({placeholder1})"
+        params.extend(types)
+    if sort_clauses:
+        query += " ORDER BY " + ", ".join(sort_clauses)
+    else:
+        query += " ORDER BY College ASC, Region ASC, Hall ASC, Room ASC"
+            
+
+    cursor = get_db().execute(query, params)
+    results = cursor.fetchall()
+    cursor.close()
+
+    # Map results to dictionary for template rendering
+    column_names = [description[0] for description in cursor.description]
+    rooms = [dict(zip(column_names, row)) for row in results]
+    print(search_data)
+    response = make_response(render_template('inland.html', username=username, user_data=search_data, results=rooms))
+    # for key, value in search_data.items():
+    #     response.set_cookie(key, value)
+    return response
 
 @app.route('/logout')
 def logout():
@@ -36,105 +107,6 @@ def close_connection(exception):
         db.close()
 
 
-# Search route
-@app.route('/search', methods=['GET'])
-def search():
-    first_sort = request.args.get("First Sort")
-    second_sort = request.args.get("Second Sort")
-
-    if first_sort is None:
-        first_sort = request.cookies.get("First Sort")
-    if second_sort is None:
-        second_sort = request.cookies.get("Second Sort")
-
-
-    sort_clauses = []
-
-    if first_sort:
-        sort_clauses.append(f"{first_sort}")
-    if second_sort:
-            sort_clauses.append(f"{second_sort}")
-
-    Butler = request.args.get("Butler")
-    Forbes = request.args.get("Forbes")
-    Mathey = request.args.get("Mathey")
-    NewCollege = request.args.get("New College West")
-    Roma = request.args.get("Rocky")
-    Upperclass = request.args.get("Upperclass")
-    Whitman = request.args.get("Whitman")
-    Yeh = request.args.get("Yeh College")
-
-    
-
-    Colleges = []
-    if Butler:
-        Colleges.append("Butler College")
-    if Forbes:
-        Colleges.append("Forbes College")
-    if Mathey:
-        Colleges.append("Mathey College")
-    if NewCollege:
-        Colleges.append("New College West")
-    if Roma:
-        Colleges.append("Rockefeller College")
-    if Upperclass:
-        Colleges.append("UPPERCLASS")
-    if Whitman:
-        Colleges.append("Whitman College")
-    if Yeh:
-        Colleges.append("Yeh College")
-    
-
-    Single = request.args.get("Single")
-    Double = request.args.get("Double")
-    Triple = request.args.get("Triple")
-    Quad = request.args.get("Quad")
-    Quint = request.args.get("Quint")
-    SixPerson = request.args.get("6-Person")
-    
-    types = []
-    if Single:
-        types.append("SINGLE")
-    if Double:
-        types.append("DOUBLE")
-    if Triple:
-        types.append("TRIPLE")
-    if Quad:
-        types.append("QUAD")
-    if Quint:
-        types.append("QUINT")
-    if SixPerson:
-        types.append("6PERSON")
-
-
-    query = "SELECT * FROM rooms WHERE 1=1"
-    params = []
-    
-    if Colleges:
-        placeholder = ', '.join(['?'] * len(Colleges))
-        query += f" AND College IN ({placeholder})"
-        params.extend(Colleges)
-    if types:
-        placeholder1 = ', '.join(['?'] * len(types))
-        query += f" AND Type IN ({placeholder1})"
-        params.extend(types)
-    if sort_clauses:
-        query += " ORDER BY " + ", ".join(sort_clauses)
-    else:
-        query += " ORDER BY College ASC, Region ASC, Hall ASC, Room ASC"
-            
-
-    cursor = get_db().execute(query, params)
-    results = cursor.fetchall()
-    cursor.close()
-
-    # Map results to dictionary for template rendering
-    column_names = [description[0] for description in cursor.description]
-    rooms = [dict(zip(column_names, row)) for row in results]
-    response = flask.make_response(render_template('search.html', results=rooms, firstSort=first_sort, secondSort=second_sort))
-    response.set_cookie("First Sort", first_sort)
-    response.set_cookie("Second Sort", second_sort)
-    return response
 
 @app.route("/room_details/<roomID>")
 def room_details(roomID):
