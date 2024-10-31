@@ -19,6 +19,7 @@
             <td><strong>College</strong></td>
             <td><strong>Region</strong></td>
             <td><strong>Floor Plan</strong></td>
+            <td><strong>More Info</strong></td>
         </tr>
 
         {% for room in results %}
@@ -36,6 +37,7 @@
                     N/A
                 {% endif %}
             </td>
+            <td><a href="/login">Click here to see more</a></td>
         </tr>
         {% endfor %}
     </table>

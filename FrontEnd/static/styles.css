@@ -1,4 +1,3 @@
-
 /* Style for the logo and name container */
 .logo-container {
     width: 50px;
@@ -18,7 +17,8 @@
 .site-name {
     font-size: 30px;
     font: 'Raleway';
-    color: #824f0d; 
+    color: #000000;
+    margin-top: 0px;
 }
 
 .welcome {
@@ -26,9 +26,8 @@
     font-weight: normal;
     font: 'Raleway';
     text-align: center;
-    color: #824f0d;
+    color: #000000;
 }
-
 
 .loginButton {
     display: inline-block; /* Make the link behave like a block element */
@@ -41,7 +40,7 @@
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     text-align: center;
     align-items: center;
-    width:60px;
+    width: 60px;
 }
 
 .loginButton:hover {

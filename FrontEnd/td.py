@@ -93,7 +93,7 @@ def search():
     if Quad:
         types.append("QUAD")
     if Quint:
-        types.append("Quint")
+        types.append("QUINT")
     if SixPerson:
         types.append("6PERSON")
 
