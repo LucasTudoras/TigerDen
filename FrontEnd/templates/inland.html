@@ -8,7 +8,7 @@
     <h2>Search for Rooms</h2>
     Filter a search query to find the rooms that fit your desires.
     <hr>
-    <form action="/login" method="POST">
+    <form action="/login" onsubmit="saveFilterSelection()" method="POST">
                 {% for option in ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky', 
                 'Upperclass', 'Whitman', 'Yeh'] %}
     <label>
@@ -166,7 +166,7 @@ function fetchCheckedColleges() {
     .catch(error => console.error('Error:', error));
 }
 
-function fetchCheckedFilters() {
+function fetchCheckedTypes() {
     console.log("Filter button clicked!");
     const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
     const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
@@ -217,6 +217,45 @@ function deselectAllTypes() {
     });
 }
 
+
+
+
+
+
+function saveFilterSelection() {
+    const collegeOptions = Array.from(document.querySelectorAll('input[name="CollegeOptions"]:checked'))
+        .map(checkbox => checkbox.value);
+    console.log(collegeOptions);
+    document.cookie = `selected_colleges=${collegeOptions.join(',')}; path=/`;
+
+    const typeOptions = Array.from(document.querySelectorAll('input[name="TypeOptions"]:checked'))
+        .map(checkbox => checkbox.value);
+    document.cookie = `selected_types=${typeOptions.join(',')}; path=/`;
+}
+
+function loadFilterSelection() {
+    const cookies = document.cookie.split(';').reduce((acc, cookie) => {
+        const [key, value] = cookie.split('=');
+        acc[key.trim()] = decodeURIComponent(value);
+        return acc;
+    }, {});
+
+    if (cookies.selected_colleges) {
+        const selectedColleges = cookies.selected_colleges.split(',');
+        document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
+            checkbox.checked = selectedColleges.includes(checkbox.value);
+        });
+    }
+
+    if (cookies.selected_types) {
+        const selectedTypes = cookies.selected_types.split(',');
+        document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
+            checkbox.checked = selectedTypes.includes(checkbox.value);
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadFilterSelection);
 
 
 </script>

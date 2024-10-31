@@ -48,11 +48,13 @@ def login():
         'Quint': 'QUINT',
         '6-Person': '6PERSON'
     }
+    
+
     colleges = [name_discreptancies[college] for college in selected_colleges]
     types = [name_discreptancies[type] for type in selected_types]
     sort_clauses = [search_data['FirstSort'] + ' ' + search_data['FirstOrder'],
                     search_data['SecondSort'] + ' ' + search_data['SecondOrder']]
-    
+
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
     
@@ -82,6 +84,7 @@ def login():
     rooms = [dict(zip(column_names, row)) for row in results]
     print(search_data)
     response = make_response(render_template('inland.html', username=username, user_data=search_data, results=rooms))
+    print(search_data)
     for key, value in search_data.items():
         if type(value)!=list:
             response.set_cookie(key, value)
