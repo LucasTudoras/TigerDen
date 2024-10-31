@@ -5,7 +5,8 @@
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
 
-    <h2 style="display: inline;">Room Search Results</h2>
+    <h2>Room Search Results</h2>
+    All the rooms that match the inputted search parameters.
     <a href="/login" style="float: right" style="display: inline;">Search another room</a>
     <hr>
 
@@ -37,7 +38,7 @@
                     N/A
                 {% endif %}
             </td>
-            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
+            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">View more information</a></td>
         </tr>
         {% endfor %}
     </table>
