@@ -122,114 +122,102 @@ const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
 
 return cookies;
 }
-document.addEventListener('DOMContentLoaded', function() {
-    function sendSelectedValue1() {
-        const selectedValue1 = document.getElementById("FirstSort").value;
-        fetch(`/get_selected_value?selectedValue1=${encodeURIComponent(selectedValue1)}`)
-        .then(response => response.json())
+
+function sendSelectedValue1() {
+    const selectedValue1 = document.getElementById("FirstSort").value;
+    fetch(`/get_selected_value?selectedValue1=${encodeURIComponent(selectedValue1)}`)
+    .then(response => response.json())
+}
+
+function sendSelectedValue2() {
+    const selectedValue2 = document.getElementById("SecondSort").value;
+    fetch(`/get_selected_value?selectedValue2=${encodeURIComponent(selectedValue2)}`)
+    .then(response => response.json())
+}
+
+function sendOrder1() {
+    const selectedOrder1 = document.getElementById("FirstOrder").value;
+    fetch(`/get_order?selectedOrder1=${encodeURIComponent(selectedOrder1)}`)
+    .then(response => response.json())
+}
+
+function sendOrder2() {
+    const selectedOrder2 = document.getElementById("SecondOrder").value;
+    fetch(`/get_order?selectedOrder2=${encodeURIComponent(selectedOrder2)}`)
+    .then(response => response.json())
+}
+
+
+
+function fetchCheckedColleges() {
+    console.log("Filter button clicked!");
+    const checkboxes = document.querySelectorAll('input[name="CollegeOptions"]:checked');
+    const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+    fetch('/apply-colleges', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ selectedOptions: selectedValues })
+    })
+    .then(response => response.json())
+    .then(data => {
+    document.getElementById('results').innerHTML = data.results;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function fetchCheckedFilters() {
+    console.log("Filter button clicked!");
+    const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
+    const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+    fetch('/apply-types', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ selectedOptions: selectedValues })
+    })
+    .then(response => response.json())
+    .then(data => {
+    document.getElementById('results').innerHTML = data.results;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function selectAllColleges() {
+    console.log("Select All button clicked")
+    document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
+        try {
+        checkbox.checked = true;
+    } catch (error) {
+        console.error("Error setting checkbox:", error);
     }
+    });
+}
 
-    function sendSelectedValue2() {
-        const selectedValue2 = document.getElementById("SecondSort").value;
-        fetch(`/get_selected_value?selectedValue2=${encodeURIComponent(selectedValue2)}`)
-        .then(response => response.json())
+function deselectAllColleges() {
+    document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+}
+
+function selectAllTypes() {
+    document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
+        try {
+        checkbox.checked = true;
+    } catch (error) {
+        console.error("Error setting checkbox:", error);
     }
-
-    function sendOrder1() {
-        const selectedOrder1 = document.getElementById("FirstOrder").value;
-        fetch(`/get_order?selectedOrder1=${encodeURIComponent(selectedOrder1)}`)
-        .then(response => response.json())
-    }
-
-    function sendOrder2() {
-        const selectedOrder2 = document.getElementById("SecondOrder").value;
-        fetch(`/get_order?selectedOrder2=${encodeURIComponent(selectedOrder2)}`)
-        .then(response => response.json())
-    }
+    });
+}
 
 
-
-    function fetchCheckedColleges() {
-        console.log("Filter button clicked!");
-        const checkboxes = document.querySelectorAll('input[name="CollegeOptions"]:checked');
-        const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
-
-        fetch('/apply-colleges', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ selectedOptions: selectedValues })
-        })
-        .then(response => response.json())
-        .then(data => {
-        document.getElementById('results').innerHTML = data.results;
-        })
-        .catch(error => console.error('Error:', error));
-    }
-
-    function fetchCheckedFilters() {
-        console.log("Filter button clicked!");
-        const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
-        const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
-
-        fetch('/apply-types', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ selectedOptions: selectedValues })
-        })
-        .then(response => response.json())
-        .then(data => {
-        document.getElementById('results').innerHTML = data.results;
-        })
-        .catch(error => console.error('Error:', error));
-    }
-
-    function selectAllColleges() {
-        console.log("Select All button clicked")
-        document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
-            try {
-            checkbox.checked = true;
-        } catch (error) {
-            console.error("Error setting checkbox:", error);
-        }
-        });
-    }
-
-    function deselectAllColleges() {
-        document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
-            checkbox.checked = false;
-        });
-    }
-
-    function selectAllTypes() {
-        document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
-            try {
-            checkbox.checked = true;
-        } catch (error) {
-            console.error("Error setting checkbox:", error);
-        }
-        });
-    }
+function deselectAllTypes() {
+    document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+}
 
 
-    function deselectAllTypes() {
-        document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
-            checkbox.checked = false;
-        });
-    }
-
-
-    window.fetchCheckedColleges = fetchCheckedColleges;
-    window.fetchCheckedFilters = fetchCheckedFilters;
-    window.selectAllColleges = selectAllColleges;
-    window.deselectAllColleges = deselectAllColleges;
-    window.selectAllTypes = selectAllTypes;
-    window.deselectAllTypes = deselectAllTypes;
-    window.fetchCheckedFilters = fetchCheckedFilters;
-    window.sendSelectedValue1 = sendSelectedValue1;
-    window.sendOrder1 = sendOrder1; 
-    window.sendSelectedValue2 = sendSelectedValue2;
-    window.sendOrder2 = sendOrder2; 
-});
 
 </script>
 {% endblock %}
