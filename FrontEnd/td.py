@@ -25,10 +25,10 @@ def login():
             selected_types = request.form.getlist('TypeOptions')
 
     search_data = {
-        'FirstSort': request.args.get('FirstSort', 'Sqft'),
-        'SecondSort': request.args.get('SecondSort', 'College'),
-        'FirstOrder': request.args.get('FirstOrder', 'DESC'),
-        'SecondOrder': request.args.get('SecondOrder', 'ASC'),
+        'FirstSort': request.args.get('FirstSort', request.cookies.get('FirstSort', 'Sqft')),
+        'SecondSort': request.args.get('SecondSort', request.cookies.get('SecondSort', 'College')),
+        'FirstOrder': request.args.get('FirstOrder', request.cookies.get('FirstOrder', 'DESC')),
+        'SecondOrder': request.args.get('SecondOrder', request.cookies.get('SecondOrder', 'ASC')),
         'selected_colleges': selected_colleges,
         'selected_types': selected_types
     }

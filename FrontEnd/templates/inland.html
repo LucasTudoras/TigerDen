@@ -153,11 +153,20 @@ function fetchCheckedColleges() {
     console.log("Filter button clicked!");
     const checkboxes = document.querySelectorAll('input[name="CollegeOptions"]:checked');
     const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
-
+    const firstSort = document.getElementById("FirstSort").value;
+    const secondSort = document.getElementById("SecondSort").value;
+    const firstOrder = document.getElementById("FirstOrder").value;
+    const secondOrder = document.getElementById("SecondOrder").value;
     fetch('/apply-colleges', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ selectedOptions: selectedValues })
+        body: JSON.stringify({
+            selectedOptions: selectedValues,
+            FirstSort: firstSort,
+            SecondSort: secondSort,
+            FirstOrder: firstOrder,
+            SecondOrder: secondOrder
+        })
     })
     .then(response => response.json())
     .then(data => {
@@ -170,11 +179,20 @@ function fetchCheckedTypes() {
     console.log("Filter button clicked!");
     const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
     const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
-
+    const firstSort = document.getElementById("FirstSort").value;
+    const secondSort = document.getElementById("SecondSort").value;
+    const firstOrder = document.getElementById("FirstOrder").value;
+    const secondOrder = document.getElementById("SecondOrder").value;
     fetch('/apply-types', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ selectedOptions: selectedValues })
+        body: JSON.stringify({
+            selectedOptions: selectedValues,
+            FirstSort: firstSort,
+            SecondSort: secondSort,
+            FirstOrder: firstOrder,
+            SecondOrder: secondOrder
+        })
     })
     .then(response => response.json())
     .then(data => {
