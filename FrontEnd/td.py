@@ -125,3 +125,16 @@ def search():
 
     return render_template('search.html', results=rooms)
 
+@app.route("/room_details/<roomID>")
+def room_details(roomID):
+    query = "SELECT * FROM rooms WHERE 1=1"
+    params = []
+    query += " And RoomID = ?"
+    params.append(roomID)
+    cursor = get_db().execute(query, params)
+    results = cursor.fetchall()
+    cursor.close()
+
+    column_names = [description[0] for description in cursor.description]
+    room = [dict(zip(column_names, row)) for row in results]
+    return render_template('room_details.html', results = room)
