@@ -5,48 +5,39 @@
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
 
-    <h2 style = "display: inline;">Room Search Results</h2>
-     <a href="/login" style = "float: right" style = "display: inline;">Search another room</a>
+    <h2 style="display: inline;">Room Search Results</h2>
+    <a href="/login" style="float: right" style="display: inline;">Search another room</a>
     <hr>
 
-    
-
     {% if results %}
-    <table id= "room results" border = "1"> 
-            <tr>
-                <td>
-                    <strong>Hall</strong>
-                </td>
-                <td><strong>Room</strong></td>
-                <td><strong>Type</strong></td>
-                <td><strong>Sqft</strong></td>
-                <td><strong>College</strong></td>
-                <td><strong>Region</strong></td>
-            </tr>
+    <table id="room results" border="1">
+        <tr>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>Region</strong></td>
+            <td><strong>Floor Plan</strong></td>
+        </tr>
 
-            {% for room in results %}
-            <tr>
-                <td>
-                    {{ room['Hall'] }}
-                </td>
-                <td>
-                    {{ room['Room'] }}
-                </td>
-                <td>
-                    {{ room['Type'] }}
-                </td>
-                <td>
-                    {{ room['Sqft'] }}
-                </td>
-                <td>
-                    {{ room['College'] }}
-                </td>
-                <td>
-                    {{ room['Region'] }}
-                </td>
-
-            </tr>
-            {% endfor %}
+        {% for room in results %}
+        <tr>
+            <td>{{ room['Hall'] }}</td>
+            <td>{{ room['Room'] }}</td>
+            <td>{{ room['Type'] }}</td>
+            <td>{{ room['Sqft'] }}</td>
+            <td>{{ room['College'] }}</td>
+            <td>{{ room['Region'] }}</td>
+            <td>
+                {% if room['FilePath'] %}
+                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
     </table>
     {% else %}
         <p>No rooms found matching your criteria.</p>
