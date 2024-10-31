@@ -42,40 +42,48 @@ def search():
     first_sort = request.args.get("First Sort")
     second_sort = request.args.get("Second Sort")
 
+    if first_sort is None:
+        first_sort = request.cookies.get("First Sort")
+    if second_sort is None:
+        second_sort = request.cookies.get("Second Sort")
+
+
     sort_clauses = []
 
-    if first_sort != '':
+    if first_sort:
         sort_clauses.append(f"{first_sort}")
-        if second_sort != '':
+    if second_sort:
             sort_clauses.append(f"{second_sort}")
 
     Butler = request.args.get("Butler")
     Forbes = request.args.get("Forbes")
-    MidCampus = request.args.get("Mathey")
+    Mathey = request.args.get("Mathey")
     NewCollege = request.args.get("New College West")
     Roma = request.args.get("Rocky")
-    Slums = request.args.get("Upperclass")
+    Upperclass = request.args.get("Upperclass")
     Whitman = request.args.get("Whitman")
     Yeh = request.args.get("Yeh College")
+
+    
 
     Colleges = []
     if Butler:
         Colleges.append("Butler College")
     if Forbes:
         Colleges.append("Forbes College")
-    if MidCampus:
+    if Mathey:
         Colleges.append("Mathey College")
     if NewCollege:
         Colleges.append("New College West")
     if Roma:
         Colleges.append("Rockefeller College")
-    if Slums:
+    if Upperclass:
         Colleges.append("UPPERCLASS")
     if Whitman:
         Colleges.append("Whitman College")
     if Yeh:
         Colleges.append("Yeh College")
-
+    
 
     Single = request.args.get("Single")
     Double = request.args.get("Double")
@@ -123,8 +131,10 @@ def search():
     # Map results to dictionary for template rendering
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
-
-    return render_template('search.html', results=rooms)
+    response = flask.make_response(render_template('search.html', results=rooms, firstSort=first_sort, secondSort=second_sort))
+    response.set_cookie("First Sort", first_sort)
+    response.set_cookie("Second Sort", second_sort)
+    return response
 
 @app.route("/room_details/<roomID>")
 def room_details(roomID):

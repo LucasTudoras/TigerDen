@@ -6,6 +6,7 @@
     </div>
 
     <h2 style="display: inline;">Room Details</h2>
+    
     <a href="{{ url_for('login') }}" style="float: right" style="display: inline;">Search another room</a>
     <hr>
 
@@ -118,4 +119,7 @@
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
+    <br>
+    <br>
+    <a href="{{url_for('search')}}" style="text-align: center; display: inline;">Return to searched rooms</a>
 {% endblock %}
