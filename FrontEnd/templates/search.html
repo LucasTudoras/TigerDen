@@ -24,13 +24,13 @@
 
         {% for room in results %}
         <tr>
-            <td>{{ room['Hall'] }}</td>
-            <td>{{ room['Room'] }}</td>
-            <td>{{ room['Type'] }}</td>
-            <td>{{ room['Sqft'] }}</td>
-            <td>{{ room['College'] }}</td>
-            <td>{{ room['Region'] }}</td>
-            <td>
+            <td align="center">{{ room['Hall'] }}</td>
+            <td align="center">{{ room['Room'] }}</td>
+            <td align="center">{{ room['Type'] }}</td>
+            <td align="center">{{ room['Sqft'] }}</td>
+            <td align="center">{{ room['College'] }}</td>
+            <td align="center">{{ room['Region'] }}</td>
+            <td align="center">
                 {% if room['FilePath'] %}
                     <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
                 {% else %}

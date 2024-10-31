@@ -51,30 +51,31 @@ def search():
 
     Butler = request.args.get("Butler")
     Forbes = request.args.get("Forbes")
-    MidCampus = request.args.get("Mid-Campus")
-    NewCollege = request.args.get("New Colleges")
-    Roma = request.args.get("Roma")
-    Slums = request.args.get("Slums")
-    Spelman = request.args.get("Spelman")
+    MidCampus = request.args.get("Mathey")
+    NewCollege = request.args.get("New College West")
+    Roma = request.args.get("Rocky")
+    Slums = request.args.get("Upperclass")
     Whitman = request.args.get("Whitman")
+    Yeh = request.args.get("Yeh College")
 
-    regions = []
+    Colleges = []
     if Butler:
-        regions.append("BUTLER")
+        Colleges.append("Butler College")
     if Forbes:
-        regions.append("FORBES")
+        Colleges.append("Forbes College")
     if MidCampus:
-        regions.append("MID-CAMPUS")
+        Colleges.append("Mathey College")
     if NewCollege:
-        regions.append("NEW COLLEGE")
+        Colleges.append("New College West")
     if Roma:
-        regions.append("ROMA")
+        Colleges.append("Rockefeller College")
     if Slums:
-        regions.append("SLUMS")
-    if Spelman:
-        regions.append("SPELMAN")
+        Colleges.append("UPPERCLASS")
     if Whitman:
-        regions.append("WHIT")
+        Colleges.append("Whitman College")
+    if Yeh:
+        Colleges.append("Yeh College")
+
 
     Single = request.args.get("Single")
     Double = request.args.get("Double")
@@ -101,10 +102,10 @@ def search():
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
     
-    if regions:
-        placeholder = ', '.join(['?'] * len(regions))
-        query += f" AND Region IN ({placeholder})"
-        params.extend(regions)
+    if Colleges:
+        placeholder = ', '.join(['?'] * len(Colleges))
+        query += f" AND College IN ({placeholder})"
+        params.extend(Colleges)
     if types:
         placeholder1 = ', '.join(['?'] * len(types))
         query += f" AND Type IN ({placeholder1})"
