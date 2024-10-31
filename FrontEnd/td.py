@@ -52,7 +52,7 @@ def search():
     Butler = request.args.get("Butler")
     Forbes = request.args.get("Forbes")
     MidCampus = request.args.get("Mid-Campus")
-    NewCollege = request.args.get("New College")
+    NewCollege = request.args.get("New Colleges")
     Roma = request.args.get("Roma")
     Slums = request.args.get("Slums")
     Spelman = request.args.get("Spelman")
