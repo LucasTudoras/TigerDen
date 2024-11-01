@@ -1,3 +1,73 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(151, 165, 99, 0.4);
+}
+
+
+body {
+    background-repeat: repeat;
+    margin: 0;
+    height: 100vh; /* Set height to full viewport */
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Overlay */
+        url('./images/background1.webp'); /* Background image */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    text-align: center;
+}
+
+
+
+.hero-section {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 60vh;              /* Adjust as needed */
+    position: relative;
+}
+
+
+.hero-content {
+    background-color: rgba(151, 165, 99, 0.4); 
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+}
+
+.hero-content p.welcome {
+    font-size: 45px;
+    font-weight: normal;
+    font: 'Raleway';
+    text-align: center;
+    color: #000000;
+}
+
+.hero-content p.welcomeDescription {
+    font-size: 20px;
+    font-weight: normal;
+    font: 'Raleway';
+    text-align: center;
+    color: #000000;
+    max-width: 90%;
+}
+
+.hero-content .loginButton {
+    margin-top: 1em;
+    width: 100px;
+}
+
+
 /* Style for the logo and name container */
 .logo-container {
     width: 50px;
@@ -20,22 +90,7 @@
     color: #000000;
 }
 
-.welcome {
-    font-size: 50px;
-    font-weight: normal;
-    font: 'Raleway';
-    text-align: center;
-    color: #000000;
-}
 
-.welcomeDescription {
-    font-size: 20px;
-    font-weight: normal;
-    font: 'Raleway';
-    text-align: left;
-    color: #000000;
-    max-width: 90%;
-}
 
 .loginButton {
     display: inline-block; /* Make the link behave like a block element */
@@ -80,15 +135,99 @@
     color: #333;
 }
 
-/* Ensure the header stays at the top left */
-header {
+
+.checkbox-options-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa; /* Light background for header */
-    border-bottom: 1px solid #ccc;
+    justify-content: space-between; /* Evenly space items in the row */
+    align-items: center;            /* Center items vertically in the row */
 }
+
+.search-options-container {
+    display: flex;
+    justify-content: flex; /* Align items to the start */
+    align-items: flex; /* Align items at the top */
+    padding: 1em;
+    margin-top: 1em;
+    background-color: rgba(151, 165, 99, 0.4); /* Background color for clarity */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    gap: 1em;
+}
+
+.search-group {
+    display: flex;
+    flex-direction: column; /* Keeps label above select */
+    margin: 2em;          /* Space out groups horizontally */
+}
+
+.checkbox-item{
+    display: flex;
+    align-items: center;      /* Aligns checkbox and label vertically */
+    gap: 0.5em;               /* Space between checkbox and label */
+    font: 'Raleway';
+    color: #000000;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;                /* Removes any extra margin from checkbox */
+}
+
+.checkbox-item label {
+    min-width: 120px;
+    text-align: left;
+}
+
+.search-text {
+    margin-top: 1em;
+    font: 'Raleway';
+    color: #000000;
+}
+
+/* Table container for responsiveness */
+.table-container {
+    overflow-x: auto;          /* Allows horizontal scroll on smaller screens */
+    margin-top: 1em;           /* Space above the table */
+}
+
+/* Basic table styles */
+table {
+    width: 100%;               /* Full-width table */
+    border-collapse: collapse; /* Remove space between cells */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header styles */
+table th, table td {
+    padding: 12px;             /* Padding inside cells */
+    text-align: center;        /* Center-align text */
+    color: black;              /* Text color */
+}
+
+
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+    background-color: rgba(151, 165, 99, 0.4); 
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(207, 224, 144, 0.4); 
+}
+
+/* Hover effect */
+table tr:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
+}
+
+/* Special column styling (optional) */
+td.special {
+    color: #333;               /* Darker text for emphasis */
+    font-weight: bold;
+}
+
+
+
+
 
 nav a {
     margin-right: 15px;

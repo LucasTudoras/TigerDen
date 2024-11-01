@@ -5,78 +5,84 @@
         <a href="/logout" class="loginButton">Log Out</a>
     </div>
 
+    <div class="search-text">
     <h2>Search for Rooms</h2>
     Filter a search query to find the rooms that fit your desires.
-    <hr>
-    <form action="/login" onsubmit="saveFilterSelection()" method="POST">
-                {% for option in ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky', 
-                'Upperclass', 'Whitman', 'Yeh'] %}
-    <label>
-          <input type="checkbox" name="CollegeOptions" value="{{ option }}"
-                 {% if option in user_data['selected_colleges'] %} checked {% endif %}>
-        {{ option }}
-    </label><br>
-    {% endfor %}
-<button onclick="selectAllColleges()">Select All Colleges</button>
-<button onclick="deselectAllColleges()">Deselect All Colleges</button>
-<button onclick="fetchCheckedColleges()">Filter</button>
-<br><br><hr>
-{% for option in ['Single', 'Double', 'Triple', 'Quad', 'Quint', '6-Person'] %}
-    <label>
-          <input type="checkbox" name="TypeOptions" value="{{ option }}"
-                 {% if option in user_data['selected_types'] %} checked {% endif %}>
-        {{ option }}
-    </label><br>
-{% endfor %}
+    </div>
+    <div class="search-options-container">
+        <form action="/login" onsubmit="saveFilterSelection()" class="checkbox-options-container" method="POST">
+            <div class="search-group">
+                {% for option in ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky', 'Upperclass', 'Whitman', 'Yeh'] %}
+                <div class="checkbox-item"><label>
+                    <input type="checkbox" name="CollegeOptions" value="{{ option }}"
+                            {% if option in user_data['selected_colleges'] %} checked {% endif %}>
+                    {{ option }}
+                </label></div><br>
+                {% endfor %}
+                <button onclick="selectAllColleges()">Select All Colleges</button>
+                <button onclick="deselectAllColleges()">Deselect All Colleges</button>
+            </div>
 
-<button onclick="selectAllTypes()">Select All Room Types</button>
-<button onclick="deselectAllTypes()">Deselect All Room Types</button>
-<button onclick="fetchCheckedTypes()">Filter</button>
+            <div class="search-group">
+            {% for option in ['Single', 'Double', 'Triple', 'Quad', 'Quint', '6-Person'] %}
+                <div class="checkbox-item"><label>
+                    <input type="checkbox" name="TypeOptions" value="{{ option }}"
+                            {% if option in user_data['selected_types'] %} checked {% endif %}>
+                    {{ option }}
+                </label></div><br>
+            {% endfor %}
 
+            <button onclick="selectAllTypes()">Select All Room Types</button>
+            <button onclick="deselectAllTypes()">Deselect All Room Types</button>
+            <button onclick="fetchCheckedTypes()" type="submit">Filter</button>
+
+            </div>
         </form>
-
-        <form action="/login" method="GET">
-        <hr>
-        <h4 style="display: inline;">Sort by</h4>
-        <label for="FirstSort"></label>
-        <select name="FirstSort" id="FirstSort" onchange="sendSelectedValue1()">
-            <option value="Hall" {% if user_data.FirstSort == "Hall" %}selected{% endif %}>Hall</option>
-            <option value="Room" {% if user_data.FirstSort == "Room" %}selected{% endif %}>Room Number</option>
-            <option value="Type" {% if user_data.FirstSort == "Type" %}selected{% endif %}>Type</option>
-            <option value="Sqft" {% if user_data.FirstSort == "Sqft" %}selected{% endif %}>Size</option>
-            <option value="College" {% if user_data.FirstSort == "College" %}selected{% endif %}>College</option>
-            <option value="Region" {% if user_data.FirstSort == "Region" %}selected{% endif %}>Region</option>
-        </select>
-        <select name="FirstOrder" id="FirstOrder" onchange="sendOrder2()">
-            <option value="ASC" {% if user_data.FirstOrder == "ASC" %}selected{% endif %}>Ascending</option>
-            <option value="DESC" {% if user_data.FirstOrder == "DESC" %}selected{% endif %}>Descending</option>
-        </select>
-        <hr>
-        <label for="SecondSort"></label>
-        <select name="SecondSort" id="SecondSort" onchange="sendSelectedValue2()">
-            <option value="Hall" {% if user_data.SecondSort == "Hall" %}selected{% endif %}>Hall</option>
-            <option value="Room" {% if user_data.SecondSort == "Room" %}selected{% endif %}>Room Number</option>
-            <option value="Type" {% if user_data.SecondSort == "Type" %}selected{% endif %}>Type</option>
-            <option value="Sqft" {% if user_data.SecondSort == "Sqft" %}selected{% endif %}>Size</option>
-            <option value="College" {% if user_data.SecondSort == "College" %}selected{% endif %}>College</option>
-            <option value="Region" {% if user_data.SecondSort == "Region" %}selected{% endif %}>Region</option>
-        </select>
-        <select name="SecondOrder" id="SecondOrder" onchange="sendOrder2()">
-            <option value="ASC" {% if user_data.SecondOrder == "ASC" %}selected{% endif %}>Ascending</option>
-            <option value="DESC" {% if user_data.SecondOrder == "DESC" %}selected{% endif %}>Descending</option>
-        </select>
         
-        <button type="submit">Search</button>
-    </form>
+        
+        <form action="/login" method="GET">
+            <div class="search-group">
 
+                <h4 style="display: inline;">Sort by</h4>
+                <label for="FirstSort"></label>
+                <select name="FirstSort" id="FirstSort" onchange="sendSelectedValue1()">
+                    <option value="Hall" {% if user_data.FirstSort == "Hall" %}selected{% endif %}>Hall</option>
+                    <option value="Room" {% if user_data.FirstSort == "Room" %}selected{% endif %}>Room Number</option>
+                    <option value="Type" {% if user_data.FirstSort == "Type" %}selected{% endif %}>Type</option>
+                    <option value="Sqft" {% if user_data.FirstSort == "Sqft" %}selected{% endif %}>Size</option>
+                    <option value="College" {% if user_data.FirstSort == "College" %}selected{% endif %}>College</option>
+                    <option value="Region" {% if user_data.FirstSort == "Region" %}selected{% endif %}>Region</option>
+                </select>
+                <select name="FirstOrder" id="FirstOrder" onchange="sendOrder2()">
+                    <option value="ASC" {% if user_data.FirstOrder == "ASC" %}selected{% endif %}>Ascending</option>
+                    <option value="DESC" {% if user_data.FirstOrder == "DESC" %}selected{% endif %}>Descending</option>
+                </select>
 
-    <hr>
-    <h2 style="display: inline;">Room Search Results</h2>
-    <a href="/login" style="float: right" style="display: inline;">Search another room</a>
-    <hr>
+                <label for="SecondSort"></label>
+                <select name="SecondSort" id="SecondSort" onchange="sendSelectedValue2()">
+                    <option value="Hall" {% if user_data.SecondSort == "Hall" %}selected{% endif %}>Hall</option>
+                    <option value="Room" {% if user_data.SecondSort == "Room" %}selected{% endif %}>Room Number</option>
+                    <option value="Type" {% if user_data.SecondSort == "Type" %}selected{% endif %}>Type</option>
+                    <option value="Sqft" {% if user_data.SecondSort == "Sqft" %}selected{% endif %}>Size</option>
+                    <option value="College" {% if user_data.SecondSort == "College" %}selected{% endif %}>College</option>
+                    <option value="Region" {% if user_data.SecondSort == "Region" %}selected{% endif %}>Region</option>
+                </select>
+                <select name="SecondOrder" id="SecondOrder" onchange="sendOrder2()">
+                    <option value="ASC" {% if user_data.SecondOrder == "ASC" %}selected{% endif %}>Ascending</option>
+                    <option value="DESC" {% if user_data.SecondOrder == "DESC" %}selected{% endif %}>Descending</option>
+                </select>
+                
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="search-text">
+        <h2 style="display: inline;">Room Search Results</h2>
+    </div>
 
     {% if results %}
-    <table id="room results" border="1">
+    <div class="table-container"><table id="room results" border="1">
         <tr>
             <td><strong>Hall</strong></td>
             <td><strong>Room</strong></td>
@@ -106,7 +112,7 @@
             <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
         </tr>
         {% endfor %}
-    </table>
+    </table></div>
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}

@@ -5,21 +5,22 @@
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
 
-    <h2>Room Details</h2>
-    Everything there is to know about a room on campus.
+    <div class="search-text">
+        <h2>Room Details</h2>
+        Everything there is to know about a room on campus.
+    </div>
 
-    <a href="{{ url_for('login') }}" style="float: right" style="display: inline;">Search another room</a>
-    <hr>
 
     {% if results %}
     
 
         {% for room in results %}
+        <div class="table-container">
         <table id="room results">
             <tr>
-                <td colspan="2" align="center"><h3>Room Info</h3></td>
+                <th><h3>Room Info</h3></td>
                 <td>&nbsp;</td>
-                <td colspan="2" align="center"><h3>Distance To (Minutes Walking):</h3></td>
+                <th><h3>Distance To (Minutes Walking):</h3></td>
                 <td></td>
             </tr>
             <tr>
@@ -117,6 +118,8 @@
             </tr> 
         {% endfor %}
     </table>
+    </div>
+    <div class="search-text">
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
