@@ -1,0 +1,12 @@
+{% extends "loggedin.html" %}
+
+{% block content %}
+    <div class="search-text">
+        <h2>Campus Map</h2>
+        Locate where halls are situated on campus.
+    </div>
+
+    <div class="campus-map-image">
+        <img src="{{ url_for('static', filename='images/CampusMap.png')}}", class="campus-map-image">
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TigerDen</title>
+    <link rel="website icon" type = "png" href="static/images/logo_den_no_bg.png">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../static/images/logo_den_no_bg.png" alt="Website Logo" class="logo">
+            <span class="site-name">TigerDen</span>
+        </div>
+        <nav class="navbar">
+            <a href="/login" class="loginButton">Rooms Search</a>
+            <a href="/floor-plans" class="loginButton">Floor Plans</a>
+            <a href="/groups" class="loginButton">Manage Groups</a>
+            <a href="/campus-map" class="loginButton">Campus Map</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

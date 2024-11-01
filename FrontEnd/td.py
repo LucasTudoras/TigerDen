@@ -9,6 +9,18 @@ from top import app
 def home():
     return flask.render_template('index.html')
 
+@app.route('/groups')
+def groups():
+    return flask.render_template('groups.html')
+
+@app.route('/campus-map')
+def campus_map():
+    return flask.render_template('campus_map.html')
+
+@app.route('/floor-plans')
+def floor_plans():
+    return flask.render_template('floor_plans.html')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     username = auth.authenticate()

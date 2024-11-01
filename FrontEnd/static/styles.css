@@ -108,6 +108,7 @@ body {
 
 .loginButton:hover {
     background-color: #0056b3; /* Darker color on hover */
+    text-decoration: none;
 }
 
 .logoutContainer {
@@ -231,6 +232,8 @@ td.special {
 
 nav a {
     margin-right: 15px;
+    height: 40px;
+    width: 100px;
     text-decoration: none;
     color: #007bff;
 }
@@ -242,4 +245,9 @@ nav a:hover {
 td.special {
     padding: 10px;
 }
-    
+
+
+.campus-map-image {
+    max-width: 100%;
+    height: auto
+}
