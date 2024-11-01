@@ -102,7 +102,7 @@ def login():
     response = make_response(render_template('inland.html', username=username, user_data=search_data, results=rooms))
     print(search_data)
     for key, value in search_data.items():
-        if type(value)!=list:
+        if type(value) is not list:
             response.set_cookie(key, value)
     return response
 
@@ -123,7 +123,7 @@ def get_db():
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, '_database', None)
-    if db != None:
+    if db is not None:
         db.close()
 
 
