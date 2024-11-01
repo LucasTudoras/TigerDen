@@ -21,6 +21,10 @@ def campus_map():
 def floor_plans():
     return flask.render_template('floor_plans.html')
 
+@app.route('/upload-pdf')
+def upload_pdf():
+    return flask.render_template('upload_pdf.html')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     username = auth.authenticate()
