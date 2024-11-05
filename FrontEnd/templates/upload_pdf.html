@@ -3,13 +3,88 @@
 {% block content %}
     <div class="search-text">
         <h2>Upload PDFs</h2> 
-    Download the most recent available rooms PDF from the myHousing portal, and upload it here to automatically refine your Room Draw search to only the rooms that are still available.
-        <br>
-    <input type="file" id = "input">
-        
-    <script>
-        const selectedFile = document.getElementByID("input").files[0];
-    </script>
-    
+        <p>Download the most recent available rooms PDF from the myHousing portal, and upload it here to automatically refine your Room Draw search to only the rooms that are still available.</p>
+    </div>
 
+    <div id="upload-area" class="upload-container" 
+         ondrop="handleFileDrop(event)" 
+         ondragover="event.preventDefault(); event.stopPropagation();">
+        <p>Drag and drop your PDF file here, or click below to select one.</p>
+        <input type="file" id="fileInput" accept=".pdf" onchange="uploadFile(event)" hidden>
+        <label for="fileInput" class="upload-button">Select PDF File</label>
+    </div>
+
+    <script>
+    function handleFileDrop(event) {
+        event.preventDefault();
+        const file = event.dataTransfer.files[0];
+        uploadFile({ target: { files: [file] } });
+    }
+
+    function uploadFile(event) {
+        const file = event.target.files[0];
+        if (file && file.type === 'application/pdf') {
+            const formData = new FormData();
+            formData.append('pdf', file);
+
+            fetch('/upload_pdf', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('PDF uploaded successfully. Database updated with available rooms.');
+                } else {
+                    alert('Error updating database. Please try again.');
+                }
+            })
+            .catch(error => console.error('Error uploading PDF:', error));
+        } else {
+            alert('Please upload a PDF file.');
+        }
+    }
+    </script>
+
+    <style>
+        .upload-container {
+            border: 2px dashed #cccccc;
+            border-radius: 10px;
+            padding: 100px;
+            text-align: center;
+            cursor: pointer;
+            color: #666;
+            background-color: #f9f9f9;
+            max-width: 200px;
+            margin: auto;
+            transition: background-color 0.2s ease;
+        }
+
+        .upload-container:hover {
+            background-color: #f1f1f1;
+        }
+
+        .upload-container p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .upload-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .upload-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 {% endblock %}
