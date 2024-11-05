@@ -3,6 +3,7 @@ import auth
 from flask import Flask, render_template, request, g, make_response
 import sqlite3
 from top import app
+import PDF
 
 
 @app.route('/')
@@ -141,3 +142,29 @@ def room_details(roomID):
     column_names = [description[0] for description in cursor.description]
     room = [dict(zip(column_names, row)) for row in results]
     return render_template('room_details.html', results = room)
+
+@app.route("/PDF")
+def uploaded_PDF(file):
+    uploaded_rooms = PDF(file)
+    return render_template('/upload_pdf.html', results = uploaded_rooms)
+
+@app.route("/college/<college>")
+def return_FilePath(college):
+    halls = []
+    if college == 'Butler College':
+        halls = ['1967', '1976', 'Bloomberg', 'Bogle', 'Scully', 'Wilf', 'Yoseloff']
+
+    elif college == 'Forbes College':
+        halls = ['99Alexander', 'Annex', 'Main']
+
+    elif college == 'Mathey College':
+        halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
+        
+    elif college == 'NCW College':
+        halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
+    
+    elif college == 'Rocky College':
+        halls = ['Buyers', 'Campbell', 'Holder', 'Witherspoon']
+
+    elif college == 'Upperclass':
+        halls = ['1901', 'Feinberg','Patton', '1903', 'Foulke', 'Pyne', 'Brown', 'Henry', 'Scully', 'Cuyler', 'Laughlin', 'Spelman', 'Dickinson Street, 2', 'Little', 'Walker', 'Dod', 'Lockhart', 'Wright']

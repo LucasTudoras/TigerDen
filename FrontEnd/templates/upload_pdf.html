@@ -4,4 +4,12 @@
     <div class="search-text">
         <h2>Upload PDFs</h2> 
     Download the most recent available rooms PDF from the myHousing portal, and upload it here to automatically refine your Room Draw search to only the rooms that are still available.
+        <br>
+    <input type="file" id = "input">
+        
+    <script>
+        const selectedFile = document.getElementByID("input").files[0];
+    </script>
+    
+
 {% endblock %}

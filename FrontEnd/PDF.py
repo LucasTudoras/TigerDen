@@ -176,26 +176,12 @@ def print_output(output, list):
             countUn +=1
         print("Rooms: " + str(countUn))
 
-def main():
+def main(file):
     # Paths to the PDF files
-    pdf_22 = Path("PDF/OrigAvailableRoomsList2022.pdf")
-    pdf_24 = Path("PDF/AvailableRoomsList2024.pdf")
-    pdf_23 = Path("PDF/AvailableRoomsList2023.pdf")
-    
+    pdf = Path(file)
+    pdf_output = Path("../temp.txt")
 
-    # Paths to the output text files
-    output22 = Path("PDF/22.txt")
-    output23 = Path("PDF/23.txt")
-    output24 = Path("PDF/24.txt") 
-
-    # Clear the output files before extraction
-    clear_file(output22)
-    clear_file(output23)
-    clear_file(output24)
-
-    PDF_22 = Info()
-    PDF_23 = Info()
-    PDF_24 = Info()
+    uploaded_pdf = Info()
 
     # Define the college names to look for
     college_names = {
@@ -213,29 +199,13 @@ def main():
     }
 
     # Extract text from both PDFs
-    extract_text_from_pdf(pdf_22, output22, college_names)
-    extract_text_from_pdf(pdf_23, output23, college_names)
-    extract_text_from_pdf(pdf_24, output24, college_names)
+    extract_text_from_pdf(pdf, pdf_output, college_names)
+    
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
     
-    print("2022 data:")
-    starts_College = find_word_in_file(output22, colleges)
-    store_intoArray(starts_College, output22, PDF_22)
-    print_output(Path("PDF/22rooms.txt"), PDF_22)
-    # newline
-    print("")   
+    print("uploaded test")
+    starts_College = find_word_in_file(pdf_output, colleges)
+    store_intoArray(starts_College, pdf_output, uploaded_pdf)
 
-    print("2023 data:")
-    starts_College = find_word_in_file(output23, colleges)
-    store_intoArray(starts_College, output23, PDF_23)
-    print_output(Path("PDF/23rooms.txt"), PDF_23)
-    # newline
-    print("")  
-    
-    print("2024 data:")
-    starts_College = find_word_in_file(output24, colleges)
-    store_intoArray(starts_College, output24, PDF_24)
-    print_output(Path("PDF/24rooms.txt"), PDF_24)
-
-main()
+    return uploaded_pdf.Class
