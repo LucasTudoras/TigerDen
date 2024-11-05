@@ -206,14 +206,34 @@ def return_floorplans(college, hall):
     else:
         directory_path = "static/FloorPlan/" + college + " College/" + hall
     test = []
-    print(college)
-    print('*******************')
-    print(hall)
+    
     for filename in os.listdir(directory_path):
+        temp_name = filename.replace(".pdf", '')
+        if temp_name == 'Lower':
+            temp_name = 'Basement Floor'
+        if temp_name == '0':
+            temp_name = "0th Floor"
+        if temp_name == '1':
+            temp_name = '1st Floor'
+        if temp_name == '2':
+            temp_name = '2nd Floor'
+        if temp_name == '3':
+            temp_name = '3rd Floor'
+        if temp_name == '4':
+            temp_name = '4th Floor'
+        if temp_name == '5':
+            temp_name = '5th Floor'
+        if temp_name == '6':
+            temp_name = '6th Floor'
+        if temp_name == '7':
+            temp_name = '7th Floor'
+        if temp_name == '8':
+            temp_name = '8th Floor'
         temp = {
-            'name': filename.replace(".pdf", ''),
+            'name': temp_name,
             'filepath': "../" + directory_path + "/" +filename
         }
+        
         test.append(temp)
         filepaths.append("../" + directory_path + "/" +filename)
 
