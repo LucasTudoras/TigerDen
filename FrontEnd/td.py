@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, g, make_response
 import sqlite3
 from top import app
 import PDF
+import os
 
 
 @app.route('/')
@@ -149,22 +150,68 @@ def uploaded_PDF(file):
     return render_template('/upload_pdf.html', results = uploaded_rooms)
 
 @app.route("/college/<college>")
-def return_FilePath(college):
+def return_halls(college):
     halls = []
-    if college == 'Butler College':
+    if college == 'Butler':
         halls = ['1967', '1976', 'Bloomberg', 'Bogle', 'Scully', 'Wilf', 'Yoseloff']
 
-    elif college == 'Forbes College':
+    elif college == 'Forbes':
         halls = ['99Alexander', 'Annex', 'Main']
 
-    elif college == 'Mathey College':
+    elif college == 'Mathey':
         halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
         
-    elif college == 'NCW College':
+    elif college == 'NCW':
         halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
     
-    elif college == 'Rocky College':
+    elif college == 'Rocky':
         halls = ['Buyers', 'Campbell', 'Holder', 'Witherspoon']
 
     elif college == 'Upperclass':
         halls = ['1901', 'Feinberg','Patton', '1903', 'Foulke', 'Pyne', 'Brown', 'Henry', 'Scully', 'Cuyler', 'Laughlin', 'Spelman', 'Dickinson Street, 2', 'Little', 'Walker', 'Dod', 'Lockhart', 'Wright']
+
+    elif college == 'Whitman':
+        halls = ['1981', 'Baker E', 'Baker S', 'Fisher', 'Hargadon', 'Lauritzen', 'Murley', 'Wendell B', 'Wendell C']
+    
+    elif college == 'Yeh':
+        halls = ['Fu', 'Grousebeck', 'Hariri', 'Mannion']
+    return render_template('/halls.html', results = halls, college = college)
+
+@app.route("/floors/<college> <hall>")
+def return_floorplans(college, hall):
+    if college == "NCW Jose E.":
+        college = "NCW"
+        hall = "Jose E. Feliciano"
+    if college == "NCW Kwanza":
+        college = "NCW"
+        hall = "Kwanza Jones"
+    if college == "Upperclass Dickinson Street,":
+        college = 'Upperclass'
+        hall = "Dickinson Street, 2"
+    if college == "Whitman Wendell" and hall == 'B':
+        college = "Whitman"
+        hall = "Wendell B"
+    if college == "Whitman Wendell" and hall == 'C':
+        college = "Whitman"
+        hall = "Wendell C"
+    if college == "Whitman Baker" and hall == 'E':
+        college = "Whitman"
+        hall = "Baker E"
+    if college == "Whitman Baker" and hall == 'S':
+        college = "Whitman"
+        hall = "Baker S"
+    filepaths = []
+    if college == 'Upperclass':
+        directory_path = "static/FloorPlan/" + college + "/" + hall
+    else:
+        directory_path = "static/FloorPlan/" + college + " College/" + hall
+    
+    print(college)
+    print('*******************')
+    print(hall)
+    for filename in os.listdir(directory_path):
+        
+        filepaths.append("../" + directory_path + "/" +filename)
+    filepaths.sort()
+
+    return render_template('floors.html', results = filepaths, hall = hall)

@@ -1,0 +1,32 @@
+{% extends "loggedin.html" %}
+
+{% block content %}
+<div class="search-text">
+    <h2>Floor Plans</h2>
+    Here are all of the floor plans in {{ hall }}
+    
+</div>
+<br>
+{% if results %}
+    
+
+{% for floor in results %}
+
+<table id="room results">
+    <tr>
+        
+    </tr>
+        <tr>
+            <iframe src="{{ floor }}" frameborder="0" height="525", width="75%" title="{{ floor }}"></iframe>
+        </tr>
+        <td style="vertical-align:center;">
+            <a href="{{ floor }}" target="_blank">&#8593;Open in new tab</a>
+        </td>
+</table>
+
+{% endfor %}
+
+{% endif %}
+<br>
+<br>
+{% endblock %}

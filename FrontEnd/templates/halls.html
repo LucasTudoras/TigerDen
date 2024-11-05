@@ -1,0 +1,24 @@
+{% extends "loggedin.html" %}
+
+{% block content %}
+<div class="search-text">
+    <h2>Floor Plans</h2>
+    Here are all of the halls in {{ college }} College
+    
+</div>
+<br>
+{% if results %}
+    
+
+{% for hall in results %}
+<table id="hall results">
+        <td>
+            <a href="/floors/{{ college }} {{ hall }}">{{ hall }}</a>
+        </td>
+    
+</table>
+
+{% endfor %}
+
+{% endif %}
+{% endblock %}
