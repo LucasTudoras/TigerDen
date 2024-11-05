@@ -205,13 +205,18 @@ def return_floorplans(college, hall):
         directory_path = "static/FloorPlan/" + college + "/" + hall
     else:
         directory_path = "static/FloorPlan/" + college + " College/" + hall
-    
+    test = []
     print(college)
     print('*******************')
     print(hall)
     for filename in os.listdir(directory_path):
-        
+        temp = {
+            'name': filename.replace(".pdf", ''),
+            'filepath': "../" + directory_path + "/" +filename
+        }
+        test.append(temp)
         filepaths.append("../" + directory_path + "/" +filename)
-    filepaths.sort()
 
-    return render_template('floors.html', results = filepaths, hall = hall)
+    filepaths.sort()
+    sorted_test = sorted(test, key=lambda x: x['name'])
+    return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall)

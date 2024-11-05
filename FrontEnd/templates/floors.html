@@ -7,20 +7,21 @@
     
 </div>
 <br>
-{% if results %}
-    
+{% if test %}  
 
-{% for floor in results %}
+{% for floor in test %}
 
 <table id="room results">
-    <tr>
-        
-    </tr>
+        <td>
+            <strong>{{ floor['name'] }} Floor</strong>
+
+        </td>
         <tr>
-            <iframe src="{{ floor }}" frameborder="0" height="525", width="75%" title="{{ floor }}"></iframe>
+            <iframe src="{{ floor['filepath'] }}" frameborder="0" height="525", width="75%" title="{{ floor['filepath'] }}"></iframe>
         </tr>
         <td style="vertical-align:center;">
-            <a href="{{ floor }}" target="_blank">&#8593;Open in new tab</a>
+            
+            <a href="{{ floor['filepath'] }}" target="_blank">&#8593;Open in new tab</a>
         </td>
 </table>
 
