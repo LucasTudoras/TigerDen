@@ -1,12 +1,20 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
+<div style="text-align:left;">
+    <a href="/college/{{ college }}" class="backButton">Back to {{ college }}</a>
+</div>
+
 <div class="search-text">
     <h2>Floor Plans</h2>
     Here are all of the floor plans in {{ hall }}
     
 </div>
 <br>
+
+    
+
+
 {% if test %}  
 
 {% for floor in test %}
@@ -30,4 +38,11 @@
 {% endif %}
 <br>
 <br>
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            window.scrollTo(0,0);
+        }, 25);
+    });
+</script>
 {% endblock %}

@@ -227,9 +227,6 @@ td.special {
 }
 
 
-
-
-
 nav a {
     margin-right: 15px;
     height: 40px;
@@ -269,4 +266,27 @@ td.special {
 .uploadButton:hover {
     background-color: #3d00a7; /* Darker color on hover */
     text-decoration: none;
+}
+
+.backButton {
+    display: inline-block; /* Make the link behave like a block element */
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: #007bff; /* Set the background color */
+    color: white; /* Set the text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.backButton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    text-decoration: none; 
+}
+
+html {
+    scroll-behavior: smooth;
+    
 }

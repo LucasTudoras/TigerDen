@@ -1,11 +1,19 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
+<div style="text-align:left;">
+    <a href="/floor-plans" class="backButton">Back to Colleges</a>
+</div>
+
 <div class="search-text">
     <h2>Floor Plans</h2>
     Here are all of the halls in {{ college }} College
     
 </div>
+
+<br>
+
+<br>
 <br>
 {% if results %}
     
@@ -21,4 +29,6 @@
 {% endfor %}
 
 {% endif %}
+<br><br>
+
 {% endblock %}
