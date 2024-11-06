@@ -162,9 +162,11 @@ def return_halls(college):
         halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
         
     elif college == 'NCW':
+        college = 'New College West'
         halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
     
-    elif college == 'Rocky':
+    elif college == 'Rockefeller':
+        college = "Rockefeller"
         halls = ['Buyers', 'Campbell', 'Holder', 'Witherspoon']
 
     elif college == 'Upperclass':
@@ -174,16 +176,16 @@ def return_halls(college):
         halls = ['1981', 'Baker E', 'Baker S', 'Fisher', 'Hargadon', 'Lauritzen', 'Murley', 'Wendell B', 'Wendell C']
     
     elif college == 'Yeh':
-        halls = ['Fu', 'Grousebeck', 'Hariri', 'Mannion']
+        halls = ['Fu', 'Grousbeck', 'Hariri', 'Mannion']
     return render_template('/halls.html', results = halls, college = college)
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
-    if college == "NCW Jose E.":
-        college = "NCW"
+    if college == "New College West Jose E.":
+        college = "New College West"
         hall = "Jose E. Feliciano"
-    if college == "NCW Kwanza":
-        college = "NCW"
+    if college == "New College West Kwanza":
+        college = "New College West"
         hall = "Kwanza Jones"
     if college == "Upperclass Dickinson Street,":
         college = 'Upperclass'
@@ -201,7 +203,7 @@ def return_floorplans(college, hall):
         college = "Whitman"
         hall = "Baker S"
     filepaths = []
-    if college == 'Upperclass':
+    if college == 'Upperclass' or college == 'New College West':
         directory_path = "static/FloorPlan/" + college + "/" + hall
     else:
         directory_path = "static/FloorPlan/" + college + " College/" + hall

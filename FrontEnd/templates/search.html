@@ -33,7 +33,7 @@
             <td align="center" class="special">{{ room['Region'] }}</td>
             <td align="center" class="special">
                 {% if room['FilePath'] %}
-                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                    <a href="../static/{{ room['FilePath'] }}" target="_blank">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
