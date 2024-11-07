@@ -216,12 +216,14 @@ function selectAllColleges() {
         console.error("Error setting checkbox:", error);
     }
     });
+    fetchFilters();
 }
 
 function deselectAllColleges() {
     document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
         checkbox.checked = false;
     });
+    fetchFilters();
 }
 
 function selectAllTypes() {
@@ -232,6 +234,7 @@ function selectAllTypes() {
         console.error("Error setting checkbox:", error);
     }
     });
+    fetchFilters();
 }
 
 
@@ -239,6 +242,7 @@ function deselectAllTypes() {
     document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
         checkbox.checked = false;
     });
+    fetchFilters();
 }
 
 
