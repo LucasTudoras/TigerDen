@@ -84,7 +84,6 @@
     {% if results %}
     <div class="table-container"><table id="room results" border="1">
         <tr>
-            <td><strong>Favorite</strong></td>
             <td><strong>Hall</strong></td>
             <td><strong>Room</strong></td>
             <td><strong>Type</strong></td>
@@ -97,18 +96,6 @@
 
         {% for room in results %}
         <tr>
-            <td align="center">
-                <span 
-                    class="favorite-icon" 
-                    onclick="toggleFavorite({{ room['RoomID'] }})" 
-                    style="cursor: pointer;">
-                    {% if room['is_favorite'] %}
-                        &#9733; <!-- Filled star -->
-                    {% else %}
-                        &#9734; <!-- Empty star -->
-                    {% endif %}
-                </span>
-            </td>
             <td align="center" class="special">{{ room['Hall'] }}</td>
             <td align="center" class="special">{{ room['Room'] }}</td>
             <td align="center" class="special">{{ room['Type'] }}</td>
@@ -254,23 +241,10 @@ function deselectAllTypes() {
     });
 }
 
-function Favorite(roomID) {
-    fetch(`/favorite`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ room_id: roomID })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            const icon = document.querySelector(`[onclick="toggleFavorite(${roomID})"]`);
-            icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
-        } else {
-            alert("Failed to update favorite status.");
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
+
+
+
+
 
 function saveFilterSelection() {
     const collegeOptions = Array.from(document.querySelectorAll('input[name="CollegeOptions"]:checked'))
