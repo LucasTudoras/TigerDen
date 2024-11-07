@@ -9,6 +9,7 @@ cursor = conn.cursor()
 # Create table to store room information
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS rooms (
+    Favorite BOOLEAN DEFAULT FALSE,
     Hall TEXT,
     Room TEXT,
     Type TEXT,
