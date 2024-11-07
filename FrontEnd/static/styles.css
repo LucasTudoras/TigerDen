@@ -303,7 +303,7 @@ html {
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     text-align: center;
     align-items: center;
-    width: 120px;
+    width: 140px;
 }
 
 .addtofavoritesButton:hover {
