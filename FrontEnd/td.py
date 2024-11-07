@@ -243,7 +243,43 @@ def return_sameHallFloorPlan(hall):
             'Mannion': "Yeh",
         }
     college = colleges[hall]
-    return return_floorplans(college, hall)
+    directory_path = "static/FloorPlan/" + college + "/" + hall
+    test = []
+    filepaths = []
+    for filename in os.listdir(directory_path):
+        temp_name = filename.replace(".pdf", '')
+        if temp_name == 'Lower':
+            temp_name = 'Basement Floor'
+        if temp_name == '0':
+            temp_name = "0th Floor"
+        if temp_name == '1':
+            temp_name = '1st Floor'
+        if temp_name == '2':
+            temp_name = '2nd Floor'
+        if temp_name == '3':
+            temp_name = '3rd Floor'
+        if temp_name == '4':
+            temp_name = '4th Floor'
+        if temp_name == '5':
+            temp_name = '5th Floor'
+        if temp_name == '6':
+            temp_name = '6th Floor'
+        if temp_name == '7':
+            temp_name = '7th Floor'
+        if temp_name == '8':
+            temp_name = '8th Floor'
+        temp = {
+            'name': temp_name,
+            'filepath': "../" + directory_path + "/" +filename
+        }
+        
+        test.append(temp)
+        filepaths.append("../" + directory_path + "/" +filename)
+
+    filepaths.sort()
+    sorted_test = sorted(test, key=lambda x: x['name'])
+    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college)
+
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
     if college == "New College West Jose E.":

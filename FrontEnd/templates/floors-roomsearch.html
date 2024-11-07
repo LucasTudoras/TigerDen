@@ -2,7 +2,9 @@
 
 {% block content %}
 <div style="text-align:left;">
-    <a href="javascript:window.history.back()" class="backButton">Back to {{ college }}</a>
+    <a href="/college/{{ college }}" class="backButton">Back to {{ college }}</a>
+    <br>
+    <a href="javascript:window.history.back()" class="backButton">Back to Room Details</a>
 </div>
 
 <div class="search-text">
@@ -38,7 +40,6 @@
 {% endif %}
 <br>
 <br>
-<a href="javascript:window.history.back()">Back</a>
 <script>
     window.addEventListener("load", function() {
         setTimeout(function() {
