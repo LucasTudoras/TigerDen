@@ -137,12 +137,6 @@
     {% endif %}
     <br>
     <br>
-    <a href="{{url_for('login', FirstSort=request.cookies.get('FirstSort', 'Room'),
-    SecondSort=request.cookies.get('SecondSort', 'Room'),
-    FirstOrder=request.cookies.get('FirstOrder', 'Room'),
-    SecondOrder=request.cookies.get('SecondOrder', 'Room'),
-    selected_colleges=request.cookies.get('selected_colleges'),
-    selected_types=request.cookies.get('selected_types')
-    )}}"  
+    <a href="javascript:window.history.back()"  
     style="text-align: center; display: inline;">Return to searched rooms</a>
 {% endblock %}
