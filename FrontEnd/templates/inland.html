@@ -178,6 +178,8 @@ function fetchFilters() {
     const selectedColleges = Array.from(checkboxes1).map(checkbox => checkbox.value);
     const checkboxes2 = document.querySelectorAll('input[name="TypeOptions"]:checked');
     const selectedTypes = Array.from(checkboxes2).map(checkbox => checkbox.value);
+    document.cookie = `selected_colleges=${selectedColleges.join(',')}; path=/`;
+    document.cookie = `selected_types=${selectedTypes.join(',')}; path=/`;
     const firstSort = document.getElementById("FirstSort").value;
     const secondSort = document.getElementById("SecondSort").value;
     const firstOrder = document.getElementById("FirstOrder").value;
@@ -199,8 +201,6 @@ function fetchFilters() {
     document.getElementById('results').innerHTML = data.results;
     })
     .catch(error => console.error('Error:', error));
-    document.cookie = `selected_colleges=${selectedColleges.join(',')}; path=/`;
-    document.cookie = `selected_types=${selectedTypes.join(',')}; path=/`;
 }
 
 
@@ -213,12 +213,14 @@ function selectAllColleges() {
         console.error("Error setting checkbox:", error);
     }
     });
+    fetchFilters();
 }
 
 function deselectAllColleges() {
     document.querySelectorAll('input[name="CollegeOptions"]').forEach(checkbox => {
         checkbox.checked = false;
     });
+    fetchFilters();
 }
 
 function selectAllTypes() {
@@ -229,6 +231,7 @@ function selectAllTypes() {
         console.error("Error setting checkbox:", error);
     }
     });
+    fetchFilters();
 }
 
 
@@ -236,6 +239,7 @@ function deselectAllTypes() {
     document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
         checkbox.checked = false;
     });
+    fetchFilters();
 }
 
 function Favorite(roomID) {
