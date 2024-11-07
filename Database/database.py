@@ -9,7 +9,7 @@ cursor = conn.cursor()
 # Create table to store room information
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS rooms (
-    Favorite BOOLEAN DEFAULT FALSE,
+    Favorite BOOLEAN,
     Hall TEXT,
     Room TEXT,
     Type TEXT,
@@ -105,10 +105,10 @@ for room in room_info_dicts:
         # Insert data into the database
         cursor.execute('''
             INSERT OR REPLACE INTO rooms (
-                Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom,
+                Favorite, Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom,
                 AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist,
                 Street, EQuad, Dillon, RoomID
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (False, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             room["Hall"], room["Room"], room["Type"], room["Sqft"],
             room["College"], room["Region"], room["Elevator"],

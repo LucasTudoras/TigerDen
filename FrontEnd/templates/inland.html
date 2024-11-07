@@ -96,17 +96,18 @@
 
         {% for room in results %}
         <tr>
-            <td align="center">
-                <span 
-                    class="favorite-icon" 
-                    onclick="toggleFavorite({{ room['RoomID'] }})" 
-                    style="cursor: pointer;">
-                    {% if room['is_favorite'] %}
-                        &#9733; <!-- Filled star -->
+            <td
+            <form method="POST" action="{{ url_for('add_favorite') }}">
+                <input type="hidden" name="room_id" value="{{ room['RoomID'] }}">
+                <input type="hidden" name="is_favorite" value="{{ 'true' if not room['favorite'] else 'false' }}">
+                <button type="submit">
+                    {% if room['favorite'] %}
+                        &#9733  <!-- Filled star for favorite -->
                     {% else %}
-                        &#9734; <!-- Empty star -->
+                        &#9734  <!-- Empty star for not favorite -->
                     {% endif %}
-                </span>
+                </button>
+            </form>
             </td>
             <td align="center" class="special">{{ room['Hall'] }}</td>
             <td align="center" class="special">{{ room['Room'] }}</td>
