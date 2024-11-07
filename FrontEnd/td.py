@@ -183,9 +183,11 @@ def return_halls(college):
         halls = ['Fu', 'Grousbeck', 'Hariri', 'Mannion']
     return render_template('/halls.html', results = halls, college = college)
 
-@app.route("/samehall/<hall>")
-def return_sameHallFloorPlan(hall):
+@app.route("/samehall/<hall> <room>")
+def return_sameHallFloorPlan(hall, room):
     hall = hall.title()
+    print(hall)
+    print(room)
     colleges = {
             '1967': "Butler College",
             '1976': "Butler College",
@@ -278,7 +280,7 @@ def return_sameHallFloorPlan(hall):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college)
+    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room)
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
