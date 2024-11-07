@@ -2,11 +2,21 @@
 
 {% block content %}
     <div class="search-text">
-        <h2>Campus Map</h2>
+        <h2>Campus Wayfinding Map</h2>
         Locate where halls are situated on campus.
     </div>
 
-    <div class="campus-map-image">
-        <img src="{{ url_for('static', filename='images/CampusMap.png')}}", class="campus-map-image">
+    <div>
+        <iframe src="https://campusmap.princeton.edu/" frameborder="0" height="575", width="75%" title="MAPP"></iframe>
+    </div>
+
+    <hline></hline>
+
+    <div class="search-text">
+        <a href="static/PrincetonCampusAccessibilityMap.pdf" target="_blank">View Accessibility Map</a>
+    </div>
+
+    <div class="search-text">
+        All credit for the Campus Wayfinding Map and the linked Accessibility Map is given to the Facilities department at Princeton University.
     </div>
 {% endblock %}
