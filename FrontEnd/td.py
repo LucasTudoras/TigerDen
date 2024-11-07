@@ -209,7 +209,8 @@ def return_floorplans(college, hall):
     filepaths = []
     if college == 'Upperclass' or college == 'New College West':
         directory_path = "static/FloorPlan/" + college + "/" + hall
-        college = 'NCW'
+        if college == 'New College West':
+            college = 'NCW'
     else:
         directory_path = "static/FloorPlan/" + college + " College/" + hall
     test = []
