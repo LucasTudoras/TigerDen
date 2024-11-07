@@ -3,7 +3,60 @@
 {% block content %}
 <div class="search-text">
     <h2>Favorite Rooms</h2>
-    Think you might have found the one? Add the room to your favorites and manage them here.
+    <p>Think you might have found the one? Add the room to your favorites and manage them here.</p>
 </div>
 <br>
+
+{% if favorite_rooms %}
+    <table class="room-table">
+        <thead>
+            <tr>
+                <th>Favorite</th>
+                <th>Hall</th>
+                <th>Room</th>
+                <th>Type</th>
+                <th>Sqft</th>
+                <th>College</th>
+                <th>Region</th>
+                <th>Floor Plan</th>
+                <th>More Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for room in favorite_rooms %}
+            <tr>
+                <td>
+                    {% if room.is_favorite %}
+                        <span>⭐</span> <!-- Star icon for favorites -->
+                    {% else %}
+                        <span>☆</span> <!-- Empty star for non-favorites -->
+                    {% endif %}
+                </td>
+                <td>{{ room.hall }}</td>       <!-- Hall name -->
+                <td>{{ room.room }}</td>       <!-- Room number -->
+                <td>{{ room.type }}</td>       <!-- Room type -->
+                <td>{{ room.sqft }}</td>       <!-- Square footage -->
+                <td>{{ room.college }}</td>    <!-- College name -->
+                <td>{{ room.region }}</td>     <!-- Region -->
+                <td>
+                    {% if room.floor_plan %}
+                        <a href="{{ room.floor_plan }}" target="_blank">View Floor Plan</a> <!-- Link to floor plan -->
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </td>
+                <td>
+                    {% if room.more_info %}
+                        <a href="{{ room.more_info }}" target="_blank">More Info</a> <!-- Link to more info -->
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No rooms have been added to your favorites yet.</p>
+{% endif %}
 {% endblock %}

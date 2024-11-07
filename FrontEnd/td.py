@@ -345,17 +345,27 @@ def return_floorplans(college, hall):
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
     return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
+    
+@app.route('/favorites')
+def show_favorites():
+    # Query the database for rooms where `is_favorite` is True
+    favorite_rooms = DATABASE.query.filter_by(is_favorite=True).all()
+    # Render the 'favorites.html' template and pass the list of favorite rooms
+    return render_template('favorites.html', favorite_rooms=favorite_rooms)
 
-@app.route('/favorite', methods=['POST'])
-def toggle_favorite():
-    data = request.get_json()
-    room_id = data.get('room_id')
+@app.route('/add_favorite', methods=['POST'])
+def add_favorite():
+    # Retrieve room ID and favorite status from POST request
+    room_id = request.form.get('RoomID')
+    is_favorite = request.form.get('Favorite') == 'true'  # assuming 'true' or 'false' strings
 
-    # Retrieve room and toggle favorite status
-    room = DATABASE.query.get(room_id)
-    if room:
-        room.is_favorite = not room.is_favorite
-        DATABASE.session.commit()
-        return jsonify(success=True, is_favorite=room.is_favorite)
-    else:
-        return jsonify(success=False), 404
+    # Connect to the database and update the favorite status for this room
+    query = "UPDATE rooms SET Favorite = ? WHERE RoomID = ?"
+    params = [is_favorite, room_id]
+    
+    try:
+        cursor = get_db().execute(query, params)
+        get_db().commit()
+        return jsonify({'success': True, 'message': 'Favorite status updated successfully'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)})

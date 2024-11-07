@@ -97,17 +97,18 @@
 
         {% for room in results %}
         <tr>
-            <td align="center">
-                <span 
-                    class="favorite-icon" 
-                    onclick="toggleFavorite({{ room['RoomID'] }})" 
-                    style="cursor: pointer;">
-                    {% if room['is_favorite'] %}
-                        &#9733; <!-- Filled star -->
+            <td
+            <form method="POST" action="{{ url_for('add_favorite') }}">
+                <input type="hidden" name="room_id" value="{{ room['RoomID'] }}">
+                <input type="hidden" name="is_favorite" value="{{ 'true' if not room['favorite'] else 'false' }}">
+                <button type="submit">
+                    {% if room['favorite'] %}
+                        &#9733  <!-- Filled star for favorite -->
                     {% else %}
-                        &#9734; <!-- Empty star -->
+                        &#9734  <!-- Empty star for not favorite -->
                     {% endif %}
-                </span>
+                </button>
+            </form>
             </td>
             <td align="center" class="special">{{ room['Hall'] }}</td>
             <td align="center" class="special">{{ room['Room'] }}</td>
@@ -252,24 +253,6 @@ function deselectAllTypes() {
     document.querySelectorAll('input[name="TypeOptions"]').forEach(checkbox => {
         checkbox.checked = false;
     });
-}
-
-function Favorite(roomID) {
-    fetch(`/favorite`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ room_id: roomID })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            const icon = document.querySelector(`[onclick="toggleFavorite(${roomID})"]`);
-            icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
-        } else {
-            alert("Failed to update favorite status.");
-        }
-    })
-    .catch(error => console.error('Error:', error));
 }
 
 function saveFilterSelection() {

@@ -114,7 +114,9 @@
     <br>
 
     <div class="addtofavoritesButton">
-        ☆ Add to Favorites
+        <form action="{{ url_for('add_favorite', room_id=room['Room']) }}" method="POST">
+            <button type="submit">☆ Add to Favorites</button>
+        </form>
     </div>
 
     <div class="search-text">
