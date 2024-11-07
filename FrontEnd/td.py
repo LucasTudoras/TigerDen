@@ -11,6 +11,10 @@ import os
 def home():
     return flask.render_template('index.html')
 
+@app.route('/favorite-rooms')
+def favorite_rooms():
+    return flask.render_template('favorite_rooms.html')
+
 @app.route('/groups')
 def groups():
     return flask.render_template('groups.html')

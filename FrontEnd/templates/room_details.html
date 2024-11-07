@@ -106,10 +106,30 @@
             </tr>
             <tr>
                 <td><strong>Floor Plan</strong></td>
-                <td><a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a></td>
+                <td><a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan in New Tab</a></td>
             </tr> 
-        {% endfor %}
     </table>
+
+    <br>
+    <br>
+
+    <div class="addtofavoritesButton">
+        Add {{ room['Hall'] }} {{ room['Room']}} to Favorites
+    </div>
+
+    <div class="search-text">
+        Floor Plan
+    </div>
+
+    <div>
+        <iframe src="{{ url_for('static', filename=room['FilePath']) }}" frameborder="0" height="525", width="75%" title="floor"></iframe>
+    </div>
+
+    <div class="search-text">
+        <a href="">View other floors in this hall</a>
+    </div>
+    {% endfor %}
+
     </div>
     <div class="search-text">
     {% else %}

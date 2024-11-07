@@ -74,6 +74,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    flex-grow: 1;
 }
 
 /* Style for the logo image */
@@ -289,4 +290,23 @@ td.special {
 html {
     scroll-behavior: smooth;
     
+}
+
+.addtofavoritesButton {
+    display: inline-block; /* Make the link behave like a block element */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: #510378; /* Set the background color */
+    color: white; /* Set the text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-align: center;
+    align-items: center;
+    width: 120px;
+}
+
+.addtofavoritesButton:hover {
+    background-color: #3c005a; /* Darker color on hover */
+    text-decoration: none;
 }
