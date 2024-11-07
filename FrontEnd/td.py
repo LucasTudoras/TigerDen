@@ -183,6 +183,67 @@ def return_halls(college):
         halls = ['Fu', 'Grousbeck', 'Hariri', 'Mannion']
     return render_template('/halls.html', results = halls, college = college)
 
+@app.route("/samehall/<hall>")
+def return_sameHallFloorPlan(hall):
+    hall = hall.title()
+    colleges = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little': "Mathey College",
+            'Addy': "New College West",
+            'Jose E. Feliciano': "New College West",
+            'Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller",
+            'Campbell': "Rockefeller",
+            'Holder': "Rockefeller",
+            'Witherspoon': "Rockefeller",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman",
+            'Baker E': "Whitman",
+            'Baker S': "Whitman",
+            'Fisher': "Whitman",
+            'Hargadon': "Whitman",
+            'Lauritzen': "Whitman",
+            'Murley': "Whitman",
+            'Wendell B': "Whitman",
+            'Wendell C': "Whitman",
+            'Fu': "Yeh",
+            'Grousbeck': "Yeh",
+            'Hariri': "Yeh",
+            'Mannion': "Yeh",
+        }
+    college = colleges[hall]
+    return return_floorplans(college, hall)
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
     if college == "New College West Jose E.":
