@@ -205,6 +205,7 @@ def return_floorplans(college, hall):
     filepaths = []
     if college == 'Upperclass' or college == 'New College West':
         directory_path = "static/FloorPlan/" + college + "/" + hall
+        college = 'NCW'
     else:
         directory_path = "static/FloorPlan/" + college + " College/" + hall
     test = []
@@ -241,4 +242,4 @@ def return_floorplans(college, hall):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall)
+    return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
