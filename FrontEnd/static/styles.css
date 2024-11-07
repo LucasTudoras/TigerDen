@@ -15,7 +15,7 @@ body {
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Overlay */
         url('./images/background1.webp'); /* Background image */
     background-position: center; /* Center the image */
-    color: white; /* Text color */
+    color: #333; /* Text color */
     font-family: Arial, sans-serif;
     align-items: center; /* Vertically center */
     justify-content: center; /* Horizontally center */
