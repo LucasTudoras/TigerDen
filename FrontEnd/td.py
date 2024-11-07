@@ -356,12 +356,12 @@ def toggle_favorite():
     print(request)
     data = request.get_json()
     room_id = data.get('room_id')
-
+    # isnt this bad?
     # Retrieve room and toggle favorite status
     room = DATABASE.query.get(room_id)
     if room:
         room.is_favorite = not room.is_favorite
-        DATABASE.session.commit()
+        get_db().session.commit()
         return jsonify(success=True, is_favorite=room.is_favorite)
     else:
         return jsonify(success=False), 404
