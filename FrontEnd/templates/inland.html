@@ -10,7 +10,7 @@
     Filter a search query to find the rooms that fit your desires.
     </div>
     <div class="search-options-container">
-        <form action="/login" onsubmit="saveFilterSelection()" class="checkbox-options-container" method="POST">
+        <form action="/login" class="checkbox-options-container" method="POST">
             <div class="search-group">
                 {% for option in ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky', 'Upperclass', 'Whitman', 'Yeh'] %}
                 <div class="checkbox-item"><label>
@@ -34,13 +34,11 @@
 
             <button onclick="selectAllTypes()">Select All Room Types</button>
             <button onclick="deselectAllTypes()">Deselect All Room Types</button>
-            <button onclick="fetchCheckedTypes()" type="submit">Filter</button>
 
             </div>
-        </form>
         
         
-        <form action="/login" method="GET">
+
             <div class="search-group">
 
                 <h4 style="display: inline;">Sort by</h4>
@@ -72,8 +70,9 @@
                     <option value="DESC" {% if user_data.SecondOrder == "DESC" %}selected{% endif %}>Descending</option>
                 </select>
                 
-                <button type="submit">Search</button>
-            </div>
+                <button type="submit" onclick="fetchFilters();">Search</button>
+            </div> 
+
         </form>
     </div>
 
@@ -146,32 +145,38 @@ function sendSelectedValue1() {
     const selectedValue1 = document.getElementById("FirstSort").value;
     fetch(`/get_selected_value?selectedValue1=${encodeURIComponent(selectedValue1)}`)
     .then(response => response.json())
+    return selectedValue1;
 }
 
 function sendSelectedValue2() {
     const selectedValue2 = document.getElementById("SecondSort").value;
     fetch(`/get_selected_value?selectedValue2=${encodeURIComponent(selectedValue2)}`)
     .then(response => response.json())
+    return selectedValue2;
 }
 
 function sendOrder1() {
     const selectedOrder1 = document.getElementById("FirstOrder").value;
     fetch(`/get_order?selectedOrder1=${encodeURIComponent(selectedOrder1)}`)
     .then(response => response.json())
+    return selectedOrder1;
 }
 
 function sendOrder2() {
     const selectedOrder2 = document.getElementById("SecondOrder").value;
     fetch(`/get_order?selectedOrder2=${encodeURIComponent(selectedOrder2)}`)
     .then(response => response.json())
+    return selectedOrder2;
 }
 
 
 
-function fetchCheckedColleges() {
+function fetchFilters() {
     console.log("Filter button clicked!");
-    const checkboxes = document.querySelectorAll('input[name="CollegeOptions"]:checked');
-    const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+    const checkboxes1 = document.querySelectorAll('input[name="CollegeOptions"]:checked');
+    const selectedColleges = Array.from(checkboxes1).map(checkbox => checkbox.value);
+    const checkboxes2 = document.querySelectorAll('input[name="TypeOptions"]:checked');
+    const selectedTypes = Array.from(checkboxes2).map(checkbox => checkbox.value);
     const firstSort = document.getElementById("FirstSort").value;
     const secondSort = document.getElementById("SecondSort").value;
     const firstOrder = document.getElementById("FirstOrder").value;
@@ -180,7 +185,8 @@ function fetchCheckedColleges() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            selectedOptions: selectedValues,
+            selectedColleges: selectedColleges,
+            selectedTypes: selectedTypes,
             FirstSort: firstSort,
             SecondSort: secondSort,
             FirstOrder: firstOrder,
@@ -192,33 +198,10 @@ function fetchCheckedColleges() {
     document.getElementById('results').innerHTML = data.results;
     })
     .catch(error => console.error('Error:', error));
+    document.cookie = `selected_colleges=${selectedColleges.join(',')}; path=/`;
+    document.cookie = `selected_types=${selectedTypes.join(',')}; path=/`;
 }
 
-function fetchCheckedTypes() {
-    console.log("Filter button clicked!");
-    const checkboxes = document.querySelectorAll('input[name="TypeOptions"]:checked');
-    const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
-    const firstSort = document.getElementById("FirstSort").value;
-    const secondSort = document.getElementById("SecondSort").value;
-    const firstOrder = document.getElementById("FirstOrder").value;
-    const secondOrder = document.getElementById("SecondOrder").value;
-    fetch('/apply-types', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            selectedOptions: selectedValues,
-            FirstSort: firstSort,
-            SecondSort: secondSort,
-            FirstOrder: firstOrder,
-            SecondOrder: secondOrder
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-    document.getElementById('results').innerHTML = data.results;
-    })
-    .catch(error => console.error('Error:', error));
-}
 
 function selectAllColleges() {
     console.log("Select All button clicked")
@@ -272,16 +255,7 @@ function Favorite(roomID) {
     .catch(error => console.error('Error:', error));
 }
 
-function saveFilterSelection() {
-    const collegeOptions = Array.from(document.querySelectorAll('input[name="CollegeOptions"]:checked'))
-        .map(checkbox => checkbox.value);
-    console.log(collegeOptions);
-    document.cookie = `selected_colleges=${collegeOptions.join(',')}; path=/`;
 
-    const typeOptions = Array.from(document.querySelectorAll('input[name="TypeOptions"]:checked'))
-        .map(checkbox => checkbox.value);
-    document.cookie = `selected_types=${typeOptions.join(',')}; path=/`;
-}
 
 function loadFilterSelection() {
     const cookies = document.cookie.split(';').reduce((acc, cookie) => {

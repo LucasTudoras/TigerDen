@@ -40,7 +40,6 @@ def login():
     selected_types = ['Single', 'Double','Triple', 'Quad', 'Quint', '6-Person']
     
     if request.method == 'POST':
-        print("REQUEST ARRIVED")
         content_type = request.headers.get('Content-Type')
         if content_type == 'application/x-www-form-urlencoded':
             selected_colleges = request.form.getlist('CollegeOptions')
@@ -51,8 +50,8 @@ def login():
         'SecondSort': request.args.get('SecondSort', request.cookies.get('SecondSort', 'College')),
         'FirstOrder': request.args.get('FirstOrder', request.cookies.get('FirstOrder', 'DESC')),
         'SecondOrder': request.args.get('SecondOrder', request.cookies.get('SecondOrder', 'ASC')),
-        'selected_colleges': selected_colleges,
-        'selected_types': selected_types
+        'selected_colleges': request.form.getlist('CollegeOptions'),
+        'selected_types': request.form.getlist('TypeOptions'),
     }
     name_discreptancies = {
         'Butler': 'Butler College',
