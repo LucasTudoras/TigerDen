@@ -1,6 +1,6 @@
 import flask
 import auth
-from flask import Flask, render_template, request, g, make_response
+from flask import Flask, render_template, request, g, make_response, jsonify
 import sqlite3
 from top import app
 import PDF
@@ -345,3 +345,17 @@ def return_floorplans(college, hall):
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
     return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
+
+@app.route('/favorite', methods=['POST'])
+def toggle_favorite():
+    data = request.get_json()
+    room_id = data.get('room_id')
+
+    # Retrieve room and toggle favorite status
+    room = DATABASE.query.get(room_id)
+    if room:
+        room.is_favorite = not room.is_favorite
+        DATABASE.session.commit()
+        return jsonify(success=True, is_favorite=room.is_favorite)
+    else:
+        return jsonify(success=False), 404
