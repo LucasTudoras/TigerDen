@@ -185,6 +185,7 @@ def return_halls(college):
 
 @app.route("/samehall/<hall> <room>")
 def return_sameHallFloorPlan(hall, room):
+    hallOG = hall
     hall = hall.title()
     print(hall)
     print(room)
@@ -280,7 +281,7 @@ def return_sameHallFloorPlan(hall, room):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room)
+    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
