@@ -1,163 +1,168 @@
 {% extends "loggedin.html" %}
 
-{% block content %}    
+
+{% block content %}   
 <div class="logoutContainer">
-    <a href="/logout" class="loginButton">Log Out</a>
+   <a href="/logout" class="loginButton">Log Out</a>
 </div>
+
 
 <div class="search-text">
 <h2>Search for Rooms</h2>
 Filter a search query to find the rooms that fit your desires.
 </div>
-    <form action="/search" method="GET">
-        
-        <table >
-            <th >
-                <tr>
-                    <td align="center"><h3>College</h3></td>
-                    <td></td>
-                    <td>&emsp;</td>
-                    <td>&emsp;</td>
-                    <td align="center"><h3>Type</h3></td>
-                </tr>
-            </th>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" {% if "Butler College" in selected_colleges %}checked{% endif %}>
-                    <label for="Butler College">Butler College</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" {% if "Forbes College" in selected_colleges %}checked{% endif %}>
-                    <label for="Forbes College">Forbes College</label>
-                </td>
-                <td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="SINGLE" name="SINGLE" value="SINGLE" {% if "SINGLE" in selected_types %}checked{% endif %}>
-                    <label for="SINGLE">Single</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="DOUBLE" name="DOUBLE" value="DOUBLE" {% if "DOUBLE" in selected_types %}checked{% endif %}>
-                    <label for="DOUBLE">Double</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" {% if "Mathey College" in selected_colleges %}checked{% endif %}>
-                    <label for="Mathey College">Mathey College</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="New College West" name="New College West" value="New College West"{% if "New College West" in selected_colleges %}checked{% endif %}>
-                    <label for="New College West">New College West</label>
-                </td><td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="TRIPLE" name="TRIPLE" value="TRIPLE" {% if "TRIPLE" in selected_types %}checked{% endif %}>
-                    <label for="TRIPLE">Triple</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="QUAD" name="QUAD" value="QUAD" {% if "QUAD" in selected_types %}checked{% endif %}>
-                    <label for="QUAD">Quad</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" {% if "Rockefeller College" in selected_colleges %}checked{% endif %}>
-                    <label for="Rockefeller College">Rockefeller College</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="UPPERCLASS" name="UPPERCLASS" value="UPPERCLASS" {% if "UPPERCLASS" in selected_colleges %}checked{% endif %}>
-                    <label for="UPPERCLASS">Upperclass</label>
-                </td><td></td><td>&emsp;</td>
-                <td>
-                    <input type="checkbox" id="QUINT" name="QUINT" value="QUINT" {% if "QUINT" in selected_types %}checked{% endif %}>
-                    <label for="QUINT">5-Person</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="6PERSON" name="6PERSON" value="6PERSON" {% if "6PERSON" in selected_types %}checked{% endif %}>
-                    <label for="6PERSON">6-Person</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" {% if "Whitman College" in selected_colleges %}checked{% endif %}>
-                    <label for="Whitman College">Whitman College</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" {% if "Yeh College" in selected_colleges %}checked{% endif %}>
-                    <label for="Yeh College">Yeh College</label>
-                </td>
-            </tr>
+   <form action="/search" method="GET">
+      
+       <table >
+           <th >
+               <tr>
+                   <td align="center"><h3>College</h3></td>
+                   <td></td>
+                   <td>&emsp;</td>
+                   <td>&emsp;</td>
+                   <td align="center"><h3>Type</h3></td>
+               </tr>
+           </th>
+           <tr>
+               <td>
+                   <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" {% if "Butler College" in selected_colleges %}checked{% endif %}>
+                   <label for="Butler College">Butler College</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" {% if "Forbes College" in selected_colleges %}checked{% endif %}>
+                   <label for="Forbes College">Forbes College</label>
+               </td>
+               <td></td><td>&emsp;</td>
+               <td>
+                   <input type="checkbox" id="SINGLE" name="SINGLE" value="SINGLE" {% if "SINGLE" in selected_types %}checked{% endif %}>
+                   <label for="SINGLE">Single</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="DOUBLE" name="DOUBLE" value="DOUBLE" {% if "DOUBLE" in selected_types %}checked{% endif %}>
+                   <label for="DOUBLE">Double</label>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" {% if "Mathey College" in selected_colleges %}checked{% endif %}>
+                   <label for="Mathey College">Mathey College</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="New College West" name="New College West" value="New College West"{% if "New College West" in selected_colleges %}checked{% endif %}>
+                   <label for="New College West">New College West</label>
+               </td><td></td><td>&emsp;</td>
+               <td>
+                   <input type="checkbox" id="TRIPLE" name="TRIPLE" value="TRIPLE" {% if "TRIPLE" in selected_types %}checked{% endif %}>
+                   <label for="TRIPLE">Triple</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="QUAD" name="QUAD" value="QUAD" {% if "QUAD" in selected_types %}checked{% endif %}>
+                   <label for="QUAD">Quad</label>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" {% if "Rockefeller College" in selected_colleges %}checked{% endif %}>
+                   <label for="Rockefeller College">Rockefeller College</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="UPPERCLASS" name="UPPERCLASS" value="UPPERCLASS" {% if "UPPERCLASS" in selected_colleges %}checked{% endif %}>
+                   <label for="UPPERCLASS">Upperclass</label>
+               </td><td></td><td>&emsp;</td>
+               <td>
+                   <input type="checkbox" id="QUINT" name="QUINT" value="QUINT" {% if "QUINT" in selected_types %}checked{% endif %}>
+                   <label for="QUINT">5-Person</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="6PERSON" name="6PERSON" value="6PERSON" {% if "6PERSON" in selected_types %}checked{% endif %}>
+                   <label for="6PERSON">6-Person</label>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" {% if "Whitman College" in selected_colleges %}checked{% endif %}>
+                   <label for="Whitman College">Whitman College</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" {% if "Yeh College" in selected_colleges %}checked{% endif %}>
+                   <label for="Yeh College">Yeh College</label>
+               </td>
+           </tr>
 
-        </table>
-        <hr>
-        <h4 style="display: inline;">Sort by</h4>
-        <select name="First Sort" id="First Sort">
-            <option value="">First Sort</option>
-            <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
-            <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
-            <option value="Room ASC" {% if firstSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
-            <option value="Room DESC" {% if firstSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
-            <option value="Type ASC" {% if firstSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
-            <option value="Type DESC" {% if firstSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
-            <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
-            <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
-            <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
-            <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
-            <option value="Region ASC" {% if firstSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
-            <option value="Region DESC" {% if firstSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
-        </select>
-        <select name="Second Sort" id="Second Sort">
-            <option value="">Second Sort</option>
-            <option value="Hall ASC" {% if secondSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
-            <option value="Hall DESC" {% if secondSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
-            <option value="Room ASC" {% if secondSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
-            <option value="Room DESC" {% if secondSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
-            <option value="Type ASC" {% if secondSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
-            <option value="Type DESC" {% if secondSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
-            <option value="Sqft ASC" {% if secondSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
-            <option value="Sqft DESC" {% if secondSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
-            <option value="College ASC" {% if secondSort == "College ASC" %}selected{% endif %}>College Ascending</option>
-            <option value="College DESC" {% if secondSort == "College DESC" %}selected{% endif %}>College Descending</option>
-            <option value="Region ASC" {% if secondSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
-            <option value="Region DESC" {% if secondSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
-        </select>
-        <br>
-        <button type="submit">Search</button>
-    </form>
 
-    {% if results %}
-    <table id="room results" border="1">
-        <tr>
-            <td><strong>Hall</strong></td>
-            <td><strong>Room</strong></td>
-            <td><strong>Type</strong></td>
-            <td><strong>Sqft</strong></td>
-            <td><strong>College</strong></td>
-            <td><strong>Region</strong></td>
-            <td><strong>Floor Plan</strong></td>
-            <td><strong>More Info</strong></td>
-        </tr>
+       </table>
+       <hr>
+       <h4 style="display: inline;">Sort by</h4>
+       <select name="First Sort" id="First Sort">
+           <option value="">First Sort</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if firstSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if firstSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if firstSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if firstSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if firstSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if firstSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <select name="Second Sort" id="Second Sort">
+           <option value="">Second Sort</option>
+           <option value="Hall ASC" {% if secondSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if secondSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if secondSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if secondSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if secondSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if secondSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if secondSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if secondSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if secondSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if secondSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if secondSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if secondSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <br>
+       <button type="submit">Search</button>
+   </form>
 
-        {% for room in results %}
-        <tr>
-            <td align="center" class="special">{{ room['Hall'] }}</td>
-            <td align="center" class="special">{{ room['Room'] }}</td>
-            <td align="center" class="special">{{ room['Type'] }}</td>
-            <td align="center" class="special">{{ room['Sqft'] }}</td>
-            <td align="center" class="special">{{ room['College'] }}</td>
-            <td align="center" class="special">{{ room['Region'] }}</td>
-            <td align="center" class="special">
-                {% if room['FilePath'] %}
-                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
-                {% else %}
-                    N/A
-                {% endif %}
-            </td>
-            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
-        </tr>
-        {% endfor %}
-    </table>
-    {% else %}
-        <p>No rooms found matching your criteria.</p>
-    {% endif %}
+
+   {% if results %}
+   <table id="room results" border="1">
+       <tr>
+           <td><strong>Hall</strong></td>
+           <td><strong>Room</strong></td>
+           <td><strong>Type</strong></td>
+           <td><strong>Sqft</strong></td>
+           <td><strong>College</strong></td>
+           <td><strong>Region</strong></td>
+           <td><strong>Floor Plan</strong></td>
+           <td><strong>More Info</strong></td>
+       </tr>
+
+
+       {% for room in results %}
+       <tr>
+           <td align="center" class="special">{{ room['Hall'] }}</td>
+           <td align="center" class="special">{{ room['Room'] }}</td>
+           <td align="center" class="special">{{ room['Type'] }}</td>
+           <td align="center" class="special">{{ room['Sqft'] }}</td>
+           <td align="center" class="special">{{ room['College'] }}</td>
+           <td align="center" class="special">{{ room['Region'] }}</td>
+           <td align="center" class="special">
+               {% if room['FilePath'] %}
+                   <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+               {% else %}
+                   N/A
+               {% endif %}
+           </td>
+           <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
+       </tr>
+       {% endfor %}
+   </table>
+   {% else %}
+       <p>No rooms found matching your criteria.</p>
+   {% endif %}
 {% endblock %}
 
