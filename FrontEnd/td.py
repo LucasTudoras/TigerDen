@@ -423,13 +423,8 @@ def search():
         selected_types = [type_name for arg_name, type_name in types if request.cookies.get(arg_name)]
 
     # Build SQL query with filters and sorting
-    query = """SELECT rooms.*, 
-               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
-        FROM rooms
-        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
-        WHERE 1=1
-            """
-    params = [username]
+    query = "SELECT * FROM rooms WHERE 1=1"
+    params = []
     if selected_colleges:
         placeholder = ', '.join(['?'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
