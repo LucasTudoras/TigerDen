@@ -384,7 +384,6 @@ def search():
     # Convert results to dictionary format
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
-    print(rooms[0])
 
     # Create response with updated cookies
     response = make_response(render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
