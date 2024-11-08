@@ -47,13 +47,14 @@ def login():
             selected_types = request.form.getlist('TypeOptions')
 
     search_data = {
-        'FirstSort': request.args.get('FirstSort', request.cookies.get('FirstSort', 'Sqft')),
-        'SecondSort': request.args.get('SecondSort', request.cookies.get('SecondSort', 'College')),
-        'FirstOrder': request.args.get('FirstOrder', request.cookies.get('FirstOrder', 'DESC')),
-        'SecondOrder': request.args.get('SecondOrder', request.cookies.get('SecondOrder', 'ASC')),
+        'FirstSort': request.form.get('FirstSort', request.cookies.get('FirstSort', 'Sqft')),
+        'SecondSort': request.form.get('SecondSort', request.cookies.get('SecondSort', 'College')),
+        'FirstOrder': request.form.get('FirstOrder', request.cookies.get('FirstOrder', 'DESC')),
+        'SecondOrder': request.form.get('SecondOrder', request.cookies.get('SecondOrder', 'ASC')),
         'selected_colleges': selected_colleges,
         'selected_types': selected_types
     }
+
     name_discreptancies = {
         'Butler': 'Butler College',
         'Forbes': 'Forbes College',
@@ -351,14 +352,16 @@ def return_floorplans(college, hall):
 
 @app.route('/favorite', methods=['POST'])
 def toggle_favorite():
+    print("REQUEST:")
+    print(request)
     data = request.get_json()
     room_id = data.get('room_id')
-
+    # isnt this bad?
     # Retrieve room and toggle favorite status
     room = DATABASE.query.get(room_id)
     if room:
         room.is_favorite = not room.is_favorite
-        DATABASE.session.commit()
+        get_db().session.commit()
         return jsonify(success=True, is_favorite=room.is_favorite)
     else:
         return jsonify(success=False), 404
