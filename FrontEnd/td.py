@@ -455,10 +455,10 @@ def search():
         if arg_name in selected_colleges:
             response.set_cookie(arg_name, '1', max_age=60*60*24*30)
         else:
-            response.set_cookie(arg_name, '0', max_age=60*60*24*30)
+            response.set_cookie(arg_name, '0', max_age=0)
     for arg_name, _ in types:
         if arg_name in selected_types:
             response.set_cookie(arg_name, '1', max_age=60*60*24*30)
         else:
-            response.set_cookie(arg_name, '0', max_age=60*60*24*30)
+            response.set_cookie(arg_name, '0', max_age=0)
     return response
