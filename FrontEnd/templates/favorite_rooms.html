@@ -4,6 +4,85 @@
 <div class="search-text">
     <h2>Favorite Rooms</h2>
     Think you might have found the one? Add the room to your favorites and manage them here.
+    <br>
+    {% if favorite_rooms %}
+    <table id="room results" border="1">
+        <tr>
+            <td><strong>Favorite</strong></td>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>Region</strong></td>
+            <td><strong>Floor Plan</strong></td>
+            <td><strong>More Info</strong></td>
+        </tr>
+
+        {% for room in favorite_rooms %}
+        <tr>
+            <td align="center">
+                <span 
+                    class="favorite-icon" 
+                    onclick="Favorite('{{ room['RoomID'] }}');"
+                    style="cursor: pointer;">
+                    {% if room['is_favorite'] %}
+                        &#9733; <!-- Filled star -->
+                    {% else %}
+                        &#9734; <!-- Empty star -->
+                    {% endif %}
+                </span>
+            </td>
+            <td align="center" class="special">{{ room['Hall'] }}</td>
+            <td align="center" class="special">{{ room['Room'] }}</td>
+            <td align="center" class="special">{{ room['Type'] }}</td>
+            <td align="center" class="special">{{ room['Sqft'] }}</td>
+            <td align="center" class="special">{{ room['College'] }}</td>
+            <td align="center" class="special">{{ room['Region'] }}</td>
+            <td align="center" class="special">
+                {% if room['FilePath'] %}
+                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No rooms set as favorite yet!</p>
+    {% endif %}
 </div>
 <br>
+
+
+
+
+<script>
+
+
+
+    function Favorite(roomID) {
+        console.log("TRYING TO FAVORITE " + roomID)
+        fetch(`/favorite`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ room_id: roomID })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const icon = document.querySelector(`[onclick="Favorite('${roomID}');"]`);
+                console.log(`[onclick="Favorite('${roomID}')"]`);
+                icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
+            } else {
+                alert("Failed to update favorite status.");
+            }
+        })
+        .catch(error => console.log('Error:', error));
+    }
+
+</script>
+
 {% endblock %}
