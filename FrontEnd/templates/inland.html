@@ -127,6 +127,7 @@ Filter a search query to find the rooms that fit your desires.
     {% if results %}
     <table id="room results" border="1">
         <tr>
+            <td><strong>Favorite</strong></td>
             <td><strong>Hall</strong></td>
             <td><strong>Room</strong></td>
             <td><strong>Type</strong></td>
@@ -139,6 +140,18 @@ Filter a search query to find the rooms that fit your desires.
 
         {% for room in results %}
         <tr>
+            <td align="center">
+                <span 
+                    class="favorite-icon" 
+                    onclick="Favorite('{{ room['RoomID'] }}');"
+                    style="cursor: pointer;">
+                    {% if room['is_favorite'] %}
+                        &#9733; <!-- Filled star -->
+                    {% else %}
+                        &#9734; <!-- Empty star -->
+                    {% endif %}
+                </span>
+            </td>
             <td align="center" class="special">{{ room['Hall'] }}</td>
             <td align="center" class="special">{{ room['Room'] }}</td>
             <td align="center" class="special">{{ room['Type'] }}</td>
@@ -159,4 +172,32 @@ Filter a search query to find the rooms that fit your desires.
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
-{% endblock %}
+
+<script>
+
+    function test(){
+        console.log("test")
+    }
+
+    function Favorite(roomID) {
+        console.log("TRYING TO FAVORITE " + roomID)
+        fetch(`/favorite`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ room_id: roomID })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const icon = document.querySelector(`[onclick="Favorite('${roomID}');"]`);
+                console.log(`[onclick="Favorite('${roomID}')"]`);
+                icon.innerHTML = data.starred ? '&#9733;' : '&#9734;'; // Toggle star
+            } else {
+                alert("Failed to update favorite status.");
+            }
+        })
+        .catch(error => console.log('Error:', error));
+    }
+
+</script>
+    {% endblock %}
