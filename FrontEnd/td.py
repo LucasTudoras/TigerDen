@@ -13,17 +13,28 @@ def home():
 
 @app.route('/favorite-rooms')
 def favorite_rooms():
-    username = auth.authenticate()
-    return flask.render_template('favorite_rooms.html')
+    user_id = username = auth.authenticate()
+
+    with sqlite3.connect("../Database/rooms.db") as conn:
+        cursor = conn.cursor()
+        cursor.execute("""SELECT rooms.*
+            FROM rooms
+            JOIN favorites ON rooms.RoomID = favorites.room_id
+            WHERE favorites.user_id = ?
+        """, (user_id,))
+        rooms = cursor.fetchall()
+        column_names = [description[0] for description in cursor.description]
+        favorite_rooms = [dict(zip(column_names, row)) for row in rooms]
+        for room in favorite_rooms:
+            room['is_favorite'] = True
+        cursor.close()
+
+    return render_template('favorite_rooms.html', favorite_rooms=favorite_rooms)
 
 @app.route('/groups')
 def groups():
     username = auth.authenticate()
     return flask.render_template('groups.html')
-
-@app.route('/in-group')
-def in_group():
-    return flask.render_template('in_group.html')
 
 @app.route('/campus-map')
 def campus_map():
@@ -39,88 +50,6 @@ def floor_plans():
 def upload_pdf():
     username = auth.authenticate()
     return flask.render_template('upload_pdf.html')
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    username = auth.authenticate()
-    selected_colleges = ['Butler', 'Forbes', 'Mathey', 'New College West', 'Rocky',
-                        'Upperclass', 'Whitman', 'Yeh',]
-    
-    selected_types = ['Single', 'Double','Triple', 'Quad', 'Quint', '6-Person']
-    
-    if request.method == 'POST':
-        print("REQUEST ARRIVED")
-        content_type = request.headers.get('Content-Type')
-        if content_type == 'application/x-www-form-urlencoded':
-            selected_colleges = request.form.getlist('CollegeOptions')
-            selected_types = request.form.getlist('TypeOptions')
-
-    search_data = {
-        'FirstSort': request.form.get('FirstSort', request.cookies.get('FirstSort', 'Sqft')),
-        'SecondSort': request.form.get('SecondSort', request.cookies.get('SecondSort', 'College')),
-        'FirstOrder': request.form.get('FirstOrder', request.cookies.get('FirstOrder', 'DESC')),
-        'SecondOrder': request.form.get('SecondOrder', request.cookies.get('SecondOrder', 'ASC')),
-        'selected_colleges': selected_colleges,
-        'selected_types': selected_types
-    }
-
-    name_discreptancies = {
-        'Butler': 'Butler College',
-        'Forbes': 'Forbes College',
-        'Mathey': 'Mathey College',
-        'New College West': 'New College West',
-        'Rocky': 'Rockefeller College',    
-        'Upperclass': 'UPPERCLASS',    
-        'Whitman': 'Whitman College',    
-        'Yeh': 'Yeh College',    
-        'Single': 'SINGLE',
-        'Double': 'DOUBLE',
-        'Triple': 'TRIPLE',
-        'Quad': 'QUAD',
-        'Quint': 'QUINT',
-        '6-Person': '6PERSON'
-    }
-    
-
-    colleges = [name_discreptancies[college] for college in selected_colleges]
-    types = [name_discreptancies[type] for type in selected_types]
-    sort_clauses = [search_data['FirstSort'] + ' ' + search_data['FirstOrder'],
-                    search_data['SecondSort'] + ' ' + search_data['SecondOrder']]
-
-    query = "SELECT * FROM rooms WHERE 1=1"
-    params = []
-    
-    if not colleges or not types:
-        return flask.render_template('inland.html', username=username, user_data=search_data, results=[])
-
-    if colleges:
-        placeholder = ', '.join(['?'] * len(colleges))
-        query += f" AND College IN ({placeholder})"
-        params.extend(colleges)
-    if types:
-        placeholder1 = ', '.join(['?'] * len(types))
-        query += f" AND Type IN ({placeholder1})"
-        params.extend(types)
-    if sort_clauses:
-        query += " ORDER BY " + ", ".join(sort_clauses)
-    else:
-        query += " ORDER BY College ASC, Region ASC, Hall ASC, Room ASC"
-            
-
-    cursor = get_db().execute(query, params)
-    results = cursor.fetchall()
-    cursor.close()
-
-    # Map results to dictionary for template rendering
-    column_names = [description[0] for description in cursor.description]
-    rooms = [dict(zip(column_names, row)) for row in results]
-    print(search_data)
-    response = make_response(render_template('inland.html', username=username, user_data=search_data, results=rooms))
-    print(search_data)
-    for key, value in search_data.items():
-        if type(value) is not list:
-            response.set_cookie(key, value)
-    return response
 
 @app.route('/logout')
 def logout():
@@ -380,13 +309,13 @@ def toggle_favorite():
             print("ALREADY FAV")
             cursor.execute("DELETE FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
             conn.commit()
-            return jsonify({'success': True, 'message': 'Room removed from favorites', 'starred': False})
+            return jsonify({'success': True, 'message': 'Room removed from favorites', 'is_favorite': False})
         else:
             # star
             print("WILL FAV")
             cursor.execute("INSERT INTO favorites (user_id, room_id) VALUES (?, ?)", (user_id, room_id))
             conn.commit()
-            return jsonify({'success': True, 'message': 'Room added to favorites', 'starred': True})
+            return jsonify({'success': True, 'message': 'Room added to favorites', 'is_favorite': True})
 
     
 
@@ -423,8 +352,13 @@ def search():
         selected_types = [type_name for arg_name, type_name in types if request.cookies.get(arg_name)]
 
     # Build SQL query with filters and sorting
-    query = "SELECT * FROM rooms WHERE 1=1"
-    params = []
+    query = """SELECT rooms.*, 
+               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
+        WHERE 1=1
+            """
+    params = [username]
     if selected_colleges:
         placeholder = ', '.join(['?'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
@@ -445,6 +379,7 @@ def search():
     # Convert results to dictionary format
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
+    print(rooms[0])
 
     # Create response with updated cookies
     response = make_response(render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
