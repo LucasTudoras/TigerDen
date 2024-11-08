@@ -1,0 +1,45 @@
+{% extends "loggedin.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h2>Groups</h2>
+        <p>All things related to your draw group.</p>
+    </div>
+
+    <div class="search-text">
+        See all favorited rooms from every member in the group, rank/rate them, and have an organized place to share your preferences.
+    </div>
+
+    <br>
+
+    <div>
+    <table id="room results" border="1">
+        <tr>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>Region</strong></td>
+            <td><strong>Floor Plan</strong></td>
+            <td><strong>More Info</strong></td>
+            <td><strong>Group Rating</strong></td>
+        </tr>
+            <td class="special">Hall</td>
+            <td class="special">Room</td>
+            <td class="special">Type</td>
+            <td class="special">Sqft</td>
+            <td class="special">College</td>
+            <td class="special">Region</td>
+            <td>
+                <iframe src="../static/FloorPlan/Butler College/1967/1.pdf">RoomExample</iframe>
+            </td>
+            <td class="special">More Info</td>
+            <td class="special">Rating</td>
+        <tr>
+            
+        </tr>
+    </div>
+
+{% endblock %}

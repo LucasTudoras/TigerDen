@@ -19,6 +19,10 @@ def favorite_rooms():
 def groups():
     return flask.render_template('groups.html')
 
+@app.route('/in-group')
+def in_group():
+    return flask.render_template('in_group.html')
+
 @app.route('/campus-map')
 def campus_map():
     return flask.render_template('campus_map.html')
