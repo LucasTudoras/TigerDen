@@ -207,12 +207,12 @@ def return_sameHallFloorPlan(hall, room):
             'Little': "Mathey College",
             'Addy': "New College West",
             'Jose E. Feliciano': "New College West",
-            'Kanji': "New College West",
+            'Aliya Kanji': "New College West",
             'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller",
-            'Campbell': "Rockefeller",
-            'Holder': "Rockefeller",
-            'Witherspoon': "Rockefeller",
+            'Buyers': "Rockefeller College",
+            'Campbell': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
             '1901': "Upperclass",
             'Feinberg': "Upperclass",
             'Patton': "Upperclass",
@@ -231,19 +231,19 @@ def return_sameHallFloorPlan(hall, room):
             'Dod': "Upperclass",
             'Lockhart': "Upperclass",
             'Wright': "Upperclass",
-            '1981': "Whitman",
-            'Baker E': "Whitman",
-            'Baker S': "Whitman",
-            'Fisher': "Whitman",
-            'Hargadon': "Whitman",
-            'Lauritzen': "Whitman",
-            'Murley': "Whitman",
-            'Wendell B': "Whitman",
-            'Wendell C': "Whitman",
-            'Fu': "Yeh",
-            'Grousbeck': "Yeh",
-            'Hariri': "Yeh",
-            'Mannion': "Yeh",
+            '1981': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
         }
     college = colleges[hall]
     directory_path = "static/FloorPlan/" + college + "/" + hall
@@ -362,3 +362,75 @@ def toggle_favorite():
         return jsonify(success=True, is_favorite=room.is_favorite)
     else:
         return jsonify(success=False), 404
+    
+@app.route('/search', methods=['GET'])
+def search():
+    first_sort = request.args.get("First Sort") or request.cookies.get("First Sort") or "Sqft DESC"
+    second_sort = request.args.get("Second Sort") or request.cookies.get("Second Sort") or "College ASC"
+
+    sort_clauses = []
+
+    if first_sort:
+        sort_clauses.append(first_sort)
+    if second_sort:
+        sort_clauses.append(second_sort)
+
+    # Retrieve college filters
+    colleges = [
+        ("Butler College", "Butler College"), ("Forbes College", "Forbes College"), ("Mathey College", "Mathey College"),
+        ("New College West", "New College West"), ("Rockefeller College", "Rockefeller College"),
+        ("UPPERCLASS", "UPPERCLASS"), ("Whitman College", "Whitman College"), ("Yeh College", "Yeh College")
+    ]
+    selected_colleges = [college_name for arg_name, college_name in colleges if request.args.get(arg_name)]
+    if not selected_colleges:
+        selected_colleges = [college_name for arg_name, college_name in colleges if request.cookies.get(arg_name)]
+
+    # Retrieve room type filters
+    types = [
+        ("SINGLE", "SINGLE"), ("DOUBLE", "DOUBLE"), ("TRIPLE", "TRIPLE"),
+        ("QUAD", "QUAD"), ("QUINT", "QUINT"), ("6PERSON", "6PERSON")
+    ]
+    selected_types = [type_name for arg_name, type_name in types if request.args.get(arg_name)]
+    if not selected_types:
+        selected_types = [type_name for arg_name, type_name in types if request.cookies.get(arg_name)]
+
+    # Build SQL query with filters and sorting
+    query = "SELECT * FROM rooms WHERE 1=1"
+    params = []
+    if selected_colleges:
+        placeholder = ', '.join(['?'] * len(selected_colleges))
+        query += f" AND College IN ({placeholder})"
+        params.extend(selected_colleges)
+    if selected_types:
+        placeholder = ', '.join(['?'] * len(selected_types))
+        query += f" AND Type IN ({placeholder})"
+        params.extend(selected_types)
+    if sort_clauses:
+        query += " ORDER BY " + ", ".join(sort_clauses)
+    
+
+    # Execute query and fetch results
+    cursor = get_db().execute(query, params)
+    results = cursor.fetchall()
+    cursor.close()
+
+    # Convert results to dictionary format
+    column_names = [description[0] for description in cursor.description]
+    rooms = [dict(zip(column_names, row)) for row in results]
+
+    # Create response with updated cookies
+    response = make_response(render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
+    response.set_cookie("First Sort", first_sort)
+    response.set_cookie("Second Sort", second_sort)
+
+    for arg_name, _ in colleges:
+        if arg_name in selected_colleges:
+            response.set_cookie(arg_name, '1', max_age=60*60*24*30)
+        else:
+            response.set_cookie(arg_name, '', max_age=60*60*24*30)
+    for arg_name, _ in types:
+        if arg_name in selected_types:
+            response.set_cookie(arg_name, '1', max_age=60*60*24*30)
+        else:
+            response.set_cookie(arg_name, '', max_age=60*60*24*30)
+    return response

@@ -1,48 +1,13 @@
-{% extends "basic.html" %}
+{% extends "loggedin.html" %}
 
 {% block content %}
     <div class="logoutContainer">
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
 
-    <h2>Room Search Results</h2>
-    All the rooms that match the inputted search parameters.
+    <h2 style="display: inline;">Room Search Results</h2>
     <a href="/login" style="float: right" style="display: inline;">Search another room</a>
     <hr>
 
-    {% if results %}
-    <table id="room results" border="1">
-        <tr>
-            <td><strong>Hall</strong></td>
-            <td><strong>Room</strong></td>
-            <td><strong>Type</strong></td>
-            <td><strong>Sqft</strong></td>
-            <td><strong>College</strong></td>
-            <td><strong>Region</strong></td>
-            <td><strong>Floor Plan</strong></td>
-            <td><strong>More Info</strong></td>
-        </tr>
-
-        {% for room in results %}
-        <tr>
-            <td align="center" class="special">{{ room['Hall'] }}</td>
-            <td align="center" class="special">{{ room['Room'] }}</td>
-            <td align="center" class="special">{{ room['Type'] }}</td>
-            <td align="center" class="special">{{ room['Sqft'] }}</td>
-            <td align="center" class="special">{{ room['College'] }}</td>
-            <td align="center" class="special">{{ room['Region'] }}</td>
-            <td align="center" class="special">
-                {% if room['FilePath'] %}
-                    <a href="../static/{{ room['FilePath'] }}" target="_blank">View Floor Plan</a>
-                {% else %}
-                    N/A
-                {% endif %}
-            </td>
-            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">View more information</a></td>
-        </tr>
-        {% endfor %}
-    </table>
-    {% else %}
-        <p>No rooms found matching your criteria.</p>
-    {% endif %}
+    
 {% endblock %}

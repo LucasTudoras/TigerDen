@@ -79,31 +79,7 @@
                 <td><strong>Floor</strong></td>
                 <td>{{ room['Floor'] }}</td>
             </tr>    
-            
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-                
-            </tr>
+        
             <tr>
                 <td><strong>Floor Plan</strong></td>
                 <td><a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan in New Tab</a></td>
@@ -137,6 +113,10 @@
     {% endif %}
     <br>
     <br>
-    <a href="javascript:window.history.back()"  
+    <a href="/search?{% for key, value in request.args.items() %}
+    {% if key != 'page' %}
+        {{ key }}={{ value }}& 
+    {% endif %}
+{% endfor %}" 
     style="text-align: center; display: inline;">Return to searched rooms</a>
 {% endblock %}
