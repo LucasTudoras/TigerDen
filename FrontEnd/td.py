@@ -23,6 +23,7 @@ def groups():
 
 @app.route('/in-group')
 def in_group():
+    username = auth.authenticate()
     return flask.render_template('in_group.html')
 
 @app.route('/campus-map')
