@@ -13,10 +13,12 @@ def home():
 
 @app.route('/favorite-rooms')
 def favorite_rooms():
+    username = auth.authenticate()
     return flask.render_template('favorite_rooms.html')
 
 @app.route('/groups')
 def groups():
+    username = auth.authenticate()
     return flask.render_template('groups.html')
 
 @app.route('/in-group')
@@ -25,14 +27,17 @@ def in_group():
 
 @app.route('/campus-map')
 def campus_map():
+    username = auth.authenticate()
     return flask.render_template('campus_map.html')
 
 @app.route('/floor-plans')
 def floor_plans():
+    username = auth.authenticate()
     return flask.render_template('floor_plans.html')
 
 @app.route('/upload-pdf')
 def upload_pdf():
+    username = auth.authenticate()
     return flask.render_template('upload_pdf.html')
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -141,6 +146,7 @@ def close_connection(exception):
 
 @app.route("/room_details/<roomID>")
 def room_details(roomID):
+    username = auth.authenticate()
     query = "SELECT * FROM rooms WHERE 1=1"
     params = []
     query += " And RoomID = ?"
@@ -155,11 +161,13 @@ def room_details(roomID):
 
 @app.route("/PDF")
 def uploaded_PDF(file):
+    username = auth.authenticate()
     uploaded_rooms = PDF(file)
     return render_template('/upload_pdf.html', results = uploaded_rooms)
 
 @app.route("/college/<college>")
 def return_halls(college):
+    username = auth.authenticate()
     halls = []
     if college == 'Butler':
         halls = ['1967', '1976', 'Bloomberg', 'Bogle', 'Scully', 'Wilf', 'Yoseloff']
@@ -190,6 +198,7 @@ def return_halls(college):
 
 @app.route("/samehall/<hall> <room>")
 def return_sameHallFloorPlan(hall, room):
+    username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
     print(hall)
@@ -290,6 +299,7 @@ def return_sameHallFloorPlan(hall, room):
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
+    username = auth.authenticate()
     if college == "New College West Jose E.":
         college = "New College West"
         hall = "Jose E. Feliciano"
@@ -354,24 +364,35 @@ def return_floorplans(college, hall):
     sorted_test = sorted(test, key=lambda x: x['name'])
     return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
 
-@app.route('/favorite', methods=['POST'])
+@app.route('/favorite', methods=['POST', 'GET'])
 def toggle_favorite():
-    print("REQUEST:")
-    print(request)
+    user_id = username = auth.authenticate()
     data = request.get_json()
     room_id = data.get('room_id')
-    # isnt this bad?
-    # Retrieve room and toggle favorite status
-    room = DATABASE.query.get(room_id)
-    if room:
-        room.is_favorite = not room.is_favorite
-        get_db().session.commit()
-        return jsonify(success=True, is_favorite=room.is_favorite)
-    else:
-        return jsonify(success=False), 404
+    if not room_id or not user_id:
+        return jsonify({"success": False, "message": "Invalid input"}), 400
+    with sqlite3.connect("../Database/rooms.db") as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT 1 FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
+        exists = cursor.fetchone()
+        if exists:
+            # unstar
+            print("ALREADY FAV")
+            cursor.execute("DELETE FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
+            conn.commit()
+            return jsonify({'success': True, 'message': 'Room removed from favorites', 'starred': False})
+        else:
+            # star
+            print("WILL FAV")
+            cursor.execute("INSERT INTO favorites (user_id, room_id) VALUES (?, ?)", (user_id, room_id))
+            conn.commit()
+            return jsonify({'success': True, 'message': 'Room added to favorites', 'starred': True})
+
     
+
 @app.route('/search', methods=['GET'])
 def search():
+    username = auth.authenticate()
     first_sort = request.args.get("First Sort") or request.cookies.get("First Sort") or "Sqft DESC"
     second_sort = request.args.get("Second Sort") or request.cookies.get("Second Sort") or "College ASC"
 
@@ -402,8 +423,13 @@ def search():
         selected_types = [type_name for arg_name, type_name in types if request.cookies.get(arg_name)]
 
     # Build SQL query with filters and sorting
-    query = "SELECT * FROM rooms WHERE 1=1"
-    params = []
+    query = """SELECT rooms.*, 
+               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
+        WHERE 1=1
+            """
+    params = [username]
     if selected_colleges:
         placeholder = ', '.join(['?'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
@@ -434,10 +460,10 @@ def search():
         if arg_name in selected_colleges:
             response.set_cookie(arg_name, '1', max_age=60*60*24*30)
         else:
-            response.set_cookie(arg_name, '', max_age=60*60*24*30)
+            response.set_cookie(arg_name, '0', max_age=60*60*24*30)
     for arg_name, _ in types:
         if arg_name in selected_types:
             response.set_cookie(arg_name, '1', max_age=60*60*24*30)
         else:
-            response.set_cookie(arg_name, '', max_age=60*60*24*30)
+            response.set_cookie(arg_name, '0', max_age=60*60*24*30)
     return response

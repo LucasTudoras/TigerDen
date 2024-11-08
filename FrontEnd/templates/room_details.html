@@ -4,6 +4,19 @@
     <div class="logoutContainer">
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
+    
+    <div class="button-row">
+        <a href="/search?{% for key, value in request.args.items() %}
+        {% if key != 'page' %}
+            {{ key }}={{ value }}& 
+        {% endif %}
+    {% endfor %}" class="backButton">Back to Room Search</a>
+        <br>
+    
+        <div class="addtofavoritesButton">
+            ☆ Add to Favorites
+        </div>
+    </div>
 
     <div class="search-text">
         <h2>Room Details</h2>
@@ -89,10 +102,11 @@
     <br>
     <br>
 
-    <div class="addtofavoritesButton">
-        ☆ Add to Favorites
+    
+    <div class="search-text">
+        <a href="/samehall/{{ room['Hall'] }} {{ room['Room'] }}">View other floors in this hall</a>
     </div>
-
+    <br>
     <div class="search-text">
         Floor Plan
     </div>
@@ -101,9 +115,7 @@
         <iframe src="{{ url_for('static', filename=room['FilePath']) }}" frameborder="0" height="600", width="75%" title="floor"></iframe>
     </div>
 
-    <div class="search-text">
-        <a href="/samehall/{{ room['Hall'] }} {{ room['Room'] }}">View other floors in this hall</a>
-    </div>
+    
     {% endfor %}
 
     </div>
@@ -111,12 +123,5 @@
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
-    <br>
-    <br>
-    <a href="/search?{% for key, value in request.args.items() %}
-    {% if key != 'page' %}
-        {{ key }}={{ value }}& 
-    {% endif %}
-{% endfor %}" 
-    style="text-align: center; display: inline;">Return to searched rooms</a>
+    
 {% endblock %}
