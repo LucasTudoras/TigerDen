@@ -1,7 +1,10 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
-<div style="text-align:left;">
+<div class="logoutContainer">
+    <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
+</div>
+<div class="button-row">
     <a href="/floor-plans" class="backButton">Back to Colleges</a>
 </div>
 
@@ -21,7 +24,7 @@
 {% for hall in results %}
 <table id="hall results">
         <td>
-            <a href="/floors/{{ college }} {{ hall }}">{{ hall }}</a>
+            <a href="/floors/{{ college }} {{ hall }}" title="{{ college }} {{ hall }}">{{ hall }}</a>
         </td>
     
 </table>

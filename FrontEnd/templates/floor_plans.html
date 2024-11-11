@@ -1,6 +1,9 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
+<div class="logoutContainer">
+    <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
+</div>
 <div class="search-text">
     <h2>Floor Plans</h2>
     Found a room you like? Check out the other floors to see how the building is structured.
@@ -10,28 +13,28 @@
     <table>
         <th>
             <td>
-                <a href="/college/Butler">Butler</a>
+                <a href="/college/Butler" title="Butler">Butler</a>
             </td>
             <td>
-                <a href="/college/Forbes">Forbes</a>
+                <a href="/college/Forbes" title="Forbes">Forbes</a>
             </td>
             <td>
-                <a href="/college/Mathey">Mathey</a>
+                <a href="/college/Mathey" title="Mathey">Mathey</a>
             </td>
             <td>
-                <a href="/college/NCW">New College West</a>
+                <a href="/college/NCW" title="New College West">New College West</a>
             </td>
             <td>
-                <a href="/college/Rockefeller">Rocky</a>
+                <a href="/college/Rockefeller" title="Rocky">Rocky</a>
             </td>
             <td>
-                <a href="/college/Upperclass">UpperClass</a>
+                <a href="/college/Upperclass" title="Upperclass">UpperClass</a>
             </td>
             <td>
-                <a href="/college/Whitman">Whitman</a>
+                <a href="/college/Whitman" title="Whitman">Whitman</a>
             </td>
             <td>
-                <a href="/college/Yeh">Yeh</a>
+                <a href="/college/Yeh" title="Yeh">Yeh</a>
             </td>
         </th>
     </table>

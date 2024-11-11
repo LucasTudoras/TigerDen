@@ -1,7 +1,10 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
-<div style="text-align:left;">
+<div class="logoutContainer">
+    <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
+</div>
+<div class="button-row">
     <a href="javascript:window.history.back()" class="backButton">Back to {{ college }}</a>
 </div>
 
@@ -29,7 +32,7 @@
         </tr>
         <td style="vertical-align:center;">
             
-            <a href="{{ floor['filepath'] }}" target="_blank">&#8593;Open in new tab</a>
+            <a href="{{ floor['filepath'] }}" target="_blank" title="{{ hall }} {{ floor['name'] }}">&#8593;Open in new tab</a>
         </td>
 </table>
 
