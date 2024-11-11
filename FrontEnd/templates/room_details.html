@@ -13,8 +13,18 @@
     {% endfor %}" class="backButton">Back to Room Search</a>
         <br>
     
-        <div class="addtofavoritesButton">
-            ☆ Add to Favorites
+        {% if results %}
+        {% for room in results %}
+
+        <div class="addtofavoritesButton" onclick="Favorite('{{ room['RoomID'] }}')">
+            <span id="favorite-icon">
+                {% if room['is_favorite'] %}
+                    &#9733; <!-- Filled star -->
+                {% else %}
+                    &#9734; <!-- Empty star -->
+                {% endif %}
+            </span>
+            Add to Favorites
         </div>
     </div>
 
@@ -22,12 +32,8 @@
         <h2>Room Details</h2>
         Everything there is to know about a room on campus.
     </div>
-
-
-    {% if results %}
     
 
-        {% for room in results %}
         <div class="table-container">
         <table id="room results">
             <tr>
@@ -112,7 +118,7 @@
     </div>
 
     <div>
-        <iframe src="{{ url_for('static', filename=room['FilePath']) }}" frameborder="0" height="600", width="75%" title="floor"></iframe>
+        <iframe src="{{ url_for('static', filename=room['FilePath']) }}" frameborder="0" height="600" width="75%" title="floor"></iframe>
     </div>
 
     
@@ -123,5 +129,29 @@
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
+
+    <script>
+
+        function Favorite(roomID) {
+            console.log("TRYING TO FAVORITE " + roomID)
+            fetch(`/favorite`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ room_id: roomID })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const icon = document.querySelector(`[onclick="Favorite('${roomID}');"]`);
+                    console.log(`[onclick="Favorite('${roomID}')"]`);
+                    icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
+                } else {
+                    alert("Failed to update favorite status.");
+                }
+            })
+            .catch(error => console.log('Error:', error));
+        }
+    
+    </script>
     
 {% endblock %}
