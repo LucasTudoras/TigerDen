@@ -164,7 +164,7 @@ Filter a search query to find the rooms that fit your desires.
             <td align="center" class="special">{{ room['Region'] }}</td>
             <td align="center" class="special">
                 {% if room['FilePath'] %}
-                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank" title="{{ room['Hall'] }} {{ room['Room']}}">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
