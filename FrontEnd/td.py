@@ -1,6 +1,6 @@
 import flask
 import auth
-from flask import Flask, render_template, request, g, make_response, jsonify
+import flask
 import sqlite3
 from top import app
 import PDF
@@ -29,7 +29,7 @@ def favorite_rooms():
             room['is_favorite'] = True
         cursor.close()
 
-    return render_template('favorite_rooms.html', favorite_rooms=favorite_rooms)
+    return flask.render_template('favorite_rooms.html', favorite_rooms=favorite_rooms)
 
 @app.route('/groups')
 def groups():
@@ -65,14 +65,14 @@ def logout():
 DATABASE = '../Database/rooms.db'
 
 def get_db():
-    db = getattr(g, '_database', None)
+    db = getattr(flask.g, '_database', None)
     if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
+        db = flask.g._database = sqlite3.connect(DATABASE)
     return db
 
 @app.teardown_appcontext
 def close_connection(exception):
-    db = getattr(g, '_database', None)
+    db = getattr(flask.g, '_database', None)
     if db is not None:
         db.close()
 
@@ -91,13 +91,13 @@ def room_details(roomID):
 
     column_names = [description[0] for description in cursor.description]
     room = [dict(zip(column_names, row)) for row in results]
-    return render_template('room_details.html', results = room)
+    return flask.render_template('room_details.html', results = room)
 
 @app.route("/PDF")
 def uploaded_PDF(file):
     username = auth.authenticate()
     uploaded_rooms = PDF(file)
-    return render_template('/upload_pdf.html', results = uploaded_rooms)
+    return flask.render_template('/upload_pdf.html', results = uploaded_rooms)
 
 @app.route("/college/<college>")
 def return_halls(college):
@@ -128,7 +128,7 @@ def return_halls(college):
     
     elif college == 'Yeh':
         halls = ['Fu', 'Grousbeck', 'Hariri', 'Mannion']
-    return render_template('/halls.html', results = halls, college = college)
+    return flask.render_template('/halls.html', results = halls, college = college)
 
 @app.route("/samehall/<hall> <room>")
 def return_sameHallFloorPlan(hall, room):
@@ -229,7 +229,7 @@ def return_sameHallFloorPlan(hall, room):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
+    return flask.render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
@@ -296,15 +296,15 @@ def return_floorplans(college, hall):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
+    return flask.render_template('floors.html', results = filepaths, test = sorted_test, hall = hall, college = college)
 
 @app.route('/favorite', methods=['POST', 'GET'])
 def toggle_favorite():
     user_id = username = auth.authenticate()
-    data = request.get_json()
+    data = flask.request.get_json()
     room_id = data.get('room_id')
     if not room_id or not user_id:
-        return jsonify({"success": False, "message": "Invalid input"}), 400
+        return flask.jsonify({"success": False, "message": "Invalid input"}), 400
     with sqlite3.connect("../Database/rooms.db") as conn:
         cursor = conn.cursor()
         cursor.execute("SELECT 1 FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
@@ -314,21 +314,21 @@ def toggle_favorite():
             print("ALREADY FAV")
             cursor.execute("DELETE FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
             conn.commit()
-            return jsonify({'success': True, 'message': 'Room removed from favorites', 'is_favorite': False})
+            return flask.jsonify({'success': True, 'message': 'Room removed from favorites', 'is_favorite': False})
         else:
             # star
             print("WILL FAV")
             cursor.execute("INSERT INTO favorites (user_id, room_id) VALUES (?, ?)", (user_id, room_id))
             conn.commit()
-            return jsonify({'success': True, 'message': 'Room added to favorites', 'is_favorite': True})
+            return flask.jsonify({'success': True, 'message': 'Room added to favorites', 'is_favorite': True})
 
     
 
 @app.route('/search', methods=['GET'])
 def search():
     username = auth.authenticate()
-    first_sort = request.args.get("First Sort") or request.cookies.get("First Sort") or "Sqft DESC"
-    second_sort = request.args.get("Second Sort") or request.cookies.get("Second Sort") or "College ASC"
+    first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
+    second_sort = flask.request.args.get("Second Sort") or flask.request.cookies.get("Second Sort") or "College ASC"
 
     sort_clauses = []
 
@@ -343,18 +343,18 @@ def search():
         ("New College West", "New College West"), ("Rockefeller College", "Rockefeller College"),
         ("UPPERCLASS", "UPPERCLASS"), ("Whitman College", "Whitman College"), ("Yeh College", "Yeh College")
     ]
-    selected_colleges = [college_name for arg_name, college_name in colleges if request.args.get(arg_name)]
+    selected_colleges = [college_name for arg_name, college_name in colleges if flask.request.args.get(arg_name)]
     if not selected_colleges:
-        selected_colleges = [college_name for arg_name, college_name in colleges if request.cookies.get(arg_name)]
+        selected_colleges = [college_name for arg_name, college_name in colleges if flask.request.cookies.get(arg_name)]
 
     # Retrieve room type filters
     types = [
         ("SINGLE", "SINGLE"), ("DOUBLE", "DOUBLE"), ("TRIPLE", "TRIPLE"),
         ("QUAD", "QUAD"), ("QUINT", "QUINT"), ("6PERSON", "6PERSON")
     ]
-    selected_types = [type_name for arg_name, type_name in types if request.args.get(arg_name)]
+    selected_types = [type_name for arg_name, type_name in types if flask.request.args.get(arg_name)]
     if not selected_types:
-        selected_types = [type_name for arg_name, type_name in types if request.cookies.get(arg_name)]
+        selected_types = [type_name for arg_name, type_name in types if flask.request.cookies.get(arg_name)]
 
     # Build SQL query with filters and sorting
     query = """SELECT rooms.*, 
@@ -386,7 +386,7 @@ def search():
     rooms = [dict(zip(column_names, row)) for row in results]
 
     # Create response with updated cookies
-    response = make_response(render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
+    response = flask.make_response(flask.render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
     response.set_cookie("First Sort", first_sort)
     response.set_cookie("Second Sort", second_sort)
 
