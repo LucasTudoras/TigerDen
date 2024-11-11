@@ -302,6 +302,7 @@ html {
     font-size: 16px; /* Font size */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     text-align: center;
+    cursor: pointer;
 }
 
 .addtofavoritesButton:hover {
@@ -331,3 +332,4 @@ html {
 .backtodetailsButton:hover {
     background-color: #0056b3; /* Darker color on hover */
 }
+
