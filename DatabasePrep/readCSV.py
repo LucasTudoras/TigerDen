@@ -4,7 +4,7 @@ from pathlib import Path
 room_info_dicts = []
 
 # read List.csv
-file = open(Path("List.csv"))
+file = open("DatabasePrep/List.csv")
 room_list = csv.reader(file, delimiter=',')
 
 # iterate through every room to parse its information
@@ -30,7 +30,7 @@ for room in room_list:
         Header= False
 
 # read Distance.csv
-file_1 = open(Path("Distance.csv"))
+file_1 = open("DatabasePrep/Distance.csv")
 hall_distances = csv.reader(file_1, delimiter=',')
 
 # populate a list of dictionaries representing how far of a walk it is
