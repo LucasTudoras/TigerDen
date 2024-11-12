@@ -1,1 +1,1 @@
-web: gunicorn FrontEnd.wsgi
+web: python FrontEnd/app.py
