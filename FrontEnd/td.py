@@ -81,8 +81,13 @@ def close_connection(exception):
 @app.route("/room_details/<roomID>")
 def room_details(roomID):
     username = auth.authenticate()
-    query = "SELECT * FROM rooms WHERE 1=1"
-    params = []
+    query = """SELECT rooms.*, 
+               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
+        WHERE 1=1
+            """
+    params = [username]
     query += " And RoomID = ?"
     params.append(roomID)
     cursor = get_db().execute(query, params)
@@ -91,6 +96,7 @@ def room_details(roomID):
 
     column_names = [description[0] for description in cursor.description]
     room = [dict(zip(column_names, row)) for row in results]
+    
     return flask.render_template('room_details.html', results = room)
 
 @app.route("/PDF")
