@@ -13,6 +13,12 @@ DATABASE = os.environ['DATABASE_URL']
 def home():
     return flask.render_template('index.html')
 
+@app.teardown_appcontext
+def close_connection(exception):
+    db = getattr(flask.g, '_database', None)
+    if db is None:
+        db.close()
+
 @app.route('/favorite-rooms')
 def favorite_rooms():
     user_id = username = auth.authenticate()
@@ -22,7 +28,7 @@ def favorite_rooms():
         cursor.execute("""SELECT rooms.*
             FROM rooms
             JOIN favorites ON rooms.RoomID = favorites.room_id
-            WHERE favorites.user_id = ?
+            WHERE favorites.user_id = %s
         """, (user_id,))
         rooms = cursor.fetchall()
         column_names = [description[0] for description in cursor.description]
@@ -63,19 +69,11 @@ def logout():
     flask.session.clear()
     return flask.redirect('/')
 
-
-
 def get_db():
     db = getattr(flask.g, '_database', None)
     if db is None:
         db = flask.g._database = psycopg2.connect(DATABASE)
     return db
-
-@app.teardown_appcontext
-def close_connection(exception):
-    db = getattr(flask.g, '_database', None)
-    if db is not None:
-        db.close()
 
 
 
@@ -85,11 +83,11 @@ def room_details(roomID):
     query = """SELECT rooms.*, 
                CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
         FROM rooms
-        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE 1=1
             """
     params = [username]
-    query += " And RoomID = ?"
+    query += " And RoomID = %s"
     params.append(roomID)
     cursor = get_db().execute(query, params)
     results = cursor.fetchall()
@@ -314,18 +312,18 @@ def toggle_favorite():
         return flask.jsonify({"success": False, "message": "Invalid input"}), 400
     with psycopg2.connect("../Database/rooms.db") as conn:
         cursor = conn.cursor()
-        cursor.execute("SELECT 1 FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
+        cursor.execute("SELECT 1 FROM favorites WHERE user_id = %s AND room_id = %s", (user_id, room_id))
         exists = cursor.fetchone()
         if exists:
             # unstar
             print("ALREADY FAV")
-            cursor.execute("DELETE FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
+            cursor.execute("DELETE FROM favorites WHERE user_id =%s AND room_id = %s", (user_id, room_id))
             conn.commit()
             return flask.jsonify({'success': True, 'message': 'Room removed from favorites', 'is_favorite': False})
         else:
             # star
             print("WILL FAV")
-            cursor.execute("INSERT INTO favorites (user_id, room_id) VALUES (?, ?)", (user_id, room_id))
+            cursor.execute("INSERT INTO favorites (user_id, room_id) VALUES (%s, %s)", (user_id, room_id))
             conn.commit()
             return flask.jsonify({'success': True, 'message': 'Room added to favorites', 'is_favorite': True})
 
@@ -367,16 +365,16 @@ def search():
     query = """SELECT rooms.*, 
                CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
         FROM rooms
-        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = ?
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE 1=1
             """
     params = [username]
     if selected_colleges:
-        placeholder = ', '.join(['?'] * len(selected_colleges))
+        placeholder = ', '.join(['%s'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
         params.extend(selected_colleges)
     if selected_types:
-        placeholder = ', '.join(['?'] * len(selected_types))
+        placeholder = ', '.join(['%s'] * len(selected_types))
         query += f" AND Type IN ({placeholder})"
         params.extend(selected_types)
     if sort_clauses:
@@ -384,13 +382,15 @@ def search():
     
 
     # Execute query and fetch results
-    cursor = get_db().execute(query, params)
+    cursor = get_db().cursor
+    cursor.execute(query, params)
     results = cursor.fetchall()
-    cursor.close()
-
     # Convert results to dictionary format
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+   
 
     # Create response with updated cookies
     response = flask.make_response(flask.render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
