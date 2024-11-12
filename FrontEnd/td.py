@@ -1,7 +1,7 @@
 import flask
 import auth
 import flask
-import sqlite3
+import psycopg2
 from top import app
 import PDF
 import os
@@ -17,7 +17,7 @@ def home():
 def favorite_rooms():
     user_id = username = auth.authenticate()
 
-    with sqlite3.connect(DATABASE) as conn:
+    with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
         cursor.execute("""SELECT rooms.*
             FROM rooms
@@ -68,7 +68,7 @@ def logout():
 def get_db():
     db = getattr(flask.g, '_database', None)
     if db is None:
-        db = flask.g._database = sqlite3.connect(DATABASE)
+        db = flask.g._database = psycopg2.connect(DATABASE)
     return db
 
 @app.teardown_appcontext
@@ -312,7 +312,7 @@ def toggle_favorite():
     room_id = data.get('room_id')
     if not room_id or not user_id:
         return flask.jsonify({"success": False, "message": "Invalid input"}), 400
-    with sqlite3.connect("../Database/rooms.db") as conn:
+    with psycopg2.connect("../Database/rooms.db") as conn:
         cursor = conn.cursor()
         cursor.execute("SELECT 1 FROM favorites WHERE user_id = ? AND room_id = ?", (user_id, room_id))
         exists = cursor.fetchone()
