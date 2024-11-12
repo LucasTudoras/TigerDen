@@ -1,8 +1,10 @@
 import td
+import os
 
 
 def main():
-    td.app.run(host='0.0.0.0', port=12345, debug=True)
+    port = int(os.environment.get("PORT", 5000))
+    td.app.run(host='0.0.0.0', port=port, debug=True)
 
 if __name__ == '__main__':
     main()
