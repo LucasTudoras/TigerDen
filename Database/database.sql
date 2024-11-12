@@ -1,4 +1,4 @@
-CREATE TABLE rooms (Hall TEXT, Room TEXT, Type TEXT, Sqft INTEGER, College TEXT, Region TEXT, Elevator TEXT, Bathroom TEXT, AC TEXT, Floor INTEGER, FilePath TEXT, Wawa INTEGER, UStore INTEGER, Nassau INTEGER, JadwinGym INTEGER, Frist INTEGER, Street INTEGER, EQuad INTEGER, Dillon INTEGER, RoomID TEXT PRIMARY KEY);
+CREATE TABLE rooms (Favorite BOOLEAN DEFAULT FALSE, Hall TEXT, Room TEXT, Type TEXT, Sqft INTEGER, College TEXT, Region TEXT, Elevator TEXT, Bathroom TEXT, AC TEXT, Floor INTEGER, FilePath TEXT, Wawa INTEGER, UStore INTEGER, Nassau INTEGER, JadwinGym INTEGER, Frist INTEGER, Street INTEGER, EQuad INTEGER, Dillon INTEGER, RoomID TEXT PRIMARY KEY);
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '101', 'TRIPLE', '444', 'UPPERCLASS', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/UPPERCLASS/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901101');
 
