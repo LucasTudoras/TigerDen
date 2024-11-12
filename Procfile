@@ -1,1 +1,1 @@
-web: gunicorn TigerDen:app
+web: gunicorn td:app
