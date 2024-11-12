@@ -16,14 +16,17 @@
         {% if results %}
         {% for room in results %}
 
-        <div class="addtofavoritesButton" onclick="Favorite('{{ room['RoomID'] }}')">
-            <span id="favorite-icon">
-                {% if room['is_favorite'] %}
-                    &#9733; <!-- Filled star -->
-                {% else %}
-                    &#9734; <!-- Empty star -->
-                {% endif %}
-            </span>
+        <div class="addtofavoritesButton">
+            <span 
+                    class="favorite-icon" 
+                    onclick="Favorite('{{ room['RoomID'] }}');"
+                    style="cursor: pointer;">
+                    {% if room['is_favorite'] %}
+                        &#9733;  <!-- Filled star -->
+                    {% else %}
+                        &#9734; <!-- Empty star -->
+                    {% endif %}
+                </span>
             Add to Favorites
         </div>
     </div>
