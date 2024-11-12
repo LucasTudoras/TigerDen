@@ -16,7 +16,7 @@ def home():
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(flask.g, '_database', None)
-    if db is None:
+    if db is not None:
         db.close()
 
 @app.route('/favorite-rooms')
