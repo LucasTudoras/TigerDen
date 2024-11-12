@@ -382,7 +382,8 @@ def search():
     
 
     # Execute query and fetch results
-    cursor = get_db().cursor
+    conn = get_db()
+    cursor = conn.cursor()
     cursor.execute(query, params)
     results = cursor.fetchall()
     # Convert results to dictionary format
