@@ -262,11 +262,11 @@ def return_floorplans(college, hall):
         hall = "Baker S"
     filepaths = []
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "static/FloorPlan/" + college + "/" + hall
+        directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "static/FloorPlan/" + college + " College/" + hall
+        directory_path = "FrontEnd/static/FloorPlan/" + college + " College/" + hall
     test = []
     
     for filename in os.listdir(directory_path):
@@ -310,7 +310,7 @@ def toggle_favorite():
     room_id = data.get('room_id')
     if not room_id or not user_id:
         return flask.jsonify({"success": False, "message": "Invalid input"}), 400
-    with psycopg2.connect("../Database/rooms.db") as conn:
+    with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
         cursor.execute("SELECT 1 FROM favorites WHERE user_id = %s AND room_id = %s", (user_id, room_id))
         exists = cursor.fetchone()
