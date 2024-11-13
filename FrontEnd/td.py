@@ -294,7 +294,7 @@ def return_floorplans(college, hall):
             temp_name = '8th Floor'
         temp = {
             'name': temp_name,
-            'filepath': "FrontEnd/static/Floorplan/" + college + "/" + hall + "/" + filename
+            'filepath': "FrontEnd/static/FloorPlan/" + college + "/" + hall + "/" + filename
         }
         
         test.append(temp)
