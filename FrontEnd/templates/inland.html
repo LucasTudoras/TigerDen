@@ -146,7 +146,7 @@ Filter a search query to find the rooms that fit your desires.
             <td align="center">
                 <span 
                     class="favorite-icon" 
-                    onclick="Favorite('{{ room['RoomID'] }}');"
+                    onclick="Favorite('{{ room['roomid'] }}');"
                     style="cursor: pointer;">
                     {% if room['is_favorite'] %}
                         &#9733; <!-- Filled star -->
@@ -155,20 +155,20 @@ Filter a search query to find the rooms that fit your desires.
                     {% endif %}
                 </span>
             </td>
-            <td align="center" class="special">{{ room['Hall'] }}</td>
-            <td align="center" class="special">{{ room['Room'] }}</td>
-            <td align="center" class="special">{{ room['Type'] }}</td>
-            <td align="center" class="special">{{ room['Sqft'] }}</td>
-            <td align="center" class="special">{{ room['College'] }}</td>
-            <td align="center" class="special">{{ room['Region'] }}</td>
+            <td align="center" class="special">{{ room['hall'] }}</td>
+            <td align="center" class="special">{{ room['room'] }}</td>
+            <td align="center" class="special">{{ room['type'] }}</td>
+            <td align="center" class="special">{{ room['sqft'] }}</td>
+            <td align="center" class="special">{{ room['college'] }}</td>
+            <td align="center" class="special">{{ room['region'] }}</td>
             <td align="center" class="special">
                 {% if room['FilePath'] %}
-                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank" title="{{ room['Hall'] }} {{ room['Room']}}">View Floor Plan</a>
+                    <a href="{{ url_for('static', filename=room['filepath']) }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
             </td>
-            <td class="special"><a href="/room_details/{{ room['RoomID'] }}" title="{{ room['Hall'] }} {{ room['Room']}}">Click here to see more</a></td>
+            <td class="special"><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
         </tr>
         {% endfor %}
     </table>
