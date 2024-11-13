@@ -391,6 +391,7 @@ def search():
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
     cursor.close()
+    print(rooms)
 
    
 
