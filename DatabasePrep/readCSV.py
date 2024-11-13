@@ -4,7 +4,7 @@ from pathlib import Path
 room_info_dicts = []
 
 # read List.csv
-file = open("DatabasePrep/Master.csv")
+file = open("/Users/lakeguy848/Desktop/Cos333 final/TigerDen/DatabasePrep/Master.csv")
 room_list = csv.reader(file, delimiter=',')
 
 # iterate through every room to parse its information
