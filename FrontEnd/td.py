@@ -262,15 +262,15 @@ def return_floorplans(college, hall):
         hall = "Baker S"
     
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
+        directory_path = "/static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "FrontEnd/static/FloorPlan/" + college + " College/" + hall
+        directory_path = "/static/FloorPlan/" + college + " College/" + hall
     test = []
     filepaths = []
     
-    for filename in os.listdir(directory_path):
+    for filename in os.listdir("FrontEnd" + directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
             temp_name = 'Basement Floor'
