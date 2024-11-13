@@ -133,7 +133,7 @@ def return_halls(college):
     elif college == 'Whitman College':
         halls = ['1981', 'Baker E', 'Baker S', 'Fisher', 'Hargadon', 'Lauritzen', 'Murley', 'Wendell B', 'Wendell C']
     
-    elif college == 'Yeh':
+    elif college == 'Yeh College':
         halls = ['Fu', 'Grousbeck', 'Hariri', 'Mannion']
     return flask.render_template('/halls.html', results = halls, college = college)
 
