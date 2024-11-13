@@ -229,11 +229,11 @@ def return_sameHallFloorPlan(hall, room):
             temp_name = '8th Floor'
         temp = {
             'name': temp_name,
-            'filepath': "../" + directory_path + "/" +filename
+            'filepath': directory_path + "/" +filename
         }
         
         test.append(temp)
-        filepaths.append("../" + directory_path + "/" +filename)
+        filepaths.append(temp['filepath'])
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
