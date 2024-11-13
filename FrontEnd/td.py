@@ -143,8 +143,6 @@ def return_sameHallFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    print(hall)
-    print(room)
     colleges = {
             '1967': "Butler College",
             '1976': "Butler College",
@@ -202,7 +200,7 @@ def return_sameHallFloorPlan(hall, room):
             'Mannion': "Yeh College",
         }
     college = colleges[hall]
-    directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
+    directory_path = "/static/FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
     for filename in os.listdir(directory_path):
@@ -350,7 +348,7 @@ def search():
     colleges = [
         ("Butler College", "Butler College"), ("Forbes College", "Forbes College"), ("Mathey College", "Mathey College"),
         ("New College West", "New College West"), ("Rockefeller College", "Rockefeller College"),
-        ("UPPERCLASS", "UPPERCLASS"), ("Whitman College", "Whitman College"), ("Yeh College", "Yeh College")
+        ("Upperclass", "Upperclass"), ("Whitman College", "Whitman College"), ("Yeh College", "Yeh College")
     ]
     selected_colleges = [college_name for arg_name, college_name in colleges if flask.request.args.get(arg_name)]
     if not selected_colleges:
@@ -394,7 +392,6 @@ def search():
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
     cursor.close()
-    print(rooms)
 
    
 
