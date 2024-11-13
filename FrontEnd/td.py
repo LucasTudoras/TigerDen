@@ -262,11 +262,11 @@ def return_floorplans(college, hall):
         hall = "Baker S"
     
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "static/FloorPlan/" + college + "/" + hall
+        directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "static/FloorPlan/" + college + " College/" + hall
+        directory_path = "FrontEnd/static/FloorPlan/" + college + " College/" + hall
     test = []
     filepaths = []
     
@@ -294,7 +294,7 @@ def return_floorplans(college, hall):
             temp_name = '8th Floor'
         temp = {
             'name': temp_name,
-            'filepath': "/static/Floorplan/" + college + "/" + hall + "/" + filename
+            'filepath': "FrontEnd/static/Floorplan/" + college + "/" + hall + "/" + filename
         }
         
         test.append(temp)
