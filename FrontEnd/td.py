@@ -199,7 +199,7 @@ def return_sameHallFloorPlan(hall, room):
             'Mannion': "Yeh College",
         }
     college = colleges[hall]
-    directory_path = "static/FloorPlan/" + college + "/" + hall
+    directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
     for filename in os.listdir(directory_path):

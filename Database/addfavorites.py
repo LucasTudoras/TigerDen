@@ -7,8 +7,8 @@ def create_tables():
     # Create the favorites table if it doesn't already exist
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS favorites (
-            user_id INTEGER,
-            room_id INTEGER,
+            user_id TEXT,
+            room_id TEXT,
             PRIMARY KEY (user_id, room_id),
             FOREIGN KEY (room_id) REFERENCES rooms(id)
         )
