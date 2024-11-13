@@ -260,14 +260,15 @@ def return_floorplans(college, hall):
     if college == "Whitman Baker" and hall == 'S':
         college = "Whitman"
         hall = "Baker S"
-    filepaths = []
+    
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "FrontEnd/static/FloorPlan/" + college + "/" + hall
+        directory_path = "static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "FrontEnd/static/FloorPlan/" + college + " College/" + hall
+        directory_path = "static/FloorPlan/" + college + " College/" + hall
     test = []
+    filepaths = []
     
     for filename in os.listdir(directory_path):
         temp_name = filename.replace(".pdf", '')
@@ -293,11 +294,11 @@ def return_floorplans(college, hall):
             temp_name = '8th Floor'
         temp = {
             'name': temp_name,
-            'filepath': "../" + directory_path + "/" +filename
+            'filepath': "/static/Floorplan/" + college + "/" + hall + "/" + filename
         }
         
         test.append(temp)
-        filepaths.append("../" + directory_path + "/" +filename)
+        filepaths.append(temp['filepath'])
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
