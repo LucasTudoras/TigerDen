@@ -162,7 +162,7 @@ Filter a search query to find the rooms that fit your desires.
             <td align="center" class="special">{{ room['college'] }}</td>
             <td align="center" class="special">{{ room['region'] }}</td>
             <td align="center" class="special">
-                {% if room['FilePath'] %}
+                {% if room['filepath'] %}
                     <a href="{{ url_for('static', filename=room['filepath']) }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
                 {% else %}
                     N/A

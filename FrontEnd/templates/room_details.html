@@ -19,7 +19,7 @@
         <div class="addtofavoritesButton">
             <span
                     class="favorite-icon" 
-                    onclick="Favorite('{{ room['RoomID'] }}');"
+                    onclick="Favorite('{{ room['roomid'] }}');"
                     style="cursor: pointer;">
                     {% if room['is_favorite'] %}
                         &#9733;  <!-- Filled star -->
@@ -47,64 +47,64 @@
             </tr>
             <tr>
                 <td><strong>Hall</strong></td>
-                <td>{{ room['Hall'] }}</td>
+                <td>{{ room['hall'] }}</td>
                 <td><strong>Wawa</strong></td>
-                <td>{{ room['Wawa'] }}</td>
+                <td>{{ room['wawa'] }}</td>
             </tr>
             <tr>
                 <td><strong>Room</strong></td>
-                <td>{{ room['Room'] }}</td>
+                <td>{{ room['room'] }}</td>
                 <td><strong>UStore</strong></td>
-                <td>{{ room['UStore'] }}</td>
+                <td>{{ room['ustore'] }}</td>
             </tr>
             <tr>
                 <td><strong>Type</strong></td>
-                <td>{{ room['Type'] }}</td>
+                <td>{{ room['type'] }}</td>
                 <td><strong>Nassau Street</strong></td>
-                <td>{{ room['Nassau'] }}</td>
+                <td>{{ room['nassau'] }}</td>
             </tr>
             <tr>
                 <td><strong>Sqft</strong></td>
-                <td>{{ room['Sqft'] }}</td>
+                <td>{{ room['sqft'] }}</td>
                 <td><strong>Jadwin Gym</strong></td>
-                <td>{{ room['JadwinGym'] }}</td>
+                <td>{{ room['jadwingym'] }}</td>
             </tr>
             <tr>
                 <td><strong>College</strong></td>
-                <td>{{ room['College'] }}</td>
+                <td>{{ room['college'] }}</td>
                 <td><strong>Frist</strong></td>
-                <td>{{ room['Frist'] }}</td>
+                <td>{{ room['frist'] }}</td>
             </tr>
             <tr>
                 <td><strong>Region</strong></td>
-                <td>{{ room['Region'] }}</td>
+                <td>{{ room['region'] }}</td>
                 <td><strong>Prospect Street</strong></td>
-                <td>{{ room['Street'] }}</td>
+                <td>{{ room['street'] }}</td>
             </tr>
             <tr>
                 <td><strong>Elevator</strong></td>
-                <td>{{ room['Elevator'] }}</td>
+                <td>{{ room['elevator'] }}</td>
                 <td><strong>EQuad</strong></td>
-                <td>{{ room['EQuad'] }}</td>
+                <td>{{ room['equad'] }}</td>
             </tr>
             <tr>
                 <td><strong>Bathroom</strong></td>
-                <td>{{ room['Bathroom'] }}</td>
+                <td>{{ room['bathroom'] }}</td>
                 <td><strong>Dillon</strong></td>
-                <td>{{ room['Dillon'] }}</td>
+                <td>{{ room['dillon'] }}</td>
             </tr>
             <tr>
                 <td><strong>AC</strong></td>
-                <td>{{ room['AC'] }}</td>
+                <td>{{ room['ac'] }}</td>
             </tr>
             <tr>
                 <td><strong>Floor</strong></td>
-                <td>{{ room['Floor'] }}</td>
+                <td>{{ room['floor'] }}</td>
             </tr>    
         
             <tr>
                 <td><strong>Floor Plan</strong></td>
-                <td><a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan in New Tab</a></td>
+                <td><a href="{{ url_for('static', filename=room['filepath']) }}" target="_blank">View Floor Plan in New Tab</a></td>
             </tr> 
     </table>
 
@@ -113,7 +113,7 @@
 
     
     <div class="search-text">
-        <a href="/samehall/{{ room['Hall'] }} {{ room['Room'] }}">View other floors in this hall</a>
+        <a href="/samehall/{{ room['hall'] }} {{ room['room'] }}">View other floors in this hall</a>
     </div>
     <br>
     <div class="search-text">
@@ -121,7 +121,7 @@
     </div>
 
     <div>
-        <iframe src="{{ url_for('static', filename=room['FilePath']) }}" frameborder="0" height="600" width="75%" title="floor"></iframe>
+        <iframe src="{{ url_for('static', filename=room['filepath']) }}" frameborder="0" height="600" width="75%" title="floor"></iframe>
     </div>
 
     

@@ -89,12 +89,15 @@ def room_details(roomID):
     params = [username]
     query += " And RoomID = %s"
     params.append(roomID)
-    cursor = get_db().execute(query, params)
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
     results = cursor.fetchall()
-    cursor.close()
-
     column_names = [description[0] for description in cursor.description]
     room = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+    
     
     return flask.render_template('room_details.html', results = room)
 
