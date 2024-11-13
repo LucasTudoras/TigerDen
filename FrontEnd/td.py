@@ -200,7 +200,7 @@ def return_sameHallFloorPlan(hall, room):
             'Mannion': "Yeh College",
         }
     college = colleges[hall]
-    directory_path = "/static/Floorplan/" + college + "/" + hall
+    directory_path = "/static/FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
     for filename in os.listdir("FrontEnd" + directory_path):
@@ -263,11 +263,11 @@ def return_floorplans(college, hall):
         hall = "Baker S"
     
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "/static/Floorplan/" + college + "/" + hall
+        directory_path = "/static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "/static/Floorplan/" + college + " College/" + hall
+        directory_path = "/static/FloorPlan/" + college + " College/" + hall
     test = []
     filepaths = []
     
