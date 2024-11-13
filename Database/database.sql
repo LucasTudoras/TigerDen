@@ -10,6 +10,24 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '105', 'SINGLE', '142', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901105');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '201', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901201');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '202', 'DOUBLE', '375', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901202');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '203', 'DOUBLE', '345', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901203');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '301', 'QUAD', '556', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901301');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '401', 'SINGLE', '154', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901401');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '402', 'SINGLE', '186', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901402');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '403', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901403');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '404', 'SINGLE', '190', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901404');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '405', 'SINGLE', '196', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901405');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '111', 'SINGLE', '122', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901111');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '112', 'DOUBLE', '402', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901112');
@@ -28,6 +46,26 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '119', 'DOUBLE', '337', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901119');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '212', 'TRIPLE', '378', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901212');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '213', 'SINGLE', '144', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901213');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '214', 'SINGLE', '153', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901214');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '215', 'DOUBLE', '349', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901215');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '311', 'DOUBLE', '363', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901311');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '312', 'DOUBLE', '355', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '313', 'DOUBLE', '364', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901313');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '314', 'SINGLE', '185', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901314');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '411', 'TRIPLE', '839', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901411');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '413', 'TRIPLE', '459', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901413');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '121', 'SINGLE', '122', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901121');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '122', 'QUAD', '503', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901122');
@@ -39,28 +77,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '125', 'QUAD', '498', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901125');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '126', 'SINGLE', '167', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901126');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '131', 'QUAD', '482', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '132', 'SINGLE', '219', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '133', 'TRIPLE', '415', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901133');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '141', 'QUAD', '799', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Upperclass/1901/4.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '201', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901201');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '202', 'DOUBLE', '375', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901202');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '203', 'DOUBLE', '345', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901203');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '212', 'TRIPLE', '378', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901212');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '213', 'SINGLE', '144', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901213');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '214', 'SINGLE', '153', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901214');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '215', 'DOUBLE', '349', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901215');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '221', 'DOUBLE', '331', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901221');
 
@@ -74,24 +90,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '226', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901226');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '232', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901232');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '233', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901233');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '234', 'SINGLE', '156', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901234');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '235', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901235');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '301', 'QUAD', '556', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901301');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '311', 'DOUBLE', '363', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901311');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '312', 'DOUBLE', '355', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '313', 'DOUBLE', '364', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901313');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '314', 'SINGLE', '185', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901314');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '321', 'SINGLE', '128', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901321');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '322', 'DOUBLE', '296', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901322');
@@ -101,6 +99,26 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '324', 'DOUBLE', '246', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901324');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '325', 'SINGLE', '160', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901325');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '421', 'DOUBLE', '351', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901421');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '222A', 'SINGLE', '92', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901222A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '223A', 'SINGLE', '129', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901223A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '131', 'QUAD', '482', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '132', 'SINGLE', '219', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '133', 'TRIPLE', '415', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901133');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '232', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901232');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '233', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901233');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '234', 'SINGLE', '156', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901234');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '235', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901235');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '331', 'QUAD', '686', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901331');
 
@@ -112,29 +130,23 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '335', 'SINGLE', '158', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901335');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '401', 'SINGLE', '154', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901401');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '402', 'SINGLE', '186', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901402');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '403', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901403');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '404', 'SINGLE', '190', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901404');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '405', 'SINGLE', '196', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1901/0.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901405');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '411', 'TRIPLE', '839', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901411');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '413', 'TRIPLE', '459', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1901/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901413');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '421', 'DOUBLE', '351', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901421');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '431', 'DOUBLE', '330', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/1901/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901431');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '141', 'QUAD', '799', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Upperclass/1901/4.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901141');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '441', 'DOUBLE', '372', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Upperclass/1901/4.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901441');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '222A', 'SINGLE', '92', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901222A');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '401', 'TRIPLE', '593', 'Upperclass', 'MID-CAMPUS', 'NO', 'Unisex', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903401');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1901', '223A', 'SINGLE', '129', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1901/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', '1901223A');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '402', 'SINGLE', '217', 'Upperclass', 'MID-CAMPUS', 'NO', 'Unisex', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903402');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '501', 'QUAD', '538', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903501');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '502', 'DOUBLE', '292', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903502');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '503', 'SINGLE', '158', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903503');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '504', 'DOUBLE', '309', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903504');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '111', 'SINGLE', '170', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903111');
 
@@ -143,36 +155,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '113', 'SINGLE', '180', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903113');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '114', 'SINGLE', '162', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903114');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '121', 'SINGLE', '173', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '122', 'SINGLE', '205', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '123', 'QUAD', '503', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '124', 'SINGLE', '174', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '125', 'SINGLE', '179', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903125');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '126', 'SINGLE', '165', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903126');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '131', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '132', 'DOUBLE', '318', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '133', 'SINGLE', '233', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903133');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '134', 'SINGLE', '172', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903134');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '135', 'SINGLE', '131', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903135');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '136', 'SINGLE', '166', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903136');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '141', 'DOUBLE', '378', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '142', 'SINGLE', '165', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903142');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '143', 'SINGLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903143');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '211', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903211');
 
@@ -185,6 +167,48 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '215', 'SINGLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903215');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '216', 'SINGLE', '206', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903216');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '311', 'TRIPLE', '396', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903311');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '312', 'SINGLE', '172', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '313', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903313');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '314', 'TRIPLE', '394', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903314');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '411', 'SINGLE', '166', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903411');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '412', 'DA', '221', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903412');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '413', 'TRIPLE', '557', 'Upperclass', 'MID-CAMPUS', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903413');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '414', 'SINGLE', '203', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903414');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '511', 'SINGLE', '175', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903511');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '512', 'TRIPLE', '424', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903512');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '513', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903513');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '514', 'SINGLE', '163', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903514');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '515', 'DOUBLE', '369', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903515');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '516', 'SINGLE', '187', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903516');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '517', 'SINGLE', '202', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903517');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '121', 'SINGLE', '173', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '122', 'SINGLE', '205', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '123', 'QUAD', '503', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '124', 'SINGLE', '174', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '125', 'SINGLE', '179', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903125');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '126', 'SINGLE', '165', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903126');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '221', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903221');
 
@@ -202,36 +226,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '228', 'SINGLE', '196', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903228');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '231', 'SINGLE', '182', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903231');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '232', 'SINGLE', '128', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903232');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '233', 'SINGLE', '140', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903233');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '234', 'SINGLE', '156', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903234');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '235', 'SINGLE', '149', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903235');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '236', 'QUAD', '521', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903236');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '237', 'DOUBLE', '449', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903237');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '241', 'SINGLE', '216', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903241');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '242', 'SINGLE', '157', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903242');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '243', 'SINGLE', '214', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903243');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '244', 'DOUBLE', '342', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903244');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '311', 'TRIPLE', '396', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903311');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '312', 'SINGLE', '172', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '313', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903313');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '314', 'TRIPLE', '394', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903314');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '321', 'TRIPLE', '393', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903321');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '322', 'SINGLE', '175', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903322');
@@ -240,57 +234,9 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '324', 'TRIPLE', '389', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903324');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '331', 'SINGLE', '248', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903331');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '332', 'SINGLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903332');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '333', 'SINGLE', '138', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903333');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '334', 'SINGLE', '124', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903334');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '401', 'TRIPLE', '593', 'Upperclass', 'MID-CAMPUS', 'NO', 'Unisex', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903401');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '402', 'SINGLE', '217', 'Upperclass', 'MID-CAMPUS', 'NO', 'Unisex', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903402');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '411', 'SINGLE', '166', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903411');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '412', 'DA', '221', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903412');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '413', 'TRIPLE', '557', 'Upperclass', 'MID-CAMPUS', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903413');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '414', 'SINGLE', '203', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903414');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '421', 'SINGLE', '230', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903421');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '422', 'DOUBLE', '495', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903422');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '431', 'SINGLE', '171', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903431');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '432', 'DOUBLE', '332', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903432');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '433', 'SINGLE', '179', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903433');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '501', 'QUAD', '538', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903501');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '502', 'DOUBLE', '292', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903502');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '503', 'SINGLE', '158', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903503');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '504', 'DOUBLE', '309', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/1903/0.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903504');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '511', 'SINGLE', '175', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903511');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '512', 'TRIPLE', '424', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903512');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '513', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903513');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '514', 'SINGLE', '163', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903514');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '515', 'DOUBLE', '369', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903515');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '516', 'SINGLE', '187', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903516');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '517', 'SINGLE', '202', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/1903/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903517');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '521', 'SINGLE', '163', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903521');
 
@@ -308,6 +254,48 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '528', 'SINGLE', '194', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903528');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '523A', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903523A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '131', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '132', 'DOUBLE', '318', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '133', 'SINGLE', '233', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903133');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '134', 'SINGLE', '172', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903134');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '135', 'SINGLE', '131', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903135');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '136', 'SINGLE', '166', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903136');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '231', 'SINGLE', '182', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903231');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '232', 'SINGLE', '128', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903232');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '233', 'SINGLE', '140', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903233');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '234', 'SINGLE', '156', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903234');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '235', 'SINGLE', '149', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903235');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '236', 'QUAD', '521', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903236');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '237', 'DOUBLE', '449', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903237');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '331', 'SINGLE', '248', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903331');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '332', 'SINGLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903332');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '333', 'SINGLE', '138', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903333');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '334', 'SINGLE', '124', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903334');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '431', 'SINGLE', '171', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903431');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '432', 'DOUBLE', '332', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903432');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '433', 'SINGLE', '179', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903433');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '531', 'SINGLE', '207', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903531');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '532', 'SINGLE', '216', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903532');
@@ -320,7 +308,19 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '536', 'SINGLE', '201', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/1903/3.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903536');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '523A', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/1903/2.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903523A');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '141', 'DOUBLE', '378', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903141');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '142', 'SINGLE', '165', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903142');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '143', 'SINGLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903143');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '241', 'SINGLE', '216', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903241');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '242', 'SINGLE', '157', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903242');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '243', 'SINGLE', '214', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903243');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1903', '244', 'DOUBLE', '342', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/1903/4.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1903244');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('1967', 'B108', 'QUAD', '538', 'Butler College', 'BUTLER', 'YES', 'Private', 'YES', '1', 'FloorPlan/Butler College/1967/1.pdf', '9', '6', '8', '13', '4', '6', '15', '1', '1967B108');
 
@@ -1002,6 +1002,10 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E008', 'DOUBLE', '141', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '0', 'FloorPlan/Whitman College/Baker E/0.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE008');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S002', 'QUAD', '650', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '0', 'FloorPlan/Whitman College/Baker S/0.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS002');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S003', 'DOUBLE', '261', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '0', 'FloorPlan/Whitman College/Baker S/0.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS003');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E105', 'SINGLE', '116', 'Whitman College', 'WHIT', 'YES', 'Jack and Jill', 'YES', '1', 'FloorPlan/Whitman College/Baker E/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE105');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E107', 'SINGLE', '114', 'Whitman College', 'WHIT', 'YES', 'Jack and Jill', 'YES', '1', 'FloorPlan/Whitman College/Baker E/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE107');
@@ -1025,6 +1029,12 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E123', 'SINGLE', '140', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker E/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE123');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E125', 'SINGLE', '140', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker E/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE125');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S102', 'QUAD', '554', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS102');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S104', 'SINGLE', '200', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS104');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S106', 'SINGLE', '138', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS106');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E205', 'SINGLE', '111', 'Whitman College', 'WHIT', 'YES', 'Jack and Jill', 'YES', '2', 'FloorPlan/Whitman College/Baker E/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE205');
 
@@ -1054,6 +1064,16 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E224', 'SINGLE', '113', 'Whitman College', 'WHIT', 'YES', 'Jack and Jill', 'YES', '2', 'FloorPlan/Whitman College/Baker E/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE224');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S202', 'QUAD', '558', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS202');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S203', 'SINGLE', '193', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS203');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S204', 'SINGLE', '202', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS204');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S205', 'SINGLE', '195', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS205');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S206', 'SINGLE', '137', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS206');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E305', 'SINGLE', '114', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker E/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE305');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E306', 'QUAD', '465', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker E/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE306');
@@ -1077,6 +1097,12 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E321', 'SINGLE', '145', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker E/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE321');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E323', 'SINGLE', '135', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker E/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE323');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S302', 'QUAD', '510', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S303', 'SINGLE', '179', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS303');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S305', 'SINGLE', '211', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS305');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E404', 'SINGLE', '126', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker E/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE404');
 
@@ -1118,32 +1144,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'E429', 'SINGLE', '119', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker E/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerE429');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S002', 'QUAD', '650', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '0', 'FloorPlan/Whitman College/Baker S/0.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS002');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S003', 'DOUBLE', '261', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '0', 'FloorPlan/Whitman College/Baker S/0.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS003');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S102', 'QUAD', '554', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS102');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S104', 'SINGLE', '200', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS104');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S106', 'SINGLE', '138', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '1', 'FloorPlan/Whitman College/Baker S/1.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS106');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S202', 'QUAD', '558', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS202');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S203', 'SINGLE', '193', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS203');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S204', 'SINGLE', '202', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS204');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S205', 'SINGLE', '195', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS205');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S206', 'SINGLE', '137', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Baker S/2.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS206');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S302', 'QUAD', '510', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S303', 'SINGLE', '179', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS303');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S305', 'SINGLE', '211', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Baker S/3.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS305');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S402', 'QUAD', '485', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker S/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS402');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S403', 'SINGLE', '128', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker S/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS403');
@@ -1153,110 +1153,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S405', 'SINGLE', '131', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker S/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS405');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Baker', 'S406', 'SINGLE', '109', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Baker S/4.pdf', '5', '9', '14', '13', '10', '12', '19', '7', 'BakerS406');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '40', 'SINGLE', '299', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair40');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '41', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair41');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '42', 'DOUBLE', '232', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair42');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '43', 'QUAD', '490', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair43');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '44', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair44');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '45', 'SINGLE', '101', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair45');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '51', 'QUAD', '517', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair51');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '52', 'DOUBLE', '210', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair52');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '53', 'QUAD', '503', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair53');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '54', 'QUAD', '490', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair54');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '61', 'DOUBLE', '277', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair61');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '62', 'QUAD', '533', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair62');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '63', 'DOUBLE', '251', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair63');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '64', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair64');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '65', 'QUAD', '499', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair65');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '71', 'QUAD', '527', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair71');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '72', 'DOUBLE', '215', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair72');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '73', 'QUAD', '496', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair73');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '74', 'QUAD', '510', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair74');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '81', 'QUAD', '501', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair81');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '82', 'QUAD', '523', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair82');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '83', 'QUAD', '504', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair83');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '84', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair84');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '91', 'QUAD', '504', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair91');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '92', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair92');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '93', 'DOUBLE', '271', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair93');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '94', 'SINGLE', '175', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair94');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '95', 'QUAD', '540', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair95');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '96', 'QUAD', '603', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair96');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '97', 'QUAD', '592', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair97');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '98', 'QUAD', '573', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair98');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '101', 'QUAD', '497', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair101');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '102', 'QUAD', '541', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair102');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '103', 'QUAD', '511', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair103');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '104', 'DOUBLE', '260', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair104');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '111', 'QUAD', '495', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair111');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '112', 'DOUBLE', '235', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair112');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '113', 'DOUBLE', '221', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair113');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '114', 'SINGLE', '184', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair114');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '116', 'QUAD', '495', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair116');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '118', 'QUAD', '549', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair118');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '301', 'QUAD', '575', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair301');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '302', 'QUAD', '598', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '303', 'QUAD', '595', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair303');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '304', 'QUAD', '600', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair304');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '305', 'QUAD', '605', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair305');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '306', 'DOUBLE', '223', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair306');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '307', 'DOUBLE', '194', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair307');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '308', 'DOUBLE', '209', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair308');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '309', 'DOUBLE', '187', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair309');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '310', 'DOUBLE', '217', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair310');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', 'A02', 'SINGLE', '160', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'BlairA02');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', 'B41', 'SINGLE', '122', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '0', 'FloorPlan/Mathey College/Blair/0.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'BlairB41');
 
@@ -1287,6 +1183,110 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', 'B91', 'SINGLE', '132', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '0', 'FloorPlan/Mathey College/Blair/0.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'BlairB91');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', 'B92', 'QUAD', '644', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '0', 'FloorPlan/Mathey College/Blair/0.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'BlairB92');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '41', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair41');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '43', 'QUAD', '490', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair43');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '45', 'SINGLE', '101', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair45');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '51', 'QUAD', '517', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair51');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '53', 'QUAD', '503', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair53');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '61', 'DOUBLE', '277', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair61');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '63', 'DOUBLE', '251', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair63');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '65', 'QUAD', '499', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair65');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '71', 'QUAD', '527', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair71');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '73', 'QUAD', '496', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair73');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '81', 'QUAD', '501', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair81');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '83', 'QUAD', '504', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair83');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '91', 'QUAD', '504', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair91');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '93', 'DOUBLE', '271', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair93');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '95', 'QUAD', '540', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair95');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '97', 'QUAD', '592', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Blair/1.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair97');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '40', 'SINGLE', '299', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair40');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '42', 'DOUBLE', '232', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair42');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '44', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair44');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '52', 'DOUBLE', '210', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair52');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '54', 'QUAD', '490', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair54');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '62', 'QUAD', '533', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair62');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '64', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair64');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '72', 'DOUBLE', '215', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair72');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '74', 'QUAD', '510', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair74');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '82', 'QUAD', '523', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair82');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '84', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair84');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '92', 'DOUBLE', '213', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair92');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '94', 'SINGLE', '175', 'Mathey College', 'ROMA', 'YES', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair94');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '96', 'QUAD', '603', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair96');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '98', 'QUAD', '573', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair98');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '101', 'QUAD', '497', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair101');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '102', 'QUAD', '541', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair102');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '103', 'QUAD', '511', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair103');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '104', 'DOUBLE', '260', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair104');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '111', 'QUAD', '495', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair111');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '112', 'DOUBLE', '235', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair112');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '113', 'DOUBLE', '221', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair113');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '114', 'SINGLE', '184', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair114');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', 'A02', 'SINGLE', '160', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Blair/2.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'BlairA02');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '116', 'QUAD', '495', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair116');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '118', 'QUAD', '549', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair118');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '301', 'QUAD', '575', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair301');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '302', 'QUAD', '598', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '303', 'QUAD', '595', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair303');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '304', 'QUAD', '600', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair304');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '305', 'QUAD', '605', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair305');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '306', 'DOUBLE', '223', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair306');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '307', 'DOUBLE', '194', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair307');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '308', 'DOUBLE', '209', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair308');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '309', 'DOUBLE', '187', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair309');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Blair', '310', 'DOUBLE', '217', 'Mathey College', 'ROMA', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Blair/3.pdf', '9', '1', '6', '19', '9', '10', '18', '5', 'Blair310');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Bloomberg', '111', 'SINGLE', '160', 'Butler College', 'BUTLER', 'YES', 'Private', 'YES', '1', 'FloorPlan/Butler College/Bloomberg/1.pdf', '5', '10', '11', '11', '7', '10', '18', '7', 'Bloomberg111');
 
@@ -1764,7 +1764,43 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Brown', '429', 'SINGLE', '220', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Brown/4.pdf', '10', '6', '7', '13', '4', '7', '15', '1', 'Brown429');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B11', 'SINGLE', '152', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB11');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B12', 'QUAD', '458', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB12');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B13', 'SINGLE', '154', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB13');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B21', 'SINGLE', '124', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB21');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B22', 'SINGLE', '128', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB22');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B23', 'SINGLE', '125', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB23');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B31', 'SINGLE', '210', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB31');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '13', 'QUAD', '551', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers13');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '15', 'QUAD', '443', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers15');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '17', 'QUAD', '545', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers17');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '21', 'QUAD', '526', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers21');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '23', 'QUAD', '554', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers23');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '31', 'DOUBLE', '197', 'Rockefeller College', 'ROMA', 'NO', 'Male', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers31');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '33', 'QUAD', '583', 'Rockefeller College', 'ROMA', 'NO', 'Male', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers33');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '12', 'QUAD', '465', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers12');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '14', 'QUAD', '444', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers14');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '16', 'DOUBLE', '265', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers16');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '18', 'SINGLE', '108', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers18');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '22', 'DOUBLE', '593', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers22');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '24', 'QUAD', '553', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers24');
 
@@ -1772,55 +1808,79 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '32', 'QUAD', '728', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers32');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '33', 'QUAD', '583', 'Rockefeller College', 'ROMA', 'NO', 'Male', 'NO', '1', 'FloorPlan/Rockefeller College/Buyers/1.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers33');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', '34', 'SINGLE', '131', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'Buyers34');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B12', 'QUAD', '458', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB12');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B13', 'SINGLE', '154', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB13');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B21', 'SINGLE', '124', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB21');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B22', 'SINGLE', '128', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB22');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B23', 'SINGLE', '125', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB23');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'B31', 'SINGLE', '210', 'Rockefeller College', 'ROMA', 'NO', 'Male', 'NO', '0', 'FloorPlan/Rockefeller College/Buyers/0.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersB31');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Buyers', 'T02', 'TRIPLE', '563', 'Rockefeller College', 'ROMA', 'NO', 'Female', 'NO', '2', 'FloorPlan/Rockefeller College/Buyers/2.pdf', '10', '3', '4', '17', '8', '8', '16', '4', 'BuyersT02');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '11', 'DOUBLE', '253', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell11');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '13', 'DOUBLE', '333', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell13');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '15', 'QUAD', '452', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell15');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '21', 'DOUBLE', '309', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell21');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '23', 'DOUBLE', '262', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell23');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '25', 'QUAD', '498', 'Rockefeller College', 'ROMA', 'NO', 'Private', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell25');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '27', 'DOUBLE', '333', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell27');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '31', 'QUAD', '422', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell31');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '33', 'QUAD', '424', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell33');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '41', 'QUAD', '411', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell41');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '51', 'QUAD', '399', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell51');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '53', 'TRIPLE', '285', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell53');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '55', 'DOUBLE', '255', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell55');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '61', 'DOUBLE', '274', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell61');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '63', 'DOUBLE', '270', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell63');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '65', 'DOUBLE', '257', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell65');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '12', 'DOUBLE', '253', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell12');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '14', 'DOUBLE', '328', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell14');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '16', 'QUAD', '445', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell16');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '22', 'DOUBLE', '317', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell22');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '24', 'DOUBLE', '262', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell24');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '31', 'QUAD', '422', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell31');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '26', 'QUAD', '486', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell26');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '28', 'QUAD', '455', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell28');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '32', 'QUAD', '422', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell32');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '33', 'QUAD', '424', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell33');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '34', 'QUAD', '423', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell34');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '41', 'QUAD', '411', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell41');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '42', 'QUAD', '411', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell42');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '44', 'DOUBLE', '377', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell44');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '56', 'DOUBLE', '246', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell56');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '52', 'SINGLE', '126', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell52');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '61', 'DOUBLE', '274', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell61');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '54', 'TRIPLE', '284', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Rockefeller College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell54');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '56', 'DOUBLE', '246', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell56');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '62', 'DOUBLE', '272', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell62');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '63', 'DOUBLE', '270', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell63');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '64', 'DOUBLE', '267', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell64');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '65', 'DOUBLE', '257', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Campbell/1.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell65');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '66', 'DOUBLE', '256', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell66');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '052A', 'SINGLE', '117', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell052A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '052B', 'SINGLE', '118', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell052B');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '001A', 'DOUBLE', '444', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Rockefeller College/Campbell/3.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell001A');
 
@@ -1842,25 +1902,69 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '006B', 'SINGLE', '193', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Mathey College/Campbell/3.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell006B');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '052A', 'SINGLE', '117', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell052A');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '401', 'SINGLE', '223', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler401');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Campbell', '052B', 'SINGLE', '118', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Campbell/2.pdf', '11', '3', '5', '21', '11', '11', '19', '4', 'Campbell052B');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '402', 'DOUBLE', '399', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler402');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '403', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler403');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '404', 'DOUBLE', '394', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler404');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '601', 'QUAD', '684', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler601');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '111', 'QUAD', '530', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler111');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '112', 'TRIPLE', '447', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler112');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '121', 'QUAD', '529', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '122', 'TRIPLE', '441', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler122');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '211', 'TRIPLE', '425', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler211');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '212', 'TRIPLE', '409', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler212');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '311', 'DOUBLE', '424', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler311');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '312', 'DOUBLE', '415', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '411', 'DOUBLE', '223', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler411');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '412', 'DOUBLE', '399', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler412');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '413', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler413');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '414', 'TRIPLE', '437', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler414');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '511', 'DOUBLE', '351', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler511');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '611', 'TRIPLE', '439', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler611');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '612', 'DOUBLE', '266', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler612');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '613', 'DOUBLE', '253', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler613');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '121', 'QUAD', '529', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '122', 'TRIPLE', '441', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler122');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '221', 'TRIPLE', '428', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler221');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '222', 'TRIPLE', '415', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler222');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '321', 'TRIPLE', '429', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler321');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '322', 'TRIPLE', '416', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler322');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '421', 'QUINT', '775', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler421');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '422', 'TRIPLE', '396', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler422');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '521', 'DOUBLE', '347', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler521');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '522', 'DOUBLE', '360', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler522');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '621', 'TRIPLE', '431', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler621');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '622', 'DOUBLE', '265', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler622');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '623', 'DOUBLE', '257', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler623');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '231', 'SINGLE', '126', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler231');
 
@@ -1873,34 +1977,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '235', 'SINGLE', '151', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler235');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '236', 'SINGLE', '127', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler236');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '311', 'DOUBLE', '424', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler311');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '312', 'DOUBLE', '415', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '321', 'TRIPLE', '429', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler321');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '322', 'TRIPLE', '416', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler322');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '401', 'SINGLE', '223', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler401');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '402', 'DOUBLE', '399', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler402');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '403', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler403');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '404', 'DOUBLE', '394', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler404');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '411', 'DOUBLE', '223', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler411');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '412', 'DOUBLE', '399', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler412');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '413', 'SINGLE', '235', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler413');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '414', 'TRIPLE', '437', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler414');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '421', 'QUINT', '775', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler421');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '422', 'TRIPLE', '396', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler422');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '431', 'SINGLE', '153', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler431');
 
@@ -1919,26 +1995,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '438', 'SINGLE', '180', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler438');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '439', 'SINGLE', '142', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler439');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '511', 'DOUBLE', '351', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler511');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '521', 'DOUBLE', '347', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler521');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '522', 'DOUBLE', '360', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler522');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '601', 'QUAD', '684', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Cuyler/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler601');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '611', 'TRIPLE', '439', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler611');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '612', 'DOUBLE', '266', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler612');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '613', 'DOUBLE', '253', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Cuyler/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler613');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '621', 'TRIPLE', '431', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler621');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '622', 'DOUBLE', '265', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler622');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '623', 'DOUBLE', '257', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Cuyler/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler623');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Cuyler', '631', 'TRIPLE', '456', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Cuyler/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Cuyler631');
 
@@ -1976,6 +2032,14 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '117', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod117');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '101N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod101N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '101S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod101S');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '102N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod102N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '102S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod102S');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '200', 'SINGLE', '125', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod200');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '201', 'SINGLE', '125', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod201');
@@ -2007,6 +2071,18 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '216', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod216');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '217', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod217');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '200N', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod200N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '200S', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod200S');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '201N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod201N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '201S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod201S');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '202N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod202N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '202S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod202S');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '300', 'SINGLE', '125', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod300');
 
@@ -2040,6 +2116,18 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '317', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod317');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '300N', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod300N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '300S', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod300S');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '301N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod301N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '301S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod301S');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '302N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod302N');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '302S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod302S');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '401', 'QUAD', '735', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Dod/4.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod401');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '403', 'QUAD', '705', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Dod/4.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod403');
@@ -2063,38 +2151,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '416', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Dod/4.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod416');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '417', 'SINGLE', '120', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Dod/4.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod417');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '101N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod101N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '101S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod101S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '102N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod102N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '102S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Dod/1.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod102S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '200N', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod200N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '200S', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod200S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '201N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod201N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '201S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod201S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '202N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod202N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '202S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Dod/2.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod202S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '300N', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod300N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '300S', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod300S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '301N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod301N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '301S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod301S');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '302N', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod302N');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '302S', 'TRIPLE', '460', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Dod/3.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod302S');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Dod', '400N', 'SINGLE', '150', 'Upperclass', 'MID-CAMPUS', 'YES', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Dod/4.pdf', '11', '5', '5', '15', '6', '7', '15', '2', 'Dod400N');
 
@@ -2360,28 +2416,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '102', 'SINGLE', '204', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke102');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '111', 'TRIPLE', '401', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke111');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '112', 'SINGLE', '148', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke112');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '113', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke113');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '114', 'TRIPLE', '441', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke114');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '121', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '122', 'SINGLE', '151', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '123', 'SINGLE', '171', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '124', 'TRIPLE', '454', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '131', 'TRIPLE', '400', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '132', 'SINGLE', '152', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '133', 'QUAD', '525', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke133');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '201', 'SINGLE', '146', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke201');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '202', 'DOUBLE', '370', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke202');
@@ -2391,20 +2425,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '204', 'SINGLE', '179', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke204');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '205', 'SINGLE', '167', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke205');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '211', 'DOUBLE', '397', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke211');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '212', 'SINGLE', '204', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke212');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '213', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke213');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '214', 'SINGLE', '183', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke214');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '215', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke215');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '221', 'TRIPLE', '430', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke221');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '222', 'QUAD', '545', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke222');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '301', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke301');
 
@@ -2422,6 +2442,24 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '308', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Foulke/0.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke308');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '111', 'TRIPLE', '401', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke111');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '112', 'SINGLE', '148', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke112');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '113', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke113');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '114', 'TRIPLE', '441', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke114');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '211', 'DOUBLE', '397', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke211');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '212', 'SINGLE', '204', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke212');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '213', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke213');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '214', 'SINGLE', '183', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke214');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '215', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke215');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '311', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke311');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '312', 'TRIPLE', '453', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke312');
@@ -2437,6 +2475,18 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '317', 'DOUBLE', '376', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke317');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '318', 'SINGLE', '211', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Foulke/1.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke318');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '121', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '122', 'SINGLE', '151', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '123', 'SINGLE', '171', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '124', 'TRIPLE', '454', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '221', 'TRIPLE', '430', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke221');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '222', 'QUAD', '545', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke222');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '321', 'DOUBLE', '411', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke321');
 
@@ -2456,6 +2506,14 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '329', 'SINGLE', '119', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke329');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '329A', 'SINGLE', '123', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke329A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '131', 'TRIPLE', '400', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '132', 'SINGLE', '152', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '133', 'QUAD', '525', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke133');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '331', 'QUAD', '638', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke331');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '332', 'SINGLE', '184', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke332');
@@ -2467,8 +2525,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '335', 'SINGLE', '190', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Foulke/3.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke335');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '341', 'QUAD', '603', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Upperclass/Foulke/4.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke341');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Foulke', '329A', 'SINGLE', '123', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Foulke/2.pdf', '7', '2', '7', '19', '9', '10', '18', '5', 'Foulke329A');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Fu', 'B014', 'QUAD', '558', 'Yeh College', 'NEW COLLEGE', 'YES', 'Unisex', 'YES', '0', 'FloorPlan/Yeh College/Fu/0.pdf', '8', '13', '14', '10', '10', '13', '18', '8', 'FuB014');
 
@@ -2844,44 +2900,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '104', 'SINGLE', '595', 'Upperclass', 'SLUMS', 'NO', 'Private', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry104');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '111', 'TRIPLE', '388', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry111');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '112', 'TRIPLE', '395', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry112');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '113', 'QUAD', '519', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry113');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '114', 'QUAD', '519', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry114');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '115', 'SINGLE', '238', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry115');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '116', 'SINGLE', '210', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry116');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '121', 'DOUBLE', '313', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '122', 'TRIPLE', '392', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '123', 'QUAD', '523', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '124', 'QUAD', '518', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '125', 'SINGLE', '238', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry125');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '131', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '132', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '133', 'QUAD', '524', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry133');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '134', 'TRIPLE', '473', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry134');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '136', 'SINGLE', '142', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry136');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '137', 'SINGLE', '137', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry137');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '141', 'QUAD', '642', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Henry/4.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '151', 'TRIPLE', '406', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '5', 'FloorPlan/Upperclass/Henry/5.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry151');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '201', 'SINGLE', '182', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry201');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '202', 'SINGLE', '187', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry202');
@@ -2895,6 +2913,22 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '206', 'SINGLE', '193', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry206');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '207', 'SINGLE', '193', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry207');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '301', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry301');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '302', 'TRIPLE', '436', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '111', 'TRIPLE', '388', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry111');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '112', 'TRIPLE', '395', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry112');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '113', 'QUAD', '519', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry113');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '114', 'QUAD', '519', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry114');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '115', 'SINGLE', '238', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry115');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '116', 'SINGLE', '210', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry116');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '211', 'SINGLE', '175', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry211');
 
@@ -2911,6 +2945,24 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '217', 'DOUBLE', '392', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry217');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '218', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry218');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '311', 'TRIPLE', '407', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry311');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '312', 'SINGLE', '196', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '313', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry313');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '314', 'TRIPLE', '431', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry314');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '121', 'DOUBLE', '313', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '122', 'TRIPLE', '392', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '123', 'QUAD', '523', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '124', 'QUAD', '518', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '125', 'SINGLE', '238', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry125');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '220', 'SINGLE', '179', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry220');
 
@@ -2932,6 +2984,28 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '229', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry229');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '321', 'TRIPLE', '457', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry321');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '322', 'SINGLE', '227', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry322');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '323', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry323');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '324', 'TRIPLE', '461', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry324');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '222A', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry222A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '131', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '132', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '133', 'QUAD', '524', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry133');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '134', 'TRIPLE', '473', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry134');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '136', 'SINGLE', '142', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry136');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '137', 'SINGLE', '137', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry137');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '230', 'SINGLE', '143', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry230');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '231', 'SINGLE', '144', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry231');
@@ -2946,87 +3020,31 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '236', 'SINGLE', '181', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry236');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '301', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry301');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '302', 'TRIPLE', '436', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Henry/0.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '311', 'TRIPLE', '407', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry311');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '312', 'SINGLE', '196', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '313', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry313');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '314', 'TRIPLE', '431', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Henry/1.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry314');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '321', 'TRIPLE', '457', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry321');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '322', 'SINGLE', '227', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry322');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '323', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry323');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '324', 'TRIPLE', '461', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry324');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '331', 'QUAD', '525', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry331');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '332', 'SINGLE', '120', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry332');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '333', 'TRIPLE', '402', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Henry/3.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry333');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '222A', 'SINGLE', '139', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Henry/2.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry222A');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '141', 'QUAD', '642', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Henry/4.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry141');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Henry', '151', 'TRIPLE', '406', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '5', 'FloorPlan/Upperclass/Henry/5.pdf', '7', '3', '7', '17', '9', '10', '18', '6', 'Henry151');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '11', 'DOUBLE', '305', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder11');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '12', 'SINGLE', '200', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder12');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '21', 'DOUBLE', '305', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder21');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '22', 'SINGLE', '110', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder22');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '24', 'SINGLE', '110', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder24');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '25', 'SINGLE', '125', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Rockefeller College/Holder/4.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder25');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '26', 'SINGLE', '235', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Rockefeller College/Holder/4.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder26');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '27', 'QUAD', '620', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '5', 'FloorPlan/Rockefeller College/Holder/5.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder27');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '31', 'QUAD', '461', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder31');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '32', 'QUAD', '436', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder32');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '33', 'QUAD', '453', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder33');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '34', 'DOUBLE', '195', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder34');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '36', 'SINGLE', '190', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder36');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '37', 'QUAD', '458', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder37');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '41', 'QUAD', '470', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder41');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '42', 'QUAD', '448', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder42');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '43', 'DOUBLE', '191', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder43');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '44', 'QUAD', '447', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder44');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '45', 'DOUBLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder45');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '46', 'QUAD', '549', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder46');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '47', 'SINGLE', '121', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder47');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '51', 'QUAD', '445', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder51');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '52', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder52');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '54', 'DOUBLE', '193', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder54');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '55', 'SINGLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder55');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '56', 'SINGLE', '122', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder56');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '57', 'SINGLE', '160', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder57');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '61', 'QUAD', '508', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder61');
 
@@ -3034,23 +3052,61 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '63', 'QUAD', '530', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder63');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '64', 'QUAD', '480', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder64');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '65', 'QUAD', '449', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder65');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '66', 'QUAD', '523', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder66');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '67', 'DOUBLE', '761', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder67');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '68', 'SINGLE', '179', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder68');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '69', 'SINGLE', '278', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder69');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '71', 'QUAD', '435', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder71');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '72', 'QUAD', '418', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder72');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '73', 'QUAD', '467', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder73');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '81', 'QUAD', '483', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder81');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '91', 'DOUBLE', '434', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder91');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '92', 'QUAD', '440', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder92');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '101', 'QUAD', '527', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder101');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '102', 'QUAD', '444', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder102');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '103', 'SINGLE', '240', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder103');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '111', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder111');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '112', 'QUAD', '441', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder112');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '121', 'DOUBLE', '439', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '122', 'DOUBLE', '435', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '131', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '132', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '141', 'QUAD', '419', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder141');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '12', 'SINGLE', '200', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder12');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '22', 'SINGLE', '110', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder22');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '33', 'QUAD', '453', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder33');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '34', 'DOUBLE', '195', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder34');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '43', 'DOUBLE', '191', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder43');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '44', 'QUAD', '447', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder44');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '45', 'DOUBLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder45');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '54', 'DOUBLE', '193', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder54');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '55', 'SINGLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder55');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '64', 'QUAD', '480', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder64');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '65', 'QUAD', '449', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder65');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '66', 'QUAD', '523', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder66');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '74', 'DOUBLE', '326', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder74');
 
@@ -3058,19 +3114,63 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '76', 'SINGLE', '169', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder76');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '77', 'SINGLE', '192', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder77');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '78', 'SINGLE', '250', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder78');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '79', 'SINGLE', '176', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder79');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '81', 'QUAD', '483', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder81');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '82', 'DOUBLE', '248', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder82');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '83', 'QUAD', '433', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder83');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '84', 'DOUBLE', '180', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder84');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '93', 'DOUBLE', '197', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder93');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '94', 'DOUBLE', '201', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder94');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '104', 'QUAD', '545', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder104');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '105', 'QUAD', '461', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder105');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '113', 'DOUBLE', '205', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder113');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '114', 'DOUBLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder114');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '123', 'DOUBLE', '402', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '124', 'SINGLE', '200', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '125', 'SINGLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder125');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '133', 'DOUBLE', '202', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder133');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '134', 'QUAD', '411', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder134');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '135', 'DOUBLE', '182', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder135');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '142', 'SINGLE', '166', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder142');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '24', 'SINGLE', '110', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder24');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '36', 'SINGLE', '190', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder36');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '37', 'QUAD', '458', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder37');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '46', 'QUAD', '549', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder46');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '47', 'SINGLE', '121', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder47');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '56', 'SINGLE', '122', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder56');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '57', 'SINGLE', '160', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder57');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '67', 'DOUBLE', '761', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder67');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '68', 'SINGLE', '179', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder68');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '69', 'SINGLE', '278', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder69');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '77', 'SINGLE', '192', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder77');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '78', 'SINGLE', '250', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder78');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '79', 'SINGLE', '176', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder79');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '85', 'SINGLE', '158', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder85');
 
@@ -3080,85 +3180,35 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '88', 'SINGLE', '215', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder88');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '91', 'DOUBLE', '434', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder91');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '92', 'QUAD', '440', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder92');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '93', 'DOUBLE', '197', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder93');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '94', 'DOUBLE', '201', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder94');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '95', 'SINGLE', '112', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder95');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '96', 'DOUBLE', '246', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder96');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '97', 'SINGLE', '118', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder97');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '101', 'QUAD', '527', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder101');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '102', 'QUAD', '444', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder102');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '103', 'SINGLE', '240', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder103');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '104', 'QUAD', '545', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder104');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '105', 'QUAD', '461', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder105');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '107', 'DOUBLE', '748', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder107');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '111', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder111');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '112', 'QUAD', '441', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder112');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '113', 'DOUBLE', '205', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder113');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '114', 'DOUBLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder114');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '115', 'SINGLE', '128', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder115');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '116', 'SINGLE', '176', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder116');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '121', 'DOUBLE', '439', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '122', 'DOUBLE', '435', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '123', 'DOUBLE', '402', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '124', 'SINGLE', '200', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '125', 'SINGLE', '186', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder125');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '126', 'QUAD', '618', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder126');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '131', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '132', 'QUAD', '437', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '133', 'DOUBLE', '202', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder133');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '134', 'QUAD', '411', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder134');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '135', 'DOUBLE', '182', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder135');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '136', 'QUAD', '594', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder136');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '141', 'QUAD', '419', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Rockefeller College/Holder/1.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '142', 'SINGLE', '166', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Rockefeller College/Holder/2.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder142');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '143', 'QUAD', '462', 'Rockefeller College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Rockefeller College/Holder/3.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder143');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '25', 'SINGLE', '125', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Rockefeller College/Holder/4.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder25');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '26', 'SINGLE', '235', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Rockefeller College/Holder/4.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder26');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Holder', '27', 'QUAD', '620', 'Rockefeller College', 'ROMA', 'NO', 'NONE', 'NO', '5', 'FloorPlan/Rockefeller College/Holder/5.pdf', '12', '5', '3', '18', '9', '8', '17', '7', 'Holder27');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '111', 'QUAD', '422', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline111');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '112', 'DOUBLE', '365', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline112');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '113', 'QUAD', '492', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline113');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '121', 'QUAD', '426', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '122', 'QUAD', '400', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '123', 'QUAD', '496', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline123');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '211', 'QUAD', '442', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline211');
 
@@ -3170,6 +3220,24 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '215', 'QUAD', '425', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline215');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '311', 'TRIPLE', '424', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline311');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '312', 'SINGLE', '156', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '313', 'TRIPLE', '409', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline313');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '411', 'QUAD', '445', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline411');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '412', 'SINGLE', '212', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline412');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '413', 'QUAD', '424', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline413');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '121', 'QUAD', '426', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '122', 'QUAD', '400', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '123', 'QUAD', '496', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline123');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '221', 'QUAD', '435', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline221');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '222', 'QUAD', '401', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline222');
@@ -3179,6 +3247,18 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '224', 'DOUBLE', '329', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline224');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '225', 'DOUBLE', '394', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline225');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '321', 'QUAD', '508', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline321');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '322', 'SINGLE', '155', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline322');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '323', 'TRIPLE', '421', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline323');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '421', 'QUAD', '429', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline421');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '422', 'SINGLE', '205', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline422');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '423', 'QUAD', '426', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline423');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '231', 'DOUBLE', '290', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline231');
 
@@ -3190,18 +3270,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '235', 'SINGLE', '238', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline235');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '311', 'TRIPLE', '424', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline311');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '312', 'SINGLE', '156', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '313', 'TRIPLE', '409', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline313');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '321', 'QUAD', '508', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline321');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '322', 'SINGLE', '155', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline322');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '323', 'TRIPLE', '421', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline323');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '331', 'SINGLE', '155', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline331');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '332', 'SINGLE', '200', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline332');
@@ -3209,18 +3277,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '333', 'SINGLE', '188', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline333');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '334', 'SINGLE', '144', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline334');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '411', 'QUAD', '445', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline411');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '412', 'SINGLE', '212', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline412');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '413', 'QUAD', '424', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Joline/1.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline413');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '421', 'QUAD', '429', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline421');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '422', 'SINGLE', '205', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline422');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '423', 'QUAD', '426', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Mathey College/Joline/2.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline423');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Joline', '431', 'SINGLE', '334', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Mathey College/Joline/3.pdf', '10', '2', '6', '19', '10', '10', '18', '5', 'Joline431');
 
@@ -3414,20 +3470,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '513', 'DOUBLE', '364', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Laughlin/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin513');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '521', 'TRIPLE', '440', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin521');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '522', 'DOUBLE', '357', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin522');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '523', 'DOUBLE', '361', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin523');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '531', 'QUINT', '768', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin531');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '532', 'SINGLE', '127', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin532');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '533', 'SINGLE', '150', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin533');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '534', 'SINGLE', '138', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin534');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '611', 'SINGLE', '230', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Laughlin/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin611');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '612', 'DOUBLE', '349', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Laughlin/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin612');
@@ -3444,6 +3486,12 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '618', 'SINGLE', '175', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Laughlin/1.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin618');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '521', 'TRIPLE', '440', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin521');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '522', 'DOUBLE', '357', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin522');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '523', 'DOUBLE', '361', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin523');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '621', 'DOUBLE', '381', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin621');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '622', 'SINGLE', '181', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin622');
@@ -3457,6 +3505,14 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '626', 'SINGLE', '190', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin626');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '627', 'DOUBLE', '437', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Laughlin/2.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin627');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '531', 'QUINT', '768', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin531');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '532', 'SINGLE', '127', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin532');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '533', 'SINGLE', '150', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin533');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '534', 'SINGLE', '138', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin534');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Laughlin', '631', 'TRIPLE', '444', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '3', 'FloorPlan/Upperclass/Laughlin/3.pdf', '7', '3', '6', '16', '8', '9', '17', '5', 'Laughlin631');
 
@@ -3550,11 +3606,93 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lauritzen', 'D420', 'SINGLE', '132', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '4', 'FloorPlan/Whitman College/Lauritzen/4.pdf', '5', '8', '11', '14', '7', '10', '18', '5', 'LauritzenD420');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A10', 'DOUBLE', '309', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA10');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A14', 'QUAD', '522', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA14');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A16', 'DOUBLE', '404', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA16');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A20', 'DOUBLE', '328', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA20');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A24', 'SINGLE', '189', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA24');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A28', 'DOUBLE', '420', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA28');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A34', 'SINGLE', '228', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA34');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A36', 'SINGLE', '201', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA36');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A38', 'QUAD', '548', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA38');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A40', 'QUAD', '562', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA40');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A46', 'DOUBLE', '444', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA46');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A48', 'QUAD', '529', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA48');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A54', 'QUAD', '501', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA54');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A56', 'QUAD', '610', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA56');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '11', 'TRIPLE', '466', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little11');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '12', 'TRIPLE', '422', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little12');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '13', 'QUAD', '561', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little13');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '21', 'QUAD', '529', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little21');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '23', 'QUAD', '531', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little23');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '31', 'QUAD', '527', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little31');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '33', 'QUAD', '514', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little33');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '41', 'QUAD', '505', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little41');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '42', 'QUAD', '551', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little42');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '43', 'QUAD', '530', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little43');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '51', 'QUAD', '529', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little51');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '53', 'QUAD', '528', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little53');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '61', 'SINGLE', '223', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little61');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '62', 'SINGLE', '238', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little62');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '71', 'QUINT', '889', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little71');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '73', 'QUAD', '573', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little73');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '81', 'QUAD', '506', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little81');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '83', 'DOUBLE', '419', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little83');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '91', 'QUAD', '509', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little91');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '93', 'QUAD', '508', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little93');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '101', 'QUAD', '512', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little101');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '103', 'QUAD', '512', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little103');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '111', 'QUAD', '744', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little111');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '112', 'SINGLE', '146', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little112');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '121', 'QUAD', '600', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '122', 'QUAD', '637', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '131', 'TRIPLE', '464', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '141', 'SINGLE', '288', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little141');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '142', 'QUAD', '644', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little142');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '143', 'QUAD', '595', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little143');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '15', 'DOUBLE', '292', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little15');
 
@@ -3562,29 +3700,15 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '19', 'QUAD', '539', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little19');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '21', 'QUAD', '529', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little21');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '23', 'QUAD', '531', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little23');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '25', 'DOUBLE', '412', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little25');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '27', 'SINGLE', '209', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little27');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '28', 'DOUBLE', '198', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little28');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '31', 'QUAD', '527', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little31');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '33', 'QUAD', '514', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little33');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '35', 'DOUBLE', '231', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little35');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '37', 'QUAD', '527', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little37');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '41', 'QUAD', '505', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little41');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '42', 'QUAD', '551', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little42');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '43', 'QUAD', '530', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little43');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '45', 'SINGLE', '222', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little45');
 
@@ -3594,61 +3718,29 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '48', 'SINGLE', '130', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little48');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '51', 'QUAD', '529', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little51');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '53', 'QUAD', '528', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little53');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '55', 'SINGLE', '212', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little55');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '57', 'DOUBLE', '443', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little57');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '61', 'SINGLE', '223', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little61');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '62', 'SINGLE', '238', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little62');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '63', 'QUAD', '644', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little63');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '71', 'QUINT', '889', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little71');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '73', 'QUAD', '573', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little73');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '74', 'QUAD', '573', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little74');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '77', 'QUAD', '683', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little77');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '81', 'QUAD', '506', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little81');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '83', 'DOUBLE', '419', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Mathey College/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little83');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '85', 'DOUBLE', '418', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little85');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '87', 'SINGLE', '198', 'Mathey College', 'ROMA', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Mathey College/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little87');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '91', 'QUAD', '509', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little91');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '93', 'QUAD', '508', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little93');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '95', 'SINGLE', '203', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little95');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '97', 'QUAD', '519', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little97');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '101', 'QUAD', '512', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little101');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '103', 'QUAD', '512', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little103');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '105', 'QUAD', '508', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little105');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '107', 'SINGLE', '238', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little107');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '111', 'QUAD', '744', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little111');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '112', 'SINGLE', '146', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little112');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '115', 'QUAD', '708', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little115');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '121', 'QUAD', '600', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '122', 'QUAD', '637', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little122');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '123', 'QUAD', '617', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little123');
 
@@ -3656,15 +3748,7 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '128', 'SINGLE', '230', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little128');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '131', 'TRIPLE', '464', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little131');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '134', 'QUAD', '537', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little134');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '141', 'SINGLE', '288', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '142', 'QUAD', '644', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little142');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '143', 'QUAD', '595', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Little/1.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little143');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '145', 'QUAD', '521', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Little/2.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little145');
 
@@ -3716,34 +3800,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', '401', 'QUAD', '550', 'Mathey College', 'ROMA', 'NO', 'NONE', 'NO', '4', 'FloorPlan/Mathey College/Little/4.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'Little401');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A10', 'DOUBLE', '309', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA10');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A14', 'QUAD', '522', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA14');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A16', 'DOUBLE', '404', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA16');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A20', 'DOUBLE', '328', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA20');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A24', 'SINGLE', '189', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA24');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A28', 'DOUBLE', '420', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA28');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A34', 'SINGLE', '228', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA34');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A36', 'SINGLE', '201', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA36');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A38', 'QUAD', '548', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA38');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A40', 'QUAD', '562', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA40');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A46', 'DOUBLE', '444', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA46');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A48', 'QUAD', '529', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA48');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A54', 'QUAD', '501', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA54');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Little', 'A56', 'QUAD', '610', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '0', 'FloorPlan/Upperclass/Little/0.pdf', '9', '4', '7', '16', '8', '9', '18', '2', 'LittleA56');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '101', 'SINGLE', '234', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart101');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '102', 'SINGLE', '111', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart102');
@@ -3751,6 +3807,20 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '103', 'DOUBLE', '380', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart103');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '104', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart104');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '201', 'DOUBLE', '338', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart201');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '301', 'SINGLE', '172', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart301');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '302', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '303', 'SINGLE', '200', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart303');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '304', 'SINGLE', '181', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart304');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '401', 'SINGLE', '219', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart401');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '402', 'SINGLE', '249', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart402');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '111', 'SINGLE', '238', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart111');
 
@@ -3760,12 +3830,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '114', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart114');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '121', 'DOUBLE', '384', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '122', 'SINGLE', '248', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '201', 'DOUBLE', '338', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart201');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '211', 'SINGLE', '179', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart211');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '212', 'SINGLE', '199', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart212');
@@ -3773,38 +3837,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '213', 'TRIPLE', '450', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart213');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '214', 'TRIPLE', '434', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart214');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '221', 'SINGLE', '188', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart221');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '222', 'SINGLE', '189', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart222');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '223', 'TRIPLE', '440', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart223');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '224', 'SINGLE', '206', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart224');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '225', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart225');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '231', 'QUAD', '686', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart231');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '232', 'QUAD', '722', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart232');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '233', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart233');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '234', 'DOUBLE', '340', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart234');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '235', 'SINGLE', '206', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart235');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '241', 'DOUBLE', '562', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Lockhart/4.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart241');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '242', 'DOUBLE', '420', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Lockhart/4.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart242');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '301', 'SINGLE', '172', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart301');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '302', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '303', 'SINGLE', '200', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart303');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '304', 'SINGLE', '181', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart304');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '311', 'TRIPLE', '400', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart311');
 
@@ -3816,6 +3848,26 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '315', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart315');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '411', 'SINGLE', '182', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart411');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '412', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart412');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '413', 'SINGLE', '198', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart413');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '121', 'DOUBLE', '384', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '122', 'SINGLE', '248', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '221', 'SINGLE', '188', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart221');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '222', 'SINGLE', '189', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart222');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '223', 'TRIPLE', '440', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart223');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '224', 'SINGLE', '206', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart224');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '225', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart225');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '321', 'TRIPLE', '396', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart321');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '322', 'SINGLE', '181', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart322');
@@ -3826,33 +3878,37 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '325', 'SINGLE', '146', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart325');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '331', 'SINGLE', '170', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart331');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '332', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart332');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '333', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart333');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '401', 'SINGLE', '219', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart401');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '402', 'SINGLE', '249', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Lockhart/0.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart402');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '411', 'SINGLE', '182', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart411');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '412', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart412');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '413', 'SINGLE', '198', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Lockhart/1.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart413');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '421', 'DOUBLE', '302', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart421');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '422', 'SINGLE', '90', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart422');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '423', 'DOUBLE', '350', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Lockhart/2.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart423');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '231', 'QUAD', '686', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart231');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '232', 'QUAD', '722', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart232');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '233', 'SINGLE', '173', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart233');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '234', 'DOUBLE', '340', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart234');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '235', 'SINGLE', '206', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart235');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '331', 'SINGLE', '170', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart331');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '332', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart332');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '333', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart333');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '431', 'DOUBLE', '283', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart431');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '432', 'DOUBLE', '248', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart432');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '433', 'SINGLE', '122', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Lockhart/3.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart433');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '241', 'DOUBLE', '562', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Lockhart/4.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart241');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Lockhart', '242', 'DOUBLE', '420', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Lockhart/4.pdf', '8', '1', '6', '18', '9', '9', '18', '5', 'Lockhart242');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '101', 'DOUBLE', '193', 'Forbes College', 'FORBES', 'NO', 'Private', 'YES', '1', 'FloorPlan/Forbes College/Main/1.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main101');
 
@@ -4048,6 +4104,8 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '272', 'DOUBLE', '291', 'Forbes College', 'FORBES', 'NO', 'Private', 'YES', '2', 'FloorPlan/Forbes College/Main/2.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main272');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '224N', 'SINGLE', '134', 'Forbes College', 'FORBES', 'NO', 'Jack and Jill', 'YES', '2', 'FloorPlan/Forbes College/Main/2.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main224N');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '301', 'SINGLE', '147', 'Forbes College', 'FORBES', 'NO', 'Private', 'YES', '3', 'FloorPlan/Forbes College/Main/3.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main301');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '302', 'SINGLE', '115', 'Forbes College', 'FORBES', 'NO', 'Jack and Jill', 'YES', '3', 'FloorPlan/Forbes College/Main/3.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main302');
@@ -4152,8 +4210,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '411', 'SINGLE', '309', 'Forbes College', 'FORBES', 'NO', 'Private', 'NO', '4', 'FloorPlan/Forbes College/Main/4.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main411');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Main', '224N', 'SINGLE', '134', 'Forbes College', 'FORBES', 'NO', 'Jack and Jill', 'YES', '2', 'FloorPlan/Forbes College/Main/2.pdf', '3', '9', '13', '16', '10', '13', '21', '9', 'Main224N');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Mannion', 'D103', 'QUAD', '454', 'Yeh College', 'NEW COLLEGE', 'YES', 'Unisex', 'YES', '1', 'FloorPlan/Yeh College/Mannion/1.pdf', '8', '13', '14', '10', '10', '13', '18', '8', 'MannionD103');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Mannion', 'D107', 'SINGLE', '247', 'Yeh College', 'NEW COLLEGE', 'YES', 'Unisex', 'YES', '1', 'FloorPlan/Yeh College/Mannion/1.pdf', '8', '13', '14', '10', '10', '13', '18', '8', 'MannionD107');
@@ -4218,39 +4274,37 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Murley', 'T403', 'DOUBLE', '584', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '4', 'FloorPlan/Whitman College/Murley/4.pdf', '4', '7', '11', '14', '7', '10', '18', '5', 'MurleyT403');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '30', 'DOUBLE', '428', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton30');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '40', '6PERSON', '835', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton40');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '41', '6PERSON', '859', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton41');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '60', 'QUAD', '574', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton60');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '61', 'TRIPLE', '437', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton61');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '62', 'TRIPLE', '449', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton62');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '63', 'TRIPLE', '430', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton63');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '64', 'SINGLE', '191', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton64');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '70', 'SINGLE', '190', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton70');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '71', 'SINGLE', '165', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton71');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '72', 'TRIPLE', '455', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton72');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '73', 'TRIPLE', '443', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton73');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '74', 'SINGLE', '192', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton74');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '75', 'DOUBLE', '313', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton75');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '76', 'TRIPLE', '457', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton76');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '80', 'DOUBLE', '456', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton80');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '81', 'TRIPLE', '435', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton81');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '90', 'TRIPLE', '431', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton90');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T01', 'TRIPLE', '395', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT01');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T02', 'SINGLE', '154', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT02');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T1', 'TRIPLE', '395', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT1');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T2', 'SINGLE', '154', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT2');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '30', 'DOUBLE', '428', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton30');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '40', '6PERSON', '835', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton40');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '61', 'TRIPLE', '437', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton61');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '62', 'TRIPLE', '449', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton62');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '72', 'TRIPLE', '455', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton72');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '73', 'TRIPLE', '443', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton73');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '82', 'QUAD', '669', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton82');
 
@@ -4262,13 +4316,55 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '86', 'SINGLE', '155', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton86');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T03', 'TRIPLE', '419', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT03');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T04', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT04');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T05', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT05');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T3', 'TRIPLE', '419', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT3');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T4', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT4');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T5', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT5');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '41', '6PERSON', '859', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton41');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '63', 'TRIPLE', '430', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton63');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '64', 'SINGLE', '191', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton64');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '74', 'SINGLE', '192', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton74');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '75', 'DOUBLE', '313', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton75');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '76', 'TRIPLE', '457', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton76');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '87', 'TRIPLE', '472', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton87');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '88', 'DOUBLE', '242', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton88');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '89', 'SINGLE', '192', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton89');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '90', 'TRIPLE', '431', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton90');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T06', 'TRIPLE', '442', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT06');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T07', 'SINGLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT07');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T08', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT08');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T09', 'SINGLE', '155', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT09');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T10', 'SINGLE', '136', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT10');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T11', 'SINGLE', '139', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT11');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T6', 'TRIPLE', '442', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT6');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T7', 'SINGLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT7');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T8', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT8');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T9', 'SINGLE', '155', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT9');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '307', '6PERSON', '873', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Patton/3.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton307');
 
@@ -4284,51 +4380,27 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '313', 'DOUBLE', '234', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Patton/3.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton313');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '408', '6PERSON', '868', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Patton/4.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton408');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T01', 'TRIPLE', '395', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT01');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T02', 'SINGLE', '154', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT02');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T03', 'TRIPLE', '419', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT03');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T04', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT04');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T05', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT05');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T06', 'TRIPLE', '442', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT06');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T07', 'SINGLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT07');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T08', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT08');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T09', 'SINGLE', '155', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT09');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T1', 'TRIPLE', '395', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT1');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T10', 'SINGLE', '136', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT10');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T11', 'SINGLE', '139', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT11');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T12', '6PERSON', '1278', 'Upperclass', 'MID-CAMPUS', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Patton/3.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT12');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T13', 'SINGLE', '229', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Patton/3.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT13');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T2', 'SINGLE', '154', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Patton/0.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT2');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', '408', '6PERSON', '868', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '4', 'FloorPlan/Upperclass/Patton/4.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Patton408');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T3', 'TRIPLE', '419', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT3');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '601', 'SINGLE', '188', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne601');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T4', 'SINGLE', '184', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT4');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '602', 'QUAD', '563', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne602');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T5', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '1', 'FloorPlan/Upperclass/Patton/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT5');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '603', 'SINGLE', '234', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne603');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T6', 'TRIPLE', '442', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT6');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '701', 'SINGLE', '162', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne701');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T7', 'SINGLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT7');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '702', 'SINGLE', '161', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne702');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T8', 'SINGLE', '195', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT8');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '703', 'SINGLE', '155', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne703');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Patton', 'T9', 'SINGLE', '155', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Patton/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'PattonT9');
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '704', 'DOUBLE', '399', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne704');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '705', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne705');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '112', 'SINGLE', '160', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne112');
 
@@ -4340,36 +4412,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '116', 'SINGLE', '191', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne116');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '121', 'DOUBLE', '444', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '122', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '123', 'SINGLE', '157', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '124', 'SINGLE', '438', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '125', 'SINGLE', '186', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne125');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '131', 'DOUBLE', '464', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '132', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne132');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '133', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne133');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '134', 'SINGLE', '436', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne134');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '135', 'SINGLE', '145', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne135');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '136', 'SINGLE', '192', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne136');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '141', 'DOUBLE', '373', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne141');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '142', 'DOUBLE', '295', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne142');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '143', 'SINGLE', '129', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne143');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '144', 'SINGLE', '192', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne144');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '211', 'DOUBLE', '375', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne211');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '212', 'SINGLE', '148', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne212');
@@ -4377,34 +4419,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '213', 'DOUBLE', '350', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne213');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '214', 'SINGLE', '146', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne214');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '221', 'DOUBLE', '373', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne221');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '222', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne222');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '223', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne223');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '224', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne224');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '225', 'SINGLE', '163', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne225');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '230', 'SINGLE', '82', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne230');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '231', 'SINGLE', '132', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne231');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '232', 'SINGLE', '132', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne232');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '233', 'SINGLE', '134', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne233');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '234', 'DOUBLE', '263', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne234');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '235', 'SINGLE', '157', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne235');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '241', 'SINGLE', '230', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne241');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '242', 'SINGLE', '237', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne242');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '243', 'SINGLE', '136', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne243');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '311', 'SINGLE', '209', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne311');
 
@@ -4418,34 +4432,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '316', 'SINGLE', '169', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne316');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '321', 'SINGLE', '213', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne321');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '322', 'DOUBLE', '348', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne322');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '323', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne323');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '324', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne324');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '325', 'SINGLE', '169', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne325');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '332', 'SINGLE', '231', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne332');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '333', 'TRIPLE', '423', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne333');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '334', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne334');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '335', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne335');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '342', 'DOUBLE', '317', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne342');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '343', 'SINGLE', '228', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne343');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '344', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne344');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '345', 'QUAD', '577', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne345');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '346', 'SINGLE', '101', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne346');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '411', 'SINGLE', '179', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne411');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '412', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne412');
@@ -4454,57 +4440,7 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '414', 'SINGLE', '200', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne414');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '421', 'SINGLE', '180', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne421');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '422', 'SINGLE', '171', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne422');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '423', 'SINGLE', '164', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne423');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '424', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne424');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '425', 'SINGLE', '169', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne425');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '426', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne426');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '427', 'SINGLE', '167', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne427');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '428', 'DOUBLE', '250', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne428');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '429', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne429');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '431', 'SINGLE', '175', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne431');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '432', 'SINGLE', '133', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne432');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '433', 'SINGLE', '183', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne433');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '434', 'SINGLE', '152', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne434');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '435', 'DOUBLE', '247', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne435');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '436', 'SINGLE', '131', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne436');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '437', 'SINGLE', '128', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne437');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '438', 'DOUBLE', '239', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne438');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '439', 'SINGLE', '117', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne439');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '440', 'SINGLE', '103', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne440');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '441', 'SINGLE', '115', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne441');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '442', 'DOUBLE', '428', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne442');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '443', 'DOUBLE', '319', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne443');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '511', 'QUAD', '809', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne511');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '601', 'SINGLE', '188', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne601');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '602', 'QUAD', '563', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne602');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '603', 'SINGLE', '234', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne603');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '611', 'DOUBLE', '349', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne611');
 
@@ -4519,42 +4455,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '616', 'SINGLE', '196', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne616');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '617', 'SINGLE', '199', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne617');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '621', 'DOUBLE', '353', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne621');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '622', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne622');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '623', 'SINGLE', '205', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne623');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '624', 'SINGLE', '178', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne624');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '625', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne625');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '626', 'SINGLE', '125', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne626');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '630', 'SINGLE', '121', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne630');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '631', 'SINGLE', '84', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne631');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '632', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne632');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '633', 'SINGLE', '215', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne633');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '634', 'SINGLE', '215', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne634');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '641', 'QUAD', '588', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne641');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '643', 'SINGLE', '149', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne643');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '701', 'SINGLE', '162', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne701');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '702', 'SINGLE', '161', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne702');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '703', 'SINGLE', '155', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne703');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '704', 'DOUBLE', '399', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne704');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '705', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '0', 'FloorPlan/Upperclass/Pyne/0.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne705');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '711', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne711');
 
@@ -4574,6 +4474,66 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '719', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Pyne/1.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne719');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '121', 'DOUBLE', '444', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '122', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '123', 'SINGLE', '157', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '124', 'SINGLE', '438', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '125', 'SINGLE', '186', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne125');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '221', 'DOUBLE', '373', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne221');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '222', 'SINGLE', '165', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne222');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '223', 'SINGLE', '176', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne223');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '224', 'SINGLE', '168', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne224');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '225', 'SINGLE', '163', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne225');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '321', 'SINGLE', '213', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne321');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '322', 'DOUBLE', '348', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne322');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '323', 'TRIPLE', '414', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne323');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '324', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne324');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '325', 'SINGLE', '169', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne325');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '421', 'SINGLE', '180', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne421');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '422', 'SINGLE', '171', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne422');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '423', 'SINGLE', '164', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne423');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '424', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne424');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '425', 'SINGLE', '169', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne425');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '426', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne426');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '427', 'SINGLE', '167', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne427');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '428', 'DOUBLE', '250', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne428');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '429', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne429');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '621', 'DOUBLE', '353', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne621');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '622', 'SINGLE', '166', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne622');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '623', 'SINGLE', '205', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne623');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '624', 'SINGLE', '178', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne624');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '625', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne625');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '626', 'SINGLE', '125', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne626');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '721', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne721');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '722', 'SINGLE', '164', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne722');
@@ -4588,6 +4548,66 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '728', 'TRIPLE', '446', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '2', 'FloorPlan/Upperclass/Pyne/2.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne728');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '131', 'DOUBLE', '464', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '132', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '133', 'SINGLE', '174', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne133');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '134', 'SINGLE', '436', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne134');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '135', 'SINGLE', '145', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne135');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '136', 'SINGLE', '192', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne136');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '230', 'SINGLE', '82', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne230');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '231', 'SINGLE', '132', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne231');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '232', 'SINGLE', '132', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne232');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '233', 'SINGLE', '134', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne233');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '234', 'DOUBLE', '263', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne234');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '235', 'SINGLE', '157', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne235');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '332', 'SINGLE', '231', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne332');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '333', 'TRIPLE', '423', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne333');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '334', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne334');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '335', 'SINGLE', '113', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne335');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '431', 'SINGLE', '175', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne431');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '432', 'SINGLE', '133', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne432');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '433', 'SINGLE', '183', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne433');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '434', 'SINGLE', '152', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne434');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '435', 'DOUBLE', '247', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne435');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '436', 'SINGLE', '131', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne436');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '437', 'SINGLE', '128', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne437');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '438', 'DOUBLE', '239', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne438');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '439', 'SINGLE', '117', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne439');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '630', 'SINGLE', '121', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne630');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '631', 'SINGLE', '84', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne631');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '632', 'SINGLE', '194', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne632');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '633', 'SINGLE', '215', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne633');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '634', 'SINGLE', '215', 'Upperclass', 'SLUMS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne634');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '731', 'SINGLE', '177', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne731');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '732', 'SINGLE', '144', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne732');
@@ -4598,6 +4618,44 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '735', 'SINGLE', '251', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne735');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '631A', 'SINGLE', '88', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne631A');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '141', 'DOUBLE', '373', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne141');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '142', 'DOUBLE', '295', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne142');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '143', 'SINGLE', '129', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne143');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '144', 'SINGLE', '192', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne144');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '241', 'SINGLE', '230', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne241');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '242', 'SINGLE', '237', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne242');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '243', 'SINGLE', '136', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne243');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '342', 'DOUBLE', '317', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne342');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '343', 'SINGLE', '228', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne343');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '344', 'SINGLE', '216', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne344');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '345', 'QUAD', '577', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne345');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '346', 'SINGLE', '101', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne346');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '440', 'SINGLE', '103', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne440');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '441', 'SINGLE', '115', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne441');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '442', 'DOUBLE', '428', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne442');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '443', 'DOUBLE', '319', 'Upperclass', 'SLUMS', 'NO', 'Female', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne443');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '641', 'QUAD', '588', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne641');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '643', 'SINGLE', '149', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne643');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '741', 'SINGLE', '183', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne741');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '742', 'SINGLE', '156', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne742');
@@ -4605,8 +4663,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '743', 'SINGLE', '137', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne743');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '441A', 'SINGLE', '124', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '4', 'FloorPlan/Upperclass/Pyne/4.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne441A');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Pyne', '631A', 'SINGLE', '88', 'Upperclass', 'SLUMS', 'NO', 'Male', 'NO', '3', 'FloorPlan/Upperclass/Pyne/3.pdf', '7', '5', '8', '14', '6', '9', '17', '4', 'Pyne631A');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Scully', '101', 'SINGLE', '288', 'Upperclass', 'BUTLER', 'YES', 'Private', 'YES', '1', 'FloorPlan/Upperclass/Scully/1.pdf', '8', '11', '12', '10', '6', '9', '16', '6', 'Scully101');
 
@@ -5012,121 +5068,131 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Scully', '448', 'SINGLE', '134', 'Upperclass', 'BUTLER', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Upperclass/Spelman/0.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Scully448');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '11', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman11');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '12', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman12');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '13', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman13');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '14', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman14');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '15', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman15');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '16', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman16');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '17', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman17');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '18', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman18');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '21', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman21');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '22', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman22');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '23', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman23');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '24', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman24');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '25', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman25');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '26', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman26');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '31', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman31');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '32', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman32');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '33', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman33');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '34', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman34');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '35', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman35');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '36', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman36');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '37', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman37');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '38', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman38');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '41', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman41');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '42', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman42');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '43', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman43');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '44', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman44');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '45', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman45');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '46', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman46');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '47', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman47');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '48', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman48');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '51', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman51');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '52', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman52');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '53', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman53');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '54', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman54');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '55', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman55');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '56', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman56');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '61', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman61');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '62', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman62');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '63', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman63');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '64', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman64');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '65', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman65');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '66', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman66');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '67', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman67');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '68', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman68');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '71', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '0', 'FloorPlan/Upperclass/Spelman/0.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman71');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '72', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '0', 'FloorPlan/Upperclass/Spelman/0.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman72');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '73', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman73');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '74', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman74');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '75', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman75');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '76', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman76');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '77', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman77');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '78', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman78');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '81', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '0', 'FloorPlan/Upperclass/Spelman/0.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman81');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '82', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '0', 'FloorPlan/Upperclass/Spelman/0.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman82');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '11', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman11');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '12', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman12');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '21', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman21');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '22', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman22');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '31', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman31');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '32', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman32');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '41', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman41');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '42', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman42');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '51', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman51');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '52', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman52');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '61', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman61');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '62', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman62');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '73', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman73');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '74', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman74');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '83', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman83');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '84', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '1', 'FloorPlan/Upperclass/Spelman/1.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman84');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '13', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman13');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '14', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman14');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '23', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman23');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '24', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman24');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '33', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman33');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '34', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman34');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '43', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman43');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '44', 'DOUBLE', '501', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman44');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '53', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman53');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '54', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman54');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '63', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman63');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '64', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman64');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '75', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman75');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '76', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman76');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '85', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman85');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '86', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '2', 'FloorPlan/Upperclass/Spelman/2.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman86');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '15', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman15');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '16', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman16');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '25', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman25');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '26', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman26');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '35', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman35');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '36', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman36');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '45', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman45');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '46', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman46');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '55', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman55');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '56', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman56');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '65', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman65');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '66', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman66');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '77', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman77');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '78', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '3', 'FloorPlan/Upperclass/Spelman/3.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman78');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '17', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman17');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '18', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman18');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '37', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman37');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '38', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman38');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '47', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman47');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '48', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman48');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '67', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman67');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Spelman', '68', 'QUAD', '930', 'Upperclass', 'SPELMAN', 'NO', 'Private', 'NO', '4', 'FloorPlan/Upperclass/Spelman/4.pdf', '5', '5', '11', '14', '5', '8', '16', '3', 'Spelman68');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '301', 'DOUBLE', '246', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker301');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '302', 'DOUBLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '303', 'DOUBLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker303');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '304', 'SINGLE', '183', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker304');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '305', 'DOUBLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker305');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '111', 'DOUBLE', '178', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker111');
 
@@ -5138,22 +5204,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '116', 'SINGLE', '99', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker116');
 
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '121', 'SINGLE', '177', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker121');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '122', 'SINGLE', '219', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker122');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '123', 'SINGLE', '161', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker123');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '124', 'SINGLE', '151', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker124');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '125', 'SINGLE', '100', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker125');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '126', 'SINGLE', '99', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker126');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '131', 'DOUBLE', '274', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker131');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '132', 'SINGLE', '151', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker132');
-
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '211', 'DOUBLE', '417', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker211');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '213', 'SINGLE', '157', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker213');
@@ -5161,36 +5211,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '214', 'SINGLE', '164', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker214');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '215', 'SINGLE', '177', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker215');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '220', 'SINGLE', '148', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker220');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '221', 'DOUBLE', '364', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker221');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '222', 'SINGLE', '202', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker222');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '223', 'SINGLE', '152', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker223');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '224', 'SINGLE', '188', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker224');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '225', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker225');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '231', 'QUAD', '701', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker231');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '232', 'DOUBLE', '160', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker232');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '233', 'SINGLE', '208', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker233');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '234', 'SINGLE', '183', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker234');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '301', 'DOUBLE', '246', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker301');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '302', 'DOUBLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '303', 'DOUBLE', '185', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker303');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '304', 'SINGLE', '183', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker304');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '305', 'DOUBLE', '186', 'Upperclass', 'MID-CAMPUS', 'NO', 'Female', 'NO', '0', 'FloorPlan/Upperclass/Walker/0.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker305');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '311', 'DOUBLE', '181', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker311');
 
@@ -5210,6 +5230,30 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '319', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male', 'NO', '1', 'FloorPlan/Upperclass/Walker/1.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker319');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '121', 'SINGLE', '177', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker121');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '122', 'SINGLE', '219', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker122');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '123', 'SINGLE', '161', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker123');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '124', 'SINGLE', '151', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker124');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '125', 'SINGLE', '100', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker125');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '126', 'SINGLE', '99', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker126');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '220', 'SINGLE', '148', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker220');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '221', 'DOUBLE', '364', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker221');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '222', 'SINGLE', '202', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker222');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '223', 'SINGLE', '152', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker223');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '224', 'SINGLE', '188', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker224');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '225', 'SINGLE', '176', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker225');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '321', 'SINGLE', '194', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker321');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '322', 'QUAD', '495', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker322');
@@ -5227,6 +5271,18 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '328', 'SINGLE', '199', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker328');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '329', 'SINGLE', '181', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '2', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker329');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '131', 'DOUBLE', '274', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker131');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '132', 'SINGLE', '151', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker132');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '231', 'QUAD', '701', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker231');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '232', 'DOUBLE', '160', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker232');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '233', 'SINGLE', '208', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker233');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '234', 'SINGLE', '183', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/3.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker234');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Walker', '331', 'QUAD', '755', 'Upperclass', 'MID-CAMPUS', 'NO', 'Male and Female', 'NO', '3', 'FloorPlan/Upperclass/Walker/2.pdf', '8', '6', '8', '13', '4', '6', '15', '1', 'Walker331');
 
@@ -5254,6 +5310,34 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B220', 'QUAD', '458', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '2', 'FloorPlan/Whitman College/Wendell B/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB220');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C202', 'SINGLE', '160', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC202');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C204', 'QUAD', '450', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC204');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C206', 'SINGLE', '143', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC206');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C207', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC207');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C208', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC208');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C209', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC209');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C210', 'SINGLE', '150', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC210');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C211', 'SINGLE', '147', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC211');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C212', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC212');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C213', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC213');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C214', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC214');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C215', 'SINGLE', '147', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC215');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C216', 'SINGLE', '138', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC216');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C217', 'SINGLE', '143', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC217');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B308', 'SINGLE', '175', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '3', 'FloorPlan/Whitman College/Wendell B/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB308');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B309', 'QUAD', '512', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '3', 'FloorPlan/Whitman College/Wendell B/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB309');
@@ -5277,6 +5361,26 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B318', 'QUAD', '517', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '3', 'FloorPlan/Whitman College/Wendell B/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB318');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B320', 'QUAD', '460', 'Whitman College', 'WHIT', 'YES', 'NONE', 'YES', '3', 'FloorPlan/Whitman College/Wendell B/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB320');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C302', 'SINGLE', '145', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC302');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C304', 'QUAD', '450', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC304');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C306', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC306');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C307', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC307');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C308', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC308');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C310', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC310');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C312', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC312');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C314', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC314');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C316', 'SINGLE', '136', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC316');
+
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C322', 'SINGLE', '210', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC322');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B407', 'SINGLE', '206', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Wendell B/4.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB407');
 
@@ -5313,54 +5417,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B426', 'SINGLE', '150', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Wendell B/4.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB426');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'B428', 'SINGLE', '130', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Wendell B/4.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellB428');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C202', 'SINGLE', '160', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC202');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C204', 'QUAD', '450', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC204');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C206', 'SINGLE', '143', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC206');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C207', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC207');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C208', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC208');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C209', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC209');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C210', 'SINGLE', '150', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC210');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C211', 'SINGLE', '147', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC211');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C212', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC212');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C213', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC213');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C214', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC214');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C215', 'SINGLE', '147', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC215');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C216', 'SINGLE', '138', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC216');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C217', 'SINGLE', '143', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '2', 'FloorPlan/Whitman College/Wendell C/2.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC217');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C302', 'SINGLE', '145', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC302');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C304', 'QUAD', '450', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC304');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C306', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC306');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C307', 'SINGLE', '146', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC307');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C308', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC308');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C310', 'SINGLE', '149', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC310');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C312', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC312');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C314', 'SINGLE', '148', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC314');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C316', 'SINGLE', '136', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC316');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C322', 'SINGLE', '210', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '3', 'FloorPlan/Whitman College/Wendell C/3.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC322');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wendell', 'C404', 'SINGLE', '134', 'Whitman College', 'WHIT', 'YES', 'Male and Female', 'YES', '4', 'FloorPlan/Whitman College/Wendell C/4.pdf', '5', '7', '8', '12', '4', '7', '15', '2', 'WendellC404');
 
@@ -5592,6 +5648,8 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Witherspoon', '522', 'DOUBLE', '284', 'Rockefeller College', 'ROMA', 'YES', 'Male and Female', 'NO', '5', 'FloorPlan/Rockefeller College/Witherspoon/5.pdf', '9', '3', '4', '17', '7', '7', '16', '4', 'Witherspoon522');
 
+INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '31', 'TRIPLE', '425', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Wright/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright31');
+
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '10', 'TRIPLE', '448', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Wright/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright10');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '11', 'TRIPLE', '448', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Wright/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright11');
@@ -5599,8 +5657,6 @@ INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '20', 'TRIPLE', '435', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Wright/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright20');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '21', 'DOUBLE', '238', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Wright/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright21');
-
-INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '31', 'TRIPLE', '425', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '1', 'FloorPlan/Upperclass/Wright/1.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright31');
 
 INSERT INTO rooms (Hall, Room, Type, Sqft, College, Region, Elevator, Bathroom, AC, Floor, FilePath, Wawa, UStore, Nassau, JadwinGym, Frist, Street, EQuad, Dillon, RoomID) VALUES ('Wright', '32', 'TRIPLE', '459', 'Upperclass', 'MID-CAMPUS', 'NO', 'NONE', 'NO', '2', 'FloorPlan/Upperclass/Wright/2.pdf', '7', '7', '8', '12', '4', '7', '15', '2', 'Wright32');
 
