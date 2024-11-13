@@ -4,7 +4,7 @@ from pathlib import Path
 room_info_dicts = []
 
 # read List.csv
-file = open("DatabasePrep/List.csv")
+file = open("DatabasePrep/Master.csv")
 room_list = csv.reader(file, delimiter=',')
 
 # iterate through every room to parse its information
@@ -23,72 +23,21 @@ for room in room_list:
             "Bathroom": room[7],
             "AC": room[8],
             "Floor": room[9],
-            "FilePath": room[10]
+            "FilePath": room[10],
+            "Wawa": room[11],
+            "UStore": room[12],
+            "Nassau": room[13],
+            "Jadwin Gym": room[14],
+            "Frist": room[15],
+            "Street": room[16],
+            "EQuad": room[17],
+            "Dillon": room[18],
+            "RoomID": room[19]
         }
         room_info_dicts.append(room_info)
     else:
         Header= False
 
-# read Distance.csv
-file_1 = open("DatabasePrep/Distance.csv")
-hall_distances = csv.reader(file_1, delimiter=',')
-
-# populate a list of dictionaries representing how far of a walk it is
-# between a hall and various areas on campus
-distances = []
-for hall in hall_distances:
-    distance_to = {
-        "Hall1": hall[0].upper(),
-        "Wawa": hall[1],
-        "UStore": hall[2],
-        "Nassau": hall[3],
-        "Jadwin Gym": hall[4],
-        "Frist": hall[5],
-        "Street": hall[6],
-        "EQuad": hall[7],
-        "Dillon": hall[8]
-    }
-    distances.append(distance_to)
-
-# handle abnormal naming for halls
-for room in room_info_dicts:
-    hall_name = room["Hall"].upper()
-    college_name = room["College"].upper()
-    region_name = room["Region"].upper()
-    for dist in distances:
-        if dist["Hall1"] == hall_name:
-            room["Wawa"] = dist["Wawa"]
-            room["UStore"] = dist["UStore"]
-            room["Nassau"] = dist["Nassau"]
-            room["Jadwin Gym"] = dist["Jadwin Gym"]
-            room["Frist"] = dist["Frist"]
-            room["Street"] = dist["Street"]
-            room["EQuad"] = dist["EQuad"]
-            room["Dillon"] = dist["Dillon"]
-            room["RoomID"] = str(room["Hall"] + room["Room"])
-            break
-        if dist["Hall1"] == region_name:
-            room["Wawa"] = dist["Wawa"]
-            room["UStore"] = dist["UStore"]
-            room["Nassau"] = dist["Nassau"]
-            room["Jadwin Gym"] = dist["Jadwin Gym"]
-            room["Frist"] = dist["Frist"]
-            room["Street"] = dist["Street"]
-            room["EQuad"] = dist["EQuad"]
-            room["Dillon"] = dist["Dillon"]
-            room["RoomID"] = str(room["Hall"] + room["Room"])
-            break
-        if dist["Hall1"] == college_name:
-            room["Wawa"] = dist["Wawa"]
-            room["UStore"] = dist["UStore"]
-            room["Nassau"] = dist["Nassau"]
-            room["Jadwin Gym"] = dist["Jadwin Gym"]
-            room["Frist"] = dist["Frist"]
-            room["Street"] = dist["Street"]
-            room["EQuad"] = dist["EQuad"]
-            room["Dillon"] = dist["Dillon"]
-            room["RoomID"] = str(room["Hall"] + room["Room"])
-            break
 
 # write all room information to masterlist.txt
 def write_to_file():
