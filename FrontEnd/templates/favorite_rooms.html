@@ -33,20 +33,20 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center" class="special">{{ room['Hall'] }}</td>
-            <td align="center" class="special">{{ room['Room'] }}</td>
-            <td align="center" class="special">{{ room['Type'] }}</td>
-            <td align="center" class="special">{{ room['Sqft'] }}</td>
-            <td align="center" class="special">{{ room['College'] }}</td>
-            <td align="center" class="special">{{ room['Region'] }}</td>
+            <td align="center" class="special">{{ room['hall'] }}</td>
+            <td align="center" class="special">{{ room['room'] }}</td>
+            <td align="center" class="special">{{ room['type'] }}</td>
+            <td align="center" class="special">{{ room['sqft'] }}</td>
+            <td align="center" class="special">{{ room['college'] }}</td>
+            <td align="center" class="special">{{ room['region'] }}</td>
             <td align="center" class="special">
-                {% if room['FilePath'] %}
-                    <a href="{{ url_for('static', filename=room['FilePath']) }}" target="_blank">View Floor Plan</a>
+                {% if room['filepath'] %}
+                    <a href="/static/{{ room['filepath'] }}" target="_blank">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
             </td>
-            <td class="special"><a href="/room_details/{{ room['RoomID'] }}">Click here to see more</a></td>
+            <td class="special"><a href="/room_details/{{ room['roomid'] }}">Click here to see more</a></td>
         </tr>
         {% endfor %}
     </table>
