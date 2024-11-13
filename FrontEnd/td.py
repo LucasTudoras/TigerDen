@@ -111,27 +111,26 @@ def uploaded_PDF(file):
 def return_halls(college):
     username = auth.authenticate()
     halls = []
-    if college == 'Butler':
+    if college == 'Butler College':
         halls = ['1967', '1976', 'Bloomberg', 'Bogle', 'Scully', 'Wilf', 'Yoseloff']
 
-    elif college == 'Forbes':
+    elif college == 'Forbes College':
         halls = ['99Alexander', 'Annex', 'Main']
 
-    elif college == 'Mathey':
+    elif college == 'Mathey Colelge':
         halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
         
-    elif college == 'NCW':
-        college = 'New College West'
+    elif college == 'New College West':
         halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
     
-    elif college == 'Rockefeller':
+    elif college == 'Rockefeller College':
         college = "Rockefeller"
         halls = ['Buyers', 'Campbell', 'Holder', 'Witherspoon']
 
     elif college == 'Upperclass':
         halls = ['1901', 'Feinberg','Patton', '1903', 'Foulke', 'Pyne', 'Brown', 'Henry', 'Scully', 'Cuyler', 'Laughlin', 'Spelman', 'Dickinson Street, 2', 'Little', 'Walker', 'Dod', 'Lockhart', 'Wright']
 
-    elif college == 'Whitman':
+    elif college == 'Whitman College':
         halls = ['1981', 'Baker E', 'Baker S', 'Fisher', 'Hargadon', 'Lauritzen', 'Murley', 'Wendell B', 'Wendell C']
     
     elif college == 'Yeh':
