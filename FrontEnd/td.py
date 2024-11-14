@@ -9,8 +9,8 @@ import update
 import PDF
 
 # Database setup
-#DATABASE = os.environ['DATABASE_URL']
-DATABASE="postgresql://postgres:123@localhost:5432/my_database"
+DATABASE = os.environ['DATABASE_URL']
+#DATABASE="postgresql://postgres:123@localhost:5432/my_database"
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
