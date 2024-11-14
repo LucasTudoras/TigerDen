@@ -12,6 +12,7 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
                 WHERE user_id = %s;
                 """
             cursor.execute(query, (user_id,))
+            conn.commit()
 
 
             # this is horrible, remember to remove ignore and fix everything later
