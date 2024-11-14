@@ -91,10 +91,77 @@ def find_word_in_file(filename, words_to_find):
 
 #adds the room information into the the underclass arrays   
 def add_to_class( Hall, Room, info_instance):
+    colleges = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little': "Mathey College",
+            'Addy': "New College West",
+            'Jose E. Feliciano': "New College West",
+            'Aliya Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller College",
+            'Campbell': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
+            "Forbes": "idk"
+        }
+    halls = colleges.keys()
+    halls = [hall.upper() for hall in halls]
+    if Hall not in halls:
+        return
+    if Hall == "FORBES":
+        if Room[0] == "A":
+            Hall = "Annex"
+        else:
+            Hall = "Main"
+    
     UnderClass_dict = {
-        'Hall': Hall.upper(),
+        'Hall': Hall.title(),
         'Room': Room.upper(),
-        'RoomID': (Hall+ Room).upper()
+        'RoomID': (Hall.title()+ Room.upper())
     }
 
     info_instance.Class.append(UnderClass_dict)

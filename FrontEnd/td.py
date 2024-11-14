@@ -6,10 +6,11 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
+import PDF
 
 # Database setup
-DATABASE = os.environ['DATABASE_URL']
-#DATABASE="postgresql://postgres:123@localhost:5432/my_database"
+#DATABASE = os.environ['DATABASE_URL']
+DATABASE="postgresql://postgres:123@localhost:5432/my_database"
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -64,10 +65,6 @@ def floor_plans():
     username = auth.authenticate()
     return flask.render_template('floor_plans.html')
 
-@app.route('/upload-pdf')
-def upload_pdf():
-    username = auth.authenticate()
-    return flask.render_template('upload_pdf.html')
 
 @app.route('/logout')
 def logout():
@@ -106,7 +103,7 @@ def room_details(roomID):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() == 'pdf'
 
-@app.route("/PDF", methods=["GET", "POST"])
+
 @app.route("/upload-pdf", methods=["GET", "POST"])
 def uploaded_PDF():
     username = auth.authenticate()
@@ -127,8 +124,9 @@ def uploaded_PDF():
             file.save(filepath)
 
             # find method from pdf.py
+            #uploaded_rooms = PDF.main(filepath)
             uploaded_rooms = update.database_update(filepath, DATABASE, username)
-            
+            #print(uploaded_rooms)
 
             return flask.jsonify({"success": True, "message": "PDF uploaded successfully", "rooms": uploaded_rooms}), 200
         else:
@@ -400,7 +398,7 @@ def search():
         LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE availables.user_id = %s
         """
-    params = [username]
+    params = [username, username]
     if selected_colleges:
         placeholder = ', '.join(['%s'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
