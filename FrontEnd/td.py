@@ -278,7 +278,7 @@ def return_floorplans(college, hall):
         college = 'Upperclass'
         hall = "Dickinson Street, 2"
     if college == "Whitman College Wendell" and hall == 'B':
-        college = "Whitman Collge"
+        college = "Whitman College"
         hall = "Wendell B"
     if college == "Whitman College Wendell" and hall == 'C':
         college = "Whitman College"
@@ -289,6 +289,9 @@ def return_floorplans(college, hall):
     if college == "Whitman College Baker" and hall == 'S':
         college = "Whitman College"
         hall = "Baker S"
+    if hall == 'Kanji':
+        hall = 'Aliya Kanji'
+    
     
     if college == 'Upperclass' or college == 'New College West':
         directory_path = "/static/FloorPlan/" + college + "/" + hall
