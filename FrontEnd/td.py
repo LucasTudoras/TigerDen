@@ -261,7 +261,7 @@ def return_sameHallFloorPlan(hall, room):
 
     filepaths.sort()
     sorted_test = sorted(test, key=lambda x: x['name'])
-    return flask.render_template('floors-roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
+    return flask.render_template('floors_roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
 
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
