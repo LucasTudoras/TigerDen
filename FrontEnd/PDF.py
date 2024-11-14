@@ -214,7 +214,10 @@ def store_intoArray(starts_College, filestring, info_instance):
                     Hall, Room = "KWANZA JONES", words[4]
                 elif first_word == "MANNION":
                     Hall, Room = "MANNION", words[2]
-                add_to_class(Hall, Room, info_instance)
+                try:
+                    add_to_class(Hall, Room, info_instance)
+                except Exception:
+                    return 
     return
 
 
