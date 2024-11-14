@@ -248,6 +248,9 @@ def main(file):
     pdf = Path(file)
     pdf_output = Path("/tmp/temp.txt")
 
+    with open(pdf_output, 'w') as file:
+        file.write("")
+
     uploaded_pdf = Info()
 
     # Define the college names to look for
