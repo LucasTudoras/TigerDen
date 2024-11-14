@@ -127,7 +127,7 @@ def uploaded_PDF():
             # find method from pdf.py
             #uploaded_rooms = PDF.main(filepath)
             uploaded_rooms = update.database_update(filepath, DATABASE, username)
-            os.remove(filepath)
+            
             #print(uploaded_rooms)
 
             return flask.jsonify({"success": True, "message": "PDF uploaded successfully", "rooms": uploaded_rooms}), 200
