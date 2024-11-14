@@ -11,10 +11,10 @@ import update
 DATABASE = os.environ['DATABASE_URL']
 #DATABASE="postgresql://postgres:123@localhost:5432/my_database"
 
-if 'DYNO' is os.environ:
-    UPLOAD_FOLDER = '/tmp'
-else:
-    UPLOAD_FOLDER = 'uploads'
+#if 'DYNO' is os.environ:
+UPLOAD_FOLDER = '/tmp'
+#else:
+#    UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
