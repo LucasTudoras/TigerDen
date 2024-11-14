@@ -27,7 +27,7 @@
             const formData = new FormData();
             formData.append('pdf', file);
 
-            fetch('/upload_pdf', {
+            fetch('/upload-pdf', {
                 method: 'POST',
                 body: formData
             })
@@ -38,10 +38,15 @@
                 } else {
                     alert('Error updating database. Please try again.');
                 }
+                event.target.value = "";
             })
-            .catch(error => console.error('Error uploading PDF:', error));
+            .catch(error => {
+                console.error('Error uploading PDF:', error);
+            event.target.value = "";
+            });
         } else {
             alert('Please upload a PDF file.');
+            event.target.value = "";
         }
     }
     </script>

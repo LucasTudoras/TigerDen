@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS availables (user_id TEXT, room_id TEXT, PRIMARY KEY (user_id, room_id), FOREIGN KEY (room_id) REFERENCES rooms(roomid))

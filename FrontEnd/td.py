@@ -5,9 +5,14 @@ import psycopg2
 from top import app
 import PDF
 import os
+from werkzeug.utils import secure_filename
 
 # Database setup
 DATABASE = os.environ['DATABASE_URL']
+#DATABASE="postgresql://postgres:123@localhost:5432/my_database"
+
+UPLOAD_FOLDER = 'uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def home():
@@ -101,11 +106,38 @@ def room_details(roomID):
     
     return flask.render_template('room_details.html', results = room)
 
-@app.route("/PDF")
-def uploaded_PDF(file):
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() == 'pdf'
+
+@app.route("/PDF", methods=["GET", "POST"])
+@app.route("/upload-pdf", methods=["GET", "POST"])
+def uploaded_PDF():
     username = auth.authenticate()
-    uploaded_rooms = PDF(file)
-    return flask.render_template('/upload_pdf.html', results = uploaded_rooms)
+    print("in this method")
+    if flask.request.method == "POST":
+        print("POSTed something")
+        if 'pdf' not in flask.request.files:
+            return flask.jsonify({"success": False, "message": "No file part"}), 400
+        
+        file = flask.request.files['pdf']
+        if file.filename == '':
+            return flask.jsonify({"success": False, "message": "No selected file"}), 400
+        
+        if file and allowed_file(file.filename):
+            # imported method
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(filepath)
+
+            # find method from pdf.py
+            uploaded_rooms = PDF.main(filepath)
+            
+
+            return flask.jsonify({"success": True, "message": "PDF uploaded successfully", "rooms": uploaded_rooms}), 200
+        else:
+            return flask.jsonify({"success": False, "message": "Invalid file format. Please upload a PDF."}), 400
+    
+    return flask.render_template('upload_pdf.html')
 
 @app.route("/college/<college>")
 def return_halls(college):
