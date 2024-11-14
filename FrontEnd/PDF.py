@@ -134,14 +134,14 @@ def add_to_class( Hall, Room, info_instance):
             'Lockhart': "Upperclass",
             'Wright': "Upperclass",
             '1981': "Whitman College",
-            'Baker': "Whitman College",
-            'Baker': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
             'Fisher': "Whitman College",
             'Hargadon': "Whitman College",
             'Lauritzen': "Whitman College",
             'Murley': "Whitman College",
-            'Wendell': "Whitman College",
-            'Wendell': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
             'Fu': "Yeh College",
             'Grousbeck': "Yeh College",
             'Hariri': "Yeh College",
@@ -157,17 +157,6 @@ def add_to_class( Hall, Room, info_instance):
             Hall = "Annex"
         else:
             Hall = "Main"
-    if Hall == "BAKER":
-        if Room[0] == "E":
-            Hall = "Baker E"
-        else:
-            Hall = "Baker S"
-    if Hall == "Wendell":
-        if Room[0] == "B":
-            Hall = "Wendell B"
-        else:
-            Hall = "Wendell C"
-    
     
     UnderClass_dict = {
         'Hall': Hall.title(),
