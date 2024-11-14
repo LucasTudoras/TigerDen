@@ -13,11 +13,11 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
 
             query = """
                 DELETE FROM availables
-                WHERE user_id LIKE %s;
+                WHERE user_id = %s;
                 """
             cursor.execute(query, (f"%{user_id}%",))
             conn.commit()
-            
+
             # this is horrible, remember to remove ignore and fix everything later
             query = """
                 INSERT INTO availables (user_id, room_id) VALUES (%s, %s);
