@@ -120,8 +120,8 @@ def uploaded_PDF():
         
         if file and allowed_file(file.filename):
             # imported method
-            filename = secure_filename(file.filename)
-            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            # filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
             file.save(filepath)
 
             # find method from pdf.py
