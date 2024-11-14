@@ -108,7 +108,7 @@ def add_to_class( Hall, Room, info_instance):
             'Joline': "Mathey College",
             'Little': "Mathey College",
             'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
+            'Jose Feliciano': "New College West",
             'Aliya Kanji': "New College West",
             'Kwanza Jones': "New College West",
             'Buyers': "Rockefeller College",
