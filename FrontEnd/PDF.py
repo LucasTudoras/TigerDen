@@ -157,6 +157,17 @@ def add_to_class( Hall, Room, info_instance):
             Hall = "Annex"
         else:
             Hall = "Main"
+    if Hall == "BAKER":
+        if Room[0] == "E":
+            Hall = "Baker B"
+        else:
+            Hall = "Baker S"
+    if Hall == "Wendell":
+        if Room[0] == "B":
+            Hall = "Wendell B"
+        else:
+            Hall = "Wendell C"
+    
     
     UnderClass_dict = {
         'Hall': Hall.title(),
