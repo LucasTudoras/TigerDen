@@ -31,7 +31,6 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
                 except Exception as e:
                     print(f"error on {room_id}: {e}")
 
-            conn.commit()
             print(f"{len(rooms)} inserted for {user_id}")
 
     except Exception as e:
