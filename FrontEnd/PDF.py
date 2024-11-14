@@ -246,7 +246,7 @@ def print_output(output, list):
 def main(file):
     # Paths to the PDF files
     pdf = Path(file)
-    pdf_output = Path("../temp.txt")
+    pdf_output = Path("/tmp/temp.txt")
 
     uploaded_pdf = Info()
 
