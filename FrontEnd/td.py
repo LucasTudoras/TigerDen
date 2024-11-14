@@ -154,7 +154,6 @@ def return_halls(college):
         halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
     
     elif college == 'Rockefeller College':
-        college = "Rockefeller"
         halls = ['Buyers', 'Campbell', 'Holder', 'Witherspoon']
 
     elif college == 'Upperclass':
