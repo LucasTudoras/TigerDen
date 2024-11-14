@@ -278,16 +278,16 @@ def return_floorplans(college, hall):
         college = 'Upperclass'
         hall = "Dickinson Street, 2"
     if college == "Whitman College Wendell" and hall == 'B':
-        college = "Whitman"
+        college = "Whitman Collge"
         hall = "Wendell B"
     if college == "Whitman College Wendell" and hall == 'C':
-        college = "Whitman"
+        college = "Whitman College"
         hall = "Wendell C"
     if college == "Whitman College Baker" and hall == 'E':
-        college = "Whitman"
+        college = "Whitman College"
         hall = "Baker E"
-    if college == "Whitman Collge Baker" and hall == 'S':
-        college = "Whitman"
+    if college == "Whitman College Baker" and hall == 'S':
+        college = "Whitman College"
         hall = "Baker S"
     
     if college == 'Upperclass' or college == 'New College West':
