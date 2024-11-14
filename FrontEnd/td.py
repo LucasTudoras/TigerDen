@@ -2,10 +2,10 @@ import flask
 import auth
 import flask
 import psycopg2
-from top import app
-import PDF
 import os
 from werkzeug.utils import secure_filename
+from top import app
+import update
 
 # Database setup
 DATABASE = os.environ['DATABASE_URL']
@@ -80,17 +80,16 @@ def get_db():
         db = flask.g._database = psycopg2.connect(DATABASE)
     return db
 
-
-
 @app.route("/room_details/<roomID>")
 def room_details(roomID):
     username = auth.authenticate()
-    query = """SELECT rooms.*, 
-               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
         FROM rooms
         LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE 1=1
-            """
+        """
     params = [username]
     query += " And RoomID = %s"
     params.append(roomID)
@@ -102,8 +101,6 @@ def room_details(roomID):
     room = [dict(zip(column_names, row)) for row in results]
     cursor.close()
 
-    
-    
     return flask.render_template('room_details.html', results = room)
 
 def allowed_file(filename):
@@ -130,7 +127,7 @@ def uploaded_PDF():
             file.save(filepath)
 
             # find method from pdf.py
-            uploaded_rooms = PDF.main(filepath)
+            uploaded_rooms = update.database_update(filepath, DATABASE, username)
             
 
             return flask.jsonify({"success": True, "message": "PDF uploaded successfully", "rooms": uploaded_rooms}), 200
@@ -395,12 +392,14 @@ def search():
         selected_types = [type_name for arg_name, type_name in types if flask.request.cookies.get(arg_name)]
 
     # Build SQL query with filters and sorting
-    query = """SELECT rooms.*, 
-               CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
         FROM rooms
+        JOIN availables ON rooms.roomid = availables.room_id
         LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
-        WHERE 1=1
-            """
+        WHERE availables.user_id = %s
+        """
     params = [username]
     if selected_colleges:
         placeholder = ', '.join(['%s'] * len(selected_colleges))
