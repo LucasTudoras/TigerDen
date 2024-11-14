@@ -400,7 +400,7 @@ def search():
         LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE availables.user_id = %s
         """
-    params = [username]
+    params = [username, username]
     if selected_colleges:
         placeholder = ', '.join(['%s'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
