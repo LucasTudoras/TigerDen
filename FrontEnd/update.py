@@ -9,7 +9,7 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
 
             query = """
                 DELETE FROM availables
-                WHERE user_id = %s;
+                WHERE user_id LIKE %s;
                 """
             cursor.execute(query, (user_id,))
             conn.commit()
