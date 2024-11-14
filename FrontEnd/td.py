@@ -147,7 +147,7 @@ def return_halls(college):
     elif college == 'Forbes College':
         halls = ['99Alexander', 'Annex', 'Main']
 
-    elif college == 'Mathey Colelge':
+    elif college == 'Mathey College':
         halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
         
     elif college == 'New College West':
