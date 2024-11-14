@@ -6,13 +6,15 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
-import PDF
 
 # Database setup
 DATABASE = os.environ['DATABASE_URL']
 #DATABASE="postgresql://postgres:123@localhost:5432/my_database"
 
-UPLOAD_FOLDER = 'uploads'
+if 'DYNO' is os.environ:
+    UPLOAD_FOLDER = 'tmp'
+else:
+    UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
@@ -65,7 +67,6 @@ def floor_plans():
     username = auth.authenticate()
     return flask.render_template('floor_plans.html')
 
-
 @app.route('/logout')
 def logout():
     flask.session.clear()
@@ -103,7 +104,7 @@ def room_details(roomID):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() == 'pdf'
 
-
+@app.route("/PDF", methods=["GET", "POST"])
 @app.route("/upload-pdf", methods=["GET", "POST"])
 def uploaded_PDF():
     username = auth.authenticate()
