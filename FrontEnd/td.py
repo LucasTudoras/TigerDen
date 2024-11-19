@@ -8,7 +8,8 @@ from top import app
 import update
 
 # Database setup
-DATABASE = os.environ['DATABASE_URL']
+#DATABASE = os.environ['DATABASE_URL']
+DATABASE="postgresql://postgres:42069@localhost:5432/my_Database"
 
 #if 'DYNO' is os.environ:
 UPLOAD_FOLDER = '/tmp'

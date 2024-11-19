@@ -203,9 +203,13 @@ table th, table td {
     padding: 12px;             /* Padding inside cells */
     text-align: center;        /* Center-align text */
     color: black;              /* Text color */
+    cursor:default;
 }
 
+table div:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
 
+}
 
 /* Alternating row colors */
 table tr:nth-child(even) {
@@ -216,7 +220,7 @@ table tr:nth-child(odd) {
     background-color: rgba(207, 224, 144, 0.4); 
 }
 
-table td:hover {
+table td.highlight:hover {
     background-color: #e0f7fa; /* Light blue on hover */
 }
 
@@ -226,6 +230,7 @@ table tr.special:hover{
 
 table td.normal:hover{
     background-color: transparent;
+    cursor:default;
 }
 /* Special column styling (optional) */
 td.special {
@@ -339,3 +344,7 @@ html {
     background-color: #0056b3; /* Darker color on hover */
 }
 
+
+.group-container:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
+}
