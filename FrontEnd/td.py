@@ -11,7 +11,8 @@ import update
 
 
 
-DATABASE = os.environ['DATABASE_URL']
+#DATABASE = os.environ['DATABASE_URL']
+DATABASE="postgresql://postgres:42069@localhost:5432/my_Database"
 
 #if 'DYNO' is os.environ:
 UPLOAD_FOLDER = '/tmp'
@@ -450,3 +451,132 @@ def search():
         else:
             response.set_cookie(arg_name, '0', max_age=0)
     return response
+
+@app.route('/newtab/<hall> <room> <floor>')
+def newtab(hall, room, floor):
+    hall = hall.title()
+    colleges = {
+            '1967',
+            '1976',
+            'Bloomberg',
+            'Bogle',
+            'Scully',
+            'Wilf',
+            'Yoseloff',
+            '99Alexander',
+            'Annex',
+            'Main',
+            'Blair',
+            'Campbell',
+            'Edwards',
+            'Joline',
+            'Little',
+            'Addy',
+            'Jose E. Feliciano',
+            'Aliya Kanji',
+            'Kwanza Jones',
+            'Buyers',
+            'Campbell',
+            'Holder',
+            'Witherspoon',
+            '1901',
+            'Feinberg',
+            'Patton',
+            '1903',
+            'Foulke',
+            'Pyne',
+            'Brown',
+            'Henry',
+            'Scully',
+            'Cuyler',
+            'Laughlin',
+            'Spelman',
+            'Dickinson Street, 2',
+            'Little',
+            'Walker',
+            'Dod',
+            'Lockhart',
+            'Wright',
+            '1981',
+            'Baker E',
+            'Baker S',
+            'Fisher',
+            'Hargadon',
+            'Lauritzen',
+            'Murley',
+            'Wendell B',
+            'Wendell C',
+            'Fu',
+            'Grousbeck',
+            'Hariri',
+            'Mannion',
+        }
+    college = colleges[hall]
+    directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
+    print(directory_path)
+    return flask.render_template('NewTab.html', filepath=directory_path, hall=hall, room=room)
+
+@app.route('/newtabfloorplan/<filepath>')
+def newtabfloorplan(filepath):
+    colleges = [
+            '1967',
+            '1976',
+            'Bloomberg',
+            'Bogle',
+            'Scully',
+            'Wilf',
+            'Yoseloff',
+            '99Alexander',
+            'Annex',
+            'Main',
+            'Blair',
+            'Campbell',
+            'Edwards',
+            'Joline',
+            'Little',
+            'Addy',
+            'Jose E. Feliciano',
+            'Aliya Kanji',
+            'Kwanza Jones',
+            'Buyers',
+            'Campbell',
+            'Holder',
+            'Witherspoon',
+            '1901',
+            'Feinberg',
+            'Patton',
+            '1903',
+            'Foulke',
+            'Pyne',
+            'Brown',
+            'Henry',
+            'Scully',
+            'Cuyler',
+            'Laughlin',
+            'Spelman',
+            'Dickinson Street, 2',
+            'Little',
+            'Walker',
+            'Dod',
+            'Lockhart',
+            'Wright',
+            '1981',
+            'Baker E',
+            'Baker S',
+            'Fisher',
+            'Hargadon',
+            'Lauritzen',
+            'Murley',
+            'Wendell B',
+            'Wendell C',
+            'Fu',
+            'Grousbeck',
+            'Hariri',
+            'Mannion'
+        ]
+    hall = [word for word in colleges if word in filepath]
+    index = filepath.rfind('/')
+    floor = filepath[index +1:]
+    floor.replace('.pdf', '')
+    return flask.render_template('NewTab.html', filepath=filepath, hall=hall, room=floor)
+    
