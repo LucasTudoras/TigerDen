@@ -11,8 +11,7 @@ import update
 
 
 
-#DATABASE = os.environ['DATABASE_URL']
-DATABASE="postgresql://postgres:42069@localhost:5432/my_Database"
+DATABASE = os.environ['DATABASE_URL']
 
 #if 'DYNO' is os.environ:
 UPLOAD_FOLDER = '/tmp'
@@ -295,7 +294,7 @@ def return_floorplans(college, hall):
     if hall == 'Kanji':
         hall = 'Aliya Kanji'
     
-    
+
     if college == 'Upperclass' or college == 'New College West':
         directory_path = "/static/FloorPlan/" + college + "/" + hall
         if college == 'New College West':
