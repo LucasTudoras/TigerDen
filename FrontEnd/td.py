@@ -8,7 +8,7 @@ from top import app
 import update
 
 # Database setup
-DATABASE = os.environ['DATABASE_URL']
+
 
 #if 'DYNO' is os.environ:
 UPLOAD_FOLDER = '/tmp'
