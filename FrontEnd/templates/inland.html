@@ -12,85 +12,88 @@
 Filter a search query to find the rooms that fit your desires.
 </div>
    <form action="/search" method="GET">
-      
-       <table >
-           <th >
-               <tr>
-                   <td align="center" colspan="2"><h3>College</h3></td>
-                   <td></td>
-                   <td>&emsp;</td>
-                   <td align="center" colspan="2"><h3>Type</h3></td>
-               </tr>
-           </th>
+       <table align="center">
            <tr>
-               <td>
+            
+                   <td class="normal" align="center" colspan="2"><h3>College</h3></td>
+                   <td class="normal" align="center" colspan="2"><h3>Type</h3></td>
+           </tr>
+           <tr>
+               <td style="text-align: left; padding-left: 50px; width: 25%;">
                    <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" {% if "Butler College" in selected_colleges %}checked{% endif %}>
                    <label for="Butler College">Butler College</label>
                </td>
-               <td>
+               <td style="text-align: left; padding-left: 50px; width: 25%;">
                    <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" {% if "Forbes College" in selected_colleges %}checked{% endif %}>
                    <label for="Forbes College">Forbes College</label>
                </td>
-               <td></td><td>&emsp;</td>
-               <td>
+               
+               <td style="text-align: left; width: 25%;">
                    <input type="checkbox" id="SINGLE" name="SINGLE" value="SINGLE" {% if "SINGLE" in selected_types %}checked{% endif %}>
                    <label for="SINGLE">Single</label>
                </td>
-               <td>
+               <td style="text-align: left; width: 25%;">
                    <input type="checkbox" id="DOUBLE" name="DOUBLE" value="DOUBLE" {% if "DOUBLE" in selected_types %}checked{% endif %}>
                    <label for="DOUBLE">Double</label>
                </td>
            </tr>
            <tr>
-               <td>
+               <td style="text-align: left; padding-left: 50px; width: 25%;">
                    <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" {% if "Mathey College" in selected_colleges %}checked{% endif %}>
                    <label for="Mathey College">Mathey College</label>
                </td>
-               <td>
+               <td style="text-align: left; padding-left: 50px;">
                    <input type="checkbox" id="New College West" name="New College West" value="New College West"{% if "New College West" in selected_colleges %}checked{% endif %}>
                    <label for="New College West">New College West</label>
-               </td><td></td><td>&emsp;</td>
-               <td>
+               </td>
+               <td style="text-align: left;">
                    <input type="checkbox" id="TRIPLE" name="TRIPLE" value="TRIPLE" {% if "TRIPLE" in selected_types %}checked{% endif %}>
                    <label for="TRIPLE">Triple</label>
                </td>
-               <td>
+               <td style="text-align: left;">
                    <input type="checkbox" id="QUAD" name="QUAD" value="QUAD" {% if "QUAD" in selected_types %}checked{% endif %}>
                    <label for="QUAD">Quad</label>
                </td>
            </tr>
            <tr>
-               <td>
+               <td style="text-align: left; padding-left: 50px;">
                    <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" {% if "Rockefeller College" in selected_colleges %}checked{% endif %}>
                    <label for="Rockefeller College">Rockefeller College</label>
                </td>
-               <td>
+               <td style="text-align: left; padding-left: 50px;">
                    <input type="checkbox" id="Upperclass" name="Upperclass" value="Upperclass" {% if "Upperclass" in selected_colleges %}checked{% endif %}>
                    <label for="Upperclass">Upperclass</label>
-               </td><td></td><td>&emsp;</td>
-               <td>
+               </td>
+               <td style="text-align: left;">
                    <input type="checkbox" id="QUINT" name="QUINT" value="QUINT" {% if "QUINT" in selected_types %}checked{% endif %}>
                    <label for="QUINT">5-Person</label>
                </td>
-               <td>
+               <td style="text-align: left;">
                    <input type="checkbox" id="6PERSON" name="6PERSON" value="6PERSON" {% if "6PERSON" in selected_types %}checked{% endif %}>
                    <label for="6PERSON">6-Person</label>
                </td>
            </tr>
            <tr>
-               <td>
+               <td style="text-align: left; padding-left: 50px;">
                    <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" {% if "Whitman College" in selected_colleges %}checked{% endif %}>
                    <label for="Whitman College">Whitman College</label>
                </td>
-               <td>
+               <td style="text-align: left; padding-left: 50px;">
                    <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" {% if "Yeh College" in selected_colleges %}checked{% endif %}>
                    <label for="Yeh College">Yeh College</label>
                </td>
            </tr>
 
-
+        
        </table>
-       <hr>
+       <br>
+       <h4 style="display: inline;">AC</h4>
+       <select name="AC" id="AC">
+            <option value="YES" {% if AC == "YES" %}selected{% endif %}>Yes</option>
+            <option value="NO" {% if AC == "NO" %}selected{% endif %}>No</option>
+       </select>
+       <br>
+       <br>
        <h4 style="display: inline;">Sort by</h4>
        <select name="First Sort" id="First Sort">
            <option value="">First Sort</option>
@@ -130,19 +133,19 @@ Filter a search query to find the rooms that fit your desires.
     {% if results %}
     <table id="room results" border="1">
         <tr>
-            <td><strong>Favorite</strong></td>
-            <td><strong>Hall</strong></td>
-            <td><strong>Room</strong></td>
-            <td><strong>Type</strong></td>
-            <td><strong>Sqft</strong></td>
-            <td><strong>College</strong></td>
-            <td><strong>Region</strong></td>
-            <td><strong>Floor Plan</strong></td>
-            <td><strong>More Info</strong></td>
+            <td class="normal"><strong>Favorite</strong></td>
+            <td class="normal"><strong>Hall</strong></td>
+            <td class="normal"><strong>Room</strong></td>
+            <td class="normal"><strong>Type</strong></td>
+            <td class="normal"><strong>Sqft</strong></td>
+            <td class="normal"><strong>College</strong></td>
+            <td class="normal"><strong>Region</strong></td>
+            <td class="normal"><strong>Floor Plan</strong></td>
+            <td class="normal"><strong>More Info</strong></td>
         </tr>
 
         {% for room in results %}
-        <tr>
+        <tr class="special">
             <td align="center">
                 <span 
                     class="favorite-icon" 
@@ -155,20 +158,20 @@ Filter a search query to find the rooms that fit your desires.
                     {% endif %}
                 </span>
             </td>
-            <td align="center" class="special">{{ room['hall'] }}</td>
-            <td align="center" class="special">{{ room['room'] }}</td>
-            <td align="center" class="special">{{ room['type'] }}</td>
-            <td align="center" class="special">{{ room['sqft'] }}</td>
-            <td align="center" class="special">{{ room['college'] }}</td>
-            <td align="center" class="special">{{ room['region'] }}</td>
-            <td align="center" class="special">
+            <td align="center" class="normal">{{ room['hall'] }}</td>
+            <td align="center" class="normal">{{ room['room'] }}</td>
+            <td align="center" class="normal">{{ room['type'] }}</td>
+            <td align="center" class="normal">{{ room['sqft'] }}</td>
+            <td align="center" class="normal">{{ room['college'] }}</td>
+            <td align="center" class="normal">{{ room['region'] }}</td>
+            <td align="center" class="normal">
                 {% if room['filepath'] %}
                     <a href="/static/{{ room['filepath'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
             </td>
-            <td class="special"><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
+            <td class="normal"><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
         </tr>
         {% endfor %}
     </table>

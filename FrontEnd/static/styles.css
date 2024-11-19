@@ -216,11 +216,17 @@ table tr:nth-child(odd) {
     background-color: rgba(207, 224, 144, 0.4); 
 }
 
-/* Hover effect */
-table tr:hover {
+table td:hover {
     background-color: #e0f7fa; /* Light blue on hover */
 }
 
+table tr.special:hover{
+    background-color: #e0f7fa5a;
+}
+
+table td.normal:hover{
+    background-color: transparent;
+}
 /* Special column styling (optional) */
 td.special {
     color: #333;               /* Darker text for emphasis */

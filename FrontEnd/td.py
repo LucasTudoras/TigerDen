@@ -9,7 +9,6 @@ import update
 
 # Database setup
 DATABASE = os.environ['DATABASE_URL']
-#DATABASE="postgresql://postgres:123@localhost:5432/my_database"
 
 #if 'DYNO' is os.environ:
 UPLOAD_FOLDER = '/tmp'
@@ -367,6 +366,7 @@ def search():
     username = auth.authenticate()
     first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
     second_sort = flask.request.args.get("Second Sort") or flask.request.cookies.get("Second Sort") or "College ASC"
+    Ac = flask.request.args.get("AC") or flask.request.cookies.get("AC") or "YES"
 
     sort_clauses = []
 
@@ -412,6 +412,8 @@ def search():
         placeholder = ', '.join(['%s'] * len(selected_types))
         query += f" AND Type IN ({placeholder})"
         params.extend(selected_types)
+    if Ac:
+        query += f" And AC IN ('{Ac}')"
     if sort_clauses:
         query += " ORDER BY " + ", ".join(sort_clauses)
     
@@ -429,9 +431,10 @@ def search():
    
 
     # Create response with updated cookies
-    response = flask.make_response(flask.render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types))
+    response = flask.make_response(flask.render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, AC = Ac))
     response.set_cookie("First Sort", first_sort)
     response.set_cookie("Second Sort", second_sort)
+    response.set_cookie("AC", Ac)
 
     for arg_name, _ in colleges:
         if arg_name in selected_colleges:
