@@ -596,12 +596,13 @@ def searchHall():
         if flask.request.args.get(hall):
             if hall == "Little-Mathey" or hall == "Little-Upperclass":
                 selected_halls.append("Little")
+                selected_colleges.append(college)
             if hall == "Campbell-Mathey" or hall == "Campbell-Rocky":
                 selected_halls.append("Campbell")
+                selected_colleges.append(college)
             else:
                 selected_halls.append(hall)
                 selected_colleges.append(college)
-            selected_colleges.append(college)
             cookies_halls.append(hall)
     
     if not selected_halls:
@@ -609,15 +610,17 @@ def searchHall():
             if flask.request.cookies.get(hall):
                 if hall == "Little-Mathey" or hall == "Little-Upperclass":
                     selected_halls.append("Little")
+                    selected_colleges.append(college)
                 if hall == "Campbell-Mathey" or hall == "Campbell-Rocky":
                     selected_halls.append("Campbell")
+                    selected_colleges.append(college)
                 else:
                     selected_halls.append(hall)
                     selected_colleges.append(college)
-                selected_colleges.append(college)
                 cookies_halls.append(hall)
+
     print(cookies_halls)
-    print(selected_halls)
+    print(selected_colleges)
     # Retrieve room type filters
     types = [
         ("SINGLE", "SINGLE"), ("DOUBLE", "DOUBLE"), ("TRIPLE", "TRIPLE"),
