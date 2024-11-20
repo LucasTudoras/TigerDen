@@ -151,7 +151,7 @@ def return_halls(college):
         halls = ['99Alexander', 'Annex', 'Main']
 
     elif college == 'Mathey College':
-        halls = ['Blair', 'Campbell', 'Edwards', 'Joline', 'Little']
+        halls = ['Blair', 'Campbell', 'Edwards', 'Hamilton', 'Joline', 'Little']
         
     elif college == 'New College West':
         halls = ['Addy', 'Jose E. Feliciano', 'Kanji', 'Kwanza Jones']
