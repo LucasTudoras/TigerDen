@@ -455,6 +455,17 @@ def search():
 
 @app.route('/newtab/<hall> <room> <floor>')
 def newtab(hall, room, floor):
+    if hall == "Wendell":
+        if room[0] == "B":
+            hall = "Wendell B"
+        else:
+            hall = "Wendell C"
+    if hall == "Baker":
+        if room[0] == "S":
+            hall = "Baker S"
+        else:
+            hall = "Baker E"
+
     hall = hall.title()
     colleges = {
             '1967': "Butler College",
