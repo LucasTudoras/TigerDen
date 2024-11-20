@@ -420,17 +420,7 @@
     {% endif %}
 
 <script>
-    function initializeCollegeCheckboxes() {
-        const colleges = new Set(
-            Array.from(document.querySelectorAll('.hall-checkbox'))
-                 .map(hallCheckbox => hallCheckbox.getAttribute('data-college'))
-        );
-
-        colleges.forEach(college => {
-            checkCollege(college);
-        });
-    }
-    window.onload = initializeCollegeCheckboxes;
+    
 
     function Favorite(roomID) {
         console.log("TRYING TO FAVORITE " + roomID)
