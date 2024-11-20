@@ -348,3 +348,36 @@ html {
 .group-container:hover {
     background-color: #e0f7fa; /* Light blue on hover */
 }
+
+td.college{
+    text-align: left; 
+    padding-left: 50px; 
+    width: 25%;
+}
+
+td.college:hover{
+    background-color: #e0f7fa;
+}
+
+td.roomtype{
+    text-align: left;
+}
+td.roomtype:hover{
+    background-color: #e0f7fa;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.dropdown-btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
