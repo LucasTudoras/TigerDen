@@ -1,0 +1,427 @@
+{% extends "loggedin.html" %}
+
+
+{% block content %}   
+<div class="logoutContainer">
+   <a href="/logout" class="loginButton">Log Out</a>
+</div>
+
+
+<div class="search-text">
+<h2>Search for Rooms by hall</h2>
+    <a href="/search">Search by College</a> <br>
+    Filter a search query to find the rooms that fit your desires.
+</div>
+   <form action="/searchHall" method="GET">
+       <table align="center" class="hall" border="1">
+           <tr>
+            
+                   <td class="collegenames" align="center"><h4>Butler</h4></td>
+                   <td class="collegenames" align="center"><h4>Forbes</h4></td>
+                   <td class="collegenames" align="center"><h4>Mathey</h4></td>
+                   <td class="collegenames" align="center"><h4>New College West</h4></td>
+                   <td class="collegenames" align="center"><h4>Rockefeller</h4></td>
+                   <td class="collegenames" align="center" colspan="2"><h4>Upperclass</h4></td>
+                   <td class="collegenames" align="center"><h4>Whitman</h4></td>
+                   <td class="collegenames" align="center"><h4>Yeh</h4></td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" id="1967" name="1967" value="1967" {% if "1967" in selected_halls %}checked{% endif %}>
+                   <label for="1967">1967</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="99Alexander" name="99Alexander" value="99Alexander" {% if "99Alexander" in selected_halls %}checked{% endif %}>
+                   <label for="99Alexander">99Alexander</label>
+               </td>
+                <td>
+                    <input type="checkbox" id="Blair" name="Blair" value="Blair" {% if "Blair" in selected_halls %}checked{% endif %}>
+                    <label for="Blair">Blair</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Addy" name="Addy" value="Addy" {% if "Addy" in selected_halls %}checked{% endif %}>
+                    <label for="Addy">Addy</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Buyers" name="Buyers" value="Buyers" {% if "Buyers" in selected_halls %}checked{% endif %}>
+                    <label for="Buyers">Buyers</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1901" name="1901" value="1901" {% if "1901" in selected_halls %}checked{% endif %}>
+                    <label for="1901">1901</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1903" name="1903" value="1903" {% if "1903" in selected_halls %}checked{% endif %}>
+                    <label for="1903">1903</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1981" name="1981" value="1981" {% if "1981" in selected_halls %}checked{% endif %}>
+                    <label for="1981">1981</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Fu" name="Fu" value="Fu" {% if "Fu" in selected_halls %}checked{% endif %}>
+                    <label for="Fu">Fu</label>
+                </td> 
+           </tr>
+           <tr>
+                <td>
+                    <input type="checkbox" id="1976" name="1976" value="1976" {% if "1976" in selected_halls %}checked{% endif %}>
+                    <label for="1976">1976</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Annex" name="Annex" value="Annex" {% if "Annex" in selected_halls %}checked{% endif %}>
+                    <label for="Annex">Annex</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Campbell-Mathey" name="Campbell-Mathey" value="Campbell-Mathey" {% if "Campbell-Mathey" in selected_halls %}checked{% endif %}>
+                    <label for="Campbell-Mathey">Campbell</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Aliya Kanji" name="Aliya Kanji" value="Aliya Kanji" {% if "Aliya Kanji" in selected_halls %}checked{% endif %}>
+                    <label for="Aliya Kanji">Aliya Kanji</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Campbell-Rocky" name="Campbell-Rocky" value="Campbell-Rocky" {% if "Campbell-Rocky" in selected_halls %}checked{% endif %}>
+                    <label for="Campbell-Rocky">Campbell</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Brown" name="Brown" value="Brown" {% if "Brown" in selected_halls %}checked{% endif %}>
+                    <label for="Brown">Brown</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Cuyler" name="Cuyler" value="Cuyler" {% if "Cuyler" in selected_halls %}checked{% endif %}>
+                    <label for="Cuyler">Cuyler</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Baker" name="Baker" value="Baker" {% if "Baker" in selected_halls %}checked{% endif %}>
+                    <label for="Baker">Baker</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Grousbeck" name="Grousbeck" value="Grousbeck" {% if "Grousbeck" in selected_halls %}checked{% endif %}>
+                    <label for="Grousbeck">Grousbeck</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Bloomberg" name="Bloomberg" value="Bloomberg" {% if "Bloomberg" in selected_halls %}checked{% endif %}>
+                    <label for="Bloomberg">Bloomberg</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Main" name="Main" value="Main" {% if "Main" in selected_halls %}checked{% endif %}>
+                    <label for="Main">Main</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Edwards" name="Edwards" value="Edwards" {% if "Edwards" in selected_halls %}checked{% endif %}>
+                    <label for="Edwards">Edwards</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Jose Feliciano" name="Jose Feliciano" value="Jose Feliciano" {% if "Jose Feliciano" in selected_halls %}checked{% endif %}>
+                    <label for="Jose Feliciano">Jose Feliciano</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Holder" name="Holder" value="Holder" {% if "Holder" in selected_halls %}checked{% endif %}>
+                    <label for="Holder">Holder</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Dickinson Street, 2" name="Dickinson Street, 2" value="Dickinson Street, 2" {% if "Dickinson Street, 2" in selected_halls %}checked{% endif %}>
+                    <label for="Dickinson Street, 2">Dickinson Street, 2</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Dod" name="Dod" value="Dod" {% if "Dod" in selected_halls %}checked{% endif %}>
+                    <label for="Dod">Dod</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Fisher" name="Fisher" value="Fisher" {% if "Fisher" in selected_halls %}checked{% endif %}>
+                    <label for="Fisher">Fisher</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Hariri" name="Hariri" value="Hariri" {% if "Hariri" in selected_halls %}checked{% endif %}>
+                    <label for="Hariri">Hariri</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Bogle" name="Bogle" value="Bogle" {% if "Bogle" in selected_halls %}checked{% endif %}>
+                    <label for="Bogle">Bogle</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Hamilton" name="Hamilton" value="Hamilton" {% if "Hamilton" in selected_halls %}checked{% endif %}>
+                    <label for="Hamilton">Hamilton</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Kwanza Jones" name="Kwanza Jones" value="Kwanza Jones" {% if "Kwanza Jones" in selected_halls %}checked{% endif %}>
+                    <label for="Kwanza Jones">Kwanza Jones</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Witherspoon" name="Witherspoon" value="Witherspoon" {% if "Witherspoon" in selected_halls %}checked{% endif %}>
+                    <label for="Witherspoon">Witherspoon</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Feinberg" name="Feinberg" value="Feinberg" {% if "Feinberg" in selected_halls %}checked{% endif %}>
+                    <label for="Feinberg">Feinberg</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Foulke" name="Foulke" value="Foulke" {% if "Foulke" in selected_halls %}checked{% endif %}>
+                    <label for="Foulke">Foulke</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Hargadon" name="Hargadon" value="Hargadon" {% if "Hargadon" in selected_halls %}checked{% endif %}>
+                    <label for="Hargadon">Hargadon</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Mannion" name="Mannion" value="Mannion" {% if "Mannion" in selected_halls %}checked{% endif %}>
+                    <label for="Mannion">Mannion</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Wilf" name="Wilf" value="Wilf" {% if "Wilf" in selected_halls %}checked{% endif %}>
+                    <label for="Wilf">Wilf</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Joline" name="Joline" value="Joline" {% if "Joline" in selected_halls %}checked{% endif %}>
+                    <label for="Joline">Joline</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Henry" name="Henry" value="Henry" {% if "Henry" in selected_halls %}checked{% endif %}>
+                    <label for="Henry">Henry</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Laughlin" name="Laughlin" value="Laughlin" {% if "Laughlin" in selected_halls %}checked{% endif %}>
+                    <label for="Laughlin">Laughlin</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Lauritzen" name="Lauritzen" value="Lauritzen" {% if "Lauritzen" in selected_halls %}checked{% endif %}>
+                    <label for="Lauritzen">Lauritzen</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Yoseloff" name="Yoseloff" value="Yoseloff" {% if "Yoseloff" in selected_halls %}checked{% endif %}>
+                    <label for="Yoseloff">Yoseloff</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Little-Mathey" name="Little-Mathey" value="Little-Mathey" {% if "Little-Mathey" in selected_halls %}checked{% endif %}>
+                    <label for="Little-Mathey">Little</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Little-Upperclass" name="Little-Upperclass" value="Little-Upperclass" {% if "Little-Upperclass" in selected_halls %}checked{% endif %}>
+                    <label for="Little-Upperclass">Little</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Lockhart" name="Lockhart" value="Lockhart" {% if "Lockhart" in selected_halls %}checked{% endif %}>
+                    <label for="Lockhart">Lockhart</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Murley" name="Murley" value="Murley" {% if "Murley" in selected_halls %}checked{% endif %}>
+                    <label for="Murley">Murley</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Patton" name="Patton" value="Patton" {% if "Patton" in selected_halls %}checked{% endif %}>
+                    <label for="Patton">Patton</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Pyne" name="Pyne" value="Pyne" {% if "Pyne" in selected_halls %}checked{% endif %}>
+                    <label for="Pyne">Pyne</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Wendell" name="Wendell" value="Wendell" {% if "Wendell" in selected_halls %}checked{% endif %}>
+                    <label for="Wendell">Wendell</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Scully" name="Scully" value="Scully" {% if "Scully" in selected_halls %}checked{% endif %}>
+                    <label for="Scully">Scully</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Spelman" name="Spelman" value="Spelman" {% if "Spelman" in selected_halls %}checked{% endif %}>
+                    <label for="Spelman">Spelman</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Walker" name="Walker" value="Walker" {% if "Walker" in selected_halls %}checked{% endif %}>
+                    <label for="Walker">Walker</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Wright" name="Wright" value="Wright" {% if "Wright" in selected_halls %}checked{% endif %}>
+                    <label for="Wright">Wright</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+       </table>
+       <table align="center" class="hall">
+        <tr>
+            <td class="normal"><h3>Room Type</h3></td>
+            <td>
+                <input type="checkbox" id="SINGLE" name="SINGLE" value="SINGLE" {% if "SINGLE" in selected_types %}checked{% endif %}>
+                   <label for="SINGLE">Single</label>
+            </td>
+            <td>
+                <input type="checkbox" id="DOUBLE" name="DOUBLE" value="DOUBLE" {% if "DOUBLE" in selected_types %}checked{% endif %}>
+                   <label for="DOUBLE">Double</label>
+            </td>
+            <td>
+                <input type="checkbox" id="TRIPLE" name="TRIPLE" value="TRIPLE" {% if "TRIPLE" in selected_types %}checked{% endif %}>
+                   <label for="TRIPLE">Triple</label>
+            </td>
+            <td>
+                <input type="checkbox" id="QUAD" name="QUAD" value="QUAD" {% if "QUAD" in selected_types %}checked{% endif %}>
+                   <label for="QUAD">Quad</label>
+            </td>
+            <td>
+                <input type="checkbox" id="QUINT" name="QUINT" value="QUINT" {% if "QUINT" in selected_types %}checked{% endif %}>
+                   <label for="QUINT">5-Person</label>
+            </td>
+            <td>
+                <input type="checkbox" id="6PERSON" name="6PERSON" value="6PERSON" {% if "6PERSON" in selected_types %}checked{% endif %}>
+                   <label for="6PERSON">6-Person</label>
+            </td>
+        </tr>
+
+       </table>
+       <br>
+       <br>
+       <h4 style="display: inline;">Sort by</h4>
+       <select name="First Sort" id="First Sort">
+           <option value="">First Sort</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if firstSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if firstSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if firstSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if firstSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if firstSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if firstSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <select name="Second Sort" id="Second Sort">
+           <option value="">Second Sort</option>
+           <option value="Hall ASC" {% if secondSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if secondSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if secondSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if secondSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if secondSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if secondSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if secondSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if secondSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if secondSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if secondSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if secondSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if secondSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <br>
+       <br>
+       <button type="submit" style="cursor:pointer;">Search</button>
+   </form>
+
+
+    {% if results %}
+    <table id="room results" border="1">
+        <tr>
+            <td><strong>Favorite</strong></td>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>Region</strong></td>
+            <td><strong>Floor Plan</strong></td>
+            <td><strong>More Info</strong></td>
+        </tr>
+
+        {% for room in results %}
+        <tr class="special">
+            <td align="center">
+                <span 
+                    class="favorite-icon" 
+                    onclick="Favorite('{{ room['roomid'] }}');"
+                    style="cursor: pointer;">
+                    {% if room['is_favorite'] %}
+                        &#9733; <!-- Filled star -->
+                    {% else %}
+                        &#9734; <!-- Empty star -->
+                    {% endif %}
+                </span>
+            </td>
+            <td align="center">{{ room['hall'] }}</td>
+            <td align="center">{{ room['room'] }}</td>
+            <td align="center">{{ room['type'] }}</td>
+            <td align="center">{{ room['sqft'] }}</td>
+            <td align="center">{{ room['college'] }}</td>
+            <td align="center">{{ room['region'] }}</td>
+            <td align="center">
+                {% if room['filepath'] %}
+                    <a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+            <td><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No rooms found matching your criteria.</p>
+    {% endif %}
+
+<script>
+
+
+
+    function Favorite(roomID) {
+        console.log("TRYING TO FAVORITE " + roomID)
+        fetch(`/favorite`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ room_id: roomID })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const icon = document.querySelector(`[onclick="Favorite('${roomID}');"]`);
+                console.log(`[onclick="Favorite('${roomID}')"]`);
+                icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
+            } else {
+                alert("Failed to update favorite status.");
+            }
+        })
+        .catch(error => console.log('Error:', error));
+    }
+
+</script>
+    {% endblock %}

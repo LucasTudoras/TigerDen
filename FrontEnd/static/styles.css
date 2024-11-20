@@ -179,6 +179,32 @@ body {
     text-align: left;
 }
 
+table.hall td.collegenames {
+    padding: 2px;
+    text-align: center;        /* Center-align text */
+    color: black;              /* Text color */
+    cursor:default;
+}
+
+table.hall td.collegenames:hover {
+    background-color: transparent;
+}
+
+table.hall td {
+    padding: 2px;
+    text-align: left;        /* Center-align text */
+    color: black;              /* Text color */
+    cursor:default;
+}
+
+table.hall td:hover {
+    background-color: #e0f7fa;
+}
+
+table.hall td.empty:hover{
+    background-color: transparent;
+}
+
 .search-text {
     margin-top: 1em;
     font: 'Raleway';
@@ -364,20 +390,4 @@ td.roomtype{
 }
 td.roomtype:hover{
     background-color: #e0f7fa;
-}
-
-.dropdown {
-    display: none;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-}
-.dropdown-btn {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
 }

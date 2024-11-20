@@ -190,6 +190,7 @@ def return_sameHallFloorPlan(hall, room):
             'Edwards': "Mathey College",
             'Joline': "Mathey College",
             'Little': "Mathey College",
+            'Hamilton': "Mathey College",
             'Addy': "New College West",
             'Jose E. Feliciano': "New College West",
             'Aliya Kanji': "New College West",
@@ -471,6 +472,7 @@ def newtab(hall, room, floor):
             'Edwards': "Mathey College",
             'Joline': "Mathey College",
             'Little': "Mathey College",
+            'Hamilton': "Mathey College",
             'Addy': "New College West",
             'Jose E. Feliciano': "New College West",
             'Aliya Kanji': "New College West",
@@ -517,4 +519,167 @@ def newtab(hall, room, floor):
     return flask.render_template('NewTab.html', filepath=directory_path, hall=hall, room=room)
 
 
+@app.route('/searchHall', methods=['GET'])
+def searchHall():
+    username = auth.authenticate()
+    first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
+    second_sort = flask.request.args.get("Second Sort") or flask.request.cookies.get("Second Sort") or "College ASC"
+
+    sort_clauses = []
+
+    if first_sort:
+        sort_clauses.append(first_sort)
+    if second_sort:
+        sort_clauses.append(second_sort)
+
+
+    halls = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell-Mathey': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little-Mathey': "Mathey College",
+            'Hamilton': "Mathey College", 
+            'Addy': "New College West",
+            'Jose Feliciano': "New College West",
+            'Aliya Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller College",
+            'Campbell-Rocky': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little-Upperclass': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman College",
+            'Baker': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
+        }
+    selected_halls = []
+    selected_colleges = []
+    cookies_halls = []
+
+    for hall, college in halls.items():
+        if flask.request.args.get(hall):
+            if hall == "Little-Mathey" or hall == "Little-Upperclass":
+                selected_halls.append("Little")
+            if hall == "Campbell-Mathey" or hall == "Campbell-Rocky":
+                selected_halls.append("Campbell")
+            else:
+                selected_halls.append(hall)
+                selected_colleges.append(college)
+            selected_colleges.append(college)
+            cookies_halls.append(hall)
+    
+    if not selected_halls:
+        for hall, college in halls.items():
+            if flask.request.cookies.get(hall):
+                if hall == "Little-Mathey" or hall == "Little-Upperclass":
+                    selected_halls.append("Little")
+                if hall == "Campbell-Mathey" or hall == "Campbell-Rocky":
+                    selected_halls.append("Campbell")
+                else:
+                    selected_halls.append(hall)
+                    selected_colleges.append(college)
+                selected_colleges.append(college)
+                cookies_halls.append(hall)
+    print(cookies_halls)
+    print(selected_halls)
+    # Retrieve room type filters
+    types = [
+        ("SINGLE", "SINGLE"), ("DOUBLE", "DOUBLE"), ("TRIPLE", "TRIPLE"),
+        ("QUAD", "QUAD"), ("QUINT", "QUINT"), ("6PERSON", "6PERSON")
+    ]
+    selected_types = [type_name for arg_name, type_name in types if flask.request.args.get(arg_name)]
+    if not selected_types:
+        selected_types = [type_name for arg_name, type_name in types if flask.request.cookies.get(arg_name)]
+
+    # Build SQL query with filters and sorting
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        JOIN availables ON rooms.roomid = availables.room_id
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
+        WHERE availables.user_id = %s
+        """
+    params = [username, username]
+    if selected_colleges:
+        placeholder = ', '.join(['%s'] * len(selected_colleges))
+        query += f" AND College IN ({placeholder})"
+        params.extend(selected_colleges)
+    if selected_types:
+        placeholder = ', '.join(['%s'] * len(selected_types))
+        query += f" AND Type IN ({placeholder})"
+        params.extend(selected_types)
+    if selected_halls:
+        placeholder = ', '.join(['%s'] * len(selected_halls))
+        query += f" AND hall IN ({placeholder})"
+        params.extend(selected_halls)
+    if sort_clauses:
+        query += " ORDER BY " + ", ".join(sort_clauses)
+    
+
+    # Execute query and fetch results
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    results = cursor.fetchall()
+    # Convert results to dictionary format
+    column_names = [description[0] for description in cursor.description]
+    rooms = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+   
+
+    # Create response with updated cookies
+    response = flask.make_response(flask.render_template('searchHall.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, selected_halls=cookies_halls))
+    response.set_cookie("First Sort", first_sort)
+    response.set_cookie("Second Sort", second_sort)
+
+    
+    for arg_name, _ in types:
+        if arg_name in selected_types:
+            response.set_cookie(arg_name, '1', max_age=60*60*24*30)
+        else:
+            response.set_cookie(arg_name, '0', max_age=0)
+    for hall, college in halls.items():
+        if hall in cookies_halls:
+            response.set_cookie(hall, '1', max_age=60*60*24*30)
+        else:
+            response.set_cookie(hall, '0', max_age=0)
+    return response
     
