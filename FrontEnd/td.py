@@ -526,7 +526,10 @@ def newtab(hall, room, floor):
         }
     college = colleges[hall]
     directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
-    print(directory_path)
+    if hall == "Wendell B" or hall == "Wendell C":
+        hall = "Wendell"
+    if hall == "Baker S" or hall == "Baker E":
+        hall = "Baker"
     return flask.render_template('NewTab.html', filepath=directory_path, hall=hall, room=room)
 
 
