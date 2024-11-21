@@ -633,18 +633,6 @@ def searchHall():
                     selected_colleges.append(college)
                 cookies_halls.append(hall)
 
-    colleges = ["Butler College", "Forbes College", "Mathey College", 
-                "New College West", "Rockefeller College", "Upperclass", "Whitman College", "Yeh College"]
-    check_all = []
-
-    for college in colleges:
-        if flask.request.args.get(college):
-            check_all.append(college)
-    
-    if not check_all:
-        for college in colleges:
-            if flask.request.cookies.get(college):
-                check_all.append(college)
 
     # Retrieve room type filters
     types = [
@@ -695,7 +683,7 @@ def searchHall():
     # Create response with updated cookies
     response = flask.make_response(flask.render_template('searchHall.html', results=rooms, firstSort=first_sort,
                  secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, 
-                 selected_halls=cookies_halls, check_all=check_all))
+                 selected_halls=cookies_halls, check_all=selected_colleges))
     response.set_cookie("First Sort", first_sort)
     response.set_cookie("Second Sort", second_sort)
 
@@ -710,10 +698,10 @@ def searchHall():
             response.set_cookie(hall, '1', max_age=60*60*24*30)
         else:
             response.set_cookie(hall, '0', max_age=0)
-    for college in college:
-        if college in check_all:
+        if college in selected_colleges:
             response.set_cookie(college, '1', max_age=60*60*24*30)
         else:
             response.set_cookie(college, '0', max_age=0)
+
     return response
     
