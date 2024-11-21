@@ -18,7 +18,6 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
             cursor.execute(query, (f"%{user_id}%",))
             conn.commit()
 
-            # this is horrible, remember to remove ignore and fix everything later
             query = """
                 INSERT INTO availables (user_id, room_id) VALUES (%s, %s) ON CONFLICT (user_id, room_id) DO NOTHING;
                 """

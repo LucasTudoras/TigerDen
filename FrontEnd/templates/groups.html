@@ -20,14 +20,12 @@
                     <thead>
                         <tr>
                             <th>NetID</th>
-                            <th>Name</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for member in group_members %}
                         <tr>
                             <td class="group-text">{{ member.netid }}</td>
-                            <td class="group-text">{{ member.name }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -70,6 +68,33 @@
         <a href="/in-group">IF IN GROUP</a>
     </div>
 </div>
+
+<div class="group-favorites">
+    <h3>Group Favorite Rooms</h3>
+    {% if user_has_group %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Building</th>
+                    <th>Favorited By</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for room in group_favorites %}
+                <tr>
+                    <td>{{ room.room_number }}</td>
+                    <td>{{ room.building }}</td>
+                    <td>{{ room.username }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No group favorites to display.</p>
+    {% endif %}
+</div>
+
 
 <script>
     // Open and close the modal for creating a group

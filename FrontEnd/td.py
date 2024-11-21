@@ -54,7 +54,59 @@ def favorite_rooms():
 @app.route('/groups')
 def groups():
     username = auth.authenticate()
-    return flask.render_template('groups.html')
+    with psycopg2.connect(DATABASE) as conn:
+        cursor = conn.cursor()
+
+        # does user belong to a group
+        cursor.execute("""
+            SELECT groups.id, groups.name, members.user_id
+            FROM groups
+            JOIN members ON groups.id = members.group_id
+            WHERE members.user_id = %s
+        """, (username,))
+        group_data = cursor.fetchall()
+
+        user_has_group = bool(group_data)
+
+        # get members of group
+        group_members = []
+        if user_has_group:
+            group_id = group_data[0][0]
+            cursor.execute("""
+                SELECT username
+                FROM members
+                WHERE members.group_id = %s
+            """, (group_id,))
+            group_members = cursor.fetchall()
+
+        cursor.close()
+
+    return flask.render_template('groups.html', user_has_group=user_has_group, group_members=group_members)
+
+
+@app.route('/create_group', methods=['POST'])
+def create_group():
+    username = auth.authenticate()
+    group_name = flask.request.form.get('group_name')
+    netids = flask.request.form.get('netids')
+
+    if not group_name or not netids:
+        return flask.jsonify({'success': False, 'message': 'Group name and members are required'}), 400
+
+    netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
+
+    with psycopg2.connect(DATABASE) as conn:
+        cursor = conn.cursor()
+        cursor.execute('INSERT INTO groups (name, admin_username) VALUES (%s, %s) RETURNING id', (group_name, username))
+        group_id = cursor.fetchone()[0]
+
+        for netid in netids_list:
+            cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (group_id, netid))
+
+        conn.commit()
+        cursor.close()
+
+    return flask.redirect('/groups')
 
 @app.route('/in-group')
 def in_group():
