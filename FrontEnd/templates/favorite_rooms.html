@@ -41,7 +41,7 @@
             <td align="center" class="special">{{ room['region'] }}</td>
             <td align="center" class="special">
                 {% if room['filepath'] %}
-                    <a href="/static/{{ room['filepath'] }}" target="_blank">View Floor Plan</a>
+                    <a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
                 {% else %}
                     N/A
                 {% endif %}
