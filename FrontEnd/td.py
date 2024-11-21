@@ -58,10 +58,10 @@ def groups():
 
         # does user belong to a group
         cursor.execute("""
-            SELECT groups.id, groups.name, members.username
+            SELECT groups.id, groups.name, members.user_id
             FROM groups
             JOIN members ON groups.id = members.group_id
-            WHERE members.username = %s
+            WHERE members.user_id = %s
         """, (username,))
         group_data = cursor.fetchall()
 
