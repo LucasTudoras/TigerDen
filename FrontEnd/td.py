@@ -20,6 +20,7 @@ UPLOAD_FOLDER = '/tmp'
 #    UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
 @app.route('/')
 def home():
     return flask.render_template('index.html')
@@ -416,94 +417,6 @@ def toggle_favorite():
             conn.commit()
             return flask.jsonify({'success': True, 'message': 'Room added to favorites', 'is_favorite': True})
 
-    
-
-@app.route('/search', methods=['GET'])
-def search():
-    username = auth.authenticate()
-    first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
-    second_sort = flask.request.args.get("Second Sort") or flask.request.cookies.get("Second Sort") or "College ASC"
-    Ac = flask.request.args.get("AC") or flask.request.cookies.get("AC") or "YES"
-
-    sort_clauses = []
-
-    if first_sort:
-        sort_clauses.append(first_sort)
-    if second_sort:
-        sort_clauses.append(second_sort)
-
-    # Retrieve college filters
-    colleges = [
-        ("Butler College", "Butler College"), ("Forbes College", "Forbes College"), ("Mathey College", "Mathey College"),
-        ("New College West", "New College West"), ("Rockefeller College", "Rockefeller College"),
-        ("Upperclass", "Upperclass"), ("Whitman College", "Whitman College"), ("Yeh College", "Yeh College")
-    ]
-    selected_colleges = [college_name for arg_name, college_name in colleges if flask.request.args.get(arg_name)]
-    if not selected_colleges:
-        selected_colleges = [college_name for arg_name, college_name in colleges if flask.request.cookies.get(arg_name)]
-
-    # Retrieve room type filters
-    types = [
-        ("SINGLE", "SINGLE"), ("DOUBLE", "DOUBLE"), ("TRIPLE", "TRIPLE"),
-        ("QUAD", "QUAD"), ("QUINT", "QUINT"), ("6PERSON", "6PERSON")
-    ]
-    selected_types = [type_name for arg_name, type_name in types if flask.request.args.get(arg_name)]
-    if not selected_types:
-        selected_types = [type_name for arg_name, type_name in types if flask.request.cookies.get(arg_name)]
-
-    # Build SQL query with filters and sorting
-    query = """
-        SELECT rooms.*,
-        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
-        FROM rooms
-        JOIN availables ON rooms.roomid = availables.room_id
-        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
-        WHERE availables.user_id = %s
-        """
-    params = [username, username]
-    if selected_colleges:
-        placeholder = ', '.join(['%s'] * len(selected_colleges))
-        query += f" AND College IN ({placeholder})"
-        params.extend(selected_colleges)
-    if selected_types:
-        placeholder = ', '.join(['%s'] * len(selected_types))
-        query += f" AND Type IN ({placeholder})"
-        params.extend(selected_types)
-    if Ac:
-        query += f" And AC IN ('{Ac}')"
-    if sort_clauses:
-        query += " ORDER BY " + ", ".join(sort_clauses)
-    
-
-    # Execute query and fetch results
-    conn = get_db()
-    cursor = conn.cursor()
-    cursor.execute(query, params)
-    results = cursor.fetchall()
-    # Convert results to dictionary format
-    column_names = [description[0] for description in cursor.description]
-    rooms = [dict(zip(column_names, row)) for row in results]
-    cursor.close()
-
-   
-
-    # Create response with updated cookies
-    response = flask.make_response(flask.render_template('inland.html', results=rooms, firstSort=first_sort, secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, AC = Ac))
-    response.set_cookie("First Sort", first_sort)
-    response.set_cookie("Second Sort", second_sort)
-    response.set_cookie("AC", Ac)
-
-    for arg_name, _ in colleges:
-        if arg_name in selected_colleges:
-            response.set_cookie(arg_name, '1', max_age=60*60*24*30)
-        else:
-            response.set_cookie(arg_name, '0', max_age=0)
-    for arg_name, _ in types:
-        if arg_name in selected_types:
-            response.set_cookie(arg_name, '1', max_age=60*60*24*30)
-        else:
-            response.set_cookie(arg_name, '0', max_age=0)
-    return response
 
 @app.route('/newtab/<hall> <room> <floor>')
 def newtab(hall, room, floor):
@@ -585,7 +498,7 @@ def newtab(hall, room, floor):
     return flask.render_template('NewTab.html', filepath=directory_path, hall=hall, room=room)
 
 
-@app.route('/searchHall', methods=['GET'])
+@app.route('/search', methods=['GET'])
 def searchHall():
     username = auth.authenticate()
     first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
