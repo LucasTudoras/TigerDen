@@ -21,6 +21,11 @@
             <a href="/favorite-rooms" class="loginButton">Favorite Rooms</a>
             <a href="/upload-pdf" class="uploadButton">Upload PDF</a>
         </nav>
+        <div class="welcome-message">
+            {% if username %}
+                Welcome, {{ username }}!
+            {% endif %}
+        </div>
     </header>
 
     <div id="content">
