@@ -100,7 +100,7 @@ def create_group():
         group_id = cursor.fetchone()[0]
 
         for netid in netids_list:
-            cursor.execute('INSERT INTO members (group_id, username) VALUES (%s, %s)', (group_id, netid))
+            cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (group_id, netid))
 
         conn.commit()
         cursor.close()
