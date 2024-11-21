@@ -13,6 +13,11 @@
             <img src="../static/images/logo_den_no_bg.png" alt="Website Logo" class="logo">
             <span class="site-name">TigerDen</span>
         </div>
+        <div class="welcome-message">
+            {% if username %}
+                Welcome, {{ username }}!
+            {% endif %}
+        </div>
     </header>
 
     <div id="content">

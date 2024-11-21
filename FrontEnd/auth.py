@@ -2,6 +2,7 @@ import urllib.request
 import urllib.parse
 import re
 import flask
+from flask import g
 from top import app
 
 _CAS_URL = 'https://fed.princeton.edu/cas/'
@@ -47,7 +48,8 @@ def authenticate():
     # If the username is in the session, then the user was
     # authenticated previously.  So return the username.
     if 'username' in flask.session:
-        return flask.session.get('username')
+        g.username = flask.session['username']
+        return g.username
 
     # If the request does not contain a login ticket, then redirect
     # the browser to the login page to get one.
@@ -69,8 +71,19 @@ def authenticate():
     # the session.
     username = username.strip()
     flask.session['username'] = username
+    g.username = username
     return username
 
+
+@app.before_request
+def load_user():
+    # Make username available globally in the request context
+    g.username = flask.session.get('username')
+
+@app.context_processor
+def inject_user():
+    # Inject username into all templates
+    return {'username': g.username}
 
 @app.route('/out', methods=['GET'])
 def out():
