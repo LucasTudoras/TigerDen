@@ -80,7 +80,7 @@ def groups():
             group_members = cursor.fetchall()
 
         cursor.close()
-        print(group_members)
+
     return flask.render_template('groups.html', user_has_group=user_has_group, group_members=group_members)
 
 
