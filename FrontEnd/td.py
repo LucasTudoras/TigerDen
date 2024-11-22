@@ -106,6 +106,11 @@ def create_group():
         return flask.jsonify({'success': False, 'message': 'Group name and members are required'}), 400
 
     netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
+    # removing duplicates and current user. is there a better way?
+    # should we add invites, somehow? create an inbox? link? 
+    netids = set(netids_list)
+    netids.discard(username)
+    netids = list(netids)
 
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
