@@ -101,12 +101,12 @@ def create_group():
     if not group_name or not netids:
         return flask.jsonify({'success': False, 'message': 'Group name and members are required'}), 400
 
-    netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
+    
     # removing duplicates and current user. is there a better way?
     # should we add invites, somehow? create an inbox? link? 
     
     print("NET IDS ARE OF THE FORM: ", netids)
-
+    netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
     netids = set(netids_list)
     netids.discard(username)
     netids = list(netids)
