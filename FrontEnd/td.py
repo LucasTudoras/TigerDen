@@ -65,24 +65,31 @@ def groups():
             WHERE members.user_id = %s
         """, (username,))
         group_data = cursor.fetchall()
+        organized_groups = []
         for group in group_data:
-            print(group)
+            organized_groups.append({'id': group[0], 'name': group[1], 'admin': group[2]})
+
         user_has_group = bool(group_data)
 
         # get members of group
         group_members = []
         if user_has_group:
-            group_id = group_data[0][0]
-            cursor.execute("""
-                SELECT user_id
-                FROM members
-                WHERE members.group_id = %s
-            """, (group_id,))
-            group_members = cursor.fetchall()
+            for group in organized_groups:
+                group_id = group['id']
+                cursor.execute("""
+                    SELECT user_id
+                    FROM members
+                    WHERE members.group_id = %s
+                """, (group_id,))
+                group_members = cursor.fetchall()
+                group['members'] = []
+                for member in group_members:
+                    if member != username:
+                        group['members'].append(member)
 
         cursor.close()
 
-    return flask.render_template('groups.html', user_has_group=user_has_group, group_members=group_members)
+    return flask.render_template('groups.html', user_has_group=user_has_group, groups = organized_groups)
 
 
 @app.route('/create_group', methods=['POST'])

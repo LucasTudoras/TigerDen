@@ -19,13 +19,17 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>NetID</th>
+                            <th>Group name</th>
+                            <th>Admin</th>
+                            <th>Members</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for member in group_members %}
+                        {% for group in groups %}
                         <tr>
-                            <td class="group-text">{{ member }}</td>
+                            <td>{{ group.name }}</td>
+                            <td>{{ group.admin }}</td>
+                            <td>{% for member in group.members %}{{ member }} {% endfor %}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
