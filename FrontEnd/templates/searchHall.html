@@ -8,11 +8,13 @@
 
 
 <div class="search-text">
-<h2>Search for Rooms</h2>
-    Filter a search query to find the rooms that fit your desires.
+<h1>Search for Rooms</h1>
+    There are 2,860 rooms at Princeton University. <br>
+    Filter this list to find rooms that fit your needs.
 </div>
-   <form id="autoSubmitForm" action="/search" method="GET">
-       <table align="center" class="hall" border="1">
+<br>
+   <form id="autoSubmitForm" action="/search" method="GET" >
+       <table align="center" class="hall" border="1" style="width: 75%;" align="center">
            <tr style="height: 50px;">
                    <td class="collegenames" align="center">
                         <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" onchange="toggleHalls(this)" data-college="Butler" {% if "Butler College" in check_all %}checked{% endif %}>
@@ -300,7 +302,7 @@
                 <td class="empty"></td>
             </tr>
        </table>
-       <table align="center" class="hall">
+       <table class="hall" style="width: 75%;" align="center">
         <tr>
             <td class="normal"><h3>Room Type</h3></td>
             <td>
@@ -367,10 +369,14 @@
        <br>
        <button type="submit" style="cursor:pointer;">Search</button>
    </form>
-
-
+   <div align="left" style="padding-left: 12%;">
+    <h2 style="display: inline;">Search Results: </h2>
+    <h2 style="display: inline;">{{ number }} rooms</h2>
+   </div>
+   
+    <h3>Click on column title to sort. Click on row to see more.</h3> 
     {% if results %}
-    <table id="room results" border="1">
+    <table id="room results" border="1" style="width:66%;" align="center">
         <tr>
             <td><strong>Favorite</strong></td>
             <td><strong>Hall</strong></td>
@@ -378,8 +384,6 @@
             <td><strong>Type</strong></td>
             <td><strong>Sqft</strong></td>
             <td><strong>College</strong></td>
-            <td><strong>Region</strong></td>
-            <td><strong>Floor Plan</strong></td>
             <td><strong>More Info</strong></td>
         </tr>
 
@@ -402,14 +406,6 @@
             <td align="center">{{ room['type'] }}</td>
             <td align="center">{{ room['sqft'] }}</td>
             <td align="center">{{ room['college'] }}</td>
-            <td align="center">{{ room['region'] }}</td>
-            <td align="center">
-                {% if room['filepath'] %}
-                    <a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
-                {% else %}
-                    N/A
-                {% endif %}
-            </td>
             <td><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
         </tr>
         {% endfor %}
@@ -455,25 +451,6 @@
         const anyChecked = Array.from(hallCheckboxes).some(hallCheckbox => hallCheckbox.checked);
         collegeCheckbox.checked = anyChecked;
     }
-    document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('autoSubmitForm');
-    const inputs = form.querySelectorAll('input, select, textarea');
-    let autoSubmitTimeout;
-
-        function resetAutoSubmit() {
-            clearTimeout(autoSubmitTimeout);
-
-            // Set a new timeout for 0.1 seconds (100 milliseconds)
-            autoSubmitTimeout = setTimeout(() => {
-                form.submit(); // Submit the form automatically
-            }, 2000);
-        }
-
-        // Attach event listeners to reset the timeout on user interaction
-        inputs.forEach(input => {
-            input.addEventListener('click', resetAutoSubmit); // For checkboxes and radios
-            });
-    });
     
 
 </script>

@@ -660,12 +660,13 @@ def searchHall():
     column_names = [description[0] for description in cursor.description]
     rooms = [dict(zip(column_names, row)) for row in results]
     cursor.close()
+    results = len(rooms)
 
 
     # Create response with updated cookies
     response = flask.make_response(flask.render_template('searchHall.html', results=rooms, firstSort=first_sort,
                  secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, 
-                 selected_halls=cookies_halls, check_all=selected_colleges))
+                 selected_halls=cookies_halls, check_all=selected_colleges, number=results))
     response.set_cookie("First Sort", first_sort)
     response.set_cookie("Second Sort", second_sort)
 

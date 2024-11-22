@@ -5,13 +5,12 @@
         <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
     </div>
     
-    <div class="button-row">
+    <div align="left">
         <a href="/search?{% for key, value in request.args.items() %}
         {% if key != 'page' %}
             {{ key }}={{ value }}& 
         {% endif %}
     {% endfor %}" class="backButton">Back to Room Search</a>
-        <br>
     
         {% if results %}
         {% for room in results %}
@@ -32,64 +31,36 @@
     </div>
 
     <div class="search-text">
-        <h2>Room Details</h2>
-        Everything there is to know about a room on campus.
+        <h1>Room Details</h1>
+        <h2>{{ room['hall'] }} {{ room['room'] }} in {{ room['college'] }}</h2>
     </div>
     
 
-        <div class="table-container">
-        <table id="room results">
+        <div class="table-container" >
+        <table id="room results" style="width: 66%;" align="center" class="details">
             <tr>
                 <th colspan="2"><h3>Room Info</h3></td>
-                <th colspan="2"><h3>Distance To (Minutes Walking):</h3></td>
-            </tr>
-            <tr>
-                <td><strong>Hall</strong></td>
-                <td>{{ room['hall'] }}</td>
-                <td><strong>Wawa</strong></td>
-                <td>{{ room['wawa'] }}</td>
-            </tr>
-            <tr>
-                <td><strong>Room</strong></td>
-                <td>{{ room['room'] }}</td>
-                <td><strong>UStore</strong></td>
-                <td>{{ room['ustore'] }}</td>
+                
             </tr>
             <tr>
                 <td><strong>Type</strong></td>
                 <td>{{ room['type'] }}</td>
-                <td><strong>Nassau Street</strong></td>
-                <td>{{ room['nassau'] }}</td>
             </tr>
             <tr>
                 <td><strong>Sqft</strong></td>
                 <td>{{ room['sqft'] }}</td>
-                <td><strong>Jadwin Gym</strong></td>
-                <td>{{ room['jadwingym'] }}</td>
-            </tr>
-            <tr>
-                <td><strong>College</strong></td>
-                <td>{{ room['college'] }}</td>
-                <td><strong>Frist</strong></td>
-                <td>{{ room['frist'] }}</td>
             </tr>
             <tr>
                 <td><strong>Region</strong></td>
                 <td>{{ room['region'] }}</td>
-                <td><strong>Prospect Street</strong></td>
-                <td>{{ room['street'] }}</td>
             </tr>
             <tr>
                 <td><strong>Elevator</strong></td>
                 <td>{{ room['elevator'] }}</td>
-                <td><strong>EQuad</strong></td>
-                <td>{{ room['equad'] }}</td>
             </tr>
             <tr>
                 <td><strong>Bathroom</strong></td>
                 <td>{{ room['bathroom'] }}</td>
-                <td><strong>Dillon</strong></td>
-                <td>{{ room['dillon'] }}</td>
             </tr>
             <tr>
                 <td><strong>AC</strong></td>
@@ -98,12 +69,50 @@
             <tr>
                 <td><strong>Floor</strong></td>
                 <td>{{ room['floor'] }}</td>
-            </tr>    
+            </tr> 
         
             <tr>
                 <td><strong>Floor Plan</strong></td>
                 <td><a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank">View Floor Plan in New Tab</a></td>
             </tr> 
+    </table>
+    <table class="detailsDistance" style="width: 66%;" align="center">
+            <tr>
+                <th colspan="2"><h3>Distance To (Minutes Walking):</h3></th>
+            </tr>
+            <tr>
+                <td><strong>Wawa</strong></td>
+                <td>{{ room['wawa'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>UStore</strong></td>
+                <td>{{ room['ustore'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>Nassau Street</strong></td>
+                <td>{{ room['nassau'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>Jadwin Gym</strong></td>
+                <td>{{ room['jadwingym'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>Frist</strong></td>
+                <td>{{ room['frist'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>Prospect Street</strong></td>
+                <td>{{ room['street'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>EQuad</strong></td>
+                <td>{{ room['equad'] }}</td>
+            </tr>
+            <tr>
+                <td><strong>Dillon</strong></td>
+                <td>{{ room['dillon'] }}</td>
+            </tr> 
+
     </table>
 
     <br>
@@ -115,7 +124,7 @@
     </div>
     <br>
     <div class="search-text">
-        Floor Plan
+        {{ room['hall'] }} {{ room['room']}}
     </div>
 
     <div>

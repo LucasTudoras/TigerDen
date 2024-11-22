@@ -11,9 +11,7 @@ body {
     background-repeat: repeat;
     margin: 0;
     height: 100vh; /* Set height to full viewport */
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Overlay */
-        url('./images/background1.webp'); /* Background image */
+    background: white; /* Background image */
     background-position: center; /* Center the image */
     color: #333; /* Text color */
     font-family: Arial, sans-serif;
@@ -114,7 +112,7 @@ body {
 
 .logoutContainer {
     position: fixed; /* Fixes the position to the viewport */
-    bottom: 20px; /* Distance from the bottom */
+    top: 10px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
 }
 
@@ -307,6 +305,7 @@ td.special {
 }
 
 .backButton {
+    display: inline-block;
     margin-left: 15px;
     margin-top: 15px;
     padding: 10px 20px; /* Add padding for a button-like appearance */
@@ -330,7 +329,6 @@ html {
 
 .addtofavoritesButton {
     display: inline-block; /* Make the link behave like a block element */
-    margin-right: 15px;
     padding: 10px 20px; /* Add padding for a button-like appearance */
     background-color: #510378; /* Set the background color */
     color: white; /* Set the text color */
@@ -390,4 +388,27 @@ td.roomtype{
 }
 td.roomtype:hover{
     background-color: #e0f7fa;
+}
+
+table.details {
+    display: inline;
+}
+table.detailsDistance {
+    display: inline;
+}
+
+table.details td {
+    background-color: white;
+    text-align: justify;
+}
+table.details th {
+    background-color: white;
+}
+
+table.detailsDistance td {
+    background-color: white;
+    text-align: justify;
+}
+table.detailsDistance th {
+    background-color: white;
 }
