@@ -65,7 +65,8 @@ def groups():
             WHERE members.user_id = %s
         """, (username,))
         group_data = cursor.fetchall()
-
+        for group in group_data:
+            print(group)
         user_has_group = bool(group_data)
 
         # get members of group
