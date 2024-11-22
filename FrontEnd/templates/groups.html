@@ -69,31 +69,6 @@
     </div>
 </div>
 
-<div class="group-favorites">
-    <h3>Group Favorite Rooms</h3>
-    {% if user_has_group %}
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Room Number</th>
-                    <th>Building</th>
-                    <th>Favorited By</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for room in group_favorites %}
-                <tr>
-                    <td>{{ room.room_number }}</td>
-                    <td>{{ room.building }}</td>
-                    <td>{{ room.username }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <p>No group favorites to display.</p>
-    {% endif %}
-</div>
 
 
 <script>

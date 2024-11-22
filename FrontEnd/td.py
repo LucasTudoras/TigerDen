@@ -100,6 +100,7 @@ def create_group():
         cursor.execute('INSERT INTO groups (name, admin_username) VALUES (%s, %s) RETURNING id', (group_name, username))
         group_id = cursor.fetchone()[0]
 
+        cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (username, group_id))
         for netid in netids_list:
             cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
 
