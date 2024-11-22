@@ -104,6 +104,9 @@ def create_group():
     netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
     # removing duplicates and current user. is there a better way?
     # should we add invites, somehow? create an inbox? link? 
+    
+    print("NET IDS ARE OF THE FORM: ", netids_list)
+
     netids = set(netids_list)
     netids.discard(username)
     netids = list(netids)
