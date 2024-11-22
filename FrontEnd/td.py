@@ -106,10 +106,9 @@ def create_group():
     # should we add invites, somehow? create an inbox? link? 
     
     print("NET IDS ARE OF THE FORM: ", netids)
-    netids_list = [n.strip() for n in netids.split(',') if n.strip()] 
+    netids_list = [n.strip() for n in netids.split(',') if (n.strip() and n.strip() != username)] 
     netids = set(netids_list)
-    netids.discard(username)
-    netids = list(netids)
+    netids_list = list(netids)
 
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
