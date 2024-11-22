@@ -85,7 +85,8 @@ def groups():
                 group['members'] = []
                 for member in group_members:
                     if member != username:
-                        group['members'].append(member)
+                        # remove (),'
+                        group['members'].append(member.replace("(", "").replace(")", "").replace("'", "").replace(",", ""))
 
         cursor.close()
 
