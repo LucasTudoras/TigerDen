@@ -73,7 +73,7 @@ def groups():
         if user_has_group:
             group_id = group_data[0][0]
             cursor.execute("""
-                SELECT username
+                SELECT user_id
                 FROM members
                 WHERE members.group_id = %s
             """, (group_id,))
