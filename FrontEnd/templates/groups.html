@@ -68,9 +68,11 @@
             </form>
         </div>
     </div>
+    {% if user_has_group %}
     <div class="search-text">
-        <a href="/in-group">IF IN GROUP</a>
+        <a href="/in-group" class="btn btn-primary">Manage Groups</a>
     </div>
+    {% endif %}
 </div>
 
 
