@@ -97,6 +97,9 @@ def create_group():
     username = auth.authenticate()
     group_name = flask.request.form.get('group_name')
     netids = flask.request.form.get('netids')
+    # removing duplicates and current user. is there a better way? 
+    netids = set(netids)
+    netids.discard(username)
 
     if not group_name or not netids:
         return flask.jsonify({'success': False, 'message': 'Group name and members are required'}), 400
