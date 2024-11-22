@@ -257,17 +257,14 @@ def main(file):
     # Define the college names to look for
     college_names = {
         "Butler", "Forbes", "Mathey", "NCW", "Rocky", "Upperclass", "Whitman", "Yeh",
-        "1967", "1976", "Bloomberg", "Bogle", "Scully", "Wilf", "Yoseloff",
-        "Annex", "Main", "Blair", "Campbell", "Edwards", "Hamilton", "Joline", "Little",
-        "Addy", "Jose", "Kanji", "Kwanza",
-        "Buyers", "Holder", "Witherspoon",
-        "1901", "1903", "99Alexander", "Brown", "Cuyler", "Dickinson Street, 2",
-        "Dod", "Feinberg", "Foulke", "Henry", "Little", "Lockhart", "Patton", "Pyne",
-        "Scully", "Spelman", "Walker", "Wright",
-        "1981", "Baker", "Fisher", "Hargadon", "Lauritzen",
-        "Murley", "Wendell",
-        "Fu", "Grousebeck", "Hariri", "Mannion"
-    }
+        '1967', '1976', 'Bloomberg', 'Bogle', 'Scully', 'Wilf', 'Yoseloff', '99Alexander', 
+        'Annex', 'Main', 'Blair', 'Campbell', 'Edwards', 'Joline', 'Little',
+        'Hamilton', 'Addy', 'Jose E. Feliciano', 'Aliya Kanji', 'Kwanza Jones', 'Buyers',
+        'Campbell', 'Holder', 'Witherspoon', '1901', 'Feinberg', 'Patton', '1903', 'Foulke',
+        'Pyne', 'Brown', 'Henry', 'Scully', 'Cuyler', 'Laughlin', 'Spelman', 'Dickinson Street, 2',
+        'Little', 'Walker', 'Dod', 'Lockhart', 'Wright', '1981', 'Baker', 'Fisher',
+        'Hargadon', 'Lauritzen', 'Murley', 'Wendell', 'Fu', 'Grousbeck', 'Hariri', 'Mannion'
+        }
 
     # Extract text from both PDFs
     extract_text_from_pdf(pdf, pdf_output, college_names)
