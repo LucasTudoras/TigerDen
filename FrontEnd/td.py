@@ -6,7 +6,7 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # Database setup
 
