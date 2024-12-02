@@ -1,0 +1,456 @@
+{% extends "loggedin.html" %}
+
+
+{% block content %}   
+<div class="logoutContainer">
+   <a href="/logout" class="loginButton">Log Out</a>
+</div>
+
+<div class="search-text">
+<h1>Browse All Rooms</h1>
+    There are 2,860 rooms at Princeton University. <br>
+    Filter this list to explore all the rooms, regardless of what PDF you have uploaded.
+</div>
+<br>
+   <form id="autoSubmitForm" action="/search" method="GET" >
+       <table align="center" class="hall" border="1" style="width: 75%;" align="center">
+           <tr style="height: 50px;">
+                   <td class="collegenames" align="center">
+                        <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" onchange="toggleHalls(this)" data-college="Butler" {% if "Butler College" in check_all %}checked{% endif %}>
+                        <label for="Butler College"><strong>Butler</strong></label>
+                    </td>
+                   <td class="collegenames" align="center">
+                    <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" onchange="toggleHalls(this)" data-college="Forbes" {% if "Forbes College" in check_all %}checked{% endif %}>
+                        <label for="Forbes College"><strong>Forbes</strong></label>
+                   </td>
+                   <td class="collegenames" align="center">
+                    <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" onchange="toggleHalls(this)" data-college="Mathey" {% if "Mathey College" in check_all %}checked{% endif %}>
+                        <label for="Mathey College"><strong>Mathey</strong></label>
+                   </td>
+                   <td class="collegenames" align="center">
+                    <input type="checkbox" id="New College West" name="New College West" value="New College West" onchange="toggleHalls(this)" data-college="New College West" {% if "New College West" in check_all %}checked{% endif %}>
+                        <label for="New College West"><strong>New College West</strong></label>
+                   </td>
+                   <td class="collegenames" align="center">
+                        <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" onchange="toggleHalls(this)" data-college="Rockefeller" {% if "Rockefeller College" in check_all %}checked{% endif %}>
+                        <label for="Rockefeller College"><strong>Rockefeller</strong></label>
+                   </td>
+                   <td class="collegenames" align="center" colspan="2">
+                        <input type="checkbox" id="Upperclass" name="Upperclass" value="Upperclass" onchange="toggleHalls(this)" data-college="Upperclass" {% if "Upperclass" in check_all %}checked{% endif %}>
+                        <label for="Upperclass"><strong>Upperclass</strong></label>
+                   </td>
+                   <td class="collegenames" align="center">
+                        <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" onchange="toggleHalls(this)" data-college="Whitman" {% if "Whitman College" in check_all %}checked{% endif %}>
+                        <label for="Whitman College"><strong>Whitman</strong></label>
+                   </td>
+                   <td class="collegenames" align="center">
+                    <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" onchange="toggleHalls(this)" data-college="Yeh" {% if "Yeh College" in check_all %}checked{% endif %}>
+                        <label for="Yeh College"><strong>Yeh</strong></label>
+                   </td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" id="1967" name="1967" value="1967" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "1967" in selected_halls %}checked{% endif %}>
+                   <label for="1967">1967</label>
+               </td>
+               <td>
+                   <input type="checkbox" id="99Alexander" name="99Alexander" value="99Alexander" data-college="Forbes" class="hall-checkbox" onchange="checkCollege('Forbes')" {% if "99Alexander" in selected_halls %}checked{% endif %}>
+                   <label for="99Alexander">99Alexander</label>
+               </td>
+                <td>
+                    <input type="checkbox" id="Blair" name="Blair" value="Blair" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Blair" in selected_halls %}checked{% endif %}>
+                    <label for="Blair">Blair</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Addy" name="Addy" value="Addy" data-college="New College West" class="hall-checkbox" onchange="checkCollege('New College West')" {% if "Addy" in selected_halls %}checked{% endif %}>
+                    <label for="Addy">Addy</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Buyers" name="Buyers" value="Buyers" data-college="Rockefeller" class="hall-checkbox" onchange="checkCollege('Rockefeller')" {% if "Buyers" in selected_halls %}checked{% endif %}>
+                    <label for="Buyers">Buyers</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1901" name="1901" value="1901" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "1901" in selected_halls %}checked{% endif %}>
+                    <label for="1901">1901</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1903" name="1903" value="1903" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "1903" in selected_halls %}checked{% endif %}>
+                    <label for="1903">1903</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="1981" name="1981" value="1981" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "1981" in selected_halls %}checked{% endif %}>
+                    <label for="1981">1981</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Fu" name="Fu" value="Fu" data-college="Yeh" class="hall-checkbox" onchange="checkCollege('Yeh')" {% if "Fu" in selected_halls %}checked{% endif %}>
+                    <label for="Fu">Fu</label>
+                </td> 
+           </tr>
+           <tr>
+                <td>
+                    <input type="checkbox" id="1976" name="1976" value="1976" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "1976" in selected_halls %}checked{% endif %}>
+                    <label for="1976">1976</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Annex" name="Annex" value="Annex" data-college="Forbes" class="hall-checkbox" onchange="checkCollege('Forbes')" {% if "Annex" in selected_halls %}checked{% endif %}>
+                    <label for="Annex">Annex</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Campbell-Mathey" name="Campbell-Mathey" value="Campbell-Mathey" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Campbell-Mathey" in selected_halls %}checked{% endif %}>
+                    <label for="Campbell-Mathey">Campbell</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Aliya Kanji" name="Aliya Kanji" value="Aliya Kanji" data-college="New College West" class="hall-checkbox" onchange="checkCollege('New College West')" {% if "Aliya Kanji" in selected_halls %}checked{% endif %}>
+                    <label for="Aliya Kanji">Aliya Kanji</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Campbell-Rocky" name="Campbell-Rocky" value="Campbell-Rocky" data-college="Rockefeller" class="hall-checkbox" onchange="checkCollege('Rockefeller')" {% if "Campbell-Rocky" in selected_halls %}checked{% endif %}>
+                    <label for="Campbell-Rocky">Campbell</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Brown" name="Brown" value="Brown" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Brown" in selected_halls %}checked{% endif %}>
+                    <label for="Brown">Brown</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Cuyler" name="Cuyler" value="Cuyler" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Cuyler" in selected_halls %}checked{% endif %}>
+                    <label for="Cuyler">Cuyler</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Baker" name="Baker" value="Baker" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Baker" in selected_halls %}checked{% endif %}>
+                    <label for="Baker">Baker</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Grousbeck" name="Grousbeck" value="Grousbeck" data-college="Yeh" class="hall-checkbox" onchange="checkCollege('Yeh')" {% if "Grousbeck" in selected_halls %}checked{% endif %}>
+                    <label for="Grousbeck">Grousbeck</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Bloomberg" name="Bloomberg" value="Bloomberg" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "Bloomberg" in selected_halls %}checked{% endif %}>
+                    <label for="Bloomberg">Bloomberg</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Main" name="Main" value="Main" data-college="Forbes" class="hall-checkbox" onchange="checkCollege('Forbes')" {% if "Main" in selected_halls %}checked{% endif %}>
+                    <label for="Main">Main</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Edwards" name="Edwards" value="Edwards" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Edwards" in selected_halls %}checked{% endif %}>
+                    <label for="Edwards">Edwards</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Jose Feliciano" name="Jose Feliciano" value="Jose Feliciano" data-college="New College West" class="hall-checkbox" onchange="checkCollege('New College West')" {% if "Jose Feliciano" in selected_halls %}checked{% endif %}>
+                    <label for="Jose Feliciano">Jose Feliciano</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Holder" name="Holder" value="Holder" data-college="Rockefeller" class="hall-checkbox" onchange="checkCollege('Rockefeller')" {% if "Holder" in selected_halls %}checked{% endif %}>
+                    <label for="Holder">Holder</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Dod" name="Dod" value="Dod" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Dod" in selected_halls %}checked{% endif %}>
+                    <label for="Dod">Dod</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Feinberg" name="Feinberg" value="Feinberg" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Feinberg" in selected_halls %}checked{% endif %}>
+                    <label for="Feinberg">Feinberg</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Fisher" name="Fisher" value="Fisher" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Fisher" in selected_halls %}checked{% endif %}>
+                    <label for="Fisher">Fisher</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Hariri" name="Hariri" value="Hariri" data-college="Yeh" class="hall-checkbox" onchange="checkCollege('Yeh')" {% if "Hariri" in selected_halls %}checked{% endif %}>
+                    <label for="Hariri">Hariri</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Bogle" name="Bogle" value="Bogle" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "Bogle" in selected_halls %}checked{% endif %}>
+                    <label for="Bogle">Bogle</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Hamilton" name="Hamilton" value="Hamilton" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Hamilton" in selected_halls %}checked{% endif %}>
+                    <label for="Hamilton">Hamilton</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Kwanza Jones" name="Kwanza Jones" value="Kwanza Jones" data-college="New College West" class="hall-checkbox" onchange="checkCollege('New College West')" {% if "Kwanza Jones" in selected_halls %}checked{% endif %}>
+                    <label for="Kwanza Jones">Kwanza Jones</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Witherspoon" name="Witherspoon" value="Witherspoon" data-college="Rockefeller" class="hall-checkbox" onchange="checkCollege('Rockefeller')" {% if "Witherspoon" in selected_halls %}checked{% endif %}>
+                    <label for="Witherspoon">Witherspoon</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Foulke" name="Foulke" value="Foulke" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Foulke" in selected_halls %}checked{% endif %}>
+                    <label for="Foulke">Foulke</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Henry" name="Henry" value="Henry" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Henry" in selected_halls %}checked{% endif %}>
+                    <label for="Henry">Henry</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Hargadon" name="Hargadon" value="Hargadon" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Hargadon" in selected_halls %}checked{% endif %}>
+                    <label for="Hargadon">Hargadon</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Mannion" name="Mannion" value="Mannion" data-college="Yeh" class="hall-checkbox" onchange="checkCollege('Yeh')" {% if "Mannion" in selected_halls %}checked{% endif %}>
+                    <label for="Mannion">Mannion</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Wilf" name="Wilf" value="Wilf" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "Wilf" in selected_halls %}checked{% endif %}>
+                    <label for="Wilf">Wilf</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Joline" name="Joline" value="Joline" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Joline" in selected_halls %}checked{% endif %}>
+                    <label for="Joline">Joline</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Laughlin" name="Laughlin" value="Laughlin" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Laughlin" in selected_halls %}checked{% endif %}>
+                    <label for="Laughlin">Laughlin</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Little-Upperclass" name="Little-Upperclass" value="Little-Upperclass" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Little-Upperclass" in selected_halls %}checked{% endif %}>
+                    <label for="Little-Upperclass">Little</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Lauritzen" name="Lauritzen" value="Lauritzen" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Lauritzen" in selected_halls %}checked{% endif %}>
+                    <label for="Lauritzen">Lauritzen</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="Yoseloff" name="Yoseloff" value="Yoseloff" data-college="Butler" class="hall-checkbox" onchange="checkCollege('Butler')" {% if "Yoseloff" in selected_halls %}checked{% endif %}>
+                    <label for="Yoseloff">Yoseloff</label>
+                </td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Little-Mathey" name="Little-Mathey" value="Little-Mathey" data-college="Mathey" class="hall-checkbox" onchange="checkCollege('Mathey')" {% if "Little-Mathey" in selected_halls %}checked{% endif %}>
+                    <label for="Little-Mathey">Little</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Lockhart" name="Lockhart" value="Lockhart" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Lockhart" in selected_halls %}checked{% endif %}>
+                    <label for="Lockhart">Lockhart</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Patton" name="Patton" value="Patton" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Patton" in selected_halls %}checked{% endif %}>
+                    <label for="Patton">Patton</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Murley" name="Murley" value="Murley" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Murley" in selected_halls %}checked{% endif %}>
+                    <label for="Murley">Murley</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Pyne" name="Pyne" value="Pyne" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Pyne" in selected_halls %}checked{% endif %}>
+                    <label for="Pyne">Pyne</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Scully" name="Scully" value="Scully" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Scully" in selected_halls %}checked{% endif %}>
+                    <label for="Scully">Scully</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Wendell" name="Wendell" value="Wendell" data-college="Whitman" class="hall-checkbox" onchange="checkCollege('Whitman')" {% if "Wendell" in selected_halls %}checked{% endif %}>
+                    <label for="Wendell">Wendell</label>
+                </td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Spelman" name="Spelman" value="Spelman" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Spelman" in selected_halls %}checked{% endif %}>
+                    <label for="Spelman">Spelman</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Walker" name="Walker" value="Walker" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Walker" in selected_halls %}checked{% endif %}>
+                    <label for="Walker">Walker</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td>
+                    <input type="checkbox" id="Wright" name="Wright" value="Wright" data-college="Upperclass" class="hall-checkbox" onchange="checkCollege('Upperclass')" {% if "Wright" in selected_halls %}checked{% endif %}>
+                    <label for="Wright">Wright</label>
+                </td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+       </table>
+       <table class="hall" style="width: 75%;" align="center">
+        <tr>
+            <td class="normal"><h3>Room Type</h3></td>
+            <td>
+                <input type="checkbox" id="SINGLE" name="SINGLE" value="SINGLE" {% if "SINGLE" in selected_types %}checked{% endif %}>
+                   <label for="SINGLE">Single</label>
+            </td>
+            <td>
+                <input type="checkbox" id="DOUBLE" name="DOUBLE" value="DOUBLE" {% if "DOUBLE" in selected_types %}checked{% endif %}>
+                   <label for="DOUBLE">Double</label>
+            </td>
+            <td>
+                <input type="checkbox" id="TRIPLE" name="TRIPLE" value="TRIPLE" {% if "TRIPLE" in selected_types %}checked{% endif %}>
+                   <label for="TRIPLE">Triple</label>
+            </td>
+            <td>
+                <input type="checkbox" id="QUAD" name="QUAD" value="QUAD" {% if "QUAD" in selected_types %}checked{% endif %}>
+                   <label for="QUAD">Quad</label>
+            </td>
+            <td>
+                <input type="checkbox" id="QUINT" name="QUINT" value="QUINT" {% if "QUINT" in selected_types %}checked{% endif %}>
+                   <label for="QUINT">5-Person</label>
+            </td>
+            <td>
+                <input type="checkbox" id="6PERSON" name="6PERSON" value="6PERSON" {% if "6PERSON" in selected_types %}checked{% endif %}>
+                   <label for="6PERSON">6-Person</label>
+            </td>
+        </tr>
+
+       </table>
+       <br>
+       <br>
+       <h4 style="display: inline;">Sort by</h4>
+       <select name="First Sort" id="First Sort">
+           <option value="">First Sort</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if firstSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if firstSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if firstSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if firstSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if firstSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if firstSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <select name="Second Sort" id="Second Sort">
+           <option value="">Second Sort</option>
+           <option value="Hall ASC" {% if secondSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
+           <option value="Hall DESC" {% if secondSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="Room ASC" {% if secondSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
+           <option value="Room DESC" {% if secondSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
+           <option value="Type ASC" {% if secondSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
+           <option value="Type DESC" {% if secondSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="Sqft ASC" {% if secondSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if secondSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="College ASC" {% if secondSort == "College ASC" %}selected{% endif %}>College Ascending</option>
+           <option value="College DESC" {% if secondSort == "College DESC" %}selected{% endif %}>College Descending</option>
+           <option value="Region ASC" {% if secondSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
+           <option value="Region DESC" {% if secondSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
+       </select>
+       <br>
+       <br>
+       <button type="submit" style="cursor:pointer;">Search</button>
+   </form>
+   <div align="left" style="padding-left: 12%;">
+    <h2 style="display: inline;">Search Results: </h2>
+    <h2 style="display: inline;">{{ number }} rooms</h2>
+   </div>
+   
+    <h3>Click on column title to sort. Click on row to see more.</h3> 
+    {% if results %}
+    <table id="room results" border="1" style="width:66%;" align="center">
+        <tr>
+            <td><strong>Favorite</strong></td>
+            <td><strong>Hall</strong></td>
+            <td><strong>Room</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Sqft</strong></td>
+            <td><strong>College</strong></td>
+            <td><strong>More Info</strong></td>
+        </tr>
+
+        {% for room in results %}
+        <tr class="special">
+            <td align="center">
+                <span 
+                    class="favorite-icon" 
+                    onclick="Favorite('{{ room['roomid'] }}');"
+                    style="cursor: pointer;">
+                    {% if room['is_favorite'] %}
+                        &#9733; <!-- Filled star -->
+                    {% else %}
+                        &#9734; <!-- Empty star -->
+                    {% endif %}
+                </span>
+            </td>
+            <td align="center">{{ room['hall'] }}</td>
+            <td align="center">{{ room['room'] }}</td>
+            <td align="center">{{ room['type'] }}</td>
+            <td align="center">{{ room['sqft'] }}</td>
+            <td align="center">{{ room['college'] }}</td>
+            <td><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No rooms found matching your criteria.</p>
+    {% endif %}
+
+<script>
+    
+
+    function Favorite(roomID) {
+        console.log("TRYING TO FAVORITE " + roomID)
+        fetch(`/favorite`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ room_id: roomID })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const icon = document.querySelector(`[onclick="Favorite('${roomID}');"]`);
+                console.log(`[onclick="Favorite('${roomID}')"]`);
+                icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
+            } else {
+                alert("Failed to update favorite status.");
+            }
+        })
+        .catch(error => console.log('Error:', error));
+    }
+    function toggleHalls(collegeCheckbox) {
+        const college = collegeCheckbox.getAttribute('data-college');
+        const hallCheckboxes = document.querySelectorAll(`.hall-checkbox[data-college="${college}"]`);
+
+        hallCheckboxes.forEach(hallCheckbox => {
+            hallCheckbox.checked = collegeCheckbox.checked;
+        });
+    }
+    function checkCollege(college) {
+        const hallCheckboxes = document.querySelectorAll(`.hall-checkbox[data-college="${college}"]`);
+        const collegeCheckbox = document.querySelector(`input[type="checkbox"][data-college="${college}"]`);
+
+        const anyChecked = Array.from(hallCheckboxes).some(hallCheckbox => hallCheckbox.checked);
+        collegeCheckbox.checked = anyChecked;
+    }
+    
+
+</script>
+    {% endblock %}
