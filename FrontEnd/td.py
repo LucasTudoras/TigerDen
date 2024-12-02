@@ -807,7 +807,7 @@ def justBrowsing():
         LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
         WHERE 1=1
         """
-    params = [username, username]
+    params = [username]
     if selected_colleges:
         placeholder = ', '.join(['%s'] * len(selected_colleges))
         query += f" AND College IN ({placeholder})"
