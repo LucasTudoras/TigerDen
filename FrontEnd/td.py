@@ -800,7 +800,7 @@ def justBrowsing():
 
     # Build SQL query with filters and sorting
     query = """
-        SELECT rooms.*,
+        SELECT DISTINCT rooms.*,
         CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
         FROM rooms
         JOIN availables ON rooms.roomid = availables.room_id
