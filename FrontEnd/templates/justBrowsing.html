@@ -383,7 +383,6 @@
             <td><strong>Type</strong></td>
             <td><strong>Sqft</strong></td>
             <td><strong>College</strong></td>
-            <td><strong>More Info</strong></td>
         </tr>
 
         {% for room in results %}
@@ -400,12 +399,21 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center">{{ room['hall'] }}</td>
-            <td align="center">{{ room['room'] }}</td>
-            <td align="center">{{ room['type'] }}</td>
-            <td align="center">{{ room['sqft'] }}</td>
-            <td align="center">{{ room['college'] }}</td>
-            <td><a href="/room_details/{{ room['roomid'] }}" title="{{ room['hall'] }} {{ room['room']}}">Click here to see more</a></td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['hall'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['room'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['type'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['sqft'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['college'] }}
+            </td>
         </tr>
         {% endfor %}
     </table>

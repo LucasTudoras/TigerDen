@@ -6,18 +6,29 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
+from dotenv import load_dotenv
 
 # Database setup
 
 
+# for local use
+# load_dotenv()
+# DATABASE = os.getenv("LOCAL_DATABASE")
 
+# for deployed use
 DATABASE = os.environ['DATABASE_URL']
 
+# for local use
+'''
+if 'DYNO' is os.environ:
+    UPLOAD_FOLDER = '/tmp'
+else:
+    UPLOAD_FOLDER = 'uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+'''
 
-#if 'DYNO' is os.environ:
+# for deployed use
 UPLOAD_FOLDER = '/tmp'
-#else:
-#    UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 

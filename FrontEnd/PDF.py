@@ -247,7 +247,12 @@ def print_output(output, list):
 def main(file):
     # Paths to the PDF files
     pdf = Path(file)
+
+    # deployed use
     pdf_output = Path("/tmp/temp.txt")
+
+    # local use
+    # pdf_output = Path("tmp")
 
     with open(pdf_output, 'w') as file:
         file.write("")
