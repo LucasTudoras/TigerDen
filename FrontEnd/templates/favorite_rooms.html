@@ -17,7 +17,6 @@
             <td><strong>College</strong></td>
             <td><strong>Region</strong></td>
             <td><strong>Floor Plan</strong></td>
-            <td><strong>More Info</strong></td>
         </tr>
 
         {% for room in favorite_rooms %}
@@ -34,12 +33,24 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center" class="special">{{ room['hall'] }}</td>
-            <td align="center" class="special">{{ room['room'] }}</td>
-            <td align="center" class="special">{{ room['type'] }}</td>
-            <td align="center" class="special">{{ room['sqft'] }}</td>
-            <td align="center" class="special">{{ room['college'] }}</td>
-            <td align="center" class="special">{{ room['region'] }}</td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['hall'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['room'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['type'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['sqft'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['college'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['region'] }}
+            </td>
             <td align="center" class="special">
                 {% if room['filepath'] %}
                     <a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
@@ -47,7 +58,6 @@
                     N/A
                 {% endif %}
             </td>
-            <td class="special"><a href="/room_details/{{ room['roomid'] }}">Click here to see more</a></td>
         </tr>
         {% endfor %}
     </table>

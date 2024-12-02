@@ -6,14 +6,16 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
-# from dotenv import load_dotenv
 
 # Database setup
 
 
 # for local use
-# load_dotenv()
-# DATABASE = os.getenv("LOCAL_DATABASE")
+'''
+from dotenv import load_dotenv
+load_dotenv()
+DATABASE = os.getenv("LOCAL_DATABASE")
+'''
 
 # for deployed use
 DATABASE = os.environ['DATABASE_URL']
