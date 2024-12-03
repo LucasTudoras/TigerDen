@@ -91,10 +91,10 @@ def groups():
                 """, (group_id,))
                 group_member_data[group_id] = [member[0] for member in cursor.fetchall()]
 
-                # Add all members to the group dictionary (including the current user and admin)
+                # adds all the members in the group
                 group['members'] = group_member_data[group_id]
 
-        # Get all favorite rooms for all group members in one query
+        # queries all the favorite rooms of all the different members
         group_favorite_rooms = []
         if user_has_group:
             for group in organized_groups:
@@ -151,6 +151,25 @@ def create_group():
         cursor.close()
 
     return flask.redirect('/groups')
+
+@app.route('/leave-group', methods=['GET', 'POST'])
+def leave_group():
+    username = auth.authenticate()
+    if flask.request.method == 'POST':
+        with psycopg2.connect(DATABASE) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT group_id FROM members WHERE user_id = %s
+            """, (username,))
+            group_id = cursor.fetchone()
+            if group_id:
+                cursor.execute("""
+                    DELETE FROM members WHERE user_id = %s AND group_id = %s
+                """, (username, group_id[0]))
+                conn.commit()
+    
+    return flask.redirect('/groups')
+
 
 
 @app.route('/campus-map')

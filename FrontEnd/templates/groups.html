@@ -116,8 +116,11 @@
     </div>
     {% if user_has_group %}
     <div class="search-text">
-        <a href="/leave-group" class="btn btn-primary">Leave Group</a>
+        <form method="post" action="/leave-group">
+            <button type="submit" class="btn btn-primary">Leave Group</button>
+        </form>
     </div>
+    
     {% endif %}
 </div>
 
