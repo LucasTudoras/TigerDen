@@ -39,18 +39,65 @@
                     </tbody>
                 </table>
             </div>
+
+            <div>
+                <table id="room results" border="1" align="center">
+                    <tr>
+                        <td><strong>Hall</strong></td>
+                        <td><strong>Room</strong></td>
+                        <td><strong>Type</strong></td>
+                        <td><strong>Sqft</strong></td>
+                        <td><strong>College</strong></td>
+                        <td><strong>Region</strong></td>
+                        <td><strong>Floor Plan</strong></td>
+                        <td><strong>Rating</strong></td>
+                    </tr>
+                    {% for room in rooms %}
+                    <tr class="special">
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['hall'] }}
+                        </td>
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['room'] }}
+                        </td>
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['type'] }}
+                        </td>
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['sqft'] }}
+                        </td>
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['college'] }}
+                        </td>
+                        <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {{ room['region'] }}
+                        </td>
+                        <td align="center" class="special">
+                            {% if room['filepath'] %}
+                                <a href="/newtab/{{ room['hall'] }} {{ room['room'] }} {{ room['floor'] }}" target="_blank" title="{{ room['hall'] }} {{ room['room']}}">View Floor Plan</a>
+                            {% else %}
+                                N/A
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                
+            </div>
+
         {% else %}
             <!-- Message displayed if the user does not have a group -->
             <div class="no-group-message">
                 <p class="message-text">You do not have a group yet. Create one below!</p>
             </div>
+            <!-- Button to open the modal for creating a group -->
+            <div class="create-group-container">
+                <button id="create-group-button" class="btn">Create Group</button>
+            </div>
         {% endif %}
     </div>
 
-    <!-- Button to open the modal for creating a group -->
-    <div class="create-group-container">
-        <button id="create-group-button" class="btn">Create Group</button>
-    </div>
+    
 
     <!-- Modal overlay for creating a group -->
     <div id="create-group-modal" class="modal" style="display: none;">
