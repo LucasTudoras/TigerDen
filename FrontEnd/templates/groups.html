@@ -24,7 +24,6 @@
                     <thead>
                         <tr>
                             <th>Group name</th>
-                            <th>Admin</th>
                             <th>Members</th>
                         </tr>
                     </thead>
@@ -32,7 +31,6 @@
                         {% for group in groups %}
                         <tr>
                             <td>{{ group.name }}</td>
-                            <td>{{ group.admin }}</td>
                             <td>{% for member in group.members %}{{ member }} {% endfor %}</td>
                         </tr>
                         {% endfor %}
@@ -96,9 +94,6 @@
             </div>
         {% endif %}
     </div>
-
-    
-
     <!-- Modal overlay for creating a group -->
     <div id="create-group-modal" class="modal" style="display: none;">
         <div class="modal-content">
@@ -121,7 +116,7 @@
     </div>
     {% if user_has_group %}
     <div class="search-text">
-        <a href="/in-group" class="btn btn-primary">Manage Groups</a>
+        <a href="/leave-group" class="btn btn-primary">Leave Group</a>
     </div>
     {% endif %}
 </div>

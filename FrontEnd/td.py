@@ -75,7 +75,7 @@ def groups():
         # Organize group data
         organized_groups = []
         for group in group_data:
-            organized_groups.append({'id': group[0], 'name': group[1], 'admin': group[2]})
+            organized_groups.append({'id': group[0], 'name': group[1]})
 
         user_has_group = bool(group_data)
 
@@ -91,8 +91,8 @@ def groups():
                 """, (group_id,))
                 group_member_data[group_id] = [member[0] for member in cursor.fetchall()]
 
-                # Add members to the group dictionary
-                group['members'] = [member for member in group_member_data[group_id] if member != username]
+                # Add all members to the group dictionary (including the current user and admin)
+                group['members'] = group_member_data[group_id]
 
         # Get all favorite rooms for all group members in one query
         group_favorite_rooms = []
@@ -116,6 +116,7 @@ def groups():
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
 
         return flask.render_template('groups.html', user_has_group=user_has_group, groups=organized_groups, rooms=group_favorite_rooms)
+
 
 
 
@@ -151,47 +152,6 @@ def create_group():
 
     return flask.redirect('/groups')
 
-@app.route('/in-group')
-def in_group():
-    username = auth.authenticate()
-
-    with psycopg2.connect(DATABASE) as conn:
-        cursor = conn.cursor()
-
-        # does user belong to a group
-        cursor.execute("""
-            SELECT groups.id, groups.name, members.user_id
-            FROM groups
-            JOIN members ON groups.id = members.group_id
-            WHERE members.user_id = %s
-        """, (username,))
-        group_data = cursor.fetchall()
-        organized_groups = []
-        for group in group_data:
-            organized_groups.append({'id': group[0], 'name': group[1], 'admin': group[2]})
-
-
-        # get members of group
-         # Get all favorited rooms by all group members
-        cursor.execute("""
-            SELECT rooms.*,
-                   CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
-            FROM rooms
-            JOIN favorites ON rooms.roomid = favorites.room_id
-            WHERE favorites.user_id IN (
-                SELECT user_id
-                FROM members
-                WHERE group_id = %s
-            )
-        """, (group[0],))
-        rooms = cursor.fetchall()
-
-        column_names = [description[0] for description in cursor.description]
-        group_favorite_rooms = [dict(zip(column_names, row)) for row in rooms]
-
-        cursor.close()
-
-    return flask.render_template('in_group.html', rooms=group_favorite_rooms)
 
 @app.route('/campus-map')
 def campus_map():
