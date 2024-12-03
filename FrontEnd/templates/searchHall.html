@@ -389,10 +389,9 @@
 
         {% for room in results %}
         <tr class="special">
-            <td align="center">
+            <td align="center" onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
                 <span 
                     class="favorite-icon" 
-                    onclick="Favorite('{{ room['roomid'] }}');"
                     style="cursor: pointer;">
                     {% if room['is_favorite'] %}
                         &#9733; <!-- Filled star -->

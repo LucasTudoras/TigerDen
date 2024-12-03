@@ -10,7 +10,7 @@ import update
 # Database setup
 
 # for local use
-
+'''
 from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
@@ -20,14 +20,12 @@ if 'DYNO' is os.environ:
 else:
     UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
+'''
 
 # for deployed use
-'''
 DATABASE = os.environ['DATABASE_URL']
 UPLOAD_FOLDER = '/tmp'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-'''
 
 @app.route('/')
 def home():
@@ -136,7 +134,45 @@ def create_group():
 @app.route('/in-group')
 def in_group():
     username = auth.authenticate()
-    return flask.render_template('in_group.html')
+
+    with psycopg2.connect(DATABASE) as conn:
+        cursor = conn.cursor()
+
+        # does user belong to a group
+        cursor.execute("""
+            SELECT groups.id, groups.name, members.user_id
+            FROM groups
+            JOIN members ON groups.id = members.group_id
+            WHERE members.user_id = %s
+        """, (username,))
+        group_data = cursor.fetchall()
+        organized_groups = []
+        for group in group_data:
+            organized_groups.append({'id': group[0], 'name': group[1], 'admin': group[2]})
+
+        user_has_group = bool(group_data)            
+
+        # get members of group
+         # Get all favorited rooms by all group members
+        cursor.execute("""
+            SELECT rooms.*,
+                   CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+            FROM rooms
+            JOIN favorites ON rooms.roomid = favorites.room_id
+            WHERE favorites.user_id IN (
+                SELECT user_id
+                FROM members
+                WHERE group_id = %s
+            )
+        """, (group[0],))
+        rooms = cursor.fetchall()
+
+        column_names = [description[0] for description in cursor.description]
+        group_favorite_rooms = [dict(zip(column_names, row)) for row in rooms]
+
+        cursor.close()
+
+    return flask.render_template('in_group.html', rooms=group_favorite_rooms)
 
 @app.route('/campus-map')
 def campus_map():
