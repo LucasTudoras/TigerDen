@@ -153,7 +153,17 @@ def create_group():
             #checks to see if the netid is in the group
             if cursor.fetchone() is None: 
                 cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
-            
+        cursor.execute(""" 
+                    SELECT COUNT(*) FROM members WHERE group_id = %s
+                """, (group_id[0],))
+        memeber_count = cursor.fetchone()[0]
+        if memeber_count <=1:
+            cursor.execute("""
+                DELETE FROM members WHERE group_id = %s
+                """, (group_id[0],))
+            cursor.execute("""
+                DELETE FROM groups WHERE id = %s
+                """, (group_id[0],))
 
         conn.commit()
         cursor.close()
