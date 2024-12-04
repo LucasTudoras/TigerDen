@@ -164,7 +164,6 @@ def create_group():
             cursor.execute("""
                 DELETE FROM groups WHERE id = %s
                 """, (group_id,))
-            return flask.jsonify({'success': True, 'message': 'Some or all of added members are already in a group'}), 400
 
         conn.commit()
         cursor.close()
