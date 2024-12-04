@@ -189,7 +189,11 @@ def leave_group():
                     SELECT COUNT(*) FROM members WHERE group_id = %s
                 """, (group_id[0],))
                 memeber_count = cursor.fetchone()[0]
-                if memeber_count <=1:
+                cursor.execute(""" 
+                    SELECT admin_username FROM group WHERE group_id = %s
+                """, (group_id[0]))
+                admin = cursor.fetchone()[0]
+                if memeber_count <=1 or admin== username:
                     cursor.execute("""
                         DELETE FROM members WHERE group_id = %s
                         """, (group_id[0],))
