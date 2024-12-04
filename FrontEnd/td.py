@@ -138,24 +138,25 @@ def create_group():
     netids_list = list(netids)
 
     with psycopg2.connect(DATABASE) as conn:
-        # alerts the user if they are trying to add someone who is already in a group
-        busy_members = False
         cursor = conn.cursor()
         cursor.execute('INSERT INTO groups (name, admin_username) VALUES (%s, %s) RETURNING id', (group_name, username))
 
         group_id = cursor.fetchone()[0]
         
         cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (username, group_id))
+        already_in_group = []
+
         for netid in netids_list:
             cursor.execute("""
                 SELECT 1 FROM members 
                 WHERE user_id = %s
             """, (netid,))
             #checks to see if the netid is in the group
-            if cursor.fetchone() is None: 
-                cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
+            existing_group = cursor.fetchone()
+            if existing_group:
+                already_in_group.append(netid)
             else:
-                busy_members = True
+                cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
 
         cursor.execute(""" 
                     SELECT COUNT(*) FROM members WHERE group_id = %s
@@ -171,6 +172,12 @@ def create_group():
 
         conn.commit()
         cursor.close()
+
+    # Prepare response messages
+    if already_in_group:
+        message = f"cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
+    else:
+        message = f"Successfully added members."
 
     return flask.redirect('/groups')
 
@@ -188,7 +195,6 @@ def add_member():
     netids_list = list(netids_set)
 
     already_in_group = []
-    added_members = []
 
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
@@ -214,7 +220,6 @@ def add_member():
                     cursor.execute("""
                         INSERT INTO members (user_id, group_id) VALUES (%s, %s)
                     """, (netid, group_id))
-                    added_members.append(netid)
 
         conn.commit()
         cursor.close()

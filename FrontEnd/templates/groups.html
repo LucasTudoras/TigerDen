@@ -169,32 +169,32 @@
         document.getElementById('create-group-modal').style.display = 'none';
     });
 
-    // Close modal when clicking outside of the modal content
-    window.addEventListener('click', function(event) {
-        var modal = document.getElementById('create-group-modal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
     document.querySelector('#add-member-modal form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); // Prevent the page from refreshing
 
-    const formData = new FormData(this);
-    fetch(this.action, {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert(data.message); // Show success message
-        } else {
-            alert(`Error: ${data.message}`); // Show error message
-        }
-    })
-    .catch(error => console.error('Error:', error));
-});
+        const formData = new FormData(this);
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Close the modal
+            document.getElementById('add-member-modal').style.display = 'none';
+            
+            // Show the response message as an alert
+            alert(data.message);
+            
+            // Optionally, refresh the group information or member list
+            if (data.success) {
+                window.location.reload(); // Reload the page to show updated group data
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An unexpected error occurred. Please try again.');
+        });
+    });
 
 </script>
 
