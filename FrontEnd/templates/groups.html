@@ -4,7 +4,7 @@
 <div class="logoutContainer">
     <a href="/logout" class="loginButton">Log Out</a>
  </div>
- 
+
 <div class="container">
     <div class="header">
         <h2>Groups</h2>
@@ -36,8 +36,11 @@
                         {% endfor %}
                     </tbody>
                 </table>
-            </div>
-
+    </div>
+     <!-- Add Member Button -->
+     <div class="add-member-container">
+         <button id="add-member-button" class="btn">Add Member</button>
+    </div>
             <div>
                 <table id="room results" border="1" align="center">
                     <tr>
@@ -48,7 +51,8 @@
                         <td><strong>College</strong></td>
                         <td><strong>Region</strong></td>
                         <td><strong>Floor Plan</strong></td>
-                        <td><strong>Rating</strong></td>
+                        <td><strong>Your Rating</strong></td>
+                        <td><strong>Group Rating</strong></td>
                     </tr>
                     {% for room in rooms %}
                     <tr class="special">
@@ -76,6 +80,20 @@
                             {% else %}
                                 N/A
                             {% endif %}
+                        </td>
+                        <td>
+                            <select class="rating-dropdown" data-member-id="{{ member.id }}">
+                                <option value="" selected>Rate (1-5)</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td align="center">
+                            <!-- Button for Group Rating -->
+                            <button onclick="alert('Average Group Rating: {{ room['group_rating'] }}');" class="btn btn-primary">Group Rating</button>
                         </td>
                     </tr>
                     {% endfor %}
@@ -121,10 +139,23 @@
             </form>
         </div>
     </div>
+
+     <!-- Modal overlay for adding a member -->
+     <div id="add-member-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Add Member</h3>
+            <form method="post" action="/add_member">
+                <div class="form-group">
+                    <label for="netid">NetIDs:</label>
+                    <input type="text" id="netid" name="netids" class="form-control" placeholder="Enter NetIDs, separated by commas" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Members</button>
+            </form>
+        </div>
+    </div>
     
 </div>
-
-
 
 <script>
     // Open and close the modal for creating a group
@@ -139,6 +170,25 @@
     // Close modal when clicking outside of the modal content
     window.addEventListener('click', function(event) {
         var modal = document.getElementById('create-group-modal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+
+<script>
+    // Open and close the modal for adding a member
+    document.getElementById('add-member-button').addEventListener('click', function() {
+        document.getElementById('add-member-modal').style.display = 'flex';
+    });
+
+    document.querySelector('.close-button').addEventListener('click', function() {
+        document.getElementById('add-member-modal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', function(event) {
+        var modal = document.getElementById('add-member-modal');
         if (event.target === modal) {
             modal.style.display = 'none';
         }
@@ -240,6 +290,11 @@
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 4px;
+    }
+
+    .add-member-container {
+        margin-top: 15px;
+        text-align: center;
     }
 
     .btn-primary {
