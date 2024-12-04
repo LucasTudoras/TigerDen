@@ -152,8 +152,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    const icon = document.querySelector(`class="favorite-icon"`);
-                    console.log(`[onclick="Favorite('${roomID}')"]`);
+                    const icon = document.querySelector('.favorite-icon');
                     icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
                 } else {
                     alert("Failed to update favorite status.");
