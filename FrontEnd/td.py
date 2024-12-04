@@ -133,7 +133,7 @@ def create_group():
     # removing duplicates and current user. is there a better way?
     # should we add invites, somehow? create an inbox? link? 
     
-    netids_list = [n.strip() for n in netids.split(',') if (n.strip() and n.strip() != username)] 
+    netids_list = [n.strip() for n in netids.split(',') if (n.strip())] 
     netids = set(netids_list)
     netids_list = list(netids)
 
@@ -151,7 +151,7 @@ def create_group():
                 SELECT 1 FROM members 
                 WHERE user_id = %s
             """, (netid,))
-            #checks to see if the netid is in the group
+            #checks to see if the netid is in group
             existing_group = cursor.fetchone()
             if existing_group:
                 already_in_group.append(netid)
@@ -190,7 +190,7 @@ def add_member():
     # if not group_id or not netids:
     #     return flask.jsonify({'success': False, 'message': 'Group ID and NetIDs are required'}), 400
 
-    netids_list = [n.strip() for n in netids.split(',') if n.strip() and n.strip() != username]
+    netids_list = [n.strip() for n in netids.split(',') if n.strip()]
     netids_set = set(netids_list)
     netids_list = list(netids_set)
 
