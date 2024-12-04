@@ -141,11 +141,19 @@ def create_group():
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
         cursor.execute('INSERT INTO groups (name, admin_username) VALUES (%s, %s) RETURNING id', (group_name, username))
+
         group_id = cursor.fetchone()[0]
 
         cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (username, group_id))
         for netid in netids_list:
-            cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
+            cursor.execute("""
+                SELECT 1 FROM members 
+                WHERE user_id = %s
+            """, (netid,))
+            #checks to see if the netid is in the group
+            if cursor.fetchone() is None: 
+                cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
+            
 
         conn.commit()
         cursor.close()

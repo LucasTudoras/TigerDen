@@ -80,6 +80,13 @@
                     </tr>
                     {% endfor %}
                 </table>
+            
+                <div class="search-text">
+                    <form method="post" action="/leave-group">
+                        <button type="submit" class="btn btn-primary">Leave Group</button>
+                    </form>
+                </div>
+
                 
             </div>
 
@@ -114,14 +121,7 @@
             </form>
         </div>
     </div>
-    {% if user_has_group %}
-    <div class="search-text">
-        <form method="post" action="/leave-group">
-            <button type="submit" class="btn btn-primary">Leave Group</button>
-        </form>
-    </div>
     
-    {% endif %}
 </div>
 
 
