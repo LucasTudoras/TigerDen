@@ -133,17 +133,18 @@ def create_group():
     # removing duplicates and current user. is there a better way?
     # should we add invites, somehow? create an inbox? link? 
     
-    print("NET IDS ARE OF THE FORM: ", netids)
     netids_list = [n.strip() for n in netids.split(',') if (n.strip() and n.strip() != username)] 
     netids = set(netids_list)
     netids_list = list(netids)
 
     with psycopg2.connect(DATABASE) as conn:
+        # alerts the user if they are trying to add someone who is already in a group
+        busy_members = False
         cursor = conn.cursor()
         cursor.execute('INSERT INTO groups (name, admin_username) VALUES (%s, %s) RETURNING id', (group_name, username))
 
         group_id = cursor.fetchone()[0]
-
+        
         cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (username, group_id))
         for netid in netids_list:
             cursor.execute("""
@@ -153,6 +154,9 @@ def create_group():
             #checks to see if the netid is in the group
             if cursor.fetchone() is None: 
                 cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (netid, group_id))
+            else:
+                busy_members = True
+
         cursor.execute(""" 
                     SELECT COUNT(*) FROM members WHERE group_id = %s
                 """, (group_id,))
@@ -169,6 +173,64 @@ def create_group():
         cursor.close()
 
     return flask.redirect('/groups')
+
+@app.route('/add_member', methods=['POST'])
+def add_member():
+    username = auth.authenticate()
+    #group_id = flask.request.form.get('group_id')
+    netids = flask.request.form.get('netids')
+
+    # if not group_id or not netids:
+    #     return flask.jsonify({'success': False, 'message': 'Group ID and NetIDs are required'}), 400
+
+    netids_list = [n.strip() for n in netids.split(',') if n.strip() and n.strip() != username]
+    netids_set = set(netids_list)
+    netids_list = list(netids_set)
+
+    already_in_group = []
+    added_members = []
+
+    with psycopg2.connect(DATABASE) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+                SELECT group_id FROM members WHERE user_id = %s
+            """, (username,))
+        group_id = cursor.fetchone()
+        
+        for netid in netids_list:
+            # Check if the user is already in another group
+            cursor.execute("""
+                SELECT group_id FROM members WHERE user_id = %s
+            """, (netid,))
+            existing_group = cursor.fetchone()
+
+            if existing_group:  # User is in another group
+                already_in_group.append(netid)
+            else:
+                cursor.execute("""
+                    SELECT 1 FROM members WHERE user_id = %s AND group_id = %s
+                """, (netid, group_id))
+                if cursor.fetchone() is None:  # If the user is not already a member
+                    cursor.execute("""
+                        INSERT INTO members (user_id, group_id) VALUES (%s, %s)
+                    """, (netid, group_id))
+                    added_members.append(netid)
+
+        conn.commit()
+        cursor.close()
+
+    # Prepare response messages
+    if already_in_group:
+        message = f"cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
+    else:
+        message = f"Successfully added members."
+
+
+    return flask.jsonify({'success': True, 'message': message})
+
+
+
+
 
 @app.route('/leave-group', methods=['GET', 'POST'])
 def leave_group():
