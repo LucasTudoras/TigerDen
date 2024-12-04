@@ -145,7 +145,7 @@
      <!-- Modal overlay for adding a member -->
      <div id="add-member-modal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span class="close-button2">&times;</span>
+            <span class="close-button" name="second-close">&times;</span>
             <h3>Add Member</h3>
             <form method="post" action="/add_member">
                 <div class="form-group">
@@ -179,7 +179,7 @@
         document.getElementById('add-member-modal').style.display = 'flex';
     });
 
-    document.querySelector('.close-button2').addEventListener('click', function() {
+    document.querySelector('[name="second-close"]').addEventListener('click', function() {
         document.getElementById('add-member-modal').style.display = 'none';
     });
 
