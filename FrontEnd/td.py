@@ -174,7 +174,21 @@ def leave_group():
                 cursor.execute("""
                     DELETE FROM members WHERE user_id = %s AND group_id = %s
                 """, (username, group_id[0]))
+
+                cursor.execute(""" 
+                    SELECT COUNT(*) FROM members WHERE group_id = %s
+                """, (group_id[0],))
+                memeber_count = cursor.fetchone()[0]
+                if memeber_count <=1:
+                    cursor.execute("""
+                        DELETE FROM members WHERE group_id = %s
+                        """, (group_id[0],))
+                    cursor.execute("""
+                        DELETE FROM groups WHERE id = %s
+                        """, (group_id[0]))
+
                 conn.commit()
+            cursor.close()
     
     return flask.redirect('/groups')
 
