@@ -145,7 +145,7 @@
      <!-- Modal overlay for adding a member -->
      <div id="add-member-modal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span class="close-button">&times;</span>
+            <span class="close-button2">&times;</span>
             <h3>Add Member</h3>
             <form method="post" action="/add_member">
                 <div class="form-group">
@@ -167,7 +167,28 @@
 
     document.querySelector('.close-button').addEventListener('click', function() {
         document.getElementById('create-group-modal').style.display = 'none';
+    });
+
+    
+
+</script>
+
+<script>
+    // Open and close the modal for adding a member
+    document.getElementById('add-member-button').addEventListener('click', function() {
+        document.getElementById('add-member-modal').style.display = 'flex';
+    });
+
+    document.querySelector('.close-button2').addEventListener('click', function() {
         document.getElementById('add-member-modal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', function(event) {
+        var modal = document.getElementById('add-member-modal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
     });
 
     document.querySelector('#add-member-modal form').addEventListener('submit', function(event) {
@@ -195,26 +216,6 @@
             console.error('Error:', error);
             alert('An unexpected error occurred. Please try again.');
         });
-    });
-
-</script>
-
-<script>
-    // Open and close the modal for adding a member
-    document.getElementById('add-member-button').addEventListener('click', function() {
-        document.getElementById('add-member-modal').style.display = 'flex';
-    });
-
-    document.querySelector('.close-button').addEventListener('click', function() {
-        document.getElementById('add-member-modal').style.display = 'none';
-    });
-
-    // Close modal when clicking outside of the modal content
-    window.addEventListener('click', function(event) {
-        var modal = document.getElementById('add-member-modal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
     });
 </script>
 
