@@ -191,7 +191,7 @@ def leave_group():
                 memeber_count = cursor.fetchone()[0]
                 cursor.execute(""" 
                     SELECT admin_username FROM group WHERE group_id = %s
-                """, (group_id[0]))
+                """, (group_id[0],))
                 admin = cursor.fetchone()[0]
                 if memeber_count <=1 or admin== username:
                     cursor.execute("""
