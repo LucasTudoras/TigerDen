@@ -185,7 +185,7 @@ def leave_group():
                         """, (group_id[0],))
                     cursor.execute("""
                         DELETE FROM groups WHERE id = %s
-                        """, (group_id[0]))
+                        """, (group_id[0],))
 
                 conn.commit()
             cursor.close()
