@@ -81,8 +81,9 @@
                                 N/A
                             {% endif %}
                         </td>
+                        
                         <td>
-                            <select class="rating-dropdown" data-member-id="{{ group.member.id }}">
+                            <select class="rating-dropdown" data-member-id="{{ username }}">
                                 <option value="" selected>Rate (1-5)</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -91,6 +92,7 @@
                                 <option value="5">5</option>
                             </select>
                         </td>
+                        
                         <td align="center">
                             <!-- Button for Group Rating -->
                             <button onclick="alert('Average Group Rating: {{ room['group_rating'] }}');" class="btn btn-primary">Group Rating</button>
