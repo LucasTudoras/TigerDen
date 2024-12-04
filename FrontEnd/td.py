@@ -179,7 +179,7 @@ def create_group():
     else:
         message = f"Successfully added members."
 
-    return flask.redirect('/groups')
+    return flask.jsonify({'success': True, 'message': message})
 
 @app.route('/add_member', methods=['POST'])
 def add_member():
