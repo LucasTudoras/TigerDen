@@ -115,9 +115,9 @@ def groups():
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
 
-                for room in group_favorite_rooms:
-                    print(room)
-                    room['rating'] = average_rating(username, room['roomid'])
+                # for room in group_favorite_rooms:
+                #     print(room)
+                #     room['rating'] = average_rating(username, room['roomid'])
 
 
         return flask.render_template('groups.html', user_has_group=user_has_group, groups=organized_groups, rooms=group_favorite_rooms, username=username)
