@@ -96,9 +96,8 @@
                             </form>
                         </td>
                         
-                        <td align="center" id="avg-rating{{ room['roomid'] }}">
-                            <!-- make this prettier -->
-                            {{ room['group_rating'] }}
+                        <td align="center" class="avg-rating" id="avg-rating{{ room['roomid'] }}">
+                            Loading...
                         </td>
                     </tr>
                     {% endfor %}
@@ -161,6 +160,31 @@
     </div>
     
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.avg-rating').forEach(element => {
+        const roomId = element.dataset.roomId;
+
+        fetch(`/average-rating?room_id=${roomId}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    element.textContent = `Average rating: ${data.average_rating}`;
+                } else {
+                    console.error(`Error fetching average rating for room ${roomId}: ${data.message}`);
+                    element.textContent = 'Error fetching rating';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching average rating:', error);
+                element.textContent = 'Error fetching rating';
+            });
+    });
+});
+
+</script>
+
 
 <script>
     // Open and close the modal for creating a group
@@ -287,7 +311,7 @@
                 if (data.success) {
                     const avgRatingElement = document.getElementById(`avg-rating${roomId}`);
                     if (avgRatingElement) {
-                        avgRatingElement.textContent = `Average rating: ${data.average_rating}`;
+                        avgRatingElement.textContent = `${data.average_rating}`;
                     }
                 } else {
                     console.error('Error fetching average rating:', data.message);
@@ -298,8 +322,7 @@
             });
     }
 
-    // Initial fetch for the average rating
-    // fetchAverageRating();
+    
 </script>
 
 <style>
