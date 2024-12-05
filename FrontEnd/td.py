@@ -722,7 +722,7 @@ def average_rating():
 
             for member in members:
                 user_id = member[0]
-
+                print(user_id, room_id)
                 cursor.execute("""
                     SELECT ratings
                     FROM ratings
