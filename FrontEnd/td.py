@@ -356,7 +356,7 @@ def uploaded_PDF():
             uploaded_rooms = update.database_update(filepath, DATABASE, username)
             os.remove(filepath)
             if uploaded_rooms is None:
-                return flask.jsonify({"success": True, "message": "Please upload a valid Room Draw PDF", "rooms": uploaded_rooms}), 200
+                return flask.jsonify({"success": False, "message": "Please upload a valid Room Draw PDF"}), 200
             #print(uploaded_rooms)
 
             return flask.jsonify({"success": True, "message": "PDF uploaded successfully", "rooms": uploaded_rooms}), 200
