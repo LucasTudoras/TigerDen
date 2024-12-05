@@ -116,6 +116,7 @@ def groups():
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
 
                 for room in group_favorite_rooms:
+                    print(room)
                     room['rating'] = average_rating(username, room['roomid'])
 
 
@@ -695,7 +696,7 @@ def rate_room():
         return flask.jsonify({'success': True, 'message': 'Rating submitted successfully.'})
 
     except Exception as e:
-        return flask.jsonify({'success': False, 'message': str(e)}), 500
+        return flask.jsonify({'success': False, 'message': "could not submit rating."}), 500
 
 
 
