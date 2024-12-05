@@ -96,7 +96,7 @@
                             </form>
                         </td>
                         
-                        <td align="center">
+                        <td align="center" id="avg-rating">
                             <!-- make this prettier -->
                             Group Average Rating: {{ room['group_rating'] }}
                         </td>
@@ -246,6 +246,55 @@
             alert('An unexpected error occurred. Please try again.');
         });
     });
+</script>
+
+
+<script>
+        document.getElementById('rate-room-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(this);
+
+        fetch('/rate-room', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Rating submitted successfully');
+                fetchAverageRating(); // Refresh the average rating
+            } else {
+                alert('Error submitting rating: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An unexpected error occurred.');
+        });
+    });
+
+
+        // Function to fetch and display the average rating
+        function fetchAverageRating() {
+        const roomId = document.querySelector('input[name="room_id"]').value;
+
+        fetch(`/average-rating?room_id=${roomId}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('avg-rating').textContent = data.average_rating;
+                } else {
+                    document.getElementById('avg-rating').textContent = 'Error fetching rating';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching average rating:', error);
+            });
+    }
+
+    // Initial fetch for the average rating
+    fetchAverageRating();
 </script>
 
 <style>

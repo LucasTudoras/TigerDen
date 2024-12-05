@@ -700,42 +700,48 @@ def rate_room():
 
 
 
-def average_rating(username, room_id):
-    with psycopg2.connect(DATABASE) as conn:
-        #get group_id
-        cursor = conn.cursor()
-        cursor.execute("""
-                SELECT group_id FROM members WHERE user_id = %s
-            """, (username,))
-        group_id = cursor.fetchone()
-        #get members
-        cursor.execute("""SELECT user_id
-            FROM members
-            WHERE group_id = %s
-        """, (group_id,))
-        members = cursor.fetchall()
-
-        ratings = []
-
-        for member in members:
-            user_id = member[0]
-
+@app.route('/average-rating', methods=['GET'])
+def average_rating():    
+    username = auth.authenticate()
+    room_id = flask.request.args.get('room_id')
+    try:
+        with psycopg2.connect(DATABASE) as conn:
+            #get group_id
+            cursor = conn.cursor()
             cursor.execute("""
-                SELECT ratings
-                FROM ratings
-                WHERE user_id = %s AND room_id = %s
-            """, (user_id, room_id))
-            
-            rating = cursor.fetchone()
-            
-            if rating:
-                ratings.append(rating[0])
+                    SELECT group_id FROM members WHERE user_id = %s
+                """, (username,))
+            group_id = cursor.fetchone()
+            #get members
+            cursor.execute("""SELECT user_id
+                FROM members
+                WHERE group_id = %s
+            """, (group_id,))
+            members = cursor.fetchall()
 
-        if ratings:
-            average = sum(ratings) / len(ratings)
-        else:
-            average = 0
-    return round(average, 2) if average else 0
+            ratings = []
+
+            for member in members:
+                user_id = member[0]
+
+                cursor.execute("""
+                    SELECT ratings
+                    FROM ratings
+                    WHERE user_id = %s AND room_id = %s
+                """, (user_id, room_id))
+                
+                rating = cursor.fetchone()
+                
+                if rating:
+                    ratings.append(rating[0])
+
+            if ratings:
+                average = sum(ratings) / len(ratings)
+            else:
+                average = 0
+        return flask.jsonify({'success': True, 'average_rating': round(average, 2) if average else 0}), 200 
+    except Exception as e:
+        return flask.jsonify({'success': False, 'message': "could not get average rating."}), 500
 
 
 
