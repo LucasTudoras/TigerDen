@@ -105,7 +105,7 @@ def groups():
                 group_id = group['id']
                 cursor.execute("""
                     SELECT rooms.*,
-                           CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+                        MAX(CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END) AS is_favorite
                     FROM rooms
                     LEFT JOIN favorites ON rooms.roomid = favorites.room_id
                     WHERE favorites.user_id IN (
@@ -113,6 +113,7 @@ def groups():
                         FROM members
                         WHERE group_id = %s
                     )
+                    GROUP BY rooms.roomid
                 """, (group_id,))
                 rooms = cursor.fetchall()
                 
