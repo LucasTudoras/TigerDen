@@ -83,7 +83,7 @@
                         </td>
                         
                         <td>
-                            <form id="rate-room-form" method="post" action="/rate-room">
+                            <form class="rate-room-form" data-room-id = "{{ room['roomid'] }}" method="post" action="/rate-room">
                             <select class="rating-dropdown" data-member-id="{{ username }}"  name="rating">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -98,7 +98,7 @@
                         
                         <td align="center" id="avg-rating">
                             <!-- make this prettier -->
-                            Group Average Rating: {{ room['group_rating'] }}
+                            {{ room['group_rating'] }}
                         </td>
                     </tr>
                     {% endfor %}
@@ -250,7 +250,7 @@
 
 
 <script>
-        document.getElementById('rate-room-form').addEventListener('submit', function(event) {
+        document.querySelectorAll('rate-room-form').forEach( form => { form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
         const formData = new FormData(this);
@@ -273,6 +273,7 @@
             alert('An unexpected error occurred.');
         });
     });
+});
 
 
         // Function to fetch and display the average rating
