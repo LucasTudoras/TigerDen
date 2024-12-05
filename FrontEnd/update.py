@@ -4,7 +4,7 @@ import PDF
 def database_update(pdf_filepath, DATABASE_URL, user_id):
     rooms = PDF.main(pdf_filepath)
     if not rooms:
-        print("no rooms parsed from uploaded PDF")
+        return
         rooms = []
 
     try:
