@@ -779,14 +779,11 @@ def get_rating():
 def handle_room_query(template_name, availables_matter):
     username = auth.authenticate()
     first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
-    second_sort = flask.request.args.get("Second Sort") or flask.request.cookies.get("Second Sort") or "College ASC"
 
     sort_clauses = []
 
     if first_sort:
         sort_clauses.append(first_sort)
-    if second_sort:
-        sort_clauses.append(second_sort)
 
     halls = {
             '1967': "Butler College",
@@ -932,10 +929,9 @@ def handle_room_query(template_name, availables_matter):
 
     # Create response with updated cookies
     response = flask.make_response(flask.render_template(template_name, results=rooms, firstSort=first_sort,
-                 secondSort=second_sort, selected_colleges = selected_colleges, selected_types = selected_types, 
+                 selected_colleges = selected_colleges, selected_types = selected_types, 
                  selected_halls=cookies_halls, check_all=selected_colleges, number=results))
     response.set_cookie("First Sort", first_sort)
-    response.set_cookie("Second Sort", second_sort)
 
     
     for arg_name, _ in types:
