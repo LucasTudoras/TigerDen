@@ -668,6 +668,77 @@ def searchHall():
 def justBrowsing():
     return handle_room_query('justBrowsing.html', availables_matter=False)
 
+@app.route('/rate-room', methods=['POST'])
+def rate_room():
+    username = auth.authenticate()
+    room_id = flask.request.form.get('room_id')
+    rating = int(flask.request.form.get('rating'))
+
+    try:
+        with psycopg2.connect(DATABASE) as conn:
+            cursor = conn.cursor()
+
+            # add or change rating
+            cursor.execute("""
+                INSERT INTO ratings (user_id, room_id, ratings)
+                VALUES (%s, %s, %s)
+                ON CONFLICT (user_id, room_id) DO UPDATE
+                SET ratings = EXCLUDED.ratings
+            """, (username, room_id, rating))
+
+            conn.commit()
+
+        return flask.jsonify({'success': True, 'message': 'Rating submitted successfully.'})
+
+    except Exception as e:
+        return flask.jsonify({'success': False, 'message': 'Error submitting rating.'}), 500
+
+
+@app.route('/average-rating', methods=['GET'])
+def average_rating():
+    username = auth.authenticate()
+    room_id = flask.request.args.get('room_id')
+    try:
+        with psycopg2.connect(DATABASE) as conn:
+            #get group_id
+            cursor = conn.cursor()
+            cursor.execute("""
+                    SELECT group_id FROM members WHERE user_id = %s
+                """, (username,))
+            group_id = cursor.fetchone()
+            #get members
+            cursor.execute("""SELECT user_id
+                FROM members
+                WHERE group_id = %s
+            """, (group_id,))
+            members = cursor.fetchall()
+
+            ratings = []
+
+            for member in members:
+                user_id = member[0]
+
+                cursor.execute("""
+                    SELECT ratings
+                    FROM ratings
+                    WHERE user_id = %s AND room_id = %s
+                """, (user_id, room_id))
+                
+                rating = cursor.fetchone()
+                
+                if rating:
+                    ratings.append(rating[0])
+
+            if ratings:
+                average = sum(ratings) / len(ratings)
+            else:
+                average = 0
+        return flask.jsonify({'success': True, 'average_rating': round(average, 2) if average else 0})
+
+    except Exception as e:
+        return flask.jsonify({'success': False, 'message': 'Error getting average rating.'}), 500
+
+
 def handle_room_query(template_name, availables_matter):
     username = auth.authenticate()
     first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
