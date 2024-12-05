@@ -337,10 +337,10 @@
        <h4 style="display: inline;">Sort by</h4>
        <select name="First Sort" id="First Sort">
            <option value="">First Sort</option>
-           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
-           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
-           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
-           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College A->Z</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Z->A</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall A->Z</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Z->A</option>
            <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
            <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
        </select>
