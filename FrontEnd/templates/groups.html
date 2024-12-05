@@ -285,7 +285,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    const avgRatingElement = document.querySelector(`[data-room-id="${roomId}"]`);
+                    const avgRatingElement = document.getElementById(`avg-rating${roomId}`);
                     if (avgRatingElement) {
                         avgRatingElement.textContent = `Average rating: ${data.average_rating}`;
                     }
@@ -299,7 +299,7 @@
     }
 
     // Initial fetch for the average rating
-    fetchAverageRating();
+    // fetchAverageRating();
 </script>
 
 <style>
