@@ -111,6 +111,8 @@ def groups():
                     )
                 """, (group_id,))
                 rooms = cursor.fetchall()
+                for room in rooms:
+                    room['rating'] = average_rating(username, room['roomid'])
 
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
@@ -691,52 +693,47 @@ def rate_room():
         return flask.jsonify({'success': True, 'message': 'Rating submitted successfully.'})
 
     except Exception as e:
-        return flask.jsonify({'success': False, 'message': 'Error submitting rating.'}), 500
+        return flask.jsonify({'success': False, 'message': str(e)}), 500
 
 
-@app.route('/average-rating', methods=['GET'])
-def average_rating():
-    username = auth.authenticate()
-    room_id = flask.request.args.get('room_id')
-    try:
-        with psycopg2.connect(DATABASE) as conn:
-            #get group_id
-            cursor = conn.cursor()
+
+def average_rating(username, room_id):
+    with psycopg2.connect(DATABASE) as conn:
+        #get group_id
+        cursor = conn.cursor()
+        cursor.execute("""
+                SELECT group_id FROM members WHERE user_id = %s
+            """, (username,))
+        group_id = cursor.fetchone()
+        #get members
+        cursor.execute("""SELECT user_id
+            FROM members
+            WHERE group_id = %s
+        """, (group_id,))
+        members = cursor.fetchall()
+
+        ratings = []
+
+        for member in members:
+            user_id = member[0]
+
             cursor.execute("""
-                    SELECT group_id FROM members WHERE user_id = %s
-                """, (username,))
-            group_id = cursor.fetchone()
-            #get members
-            cursor.execute("""SELECT user_id
-                FROM members
-                WHERE group_id = %s
-            """, (group_id,))
-            members = cursor.fetchall()
+                SELECT ratings
+                FROM ratings
+                WHERE user_id = %s AND room_id = %s
+            """, (user_id, room_id))
+            
+            rating = cursor.fetchone()
+            
+            if rating:
+                ratings.append(rating[0])
 
-            ratings = []
+        if ratings:
+            average = sum(ratings) / len(ratings)
+        else:
+            average = 0
+    return round(average, 2) if average else 0
 
-            for member in members:
-                user_id = member[0]
-
-                cursor.execute("""
-                    SELECT ratings
-                    FROM ratings
-                    WHERE user_id = %s AND room_id = %s
-                """, (user_id, room_id))
-                
-                rating = cursor.fetchone()
-                
-                if rating:
-                    ratings.append(rating[0])
-
-            if ratings:
-                average = sum(ratings) / len(ratings)
-            else:
-                average = 0
-        return flask.jsonify({'success': True, 'average_rating': round(average, 2) if average else 0})
-
-    except Exception as e:
-        return flask.jsonify({'success': False, 'message': 'Error getting average rating.'}), 500
 
 
 def handle_room_query(template_name, availables_matter):
