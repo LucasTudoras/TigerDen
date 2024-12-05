@@ -96,7 +96,7 @@
                             </form>
                         </td>
                         
-                        <td align="center" class="avg-rating" id="avg-rating{{ room['roomid'] }}">
+                        <td align="center" class="avg-rating" id="{{ room['roomid'] }}">
                             Loading...
                         </td>
                     </tr>
@@ -164,13 +164,13 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.avg-rating').forEach(element => {
-        const roomId = element.dataset.roomId;
+        const roomId = element.id;
 
         fetch(`/average-rating?room_id=${roomId}`)
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    element.textContent = `${data.average_rating}`;
+                    element.textContent = fetchAverageRating(roomId);
                 } else {
                     console.error(`Error fetching average rating for room ${roomId}: ${data.message}`);
                     element.textContent = 'Error fetching rating';
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    const avgRatingElement = document.getElementById(`avg-rating${roomId}`);
+                    const avgRatingElement = document.getElementById(`${roomId}`);
                     if (avgRatingElement) {
                         avgRatingElement.textContent = `${data.average_rating}`;
                     }
