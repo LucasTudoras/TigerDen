@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    element.textContent = `Average rating: ${data.average_rating}`;
+                    element.textContent = `${data.average_rating}`;
                 } else {
                     console.error(`Error fetching average rating for room ${roomId}: ${data.message}`);
                     element.textContent = 'Error fetching rating';

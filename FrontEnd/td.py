@@ -718,7 +718,7 @@ def average_rating():
                 WHERE group_id = %s
             """, (group_id,))
             members = cursor.fetchall()
-
+            print(members)
             ratings = []
 
             for member in members:
