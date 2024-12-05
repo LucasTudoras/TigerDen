@@ -63,6 +63,7 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
                 previous_line = None  
             else:
                 print(f"Page {page_num + 1}: No text found on this page.")
+                return False
             if page_num == 1 and not starting_word_found:
                 return False
     return True
