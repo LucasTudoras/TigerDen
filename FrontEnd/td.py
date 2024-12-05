@@ -27,6 +27,10 @@ DATABASE = os.environ['DATABASE_URL']
 UPLOAD_FOLDER = '/tmp'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+@app.errorhandler(404)
+def not_found(e):
+    return flask.render_template('error.html'), 404
+
 @app.route('/')
 def home():
     return flask.render_template('index.html')
