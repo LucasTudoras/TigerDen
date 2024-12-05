@@ -250,7 +250,9 @@
 
 
 <script>
-        document.querySelectorAll('rate-room-form').forEach( form => { form.addEventListener('submit', function(event) {
+        document.querySelectorAll('rate-room-form').forEach((form, index) => { 
+        console.log(`attaching listener to form ${index}`);
+        form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
         const formData = new FormData(this);
