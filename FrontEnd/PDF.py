@@ -23,7 +23,8 @@ def filter_text(text):
 
 #extracting the actual text from the pdf
 def extract_text_from_pdf(pdf_path, output_file_path, college_names):
-    x = 0
+    #keeps track if a valid word is found
+    starting_word_found = False
     # Open the PDF file
     with pdfplumber.open(pdf_path) as pdf:
         num_pages = len(pdf.pages)  # Get the total number of pages
@@ -44,24 +45,29 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
                 filtered_lines = filter_text(text)
 
                 for line in filtered_lines:
-                    # Check if any college name is in the line
+                    # Check if any college name is in the current line
                     if any(college in line for college in college_names) :
-                        # Write the previous line if it exists
-                        if previous_line and x == 0:
+                        #if it is the first starting word found print the previous line
+                        if previous_line and not starting_word_found:
                             write_text_to_file(output_file_path, previous_line)  # Write the previous line
-                            x =1
+                            starting_word_found = True
 
-                        # Write the current line that contains the college name
-                    if x ==1:
+                    # once the starting word is found then print the rest of the lines    
+                    if starting_word_found:
                         write_text_to_file(output_file_path, line)
 
                     # Update the previous line with the current line
-                    previous_line = line  # Always update to the current line
+                    previous_line = line
 
                 # At the end of the page, reset the previous line
                 previous_line = None  
             else:
                 print(f"Page {page_num + 1}: No text found on this page.")
+                return False
+            if page_num == 1 and not starting_word_found:
+                return False
+    return True
+            
 
 #gets the output files ready to receive the information
 def clear_file(name_file):
@@ -76,7 +82,6 @@ def find_word_in_file(filename, words_to_find):
             for line in file:
                 # Split line into words
                 words = line.split()
-                x = 0
                 for word in words:
                     # Check if the word is in the list of words to find
                     if word in words_to_find:
@@ -272,7 +277,9 @@ def main(file):
         }
 
     # Extract text from both PDFs
-    extract_text_from_pdf(pdf, pdf_output, college_names)
+    valid_PDF = extract_text_from_pdf(pdf, pdf_output, college_names)
+    if not valid_PDF:
+        return None
     
 
     colleges = {"Butler", "Forbes", "Mathey", "New College West", "Rocky", "Upperclass", "Whitman", "Yeh"}
