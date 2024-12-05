@@ -754,7 +754,7 @@ def get_rating():
 
             # Query to get the user's rating for the specific room
             cursor.execute("""
-                SELECT rating
+                SELECT ratings
                 FROM ratings
                 WHERE room_id = %s AND user_id = %s
             """, (room_id, user_id))
@@ -762,11 +762,11 @@ def get_rating():
             rating = cursor.fetchone()
 
         if rating:
-            return jsonify({'success': True, 'rating': rating[0]})
+            return flask.jsonify({'success': True, 'rating': rating[0]})
         else:
-            return jsonify({'success': False, 'message': 'No rating found for this room.'})
+            return flask.jsonify({'success': False, 'message': 'No rating found for this room.'})
     except Exception as e:
-        return jsonify({'success': False, 'message': str(e)}), 500
+        return flask.jsonify({'success': False, 'message': str(e)}), 500
 
 
 
