@@ -743,6 +743,32 @@ def average_rating():
         return flask.jsonify({'success': False, 'message': "could not get average rating."}), 500
 
 
+@app.route('/get-rating', methods=['GET'])
+def get_rating():
+    user_id = auth.authenticate()
+    room_id = flask.request.args.get('room_id')
+    
+    try:
+        with psycopg2.connect(DATABASE) as conn:
+            cursor = conn.cursor()
+
+            # Query to get the user's rating for the specific room
+            cursor.execute("""
+                SELECT rating
+                FROM ratings
+                WHERE room_id = %s AND user_id = %s
+            """, (room_id, user_id))
+
+            rating = cursor.fetchone()
+
+        if rating:
+            return jsonify({'success': True, 'rating': rating[0]})
+        else:
+            return jsonify({'success': False, 'message': 'No rating found for this room.'})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
+
+
 
 def handle_room_query(template_name, availables_matter):
     username = auth.authenticate()

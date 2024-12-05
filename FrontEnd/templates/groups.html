@@ -85,6 +85,7 @@
                         <td>
                             <form class="rate-room-form" data-room-id = "{{ room['roomid'] }}" method="post" action="/rate-room">
                             <select class="rating-dropdown" data-member-id="{{ username }}"  name="rating">
+                                <option value="" disabled selected>Rate Room</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -162,6 +163,28 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.rate-room-form').forEach(form => {
+        const roomId = form.dataset.roomId;
+        fetch(`/get-rating?room_id=${roomId}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const rating = data.rating;
+                    form.querySelector('select[name="rating"]').value = rating;
+                } else {
+                    console.log(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching rating:', error);
+            });
+    });
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.avg-rating').forEach(element => {
         const roomId = element.id;
