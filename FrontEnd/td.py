@@ -108,18 +108,19 @@ def groups():
                 group_id = group['id']
                 cursor.execute("""
                     SELECT rooms.*,
-                        MAX(CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END) AS is_favorite
-                    FROM rooms
-                    LEFT JOIN favorites ON rooms.roomid = favorites.room_id
-                    WHERE favorites.user_id IN (
-                        SELECT user_id
-                        FROM members
-                        WHERE group_id = %s
-                    )
-                    GROUP BY rooms.roomid
+                    CASE 
+                    WHEN EXISTS (
+                    SELECT 1 
+                    FROM favorites 
+                    JOIN members ON favorites.user_id = members.user_id 
+                    WHERE favorites.room_id = rooms.roomid AND members.group_id = %s
+                    ) 
+                    THEN 1 
+                    ELSE 0 
+                    END AS is_favorite
+                    FROM rooms;
                 """, (group_id,))
                 rooms = cursor.fetchall()
-                
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
                 
