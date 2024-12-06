@@ -6,6 +6,7 @@ import os
 from werkzeug.utils import secure_filename
 from top import app
 import update
+import checkNetid
 
 # Database setup
 
@@ -146,6 +147,16 @@ def create_group():
     netids_list = [n.strip() for n in netids.split(',') if (n.strip())] 
     netids = set(netids_list)
     netids_list = list(netids)
+    valid_netid_list = []
+    invalid_netid_list = []
+
+    for netid in netids_list:
+        valid_NETID = checkNetid.main(netid)
+        if valid_NETID:
+            valid_netid_list.append(netid)
+        else:
+            invalid_netid_list.append(netid)
+
 
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
@@ -156,7 +167,7 @@ def create_group():
         cursor.execute('INSERT INTO members (user_id, group_id) VALUES (%s, %s)', (username, group_id))
         already_in_group = []
 
-        for netid in netids_list:
+        for netid in valid_netid_list:
             cursor.execute("""
                 SELECT 1 FROM members 
                 WHERE user_id = %s
@@ -184,10 +195,13 @@ def create_group():
         cursor.close()
 
     # Prepare response messages
-    if already_in_group:
-        message = f"cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
+    message = ""
+    if invalid_netid_list:
+            message += f"The following netids are not valid \'{', '.join(invalid_netid_list)} \'\n"
+    elif already_in_group:
+        message += f"Cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
     else:
-        message = f"Successfully added members."
+        message += f"Successfully added members."
 
     return flask.jsonify({'success': True, 'message': message})
 
@@ -203,6 +217,15 @@ def add_member():
     netids_list = [n.strip() for n in netids.split(',') if n.strip()]
     netids_set = set(netids_list)
     netids_list = list(netids_set)
+    valid_netid_list = []
+    invalid_netid_list = []
+
+    for netid in netids_list:
+        valid_NETID = checkNetid.main(netid)
+        if valid_NETID:
+            valid_netid_list.append(netid)
+        else:
+            invalid_netid_list.append(netid)
 
     already_in_group = []
 
@@ -213,7 +236,7 @@ def add_member():
             """, (username,))
         group_id = cursor.fetchone()
         
-        for netid in netids_list:
+        for netid in valid_netid_list:
             # Check if the user is already in another group
             cursor.execute("""
                 SELECT group_id FROM members WHERE user_id = %s
@@ -235,10 +258,13 @@ def add_member():
         cursor.close()
 
     # Prepare response messages
-    if already_in_group:
-        message = f"cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
+    message = ""
+    if invalid_netid_list:
+            message += f"The following netids are not valid \'{', '.join(invalid_netid_list)} \'\n"
+    elif already_in_group:
+        message += f"Cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
     else:
-        message = f"Successfully added members."
+        message += f"Successfully added members."
 
 
     return flask.jsonify({'success': True, 'message': message})

@@ -20,12 +20,13 @@
                     class="favorite-icon" 
                     style="cursor: pointer;">
                     {% if room['is_favorite'] %}
-                        &#9733;  <!-- Filled star -->
+                        &#9733;  
+                        Remove From Favorites<!-- Filled star -->
                     {% else %}
-                        &#9734; <!-- Empty star -->
+                        &#9734; 
+                        Add to Favorites<!-- Empty star -->
                     {% endif %}
                 </span>
-            Add to Favorites
         </div>
     </div>
 
@@ -153,7 +154,7 @@
             .then(data => {
                 if (data.success) {
                     const icon = document.querySelector('.favorite-icon');
-                    icon.innerHTML = data.is_favorite ? '&#9733;' : '&#9734;'; // Toggle star
+                    icon.innerHTML = data.is_favorite ? '&#9733; Remove From Favorites' : '&#9734; Add to Favorites'; // Toggle star
                 } else {
                     alert("Failed to update favorite status.");
                 }

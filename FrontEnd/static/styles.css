@@ -111,7 +111,7 @@ body {
 }
 
 .logoutContainer {
-    position: fixed; /* Fixes the position to the viewport */
+    position:fixed; /* Fixes the position to the viewport */
     top: 10px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
 }
