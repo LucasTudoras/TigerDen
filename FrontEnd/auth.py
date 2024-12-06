@@ -4,6 +4,7 @@ import re
 import flask
 from flask import g
 from top import app
+import checkNetid
 
 _CAS_URL = 'https://fed.princeton.edu/cas/'
 
@@ -83,7 +84,8 @@ def load_user():
 @app.context_processor
 def inject_user():
     # Inject username into all templates
-    return {'username': g.username}
+    return {'username': g.username,
+            'name_user': checkNetid.main(g.username)}
 
 @app.route('/out', methods=['GET'])
 def out():
