@@ -83,7 +83,7 @@ def load_user():
 @app.context_processor
 def inject_user():
     # Inject username into all templates
-    return {'username': g.username, 'name': g.name}
+    return {'username': g.username}
 
 @app.route('/out', methods=['GET'])
 def out():
