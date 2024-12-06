@@ -50,6 +50,7 @@ def authenticate():
     # authenticated previously.  So return the username.
     if 'username' in flask.session:
         g.username = flask.session['username']
+        g.name = checkNetid.main(g.username)
         return g.username
 
     # If the request does not contain a login ticket, then redirect
@@ -73,6 +74,7 @@ def authenticate():
     username = username.strip()
     flask.session['username'] = username
     g.username = username
+    g.name = checkNetid.main(username)
     return username
 
 
