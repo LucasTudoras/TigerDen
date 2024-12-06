@@ -84,8 +84,7 @@ def load_user():
 @app.context_processor
 def inject_user():
     # Inject username into all templates
-    return {'username': g.username,
-            'name_user': checkNetid.main(g.username)}
+    return {'username': g.username}
 
 @app.route('/out', methods=['GET'])
 def out():
