@@ -774,7 +774,7 @@ def average_rating():
                 average = sum(ratings) / len(ratings)
             else:
                 average = 0
-        return flask.jsonify({'success': True, 'average_rating': round(average, 2) if average else 0}), 200 
+        return flask.jsonify({'success': True, 'average_rating': round(average, 2) if average else 'N/A'}), 200 
     except Exception as e:
         return flask.jsonify({'success': False, 'message': "could not get average rating."}), 500
 
@@ -981,3 +981,12 @@ def handle_room_query(template_name, availables_matter):
             response.set_cookie(college, '0', max_age=0)
 
     return response
+
+
+@app.route('/name', methods=['GET'])
+def name():    
+    username = auth.authenticate()
+    name = checkNetid.main(username)
+    if name:
+        return flask.jsonify({'success': True, 'name': name}), 200 
+    

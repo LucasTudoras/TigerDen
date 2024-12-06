@@ -31,7 +31,7 @@
     </header>
     <div class="welcome-message">
         {% if username %}
-            Welcome, {{ name }}!
+            <p id="{{ username }}"> <br></p>
         {% endif %}
     </div>
     <div id="content">
@@ -43,5 +43,31 @@
     function openPage(pageUrl){
        window.open(pageUrl);
      }
+
+     document.addEventListener('DOMContentLoaded', function() {
+        // Fetch the username and display it in the welcome message
+        const welcomeMessage = document.querySelector('.welcome-message');
+
+        if (welcomeMessage) {
+            fetch('/name') // Fetching data from the `/name` endpoint
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success && data.name) {
+                        welcomeMessage.textContent = `Welcome, ${data.name}!`;
+                    } else {
+                        welcomeMessage.textContent = 'Welcome, {{ username }}!';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching user data:', error);
+                    welcomeMessage.textContent = 'Welcome, {{ username }}!';
+                });
+        }
+    });
 </script>
 </html>
