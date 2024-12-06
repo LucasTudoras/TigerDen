@@ -4,6 +4,11 @@ import json
 import base64
 import requests
 
+# for local use
+""" 
+import dotenv
+dotenv.load_dotenv()
+ """
 
 ACCESS_TOKEN_URL = 'https://api.princeton.edu:443/token'
 BASE_URL = 'https://api.princeton.edu:443/active-directory/1.0.5'

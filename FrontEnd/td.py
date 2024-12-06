@@ -359,6 +359,75 @@ def room_details(roomID):
 
     return flask.render_template('room_details.html', results = room)
 
+@app.route("/room_details_browsing/<roomID>")
+def room_details_browsing(roomID):
+    username = auth.authenticate()
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
+        WHERE 1=1
+        """
+    params = [username]
+    query += " And RoomID = %s"
+    params.append(roomID)
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    results = cursor.fetchall()
+    column_names = [description[0] for description in cursor.description]
+    room = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+    return flask.render_template('room_details_browsing.html', results = room)
+
+@app.route("/room_details_groups/<roomID>")
+def room_details_groups(roomID):
+    username = auth.authenticate()
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
+        WHERE 1=1
+        """
+    params = [username]
+    query += " And RoomID = %s"
+    params.append(roomID)
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    results = cursor.fetchall()
+    column_names = [description[0] for description in cursor.description]
+    room = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+    return flask.render_template('room_details_groups.html', results = room)
+
+@app.route("/room_details_favorites/<roomID>")
+def room_details_favorites(roomID):
+    username = auth.authenticate()
+    query = """
+        SELECT rooms.*,
+        CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
+        FROM rooms
+        LEFT JOIN favorites ON rooms.RoomID = favorites.room_id AND favorites.user_id = %s
+        WHERE 1=1
+        """
+    params = [username]
+    query += " And RoomID = %s"
+    params.append(roomID)
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    results = cursor.fetchall()
+    column_names = [description[0] for description in cursor.description]
+    room = [dict(zip(column_names, row)) for row in results]
+    cursor.close()
+
+    return flask.render_template('room_details_favorites.html', results = room)
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() == 'pdf'
 
