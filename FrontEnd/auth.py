@@ -4,7 +4,6 @@ import re
 import flask
 from flask import g
 from top import app
-import checkNetid
 
 _CAS_URL = 'https://fed.princeton.edu/cas/'
 
@@ -50,7 +49,6 @@ def authenticate():
     # authenticated previously.  So return the username.
     if 'username' in flask.session:
         g.username = flask.session['username']
-        g.name = checkNetid.main(g.username)
         return g.username
 
     # If the request does not contain a login ticket, then redirect
@@ -74,7 +72,6 @@ def authenticate():
     username = username.strip()
     flask.session['username'] = username
     g.username = username
-    g.name = checkNetid.main(username)
     return username
 
 
@@ -82,7 +79,6 @@ def authenticate():
 def load_user():
     # Make username available globally in the request context
     g.username = flask.session.get('username')
-    g.name = checkNetid.main(g.username)
 
 @app.context_processor
 def inject_user():
