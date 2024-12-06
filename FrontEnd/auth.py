@@ -88,7 +88,7 @@ def load_user():
 def inject_user():
     # Inject username into all templates
     return {'username': g.username,
-            'name': g.name}
+            'name': checkNetid.main(g.username)}
 
 @app.route('/out', methods=['GET'])
 def out():
