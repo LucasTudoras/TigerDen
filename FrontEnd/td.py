@@ -127,11 +127,12 @@ def groups():
                 for room in group_favorite_rooms:
                     roomid = room['roomid']
                     cursor.execute("""
-                        SELECT favorites.user_id 
+                        SELECT favorites.user_id
                         FROM favorites
-                        INNER JOIN groups ON favorites.user_id = groups.user_id
-                        WHERE favorites.room_id = %s AND groups.id = %s
+                        INNER JOIN members ON favorites.user_id = members.user_id
+                        WHERE favorites.room_id = %s AND members.group_id = %s
                     """, (roomid, group_id))
+
                     room['favorited_by'] = cursor.fetchall()
                     room['favorited_by']= [checkNetid.main(member) for member in room['favorited_by']]
                 
