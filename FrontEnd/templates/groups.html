@@ -44,6 +44,7 @@
             <div>
                 <table id="room results" border="1" align="center">
                     <tr>
+                        <td><strong>Favorited By</strong></td>
                         <td><strong>Hall</strong></td>
                         <td><strong>Room</strong></td>
                         <td><strong>Type</strong></td>
@@ -56,6 +57,11 @@
                     </tr>
                     {% for room in rooms %}
                     <tr class="special">
+                        <td align="center" onclick="location.href='/room_details_groups/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            {% for member in room['favorited_by'] %}
+                                {{ member }} <br>
+                            {% endfor %}
+                        </td>
                         <td align="center" onclick="location.href='/room_details_groups/{{ room['roomid'] }}';" style="cursor: pointer;">
                             {{ room['hall'] }}
                         </td>

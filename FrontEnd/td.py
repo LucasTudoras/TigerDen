@@ -122,10 +122,16 @@ def groups():
                 
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
+                
 
-                # for room in group_favorite_rooms:
-                #     print(room)
-                #     room['rating'] = average_rating(username, room['roomid'])
+                for room in group_favorite_rooms:
+                    roomid = room['roomid']
+                    cursor.execute("""
+                        SELECT user_id FROM favorites WHERE room_id = %s
+                                   """, (roomid,))
+                    room['favorited_by'] = cursor.fetchall()
+                    room['favorited_by']= [checkNetid.main(member) for member in room['favorited_by']]
+                
 
 
         return flask.render_template('groups.html', user_has_group=user_has_group, groups=organized_groups, rooms=group_favorite_rooms, username=username)
@@ -827,7 +833,7 @@ def average_rating():
 
             for member in members:
                 user_id = member[0]
-                print(user_id, room_id)
+                #print(user_id, room_id)
                 cursor.execute("""
                     SELECT ratings
                     FROM ratings
@@ -835,7 +841,7 @@ def average_rating():
                 """, (user_id, room_id))
                 
                 rating = cursor.fetchone()
-                print("RATING:", rating)
+                #print("RATING:", rating)
                 if rating:
                     ratings.append(rating[0])
 
