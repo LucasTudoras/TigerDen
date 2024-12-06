@@ -337,33 +337,12 @@
        <h4 style="display: inline;">Sort by</h4>
        <select name="First Sort" id="First Sort">
            <option value="">First Sort</option>
-           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
-           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
-           <option value="Room ASC" {% if firstSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
-           <option value="Room DESC" {% if firstSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
-           <option value="Type ASC" {% if firstSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
-           <option value="Type DESC" {% if firstSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College A->Z</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Z->A</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall A->Z</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Z->A</option>
            <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
            <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
-           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Ascending</option>
-           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Descending</option>
-           <option value="Region ASC" {% if firstSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
-           <option value="Region DESC" {% if firstSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
-       </select>
-       <select name="Second Sort" id="Second Sort">
-           <option value="">Second Sort</option>
-           <option value="Hall ASC" {% if secondSort == "Hall ASC" %}selected{% endif %}>Hall Ascending</option>
-           <option value="Hall DESC" {% if secondSort == "Hall DESC" %}selected{% endif %}>Hall Descending</option>
-           <option value="Room ASC" {% if secondSort == "Room ASC" %}selected{% endif %}>Room Ascending</option>
-           <option value="Room DESC" {% if secondSort == "Room DESC" %}selected{% endif %}>Room Descending</option>
-           <option value="Type ASC" {% if secondSort == "Type ASC" %}selected{% endif %}>Type Ascending</option>
-           <option value="Type DESC" {% if secondSort == "Type DESC" %}selected{% endif %}>Type Descending</option>
-           <option value="Sqft ASC" {% if secondSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
-           <option value="Sqft DESC" {% if secondSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
-           <option value="College ASC" {% if secondSort == "College ASC" %}selected{% endif %}>College Ascending</option>
-           <option value="College DESC" {% if secondSort == "College DESC" %}selected{% endif %}>College Descending</option>
-           <option value="Region ASC" {% if secondSort == "Region ASC" %}selected{% endif %}>Region Ascending</option>
-           <option value="Region DESC" {% if secondSort == "Region DESC" %}selected{% endif %}>Region Descending</option>
        </select>
        <br>
        <br>

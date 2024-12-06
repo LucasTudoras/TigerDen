@@ -30,7 +30,13 @@
         if (file && file.type === 'application/pdf') {
             const formData = new FormData();
             formData.append('pdf', file);
-
+            const maxSize = 5 * 1024 * 1024; // 5MB in bytes, go lower?
+        
+            if (file.size > maxSize) {
+                event.preventDefault(); // Stop the form from submitting
+                alert('File size exceeds the maximum limit of 5MB. Please choose a smaller file.');
+                return;
+            }
             fetch('/upload-pdf', {
                 method: 'POST',
                 body: formData
