@@ -98,6 +98,8 @@ def groups():
 
                 # adds all the members in the group
                 group['members'] = group_member_data[group_id]
+                group['member_names'] = [checkNetid.main(member) for member in group['members']]
+                    
 
         # queries all the favorite rooms of all the different members
         group_favorite_rooms = []
@@ -148,11 +150,13 @@ def create_group():
     netids = set(netids_list)
     netids_list = list(netids)
     valid_netid_list = []
+    valid_name_list = []
     invalid_netid_list = []
 
     for netid in netids_list:
         valid_NETID = checkNetid.main(netid)
         if valid_NETID:
+            valid_name_list.append(valid_NETID)
             valid_netid_list.append(netid)
         else:
             invalid_netid_list.append(netid)
@@ -199,9 +203,9 @@ def create_group():
     if invalid_netid_list:
             message += f"The following netids are not valid \'{', '.join(invalid_netid_list)} \'\n"
     elif already_in_group:
-        message += f"Cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
+        message += f"Cannot add the following users as they are already in a group: \'{', '.join(already_in_group)} \'"
     else:
-        message += f"Successfully added members."
+        message += f"Successfully added: \' {', '.join(valid_name_list)} \'"
 
     return flask.jsonify({'success': True, 'message': message})
 
