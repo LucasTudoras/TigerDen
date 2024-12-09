@@ -11,7 +11,7 @@ import checkNetid
 # Database setup
 
 # for local use
-'''
+
 from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
@@ -21,12 +21,9 @@ if 'DYNO' is os.environ:
 else:
     UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-'''
 
-# for deployed use
-DATABASE = os.environ['DATABASE_URL']
-UPLOAD_FOLDER = '/tmp'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+
 
 @app.errorhandler(404)
 def not_found(e):
@@ -57,6 +54,16 @@ def favorite_rooms():
         column_names = [description[0] for description in cursor.description]
         favorite_rooms = [dict(zip(column_names, row)) for row in rooms]
         for room in favorite_rooms:
+            cursor.execute(""" 
+                SELECT user_id
+                FROM availables
+                WHERE room_id = %s          
+                """,(room['roomid'],))
+            available = cursor.fetchone()
+            if available:
+                room['is_available'] = '/static/images/GreenCheckMark.png'
+            else:
+                room['is_available'] = '/static/images/RedX.png'
             room['is_favorite'] = True
         cursor.close()
 
