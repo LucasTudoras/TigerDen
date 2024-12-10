@@ -16,6 +16,12 @@
         <p>Drag and drop your PDF file here, or click below to select one.</p>
         <input type="file" id="fileInput" accept=".pdf" onchange="uploadFile(event)" hidden>
         <label for="fileInput" class="upload-button">Select PDF File</label>
+
+        <div id="loading" style="display: none;">
+            <div class="loading-container">
+                <div class="loading"></div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -37,12 +43,21 @@
                 alert('File size exceeds the maximum limit of 5MB. Please choose a smaller file.');
                 return;
             }
+
+            const loadingSpinner = document.getElementById('loading');
+            if (loadingSpinner) {
+                loadingSpinner.style.display = 'flex';
+            }
+
             fetch('/upload-pdf', {
                 method: 'POST',
                 body: formData
             })
             .then(response => response.json())
             .then(data => {
+                if (loadingSpinner) {
+                    loadingSpinner.style.display = 'none';
+                }
                 if (data.success) {
                     alert('PDF uploaded successfully. Database updated with available rooms.');
                 } else {
@@ -51,6 +66,9 @@
                 event.target.value = "";
             })
             .catch(error => {
+                if (loadingSpinner) {
+                    loadingSpinner.style.display = 'none';
+                }
                 console.error('Error uploading PDF:', error);
             event.target.value = "";
             });
@@ -73,6 +91,7 @@
             max-width: 200px;
             margin: auto;
             transition: background-color 0.2s ease;
+            position: relative;
         }
 
         .upload-container:hover {
@@ -100,6 +119,39 @@
 
         .upload-button:hover {
             background-color: #0056b3;
+        }
+
+        .loading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: inline;
+        margin: auto;
+    }
+
+        #loading {
+            display: none;
+            text-align: center;
+        }
+
+        .loading {
+        border: 4px solid rgba(151, 165, 99, 0.4);
+        border-top: 4px solid #007bff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        align-items: center;
+    }
+
+        @keyframes spin {
+            0% {
+        transform: rotate(0deg);
+            }
+            100% {
+        transform: rotate(360deg);
+            }
         }
     </style>
 {% endblock %}
