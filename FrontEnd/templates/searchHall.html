@@ -330,7 +330,6 @@
        </table>
        <br>
        <br>
-       <h4 style="display: inline;">Sort by</h4>
        <br>
        <br>
        <button type="submit" style="cursor:pointer;">Search</button>
@@ -385,11 +384,21 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center">{{ room['hall'] }}</td>
-            <td align="center">{{ room['room'] }}</td>
-            <td align="center">{{ room['type'] }}</td>
-            <td align="center">{{ room['sqft'] }}</td>
-            <td align="center">{{ room['college'] }}</td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['hall'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['room'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['type'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['sqft'] }}
+            </td>
+            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+                {{ room['college'] }}
+            </td>
         </tr>
         {% endfor %}
     </table>    
