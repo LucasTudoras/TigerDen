@@ -12,7 +12,8 @@ from operator import itemgetter
 # Database setup
 
 # for local use
-''' from dotenv import load_dotenv
+'''
+from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
 
@@ -114,9 +115,7 @@ def groups():
                 for member in group['members']:
                     name = checkNetid.main(member)
                     names_of_group[member] = name
-                    group['member_names'].append(name)
-        
-                    
+                    group['member_names'].append(name)        
 
         # queries all the favorite rooms of all the different members
         group_favorite_rooms = []
@@ -139,8 +138,6 @@ def groups():
                 
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
-                
-                
 
                 for room in group_favorite_rooms:
                     roomid = room['roomid']
@@ -168,15 +165,10 @@ def groups():
                         room['is_available'] = '/static/images/RedX.png'
                 cursor.close()
             sorted_by_availability = sorted(group_favorite_rooms, key=itemgetter('is_available'))  
-        if sorted_by_availability:
-            group_favorite_rooms = sorted_by_availability
-                
-
+            if sorted_by_availability:
+                group_favorite_rooms = sorted_by_availability
 
         return flask.render_template('groups.html', user_has_group=user_has_group, groups=organized_groups, rooms=group_favorite_rooms, username=username)
-
-
-
 
 @app.route('/create_group', methods=['POST'])
 def create_group():
