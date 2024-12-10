@@ -415,7 +415,7 @@ table.detailsDistance th {
 }
 
 .dropdown {
-    position: f;
+    position: relative;
     display: inline-block;
     margin-right: 50px;
 }
@@ -425,11 +425,13 @@ table.detailsDistance th {
     border: none;
     outline: none;
     color: white;
-    padding: 10px 20px;
     background-color: #007bff;
     border-radius: 5px;
     cursor: pointer;
     width: 100px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .dropdownLinks {
