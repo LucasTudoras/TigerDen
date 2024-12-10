@@ -1,10 +1,6 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
-<div class="logoutContainer">
-    <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
-</div>
-
 <div class="button-row">
     <a href="/room_details/{{ hallBack }}{{ room }}" class="backtodetailsButton" title="{{ hallBack }} {{ room }}">Back to {{ hall }} {{ room }}</a>
 </div>

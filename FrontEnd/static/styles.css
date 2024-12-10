@@ -10,23 +10,24 @@ header {
 body {
     background-repeat: repeat;
     margin: 0;
-    height: 100vh; /* Set height to full viewport */
-    background: white; /* Background image */
-    background-position: center; /* Center the image */
-    color: #333; /* Text color */
+    height: 100vh;  
+    background: white;  
+    background-position: center;  
+    color: #333;  
     font-family: Arial, sans-serif;
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
+    align-items: center;  
+    justify-content: center;  
     text-align: center;
+    min-width: 750px;
 }
 
 
 
 .hero-section {
     display: flex;
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically */
-    height: 60vh;              /* Adjust as needed */
+    justify-content: center;    
+    align-items: center;        
+    height: 60vh;               
     position: relative;
 }
 
@@ -40,7 +41,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content horizontally */
+    align-items: center;   
 }
 
 .hero-content p.welcome {
@@ -77,9 +78,9 @@ body {
 
 /* Style for the logo image */
 .logo {
-    height: 130px; /* Adjust size as needed */
+    height: 130px;  
     width: auto;
-    margin-right: 10px; /* Space between logo and name */
+    margin-right: 10px;  
 }
 
 /* Style for the website name */
@@ -92,38 +93,38 @@ body {
 
 
 .loginButton {
-    display: inline-block; /* Make the link behave like a block element */
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    background-color: #007bff; /* Set the background color */
-    color: white; /* Set the text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Round the corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: inline-block;  
+    padding: 10px 20px;  
+    background-color: #007bff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
     text-align: center;
     align-items: center;
     width: 60px;
 }
 
 .loginButton:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3;  
     text-decoration: none;
 }
 
 .logoutContainer {
-    position:fixed; /* Fixes the position to the viewport */
-    top: 10px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
+    position:fixed;  
+    top: 10px;  
+    right: 20px;  
 }
 
 .loginContainer {
     position: fixed;
-    flex-direction: column; /* Stack elements vertically */
-    display: flex; /* Use fixed positioning */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to truly center */
-    background-color: white; /* Background color for the login container */
+    flex-direction: column;  
+    display: flex;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    background-color: white;  
     width: 500px;
     align-items: center;
     margin-top: 50px;
@@ -138,38 +139,38 @@ body {
 
 .checkbox-options-container {
     display: flex;
-    justify-content: space-between; /* Evenly space items in the row */
-    align-items: center;            /* Center items vertically in the row */
+    justify-content: space-between;  
+    align-items: center;             
 }
 
 .search-options-container {
     display: flex;
-    justify-content: flex; /* Align items to the start */
-    align-items: flex; /* Align items at the top */
+    justify-content: flex;  
+    align-items: flex;  
     padding: 1em;
     margin-top: 1em;
-    background-color: rgba(151, 165, 99, 0.4); /* Background color for clarity */
+    background-color: rgba(151, 165, 99, 0.4);  
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
     gap: 1em;
 }
 
 .search-group {
     display: flex;
-    flex-direction: column; /* Keeps label above select */
-    margin: 2em;          /* Space out groups horizontally */
+    flex-direction: column;  
+    margin: 2em;           
 }
 
 .checkbox-item{
     display: flex;
-    align-items: center;      /* Aligns checkbox and label vertically */
-    gap: 0.5em;               /* Space between checkbox and label */
+    align-items: center;       
+    gap: 0.5em;                
     font: 'Raleway';
     color: #000000;
 }
 
 .checkbox-item input[type="checkbox"] {
-    margin: 0;                /* Removes any extra margin from checkbox */
+    margin: 0;                 
 }
 
 .checkbox-item label {
@@ -179,8 +180,8 @@ body {
 
 table.hall td.collegenames {
     padding: 2px;
-    text-align: center;        /* Center-align text */
-    color: black;              /* Text color */
+    text-align: center;         
+    color: black;               
     cursor:default;
 }
 
@@ -190,8 +191,8 @@ table.hall td.collegenames:hover {
 
 table.hall td {
     padding: 2px;
-    text-align: left;        /* Center-align text */
-    color: black;              /* Text color */
+    text-align: left;         
+    color: black;               
     cursor:default;
 }
 
@@ -211,27 +212,27 @@ table.hall td.empty:hover{
 
 /* Table container for responsiveness */
 .table-container {
-    overflow-x: auto;          /* Allows horizontal scroll on smaller screens */
-    margin-top: 1em;           /* Space above the table */
+    overflow-x: auto;           
+    margin-top: 1em;            
 }
 
 /* Basic table styles */
 table {
-    width: 100%;               /* Full-width table */
-    border-collapse: collapse; /* Remove space between cells */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;                
+    border-collapse: collapse;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
 /* Header styles */
 table th, table td {
-    padding: 12px;             /* Padding inside cells */
-    text-align: center;        /* Center-align text */
-    color: black;              /* Text color */
+    padding: 12px;              
+    text-align: center;         
+    color: black;               
     cursor:default;
 }
 
 table div:hover {
-    background-color: #e0f7fa; /* Light blue on hover */
+    background-color: #e0f7fa;  
 
 }
 
@@ -286,21 +287,21 @@ td.special {
 }
 
 .uploadButton {
-    display: inline-block; /* Make the link behave like a block element */
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    background-color: #5d00ff; /* Set the background color */
-    color: white; /* Set the text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Round the corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: inline-block;  
+    padding: 10px 20px;  
+    background-color: #5d00ff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
     text-align: center;
     align-items: center;
     width: 60px;
 }
 
 .uploadButton:hover {
-    background-color: #3d00a7; /* Darker color on hover */
+    background-color: #3d00a7;  
     text-decoration: none;
 }
 
@@ -308,17 +309,17 @@ td.special {
     display: inline-block;
     margin-left: 15px;
     margin-top: 15px;
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    background-color: #007bff; /* Set the background color */
-    color: white; /* Set the text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Round the corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 20px;  
+    background-color: #007bff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
 }
 
 .backButton:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3;  
     text-decoration: none; 
 }
 
@@ -328,20 +329,20 @@ html {
 }
 
 .addtofavoritesButton {
-    display: inline-block; /* Make the link behave like a block element */
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    background-color: #510378; /* Set the background color */
-    color: white; /* Set the text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Round the corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: inline-block;  
+    padding: 10px 20px;  
+    background-color: #510378;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
     text-align: center;
     cursor: pointer;
 }
 
 .addtofavoritesButton:hover {
-    background-color: #3c005a; /* Darker color on hover */
+    background-color: #3c005a;  
 }
 
 .button-row{
@@ -352,25 +353,25 @@ html {
 }
 
 .backtodetailsButton {
-    display: inline-block; /* Make the link behave like a block element */
+    display: inline-block;  
     margin-right: 15px;
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    background-color: #007bff; /* Set the background color */
-    color: white; /* Set the text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Round the corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 20px;  
+    background-color: #007bff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
     text-align: center;
 }
 
 .backtodetailsButton:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3;  
 }
 
 
 .group-container:hover {
-    background-color: #e0f7fa; /* Light blue on hover */
+    background-color: #e0f7fa;  
 }
 
 td.college{
@@ -411,4 +412,35 @@ table.detailsDistance td {
 }
 table.detailsDistance th {
     background-color: white;
+}
+
+.dropdown {
+    position: f;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.dropdownButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.dropdownLinks {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+
+.dropdown:hover .dropdownButton {
+    background-color: #0056b3;
 }

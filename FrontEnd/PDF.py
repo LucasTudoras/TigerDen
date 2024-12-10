@@ -256,10 +256,10 @@ def main(file):
     pdf = Path(file)
 
     # deployed use
-    pdf_output = Path("/tmp/temp.txt")
+    # pdf_output = Path("/tmp/temp.txt")
 
     # local use
-    # pdf_output = Path("tmp")
+    pdf_output = Path("tmp")
 
     with open(pdf_output, 'w') as file:
         file.write("")
