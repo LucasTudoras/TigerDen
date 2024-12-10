@@ -6,8 +6,8 @@ import requests
 
 # for local use
 
-import dotenv
-dotenv.load_dotenv()
+""" import dotenv
+dotenv.load_dotenv() """
 
 
 ACCESS_TOKEN_URL = 'https://api.princeton.edu:443/token'
