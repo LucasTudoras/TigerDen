@@ -13,7 +13,6 @@ from operator import itemgetter
 
 # for local use
 '''
-
 from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
@@ -23,7 +22,6 @@ if 'DYNO' is os.environ:
 else:
     UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
 '''
 
 # for deployed use
@@ -44,6 +42,11 @@ def close_connection(exception):
     db = getattr(flask.g, '_database', None)
     if db is not None:
         db.close()
+
+@app.route('/logout')
+def logout():
+    flask.session.clear()
+    return flask.redirect('/')
 
 @app.route('/favorite-rooms')
 def favorite_rooms():
