@@ -287,8 +287,8 @@ td.special {
 }
 
 .uploadButton {
-    display: inline-block;  
-    padding: 10px 20px;  
+    display: inline-flex; 
+    position: relative; 
     background-color: #5d00ff;  
     color: white;  
     text-decoration: none;  
@@ -297,7 +297,13 @@ td.special {
     transition: background-color 0.3s;  
     text-align: center;
     align-items: center;
-    width: 60px;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .uploadButton:hover {
@@ -414,29 +420,62 @@ table.detailsDistance th {
     background-color: white;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.logout {
+    margin-left: auto; 
+}
+
+div.logout button {
+    background-color: #007bff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .dropdown {
     position: relative;
-    display: inline-block;
-    margin-right: 50px;
 }
 
 .dropdownButton {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: #007bff;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-    padding: 10px;
+    display: inline-flex;  
+    background-color: #007bff;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
     text-align: center;
     align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: default;
 }
 
 .dropdownLinks {
     display: none;
     position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .dropdown:hover .dropdownLinks {

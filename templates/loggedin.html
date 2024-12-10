@@ -18,17 +18,34 @@
         <nav class="navbar">
             <a href="/upload-pdf" class="uploadButton">Upload PDF</a>
             <div class="dropdown">
-                <button class="dropdownButton">Dropdown Menu</button>
+                <button class="dropdownButton">Search Rooms</button>
                 <div class="dropdownLinks">
-                    <a href="/search" class="loginButton">Rooms Search</a>
+                    <a href="/search" class="loginButton">Available Rooms</a>
                     <a href="/browsing" class="loginButton">Just Browsing</a>
-                    <a href="/favorite-rooms" class="loginButton">Your Favorites</a>
-                    <a href="/groups" class="loginButton">Manage Groups</a>
-                    <a href="/floor-plans" class="loginButton">Floor Plans</a>
-                    <a href="/campus-map" class="loginButton">Campus Map</a>
-                    <a href="/logout" class="loginButton">Log Out</a>
                 </div>
             </div>
+            <div class="dropdown">
+                <button class="dropdownButton">Group Favorites</button>
+                <div class="dropdownLinks">
+                    <a href="/favorite-rooms" class="loginButton">Your Favorites</a>
+                    <a href="/groups" class="loginButton">Manage Groups</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdownButton">Campus Resources</button>
+                <div class="dropdownLinks">
+                    <a href="/floor-plans" class="loginButton">Floor Plans</a>
+                    <a href="/campus-map" class="loginButton">Campus Map</a>
+                </div>
+            </div>
+            <div class="logout">
+                <form action="/logout">
+                    <button type="submit" value="Logout">Logout</button>
+                </form>
+                
+                
+            </div>
+            
         </nav>
         
     </header>
