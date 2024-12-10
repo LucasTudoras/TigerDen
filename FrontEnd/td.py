@@ -914,12 +914,7 @@ def get_rating():
 
 def handle_room_query(template_name, availables_matter):
     username = auth.authenticate()
-    first_sort = flask.request.args.get("First Sort") or flask.request.cookies.get("First Sort") or "Sqft DESC"
-
-    sort_clauses = []
-
-    if first_sort:
-        sort_clauses.append(first_sort)
+    sort_param = flask.request.args.get("sort", "Sqft DESC")  # Default sort if not provided
 
     halls = {
             '1967': "Butler College",
@@ -1028,7 +1023,7 @@ def handle_room_query(template_name, availables_matter):
         """
 
     # search page only shows rooms that are still available
-    if availables_matter == True:
+    if availables_matter:
         query += "WHERE availables.user_id = %s"
         params = [username, username]
 
@@ -1049,8 +1044,8 @@ def handle_room_query(template_name, availables_matter):
         placeholder = ', '.join(['%s'] * len(selected_halls))
         query += f" AND hall IN ({placeholder})"
         params.extend(selected_halls)
-    if sort_clauses:
-        query += " ORDER BY " + ", ".join(sort_clauses)
+    if sort_param:
+        query += f" ORDER BY {sort_param}"
     
     # Execute query and fetch results
     conn = get_db()
@@ -1064,10 +1059,10 @@ def handle_room_query(template_name, availables_matter):
     results = len(rooms)
 
     # Create response with updated cookies
-    response = flask.make_response(flask.render_template(template_name, results=rooms, firstSort=first_sort,
+    response = flask.make_response(flask.render_template(template_name, results=rooms, Sort=sort_param,
                  selected_colleges = selected_colleges, selected_types = selected_types, 
                  selected_halls=cookies_halls, check_all=selected_colleges, number=results))
-    response.set_cookie("First Sort", first_sort)
+    response.set_cookie("First Sort", sort_param)
 
     
     for arg_name, _ in types:
