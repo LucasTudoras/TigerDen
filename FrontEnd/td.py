@@ -7,11 +7,12 @@ from werkzeug.utils import secure_filename
 from top import app
 import update
 import checkNetid
+from operator import itemgetter
 
 # Database setup
 
 # for local use
-
+'''
 from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
@@ -21,8 +22,12 @@ if 'DYNO' is os.environ:
 else:
     UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+'''
 
-
+# for deployed use
+DATABASE = os.environ['DATABASE_URL']
+UPLOAD_FOLDER = '/tmp'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 @app.errorhandler(404)
@@ -57,8 +62,8 @@ def favorite_rooms():
             cursor.execute(""" 
                 SELECT user_id
                 FROM availables
-                WHERE room_id = %s          
-                """,(room['roomid'],))
+                WHERE room_id = %s AND user_id = %s          
+                """,(room['roomid'], user_id,))
             available = cursor.fetchone()
             if available:
                 room['is_available'] = '/static/images/GreenCheckMark.png'
@@ -66,8 +71,10 @@ def favorite_rooms():
                 room['is_available'] = '/static/images/RedX.png'
             room['is_favorite'] = True
         cursor.close()
+    
+    sorted_by_availability = sorted(favorite_rooms, key=itemgetter('is_available'))
 
-    return flask.render_template('favorite_rooms.html', favorite_rooms=favorite_rooms)
+    return flask.render_template('favorite_rooms.html', favorite_rooms=sorted_by_availability)
 
 @app.route('/groups')
 def groups():
@@ -90,7 +97,7 @@ def groups():
             organized_groups.append({'id': group[0], 'name': group[1]})
 
         user_has_group = bool(group_data)
-
+        names_of_group = {}
         # Get all members of each group
         group_member_data = {}
         if user_has_group:
@@ -105,7 +112,12 @@ def groups():
 
                 # adds all the members in the group
                 group['members'] = group_member_data[group_id]
-                group['member_names'] = [checkNetid.main(member) for member in group['members']]
+                group['member_names'] = []
+                for member in group['members']:
+                    name = checkNetid.main(member)
+                    names_of_group[member] = name
+                    group['member_names'].append(name)
+        
                     
 
         # queries all the favorite rooms of all the different members
@@ -130,6 +142,7 @@ def groups():
                 column_names = [description[0] for description in cursor.description]
                 group_favorite_rooms += [dict(zip(column_names, row)) for row in rooms]
                 
+                
 
                 for room in group_favorite_rooms:
                     roomid = room['roomid']
@@ -140,8 +153,25 @@ def groups():
                         WHERE favorites.room_id = %s AND members.group_id = %s
                     """, (roomid, group_id))
 
-                    room['favorited_by'] = cursor.fetchall()
-                    room['favorited_by']= [checkNetid.main(member) for member in room['favorited_by']]
+                    room['favorited_by_netid'] = cursor.fetchall()
+                    room['favorited_by'] = []
+                    for member in room['favorited_by_netid']:
+                        room['favorited_by'].append(names_of_group[member[0]])
+
+                    cursor.execute(""" 
+                        SELECT user_id
+                        FROM availables
+                        WHERE room_id = %s AND user_id = %s      
+                        """,(room['roomid'], username,))
+                    available = cursor.fetchone()
+                    if available:
+                        room['is_available'] = '/static/images/GreenCheckMark.png'
+                    else:
+                        room['is_available'] = '/static/images/RedX.png'
+                cursor.close()
+            sorted_by_availability = sorted(group_favorite_rooms, key=itemgetter('is_available'))  
+        if sorted_by_availability:
+            group_favorite_rooms = sorted_by_availability
                 
 
 

@@ -21,7 +21,7 @@
             <td><strong>College</strong></td>
             <td><strong>Region</strong></td>
             <td><strong>Floor Plan</strong></td>
-            <td><strong>Avalilability</strong></td>
+            <td><strong>Availability</strong></td>
         </tr>
 
         {% for room in favorite_rooms %}
@@ -64,7 +64,7 @@
                 {% endif %}
             </td>
             <td align="center" onclick="location.href='/room_details_favorites/{{ room['roomid'] }}';" style="cursor: pointer;">
-                <iframe src="{{ room['is_available'] }}" frameborder="0" height="20" width="20"></iframe>
+                <img src="{{ room['is_available'] }}" alt="Avalilability" height="20" width="20">
             </td>
         </tr>
         {% endfor %}

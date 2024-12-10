@@ -42,7 +42,7 @@
                 <button id="add-member-button" class="btn">Add Member</button>
             </div>
             <div>
-                <table id="room results" border="1" align="center">
+                <table id="room results" border="1" >
                     <tr>
                         <td><strong>Favorited By</strong></td>
                         <td><strong>Hall</strong></td>
@@ -54,6 +54,7 @@
                         <td><strong>Floor Plan</strong></td>
                         <td><strong>Your Rating</strong></td>
                         <td><strong>Group Rating</strong></td>
+                        <td><strong>Availability</strong></td>
                     </tr>
                     {% for room in rooms %}
                     <tr class="special">
@@ -105,6 +106,9 @@
                         
                         <td align="center" class="avg-rating" id="{{ room['roomid'] }}">
                             Loading...
+                        </td>
+                        <td align="center" onclick="location.href='/room_details_favorites/{{ room['roomid'] }}';" style="cursor: pointer;">
+                            <img src="{{ room['is_available'] }}" alt="Avalilability" height="20" width="20">
                         </td>
                     </tr>
                     {% endfor %}
@@ -357,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     /* Page layout and general styling */
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
         font-family: Arial, sans-serif;
