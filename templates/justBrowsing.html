@@ -10,37 +10,37 @@
 </div>
 <br>
    <form id="autoSubmitForm" action="/browsing" method="GET" >
-       <table align="center" class="hall" border="1" style="width: 75%;" align="center">
+       <table class="hall" border="1">
            <tr style="height: 50px;">
-                   <td class="collegenames" align="center">
+                   <td class="collegenames">
                         <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" onchange="toggleHalls(this)" data-college="Butler" {% if "Butler College" in check_all %}checked{% endif %}>
                         <label for="Butler College"><strong>Butler</strong></label>
                     </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" onchange="toggleHalls(this)" data-college="Forbes" {% if "Forbes College" in check_all %}checked{% endif %}>
                         <label for="Forbes College"><strong>Forbes</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" onchange="toggleHalls(this)" data-college="Mathey" {% if "Mathey College" in check_all %}checked{% endif %}>
                         <label for="Mathey College"><strong>Mathey</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="New College West" name="New College West" value="New College West" onchange="toggleHalls(this)" data-college="New College West" {% if "New College West" in check_all %}checked{% endif %}>
                         <label for="New College West"><strong>New College West</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                         <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" onchange="toggleHalls(this)" data-college="Rockefeller" {% if "Rockefeller College" in check_all %}checked{% endif %}>
                         <label for="Rockefeller College"><strong>Rockefeller</strong></label>
                    </td>
-                   <td class="collegenames" align="center" colspan="2">
+                   <td class="collegenames"  colspan="2">
                         <input type="checkbox" id="Upperclass" name="Upperclass" value="Upperclass" onchange="toggleHalls(this)" data-college="Upperclass" {% if "Upperclass" in check_all %}checked{% endif %}>
                         <label for="Upperclass"><strong>Upperclass</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                         <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" onchange="toggleHalls(this)" data-college="Whitman" {% if "Whitman College" in check_all %}checked{% endif %}>
                         <label for="Whitman College"><strong>Whitman</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" onchange="toggleHalls(this)" data-college="Yeh" {% if "Yeh College" in check_all %}checked{% endif %}>
                         <label for="Yeh College"><strong>Yeh</strong></label>
                    </td>
@@ -298,7 +298,7 @@
                 <td class="empty"></td>
             </tr>
        </table>
-       <table class="hall" style="width: 75%;" align="center">
+       <table class="hall" style="width: 75%;" >
         <tr>
             <td class="normal"><h3>Room Type</h3></td>
             <td>
@@ -330,19 +330,11 @@
        </table>
        <br>
        <br>
-       <h4 style="display: inline;">Sort by</h4>
-       <select name="First Sort" id="First Sort">
-        <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College A->Z</option>
-        <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Z->A</option>
-        <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall A->Z</option>
-        <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Z->A</option>
-        <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
-        <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
-        </select>
        <br>
        <br>
-       <button type="submit" style="cursor:pointer; height:60px; width: 120px; font-size:16pt">Search</button>
+       <button type="submit" style="cursor:pointer; height:60px; width: 120px; font-size:16pt">Search</button>  
    </form>
+   <br
    <div align="left" style="padding-left: 12%;">
     <h2 style="display: inline;">Search Results: </h2>
     <h2 style="display: inline;">{{ number }} rooms</h2>
@@ -350,19 +342,39 @@
    
     <h3>Click on column title to sort. Click on row to see more.</h3> 
     {% if results %}
-    <table id="room results" border="1" style="width:66%;" align="center">
+    <table id="room results" border="1" class="roomResults" >
         <tr>
             <td><strong>Favorite</strong></td>
-            <td><strong>Hall</strong></td>
-            <td><strong>Room</strong></td>
-            <td><strong>Type</strong></td>
-            <td><strong>Sqft</strong></td>
-            <td><strong>College</strong></td>
+            <td>
+                <strong>Hall</strong>
+                <span onclick="sortTable('hall', 'asc')">▲</span>
+                <span onclick="sortTable('hall', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Room</strong>
+                <span onclick="sortTable('room', 'asc')">▲</span>
+                <span onclick="sortTable('room', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Type</strong>
+                <span onclick="sortTable('type', 'asc')">▲</span>
+                <span onclick="sortTable('type', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Sqft</strong>
+                <span onclick="sortTable('sqft', 'asc')">▲</span>
+                <span onclick="sortTable('sqft', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>College</strong>
+                <span onclick="sortTable('college', 'asc')">▲</span>
+                <span onclick="sortTable('college', 'desc')">▼</span>
+            </td>
         </tr>
 
         {% for room in results %}
         <tr class="special">
-            <td align="center" onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
+            <td  onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
                 <span
                     class="favorite-icon" 
                     style="cursor: pointer;">
@@ -373,19 +385,19 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center" onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['hall'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['room'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['type'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['sqft'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details_browsing/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['college'] }}
             </td>
         </tr>
@@ -432,6 +444,11 @@
         const anyChecked = Array.from(hallCheckboxes).some(hallCheckbox => hallCheckbox.checked);
         collegeCheckbox.checked = anyChecked;
     }
+    function sortTable(column, order) {
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('sort', `${column} ${order.toUpperCase()}`);
+        window.location.search = urlParams.toString();
+}
     
 
 </script>

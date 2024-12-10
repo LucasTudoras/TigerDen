@@ -178,11 +178,40 @@ body {
     text-align: left;
 }
 
+.roomResults {
+    width: max(710px, 66%);
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.favoriteList {
+    width: max(956px, 66%);
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table.hall {
+    text-align: center;
+    align-items: center;
+    border: 1;
+    width: 75%;
+    min-width: 1010px !important;
+    max-width: 100%;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto; 
+}
+
+
+
 table.hall td.collegenames {
     padding: 2px;
     text-align: center;         
     color: black;               
     cursor:default;
+    margin: 0 auto;
 }
 
 table.hall td.collegenames:hover {
@@ -235,6 +264,7 @@ table div:hover {
     background-color: #e0f7fa;  
 
 }
+
 
 /* Alternating row colors */
 table tr:nth-child(even) {
@@ -424,13 +454,14 @@ table.detailsDistance th {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: max(360px, 5%);
 }
 
 div.logout {
     margin-left: auto; 
 }
 
-div.logout button {
+.logoutbutton {
     background-color: #007bff;  
     color: white;  
     text-decoration: none;  

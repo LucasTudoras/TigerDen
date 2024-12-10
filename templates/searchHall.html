@@ -4,43 +4,43 @@
 {% block content %}   
 
 <div class="search-text">
-<h1>Search for Rooms</h1>
+<h1>Search for Available Rooms</h1>
     There are 2,860 rooms at Princeton University. <br>
     Filter this list to find the available rooms that fit your needs.
 </div>
 <br>
    <form id="autoSubmitForm" action="/search" method="GET" >
-       <table align="center" class="hall" border="1" style="width: 75%;" align="center">
+       <table class="hall" border="1">
            <tr style="height: 50px;">
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                         <input type="checkbox" id="Butler College" name="Butler College" value="Butler College" onchange="toggleHalls(this)" data-college="Butler" {% if "Butler College" in check_all %}checked{% endif %}>
                         <label for="Butler College"><strong>Butler</strong></label>
                     </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Forbes College" name="Forbes College" value="Forbes College" onchange="toggleHalls(this)" data-college="Forbes" {% if "Forbes College" in check_all %}checked{% endif %}>
                         <label for="Forbes College"><strong>Forbes</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Mathey College" name="Mathey College" value="Mathey College" onchange="toggleHalls(this)" data-college="Mathey" {% if "Mathey College" in check_all %}checked{% endif %}>
                         <label for="Mathey College"><strong>Mathey</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="New College West" name="New College West" value="New College West" onchange="toggleHalls(this)" data-college="New College West" {% if "New College West" in check_all %}checked{% endif %}>
                         <label for="New College West"><strong>New College West</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                         <input type="checkbox" id="Rockefeller College" name="Rockefeller College" value="Rockefeller College" onchange="toggleHalls(this)" data-college="Rockefeller" {% if "Rockefeller College" in check_all %}checked{% endif %}>
                         <label for="Rockefeller College"><strong>Rockefeller</strong></label>
                    </td>
-                   <td class="collegenames" align="center" colspan="2">
+                   <td class="collegenames"  colspan="2">
                         <input type="checkbox" id="Upperclass" name="Upperclass" value="Upperclass" onchange="toggleHalls(this)" data-college="Upperclass" {% if "Upperclass" in check_all %}checked{% endif %}>
                         <label for="Upperclass"><strong>Upperclass</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                         <input type="checkbox" id="Whitman College" name="Whitman College" value="Whitman College" onchange="toggleHalls(this)" data-college="Whitman" {% if "Whitman College" in check_all %}checked{% endif %}>
                         <label for="Whitman College"><strong>Whitman</strong></label>
                    </td>
-                   <td class="collegenames" align="center">
+                   <td class="collegenames" >
                     <input type="checkbox" id="Yeh College" name="Yeh College" value="Yeh College" onchange="toggleHalls(this)" data-college="Yeh" {% if "Yeh College" in check_all %}checked{% endif %}>
                         <label for="Yeh College"><strong>Yeh</strong></label>
                    </td>
@@ -298,7 +298,7 @@
                 <td class="empty"></td>
             </tr>
        </table>
-       <table class="hall" style="width: 75%;" align="center">
+       <table class="hall" style="width: 75%;" >
         <tr>
             <td class="normal"><h3>Room Type</h3></td>
             <td>
@@ -343,7 +343,7 @@
     <h3>Click on column title to sort. Click on row to see more.</h3> 
     {% if results %}
     
-    <table id="room results" border="1" style="width:66%;" align="center">
+    <table id="room results" border="1" class="roomResults">
         <tr>
             <td><strong>Favorite</strong></td>
             <td>
@@ -375,7 +375,7 @@
     
         {% for room in results %}
         <tr class="special">
-            <td align="center" onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
+            <td  onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
                 <span class="favorite-icon">
                     {% if room['is_favorite'] %}
                         &#9733; <!-- Filled star -->
@@ -384,19 +384,19 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['hall'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['room'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['type'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['sqft'] }}
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
+            <td  onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
                 {{ room['college'] }}
             </td>
         </tr>

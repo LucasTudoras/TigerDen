@@ -1,9 +1,6 @@
 {% extends "loggedin.html" %}
 
 {% block content %}
-    <div class="logoutContainer">
-        <a href="{{ url_for('logout') }}" class="loginButton">Log Out</a>
-    </div>
     
     <div align="left">
         <a href="/search?{% for key, value in request.args.items() %}
