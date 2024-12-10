@@ -336,12 +336,13 @@
        <br>
        <h4 style="display: inline;">Sort by</h4>
        <select name="First Sort" id="First Sort">
-           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College A->Z</option>
-           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College Z->A</option>
-           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall A->Z</option>
-           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall Z->A</option>
-           <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
+           <option value="">First Sort</option>
+           <option value="College DESC" {% if firstSort == "College DESC" %}selected{% endif %}>College A->Z</option>
+           <option value="College ASC" {% if firstSort == "College ASC" %}selected{% endif %}>College Z->A</option>
+           <option value="Hall DESC" {% if firstSort == "Hall DESC" %}selected{% endif %}>Hall A->Z</option>
+           <option value="Hall ASC" {% if firstSort == "Hall ASC" %}selected{% endif %}>Hall Z->A</option>
            <option value="Sqft ASC" {% if firstSort == "Sqft ASC" %}selected{% endif %}>Smallest Rooms First</option>
+           <option value="Sqft DESC" {% if firstSort == "Sqft DESC" %}selected{% endif %}>Biggest Rooms First</option>
        </select>
        <br>
        <br>
@@ -355,22 +356,41 @@
    
     <h3>Click on column title to sort. Click on row to see more.</h3> 
     {% if results %}
+    
     <table id="room results" border="1" style="width:66%;" align="center">
         <tr>
             <td><strong>Favorite</strong></td>
-            <td><strong>Hall</strong></td>
-            <td><strong>Room</strong></td>
-            <td><strong>Type</strong></td>
-            <td><strong>Sqft</strong></td>
-            <td><strong>College</strong></td>
+            <td>
+                <strong>Hall</strong>
+                <span onclick="sortTable('hall', 'asc')">▲</span>
+                <span onclick="sortTable('hall', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Room</strong>
+                <span onclick="sortTable('room', 'asc')">▲</span>
+                <span onclick="sortTable('room', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Type</strong>
+                <span onclick="sortTable('type', 'asc')">▲</span>
+                <span onclick="sortTable('type', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>Sqft</strong>
+                <span onclick="sortTable('sqft', 'asc')">▲</span>
+                <span onclick="sortTable('sqft', 'desc')">▼</span>
+            </td>
+            <td>
+                <strong>College</strong>
+                <span onclick="sortTable('college', 'asc')">▲</span>
+                <span onclick="sortTable('college', 'desc')">▼</span>
+            </td>
         </tr>
-
+    
         {% for room in results %}
         <tr class="special">
             <td align="center" onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
-                <span 
-                    class="favorite-icon" 
-                    style="cursor: pointer;">
+                <span class="favorite-icon">
                     {% if room['is_favorite'] %}
                         &#9733; <!-- Filled star -->
                     {% else %}
@@ -378,24 +398,14 @@
                     {% endif %}
                 </span>
             </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
-                {{ room['hall'] }}
-            </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
-                {{ room['room'] }}
-            </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
-                {{ room['type'] }}
-            </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
-                {{ room['sqft'] }}
-            </td>
-            <td align="center" onclick="location.href='/room_details/{{ room['roomid'] }}';" style="cursor: pointer;">
-                {{ room['college'] }}
-            </td>
+            <td align="center">{{ room['hall'] }}</td>
+            <td align="center">{{ room['room'] }}</td>
+            <td align="center">{{ room['type'] }}</td>
+            <td align="center">{{ room['sqft'] }}</td>
+            <td align="center">{{ room['college'] }}</td>
         </tr>
         {% endfor %}
-    </table>
+    </table>    
     {% else %}
         <p>No rooms found matching your criteria.</p>
     {% endif %}
@@ -437,7 +447,11 @@
         const anyChecked = Array.from(hallCheckboxes).some(hallCheckbox => hallCheckbox.checked);
         collegeCheckbox.checked = anyChecked;
     }
-    
 
+    function sortTable(column, order) {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('sort', `${column} ${order.toUpperCase()}`);
+    window.location.search = urlParams.toString();
+}
 </script>
     {% endblock %}
