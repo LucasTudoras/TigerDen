@@ -12,7 +12,6 @@ from operator import itemgetter
 # Database setup
 
 # for local use
-'''
 from dotenv import load_dotenv
 load_dotenv()
 DATABASE = os.getenv("LOCAL_DATABASE")
@@ -22,13 +21,13 @@ if 'DYNO' is os.environ:
 else:
     UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-'''
 
 # for deployed use
+'''
 DATABASE = os.environ['DATABASE_URL']
 UPLOAD_FOLDER = '/tmp'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
+'''
 
 @app.errorhandler(404)
 def not_found(e):
