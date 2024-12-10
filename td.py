@@ -364,10 +364,6 @@ def floor_plans():
     username = auth.authenticate()
     return flask.render_template('floor_plans.html')
 
-@app.route('/logout')
-def logout():
-    flask.session.clear()
-    return flask.redirect('/')
 
 def get_db():
     db = getattr(flask.g, '_database', None)
