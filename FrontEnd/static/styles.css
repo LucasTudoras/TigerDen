@@ -446,3 +446,20 @@ table.detailsDistance th {
 .dropdown:hover .dropdownButton {
     background-color: #0056b3;
 }
+
+.searchButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8c00ff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+    background-color: #2c004c; 
+}
