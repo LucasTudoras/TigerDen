@@ -449,7 +449,16 @@
         urlParams.set('sort', `${column} ${order.toUpperCase()}`);
         window.location.search = urlParams.toString();
 }
-    
+let timer;
+document.addEventListener('click', function(event) {
+    if (event.target.type === 'checkbox') {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+            document.getElementById('autoSubmitForm').submit();
+        }, 2000);
+        }
+    });
 
 </script>
     {% endblock %}
