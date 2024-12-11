@@ -674,7 +674,7 @@ def return_floorplans(college, hall):
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "/static/FloorPlan/" + college + "/" + hall
+        directory_path = "static/FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
     
@@ -809,7 +809,7 @@ def newtab(hall, room, floor):
             'Mannion': "Yeh College",
         }
     college = colleges[hall]
-    directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
+    directory_path = "static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
     if hall == "Wendell B" or hall == "Wendell C":
         hall = "Wendell"
     if hall == "Baker S" or hall == "Baker E":
