@@ -293,7 +293,12 @@ td.special {
     font-weight: bold;
 }
 
-
+table thead.stickyHead tr {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(214, 219, 195);
+}
 nav a {
     margin-right: 15px;
     height: 40px;

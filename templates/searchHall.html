@@ -344,34 +344,36 @@
     {% if results %}
     
     <table id="room results" border="1" class="roomResults">
-        <tr>
-            <td><strong>Favorite</strong></td>
-            <td>
-                <strong>Hall</strong>
-                <span onclick="sortTable('hall', 'asc')">▲</span>
-                <span onclick="sortTable('hall', 'desc')">▼</span>
-            </td>
-            <td>
-                <strong>Room</strong>
-                <span onclick="sortTable('room', 'asc')">▲</span>
-                <span onclick="sortTable('room', 'desc')">▼</span>
-            </td>
-            <td>
-                <strong>Type</strong>
-                <span onclick="sortTable('type', 'asc')">▲</span>
-                <span onclick="sortTable('type', 'desc')">▼</span>
-            </td>
-            <td>
-                <strong>Sqft</strong>
-                <span onclick="sortTable('sqft', 'asc')">▲</span>
-                <span onclick="sortTable('sqft', 'desc')">▼</span>
-            </td>
-            <td>
-                <strong>College</strong>
-                <span onclick="sortTable('college', 'asc')">▲</span>
-                <span onclick="sortTable('college', 'desc')">▼</span>
-            </td>
-        </tr>
+        <thead class="stickyHead">
+            <tr>
+                <td><strong>Favorite</strong></td>
+                <td>
+                    <strong>Hall</strong>
+                    <span onclick="sortTable('hall', 'asc')" style="cursor: pointer;">▲</span>
+                    <span onclick="sortTable('hall', 'desc')" style="cursor: pointer;">▼</span>
+                </td>
+                <td>
+                    <strong>Room</strong>
+                    <span onclick="sortTable('room', 'asc')" style="cursor: pointer;">▲</span>
+                    <span onclick="sortTable('room', 'desc')" style="cursor: pointer;">▼</span>
+                </td>
+                <td>
+                    <strong>Type</strong>
+                    <span onclick="sortTable('type', 'asc')" style="cursor: pointer;">▲</span>
+                    <span onclick="sortTable('type', 'desc')" style="cursor: pointer;">▼</span>
+                </td>
+                <td>
+                    <strong>Sqft</strong>
+                    <span onclick="sortTable('sqft', 'asc')" style="cursor: pointer;">▲</span>
+                    <span onclick="sortTable('sqft', 'desc')" style="cursor: pointer;">▼</span>
+                </td>
+                <td>
+                    <strong>College</strong>
+                    <span onclick="sortTable('college', 'asc')" style="cursor: pointer;">▲</span>
+                    <span onclick="sortTable('college', 'desc')" style="cursor: pointer;">▼</span>
+                </td>
+            </tr>
+        </thead>
     
         {% for room in results %}
         <tr class="special">
