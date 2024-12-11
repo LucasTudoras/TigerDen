@@ -33,11 +33,12 @@ body {
 
 
 .hero-content {
-    background-color: rgba(151, 165, 99, 0.4); 
-    padding: 2em;
+    background-color: rgba(151, 165, 99, 0.4);
+    padding: 2em; 
+    margin-top: 10em;
     border-radius: 10px;
     max-width: 600px;
-    margin-top: 5em;
+    
 
     display: flex;
     flex-direction: column;
@@ -132,6 +133,7 @@ body {
 
 /* Style for the welcome message */
 .welcome-message {
+    margin-top: 1em;
     font-size: 25px;
     color: #333;
 }

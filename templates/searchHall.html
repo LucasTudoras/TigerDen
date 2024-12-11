@@ -6,7 +6,7 @@
 <div class="search-text">
 <h1>Search for Available Rooms</h1>
     There are 2,860 rooms at Princeton University. <br>
-    Filter this list to find the available rooms that fit your needs.
+    Filter this list to find the available rooms that fit your needs based on the PDF you have uploaded.
 </div>
 <br>
    <form id="autoSubmitForm" action="/search" method="GET" >
@@ -330,8 +330,6 @@
        </table>
        <br>
        <br>
-       <br>
-       <br>
        <button type="submit" style="cursor:pointer; height:60px; width: 120px; font-size:16pt">Search</button>  
    </form>
    <br
@@ -340,7 +338,7 @@
     <h2 style="display: inline;">{{ number }} available rooms</h2>
    </div>
    
-    <h3>Click on column title to sort. Click on row to see more.</h3> 
+    <h4>Click on a row to see more room information!</h4> 
     {% if results %}
     
     <table id="room results" border="1" class="roomResults">

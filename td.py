@@ -33,6 +33,14 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def not_found(e):
     return flask.render_template('error.html'), 404
 
+@app.errorhandler(405)
+def invalid_route405(e):
+    return flask.render_template('error.html'), 405
+
+@app.errorhandler(415)
+def invalid_route415(e):
+    return flask.render_template('error.html'), 415
+
 @app.route('/')
 def home():
     return flask.render_template('index.html')
@@ -265,10 +273,12 @@ def add_member():
     netids_list = list(netids_set)
     valid_netid_list = []
     invalid_netid_list = []
+    valid_name_list=[]
 
     for netid in netids_list:
         valid_NETID = checkNetid.main(netid)
         if valid_NETID:
+            valid_name_list.append(valid_NETID)
             valid_netid_list.append(netid)
         else:
             invalid_netid_list.append(netid)
@@ -310,7 +320,7 @@ def add_member():
     elif already_in_group:
         message += f"Cannot add the following users as they are already in a group: {', '.join(already_in_group)}."
     else:
-        message += f"Successfully added members."
+        message += f"Successfully added members \'{', '.join(valid_name_list)} \'\n"
 
 
     return flask.jsonify({'success': True, 'message': message})
@@ -352,7 +362,6 @@ def leave_group():
 
                 conn.commit()
             cursor.close()
-    
     return flask.redirect('/groups')
 
 
@@ -844,7 +853,7 @@ def rate_room():
 
 
 @app.route('/average-rating', methods=['GET'])
-def average_rating():    
+def average_rating():
     username = auth.authenticate()
     room_id = flask.request.args.get('room_id')
     try:
