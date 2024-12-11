@@ -604,10 +604,10 @@ def return_sameHallFloorPlan(hall, room):
             'Mannion': "Yeh College",
         }
     college = colleges[hall]
-    directory_path = "/static/FloorPlan/" + college + "/" + hall
+    directory_path = "FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
-    for filename in os.listdir("FrontEnd" + directory_path):
+    for filename in os.listdir('static/' + directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
             temp_name = 'Basement Floor'
@@ -670,15 +670,15 @@ def return_floorplans(college, hall):
     
 
     if college == 'Upperclass' or college == 'New College West':
-        directory_path = "/static/FloorPlan/" + college + "/" + hall
+        directory_path = "FloorPlan/" + college + "/" + hall
         if college == 'New College West':
             college = 'NCW'
     else:
-        directory_path = "/static/FloorPlan/" + college + "/" + hall
+        directory_path = "FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
     
-    for filename in os.listdir("FrontEnd" + directory_path):
+    for filename in os.listdir('static/' + directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
             temp_name = 'Basement Floor'
@@ -739,6 +739,7 @@ def toggle_favorite():
 
 @app.route('/newtab/<hall> <room> <floor>')
 def newtab(hall, room, floor):
+    print(hall, room, floor)
     if hall == "Wendell":
         if room[0] == "B":
             hall = "Wendell B"
@@ -810,6 +811,7 @@ def newtab(hall, room, floor):
         }
     college = colleges[hall]
     directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
+    print(directory_path)
     if hall == "Wendell B" or hall == "Wendell C":
         hall = "Wendell"
     if hall == "Baker S" or hall == "Baker E":

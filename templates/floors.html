@@ -25,11 +25,11 @@
 
         </td>
         <tr>
-            <iframe src="{{ floor['filepath'] }}" frameborder="0" height="600", width="75%" title="{{ floor['filepath'] }}"></iframe>
+            <iframe src="{{ url_for('static', filename=floor['filepath']) }}" frameborder="0" height="600", width="75%" title="{{ floor['filepath'] }}"></iframe>
         </tr>
         <td style="vertical-align:center;">
             
-            <a href="{{ floor['filepath'] }}" target="_blank" title="{{ hall }} {{ floor['name'] }}">&#8593;Open in new tab</a>
+            <a href="{{ url_for('static', filename=floor['filepath']) }}" target="_blank" title="{{ hall }} {{ floor['name'] }}">&#8593;Open in new tab</a>
         </td>
 </table>
 
