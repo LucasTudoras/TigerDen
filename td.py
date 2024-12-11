@@ -607,7 +607,7 @@ def return_sameHallFloorPlan(hall, room):
     directory_path = "/static/FloorPlan/" + college + "/" + hall
     test = []
     filepaths = []
-    for filename in os.listdir("FrontEnd" + directory_path):
+    for filename in os.listdir(directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
             temp_name = 'Basement Floor'
@@ -678,7 +678,7 @@ def return_floorplans(college, hall):
     test = []
     filepaths = []
     
-    for filename in os.listdir("FrontEnd" + directory_path):
+    for filename in os.listdir(directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
             temp_name = 'Basement Floor'
