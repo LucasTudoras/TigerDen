@@ -641,6 +641,306 @@ def return_sameHallFloorPlan(hall, room):
     sorted_test = sorted(test, key=lambda x: x['name'])
     return flask.render_template('floors_roomsearch.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
 
+@app.route("/samehall_favorites/<hall> <room>")
+def return_sameHallFavoritesFloorPlan(hall, room):
+    username = auth.authenticate()
+    hallOG = hall
+    hall = hall.title()
+    colleges = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little': "Mathey College",
+            'Hamilton': "Mathey College",
+            'Addy': "New College West",
+            'Jose E. Feliciano': "New College West",
+            'Aliya Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller College",
+            'Campbell': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
+        }
+    college = colleges[hall]
+    directory_path = "FloorPlan/" + college + "/" + hall
+    test = []
+    filepaths = []
+    for filename in os.listdir('static/' + directory_path):
+        temp_name = filename.replace(".pdf", '')
+        if temp_name == 'Lower':
+            temp_name = 'Basement Floor'
+        if temp_name == '0':
+            temp_name = "0th Floor"
+        if temp_name == '1':
+            temp_name = '1st Floor'
+        if temp_name == '2':
+            temp_name = '2nd Floor'
+        if temp_name == '3':
+            temp_name = '3rd Floor'
+        if temp_name == '4':
+            temp_name = '4th Floor'
+        if temp_name == '5':
+            temp_name = '5th Floor'
+        if temp_name == '6':
+            temp_name = '6th Floor'
+        if temp_name == '7':
+            temp_name = '7th Floor'
+        if temp_name == '8':
+            temp_name = '8th Floor'
+        temp = {
+            'name': temp_name,
+            'filepath': directory_path + "/" +filename
+        }
+        
+        test.append(temp)
+        filepaths.append(temp['filepath'])
+
+    filepaths.sort()
+    sorted_test = sorted(test, key=lambda x: x['name'])
+    return flask.render_template('floors_favorites.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
+
+@app.route("/samehall_groups/<hall> <room>")
+def return_sameHallGroupsFloorPlan(hall, room):
+    username = auth.authenticate()
+    hallOG = hall
+    hall = hall.title()
+    colleges = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little': "Mathey College",
+            'Hamilton': "Mathey College",
+            'Addy': "New College West",
+            'Jose E. Feliciano': "New College West",
+            'Aliya Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller College",
+            'Campbell': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
+        }
+    college = colleges[hall]
+    directory_path = "FloorPlan/" + college + "/" + hall
+    test = []
+    filepaths = []
+    for filename in os.listdir('static/' + directory_path):
+        temp_name = filename.replace(".pdf", '')
+        if temp_name == 'Lower':
+            temp_name = 'Basement Floor'
+        if temp_name == '0':
+            temp_name = "0th Floor"
+        if temp_name == '1':
+            temp_name = '1st Floor'
+        if temp_name == '2':
+            temp_name = '2nd Floor'
+        if temp_name == '3':
+            temp_name = '3rd Floor'
+        if temp_name == '4':
+            temp_name = '4th Floor'
+        if temp_name == '5':
+            temp_name = '5th Floor'
+        if temp_name == '6':
+            temp_name = '6th Floor'
+        if temp_name == '7':
+            temp_name = '7th Floor'
+        if temp_name == '8':
+            temp_name = '8th Floor'
+        temp = {
+            'name': temp_name,
+            'filepath': directory_path + "/" +filename
+        }
+        
+        test.append(temp)
+        filepaths.append(temp['filepath'])
+
+    filepaths.sort()
+    sorted_test = sorted(test, key=lambda x: x['name'])
+    return flask.render_template('floors_groups.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
+
+@app.route("/samehall_browsing/<hall> <room>")
+def return_sameHallBrowsingFloorPlan(hall, room):
+    username = auth.authenticate()
+    hallOG = hall
+    hall = hall.title()
+    colleges = {
+            '1967': "Butler College",
+            '1976': "Butler College",
+            'Bloomberg': "Butler College",
+            'Bogle': "Butler College",
+            'Scully': "Butler College",
+            'Wilf': "Butler College",
+            'Yoseloff': "Butler College",
+            '99Alexander': "Forbes College",
+            'Annex': "Forbes College",
+            'Main': "Forbes College",
+            'Blair': "Mathey College",
+            'Campbell': "Mathey College",
+            'Edwards': "Mathey College",
+            'Joline': "Mathey College",
+            'Little': "Mathey College",
+            'Hamilton': "Mathey College",
+            'Addy': "New College West",
+            'Jose E. Feliciano': "New College West",
+            'Aliya Kanji': "New College West",
+            'Kwanza Jones': "New College West",
+            'Buyers': "Rockefeller College",
+            'Campbell': "Rockefeller College",
+            'Holder': "Rockefeller College",
+            'Witherspoon': "Rockefeller College",
+            '1901': "Upperclass",
+            'Feinberg': "Upperclass",
+            'Patton': "Upperclass",
+            '1903': "Upperclass",
+            'Foulke': "Upperclass",
+            'Pyne': "Upperclass",
+            'Brown': "Upperclass",
+            'Henry': "Upperclass",
+            'Scully': "Upperclass",
+            'Cuyler': "Upperclass",
+            'Laughlin': "Upperclass",
+            'Spelman': "Upperclass",
+            'Dickinson Street, 2': "Upperclass",
+            'Little': "Upperclass",
+            'Walker': "Upperclass",
+            'Dod': "Upperclass",
+            'Lockhart': "Upperclass",
+            'Wright': "Upperclass",
+            '1981': "Whitman College",
+            'Baker E': "Whitman College",
+            'Baker S': "Whitman College",
+            'Fisher': "Whitman College",
+            'Hargadon': "Whitman College",
+            'Lauritzen': "Whitman College",
+            'Murley': "Whitman College",
+            'Wendell B': "Whitman College",
+            'Wendell C': "Whitman College",
+            'Fu': "Yeh College",
+            'Grousbeck': "Yeh College",
+            'Hariri': "Yeh College",
+            'Mannion': "Yeh College",
+        }
+    college = colleges[hall]
+    directory_path = "FloorPlan/" + college + "/" + hall
+    test = []
+    filepaths = []
+    for filename in os.listdir('static/' + directory_path):
+        temp_name = filename.replace(".pdf", '')
+        if temp_name == 'Lower':
+            temp_name = 'Basement Floor'
+        if temp_name == '0':
+            temp_name = "0th Floor"
+        if temp_name == '1':
+            temp_name = '1st Floor'
+        if temp_name == '2':
+            temp_name = '2nd Floor'
+        if temp_name == '3':
+            temp_name = '3rd Floor'
+        if temp_name == '4':
+            temp_name = '4th Floor'
+        if temp_name == '5':
+            temp_name = '5th Floor'
+        if temp_name == '6':
+            temp_name = '6th Floor'
+        if temp_name == '7':
+            temp_name = '7th Floor'
+        if temp_name == '8':
+            temp_name = '8th Floor'
+        temp = {
+            'name': temp_name,
+            'filepath': directory_path + "/" +filename
+        }
+        
+        test.append(temp)
+        filepaths.append(temp['filepath'])
+
+    filepaths.sort()
+    sorted_test = sorted(test, key=lambda x: x['name'])
+    return flask.render_template('floors_browsing.html', results = filepaths, test = sorted_test, hall = hall, college = college, room = room, hallBack = hallOG)
+
 @app.route("/floors/<college> <hall>")
 def return_floorplans(college, hall):
     username = auth.authenticate()

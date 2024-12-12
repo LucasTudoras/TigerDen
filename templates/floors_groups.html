@@ -1,0 +1,48 @@
+{% extends "loggedin.html" %}
+
+{% block content %}
+<div class="button-row">
+    <a href="/room_details_groups/{{ hallBack }}{{ room }}" class="backtodetailsButton" title="{{ hallBack }} {{ room }}">Back to {{ hall }} {{ room }}</a>
+</div>
+
+<div class="search-text">
+    <h2>Floor Plans</h2>
+    Here are all of the floor plans in {{ hall }}
+    
+</div>
+<br>
+
+    
+
+
+{% if test %}  
+
+{% for floor in test %}
+
+<table id="room results">
+        <td>
+            <strong>{{ floor['name'] }}</strong>
+
+        </td>
+        <tr>
+            <iframe src="{{ url_for('static', filename=floor['filepath']) }}" frameborder="0" height="525", width="75%" title="{{ results['filepath'] }}"></iframe>
+        </tr>
+        <td style="vertical-align:center;">
+            
+            <a href="{{ url_for('static', filename=floor['filepath']) }}" target="_blank" title="{{ hall }} {{ floor['name'] }}">&#8593;Open in new tab</a>
+        </td>
+</table>
+
+{% endfor %}
+
+{% endif %}
+<br>
+<br>
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            window.scrollTo(0,0);
+        }, 100);
+    });
+</script>
+{% endblock %}
