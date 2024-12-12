@@ -5,30 +5,17 @@ import psycopg2
 import os
 from werkzeug.utils import secure_filename
 from top import app
+from colleges import collegesDict
 import update
 import checkNetid
 from operator import itemgetter
 
 # Database setup
-
-# for local use
-'''
-from dotenv import load_dotenv
-load_dotenv()
-DATABASE = os.getenv("LOCAL_DATABASE")
-
-if 'DYNO' is os.environ:
-    UPLOAD_FOLDER = '/tmp'
-else:
-    UPLOAD_FOLDER = 'uploads'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-'''
-
-# for deployed use
 DATABASE = os.environ['DATABASE_URL']
 UPLOAD_FOLDER = '/tmp'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+# error handling
 @app.errorhandler(404)
 def not_found(e):
     return flask.render_template('error.html'), 404
@@ -60,6 +47,7 @@ def logout():
 def favorite_rooms():
     user_id = username = auth.authenticate()
 
+    # display the users favorites
     with psycopg2.connect(DATABASE) as conn:
         cursor = conn.cursor()
         cursor.execute("""SELECT rooms.*
@@ -191,10 +179,6 @@ def create_group():
     
     if not group_name or not netids:
         return flask.jsonify({'success': False, 'message': 'Group name and members are required'}), 400
-
-    
-    # removing duplicates and current user. is there a better way?
-    # should we add invites, somehow? create an inbox? link? 
     
     netids_list = [n.strip() for n in netids.split(',') if (n.strip())] 
     netids = set(netids_list)
@@ -203,6 +187,7 @@ def create_group():
     valid_name_list = []
     invalid_netid_list = []
 
+    # check netids
     for netid in netids_list:
         valid_NETID = checkNetid.main(netid)
         if valid_NETID:
@@ -266,7 +251,7 @@ def add_member():
     netids = flask.request.form.get('netids')
 
     # if not group_id or not netids:
-    #     return flask.jsonify({'success': False, 'message': 'Group ID and NetIDs are required'}), 400
+    # return flask.jsonify({'success': False, 'message': 'Group ID and NetIDs are required'}), 400
 
     netids_list = [n.strip() for n in netids.split(',') if n.strip()]
     netids_set = set(netids_list)
@@ -275,6 +260,7 @@ def add_member():
     invalid_netid_list = []
     valid_name_list=[]
 
+    # ensure valid netids
     for netid in netids_list:
         valid_NETID = checkNetid.main(netid)
         if valid_NETID:
@@ -325,10 +311,6 @@ def add_member():
 
     return flask.jsonify({'success': True, 'message': message})
 
-
-
-
-
 @app.route('/leave-group', methods=['GET', 'POST'])
 def leave_group():
     username = auth.authenticate()
@@ -364,8 +346,6 @@ def leave_group():
             cursor.close()
     return flask.redirect('/groups')
 
-
-
 @app.route('/campus-map')
 def campus_map():
     username = auth.authenticate()
@@ -375,7 +355,6 @@ def campus_map():
 def floor_plans():
     username = auth.authenticate()
     return flask.render_template('floor_plans.html')
-
 
 def get_db():
     db = getattr(flask.g, '_database', None)
@@ -494,8 +473,8 @@ def uploaded_PDF():
         
         if file and allowed_file(file.filename):
             # imported method
-            # filename = secure_filename(file.filename)
-            filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(filepath)
 
             # find method from pdf.py
@@ -546,63 +525,7 @@ def return_sameHallFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = {
-            '1967': "Butler College",
-            '1976': "Butler College",
-            'Bloomberg': "Butler College",
-            'Bogle': "Butler College",
-            'Scully': "Butler College",
-            'Wilf': "Butler College",
-            'Yoseloff': "Butler College",
-            '99Alexander': "Forbes College",
-            'Annex': "Forbes College",
-            'Main': "Forbes College",
-            'Blair': "Mathey College",
-            'Campbell': "Mathey College",
-            'Edwards': "Mathey College",
-            'Joline': "Mathey College",
-            'Little': "Mathey College",
-            'Hamilton': "Mathey College",
-            'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
-            'Aliya Kanji': "New College West",
-            'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller College",
-            'Campbell': "Rockefeller College",
-            'Holder': "Rockefeller College",
-            'Witherspoon': "Rockefeller College",
-            '1901': "Upperclass",
-            'Feinberg': "Upperclass",
-            'Patton': "Upperclass",
-            '1903': "Upperclass",
-            'Foulke': "Upperclass",
-            'Pyne': "Upperclass",
-            'Brown': "Upperclass",
-            'Henry': "Upperclass",
-            'Scully': "Upperclass",
-            'Cuyler': "Upperclass",
-            'Laughlin': "Upperclass",
-            'Spelman': "Upperclass",
-            'Dickinson Street, 2': "Upperclass",
-            'Little': "Upperclass",
-            'Walker': "Upperclass",
-            'Dod': "Upperclass",
-            'Lockhart': "Upperclass",
-            'Wright': "Upperclass",
-            '1981': "Whitman College",
-            'Baker E': "Whitman College",
-            'Baker S': "Whitman College",
-            'Fisher': "Whitman College",
-            'Hargadon': "Whitman College",
-            'Lauritzen': "Whitman College",
-            'Murley': "Whitman College",
-            'Wendell B': "Whitman College",
-            'Wendell C': "Whitman College",
-            'Fu': "Yeh College",
-            'Grousbeck': "Yeh College",
-            'Hariri': "Yeh College",
-            'Mannion': "Yeh College",
-        }
+    colleges = collegesDict
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -646,63 +569,7 @@ def return_sameHallFavoritesFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = {
-            '1967': "Butler College",
-            '1976': "Butler College",
-            'Bloomberg': "Butler College",
-            'Bogle': "Butler College",
-            'Scully': "Butler College",
-            'Wilf': "Butler College",
-            'Yoseloff': "Butler College",
-            '99Alexander': "Forbes College",
-            'Annex': "Forbes College",
-            'Main': "Forbes College",
-            'Blair': "Mathey College",
-            'Campbell': "Mathey College",
-            'Edwards': "Mathey College",
-            'Joline': "Mathey College",
-            'Little': "Mathey College",
-            'Hamilton': "Mathey College",
-            'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
-            'Aliya Kanji': "New College West",
-            'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller College",
-            'Campbell': "Rockefeller College",
-            'Holder': "Rockefeller College",
-            'Witherspoon': "Rockefeller College",
-            '1901': "Upperclass",
-            'Feinberg': "Upperclass",
-            'Patton': "Upperclass",
-            '1903': "Upperclass",
-            'Foulke': "Upperclass",
-            'Pyne': "Upperclass",
-            'Brown': "Upperclass",
-            'Henry': "Upperclass",
-            'Scully': "Upperclass",
-            'Cuyler': "Upperclass",
-            'Laughlin': "Upperclass",
-            'Spelman': "Upperclass",
-            'Dickinson Street, 2': "Upperclass",
-            'Little': "Upperclass",
-            'Walker': "Upperclass",
-            'Dod': "Upperclass",
-            'Lockhart': "Upperclass",
-            'Wright': "Upperclass",
-            '1981': "Whitman College",
-            'Baker E': "Whitman College",
-            'Baker S': "Whitman College",
-            'Fisher': "Whitman College",
-            'Hargadon': "Whitman College",
-            'Lauritzen': "Whitman College",
-            'Murley': "Whitman College",
-            'Wendell B': "Whitman College",
-            'Wendell C': "Whitman College",
-            'Fu': "Yeh College",
-            'Grousbeck': "Yeh College",
-            'Hariri': "Yeh College",
-            'Mannion': "Yeh College",
-        }
+    colleges = collegesDict
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -746,63 +613,7 @@ def return_sameHallGroupsFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = {
-            '1967': "Butler College",
-            '1976': "Butler College",
-            'Bloomberg': "Butler College",
-            'Bogle': "Butler College",
-            'Scully': "Butler College",
-            'Wilf': "Butler College",
-            'Yoseloff': "Butler College",
-            '99Alexander': "Forbes College",
-            'Annex': "Forbes College",
-            'Main': "Forbes College",
-            'Blair': "Mathey College",
-            'Campbell': "Mathey College",
-            'Edwards': "Mathey College",
-            'Joline': "Mathey College",
-            'Little': "Mathey College",
-            'Hamilton': "Mathey College",
-            'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
-            'Aliya Kanji': "New College West",
-            'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller College",
-            'Campbell': "Rockefeller College",
-            'Holder': "Rockefeller College",
-            'Witherspoon': "Rockefeller College",
-            '1901': "Upperclass",
-            'Feinberg': "Upperclass",
-            'Patton': "Upperclass",
-            '1903': "Upperclass",
-            'Foulke': "Upperclass",
-            'Pyne': "Upperclass",
-            'Brown': "Upperclass",
-            'Henry': "Upperclass",
-            'Scully': "Upperclass",
-            'Cuyler': "Upperclass",
-            'Laughlin': "Upperclass",
-            'Spelman': "Upperclass",
-            'Dickinson Street, 2': "Upperclass",
-            'Little': "Upperclass",
-            'Walker': "Upperclass",
-            'Dod': "Upperclass",
-            'Lockhart': "Upperclass",
-            'Wright': "Upperclass",
-            '1981': "Whitman College",
-            'Baker E': "Whitman College",
-            'Baker S': "Whitman College",
-            'Fisher': "Whitman College",
-            'Hargadon': "Whitman College",
-            'Lauritzen': "Whitman College",
-            'Murley': "Whitman College",
-            'Wendell B': "Whitman College",
-            'Wendell C': "Whitman College",
-            'Fu': "Yeh College",
-            'Grousbeck': "Yeh College",
-            'Hariri': "Yeh College",
-            'Mannion': "Yeh College",
-        }
+    colleges = collegesDict
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -846,63 +657,7 @@ def return_sameHallBrowsingFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = {
-            '1967': "Butler College",
-            '1976': "Butler College",
-            'Bloomberg': "Butler College",
-            'Bogle': "Butler College",
-            'Scully': "Butler College",
-            'Wilf': "Butler College",
-            'Yoseloff': "Butler College",
-            '99Alexander': "Forbes College",
-            'Annex': "Forbes College",
-            'Main': "Forbes College",
-            'Blair': "Mathey College",
-            'Campbell': "Mathey College",
-            'Edwards': "Mathey College",
-            'Joline': "Mathey College",
-            'Little': "Mathey College",
-            'Hamilton': "Mathey College",
-            'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
-            'Aliya Kanji': "New College West",
-            'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller College",
-            'Campbell': "Rockefeller College",
-            'Holder': "Rockefeller College",
-            'Witherspoon': "Rockefeller College",
-            '1901': "Upperclass",
-            'Feinberg': "Upperclass",
-            'Patton': "Upperclass",
-            '1903': "Upperclass",
-            'Foulke': "Upperclass",
-            'Pyne': "Upperclass",
-            'Brown': "Upperclass",
-            'Henry': "Upperclass",
-            'Scully': "Upperclass",
-            'Cuyler': "Upperclass",
-            'Laughlin': "Upperclass",
-            'Spelman': "Upperclass",
-            'Dickinson Street, 2': "Upperclass",
-            'Little': "Upperclass",
-            'Walker': "Upperclass",
-            'Dod': "Upperclass",
-            'Lockhart': "Upperclass",
-            'Wright': "Upperclass",
-            '1981': "Whitman College",
-            'Baker E': "Whitman College",
-            'Baker S': "Whitman College",
-            'Fisher': "Whitman College",
-            'Hargadon': "Whitman College",
-            'Lauritzen': "Whitman College",
-            'Murley': "Whitman College",
-            'Wendell B': "Whitman College",
-            'Wendell C': "Whitman College",
-            'Fu': "Yeh College",
-            'Grousbeck': "Yeh College",
-            'Hariri': "Yeh College",
-            'Mannion': "Yeh College",
-        }
+    colleges = collegesDict
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -1052,63 +807,7 @@ def newtab(hall, room, floor):
             hall = "Baker E"
 
     hall = hall.title()
-    colleges = {
-            '1967': "Butler College",
-            '1976': "Butler College",
-            'Bloomberg': "Butler College",
-            'Bogle': "Butler College",
-            'Scully': "Butler College",
-            'Wilf': "Butler College",
-            'Yoseloff': "Butler College",
-            '99Alexander': "Forbes College",
-            'Annex': "Forbes College",
-            'Main': "Forbes College",
-            'Blair': "Mathey College",
-            'Campbell': "Mathey College",
-            'Edwards': "Mathey College",
-            'Joline': "Mathey College",
-            'Little': "Mathey College",
-            'Hamilton': "Mathey College",
-            'Addy': "New College West",
-            'Jose E. Feliciano': "New College West",
-            'Aliya Kanji': "New College West",
-            'Kwanza Jones': "New College West",
-            'Buyers': "Rockefeller College",
-            'Campbell': "Rockefeller College",
-            'Holder': "Rockefeller College",
-            'Witherspoon': "Rockefeller College",
-            '1901': "Upperclass",
-            'Feinberg': "Upperclass",
-            'Patton': "Upperclass",
-            '1903': "Upperclass",
-            'Foulke': "Upperclass",
-            'Pyne': "Upperclass",
-            'Brown': "Upperclass",
-            'Henry': "Upperclass",
-            'Scully': "Upperclass",
-            'Cuyler': "Upperclass",
-            'Laughlin': "Upperclass",
-            'Spelman': "Upperclass",
-            'Dickinson Street, 2': "Upperclass",
-            'Little': "Upperclass",
-            'Walker': "Upperclass",
-            'Dod': "Upperclass",
-            'Lockhart': "Upperclass",
-            'Wright': "Upperclass",
-            '1981': "Whitman College",
-            'Baker E': "Whitman College",
-            'Baker S': "Whitman College",
-            'Fisher': "Whitman College",
-            'Hargadon': "Whitman College",
-            'Lauritzen': "Whitman College",
-            'Murley': "Whitman College",
-            'Wendell B': "Whitman College",
-            'Wendell C': "Whitman College",
-            'Fu': "Yeh College",
-            'Grousbeck': "Yeh College",
-            'Hariri': "Yeh College",
-            'Mannion': "Yeh College",
-        }
+    colleges = collegesDict
     college = colleges[hall]
     directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
     print(directory_path)

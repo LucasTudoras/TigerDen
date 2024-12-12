@@ -1,29 +1,20 @@
 import os
-import sys
 import json
 import base64
 import requests
-
-# for local use
-'''
-import dotenv
-dotenv.load_dotenv()
-'''
 
 ACCESS_TOKEN_URL = 'https://api.princeton.edu:443/token'
 BASE_URL = 'https://api.princeton.edu:443/active-directory/1.0.5'
 
 ENDPOINT = '/users'
 # ENDPOINT = '/users/basic'
-#ENDPOINT = '/users/full'
-
+# ENDPOINT = '/users/full'
 
 CONSUMER_KEY = os.environ['CONSUMER_KEY']
 CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
 
+# fetch a name from a given netid
 def main(netid):
-
-
     # Use the CONSUMER_KEY and CONSUMER_SECRET to get an access token.
 
     auth_header = CONSUMER_KEY + ":" + CONSUMER_SECRET

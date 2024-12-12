@@ -3,6 +3,8 @@ import PDF
 
 def database_update(pdf_filepath, DATABASE_URL, user_id):
     rooms = PDF.main(pdf_filepath)
+
+    # no rooms found
     if not rooms:
         return
         rooms = []
@@ -11,6 +13,7 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
         with psycopg2.connect(DATABASE_URL) as conn:
             cursor = conn.cursor()
 
+            # wipe the availables table for the user
             query = """
                 DELETE FROM availables
                 WHERE user_id LIKE %s;
@@ -22,6 +25,7 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
                 INSERT INTO availables (user_id, room_id) VALUES (%s, %s) ON CONFLICT (user_id, room_id) DO NOTHING;
                 """
             
+            # insert each room parsed from PDF.main back into the database for the user
             for room in rooms:
                 room_id = room['RoomID']
                 if room_id is None:

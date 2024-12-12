@@ -8,7 +8,6 @@ class Info:
 
 #writes the filtered text into the files themselves
 def write_text_to_file(file_path, text):
-    # Open the file in append mode ('a')
     with open(file_path, 'a') as file:
         # Write the text to the file
         file.write(text + "\n")
@@ -47,7 +46,6 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
                 for line in filtered_lines:
                     # Check if any college name is in the current line
                     if any(college in line for college in college_names) :
-                        #if it is the first starting word found print the previous line
                         if previous_line and not starting_word_found:
                             write_text_to_file(output_file_path, previous_line)  # Write the previous line
                             starting_word_found = True
@@ -56,7 +54,6 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
                     if starting_word_found:
                         write_text_to_file(output_file_path, line)
 
-                    # Update the previous line with the current line
                     previous_line = line
 
                 # At the end of the page, reset the previous line
@@ -71,23 +68,21 @@ def extract_text_from_pdf(pdf_path, output_file_path, college_names):
     return True
             
 
-#gets the output files ready to receive the information
+# gets the output files ready to receive the information
 def clear_file(name_file):
     with open(name_file, 'w') as file:
         file.write("")
 
-#Skips the intro part of the pdf until it reaches the data itself
+# Skips the intro part of the pdf until it reaches the data itself
 def find_word_in_file(filename, words_to_find):
     try:
         with open(filename, 'r') as file:
             next(file)
             for line in file:
-                # Split line into words
                 words = line.split()
                 for word in words:
-                    # Check if the word is in the list of words to find
                     if word in words_to_find:
-                        return True  # Return the found word
+                        return True
                     else:
                         return False
         print("No words found from the list.")
@@ -174,6 +169,7 @@ def add_to_class( Hall, Room, info_instance):
 
     info_instance.Class.append(UnderClass_dict)
 
+# handle NCW special naming conventions for various PDFs
 def NCW_hall_name(words):
     Hall_name = words[3]
     if Hall_name == "ADDY":
@@ -255,11 +251,7 @@ def main(file):
     # Paths to the PDF files
     pdf = Path(file)
 
-    # deployed use
     pdf_output = Path("/tmp/temp.txt")
-
-    # local use
-    # pdf_output = Path("tmp")
 
     with open(pdf_output, 'w') as file:
         file.write("")
