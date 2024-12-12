@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="button-row">
-    <a href="javascript:window.history.back()" class="backButton">Back to {{ college }}</a>
+    <a href="/room_details_browsing/{{ hallBack }}{{ room }}" class="backtodetailsButton" title="{{ hallBack }} {{ room }}">Back to {{ hall }} {{ room }}</a>
 </div>
 
 <div class="search-text">
@@ -25,7 +25,7 @@
 
         </td>
         <tr>
-            <iframe src="{{ url_for('static', filename=floor['filepath']) }}" frameborder="0" height="600", width="75%" title="{{ floor['filepath'] }}"></iframe>
+            <iframe src="{{ url_for('static', filename=floor['filepath']) }}" frameborder="0" height="525", width="75%" title="{{ results['filepath'] }}"></iframe>
         </tr>
         <td style="vertical-align:center;">
             

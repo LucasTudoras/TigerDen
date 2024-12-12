@@ -4,6 +4,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: rgba(151, 165, 99, 0.4);
+    min-width:990px;
 }
 
 
