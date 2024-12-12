@@ -23,11 +23,8 @@
 
         {% for room in favorite_rooms %}
         <tr class="special">
-            <td align="center">
-                <span 
-                    class="favorite-icon" 
-                    onclick="Favorite('{{ room['roomid'] }}');"
-                    style="cursor: pointer;">
+            <td  onclick="Favorite('{{ room['roomid'] }}');" style="cursor: pointer;">
+                <span class="favorite-icon">
                     {% if room['is_favorite'] %}
                         &#9733; <!-- Filled star -->
                     {% else %}
