@@ -17,17 +17,12 @@
 <br>
 {% if results %}
     
-<table id="hall results" class="favoriteList"></table>
+<table id="hall results" class="favoriteList" style="width:30%"></table>
 {% for hall in results %}
         <tr>
-            <td>
                 <a href="/floors/{{ college }} {{ hall }}" title="{{ college }} {{ hall }}">{{ hall }}</a>
-            </td>
         </tr>
         
-    
-
-
 {% endfor %}
 </table>
 
