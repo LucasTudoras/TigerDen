@@ -136,19 +136,19 @@ def room_details(roomID):
 @app.route("/room_details_browsing/<roomID>")
 def room_details_browsing(roomID):
     username = auth.authenticate()
-    room = get_room_details(username, roomID)
+    room = get_room_details(username, roomID, get_db)
     return flask.render_template('room_details_browsing.html', results = room)
 
 @app.route("/room_details_groups/<roomID>")
 def room_details_groups(roomID):
     username = auth.authenticate()
-    room = get_room_details(username, roomID)
+    room = get_room_details(username, roomID, get_db)
     return flask.render_template('room_details_groups.html', results = room)
 
 @app.route("/room_details_favorites/<roomID>")
 def room_details_favorites(roomID):
     username = auth.authenticate()
-    room = get_room_details(username, roomID)
+    room = get_room_details(username, roomID, get_db)
     return flask.render_template('room_details_favorites.html', results = room)
 
 def allowed_file(filename):
