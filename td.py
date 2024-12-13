@@ -130,7 +130,7 @@ def get_db():
 @app.route("/room_details/<roomID>")
 def room_details(roomID):
     username = auth.authenticate()
-    room = get_room_details(username, roomID)
+    room = get_room_details(username, roomID, get_db)
     return flask.render_template('room_details.html', results = room)
 
 @app.route("/room_details_browsing/<roomID>")

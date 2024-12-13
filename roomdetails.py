@@ -1,6 +1,4 @@
-from td import get_db
-
-def get_room_details(username, roomID):
+def get_room_details(username, roomID, get_db):
     query = """
         SELECT rooms.*,
         CASE WHEN favorites.user_id IS NOT NULL THEN 1 ELSE 0 END AS is_favorite
