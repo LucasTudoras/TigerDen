@@ -17,16 +17,19 @@
 <br>
 {% if results %}
     
-
+<table id="hall results" class="favoriteList"></table>
 {% for hall in results %}
-<table id="hall results">
-        <td>
-            <a href="/floors/{{ college }} {{ hall }}" title="{{ college }} {{ hall }}">{{ hall }}</a>
-        </td>
+        <tr>
+            <td>
+                <a href="/floors/{{ college }} {{ hall }}" title="{{ college }} {{ hall }}">{{ hall }}</a>
+            </td>
+        </tr>
+        
     
-</table>
+
 
 {% endfor %}
+</table>
 
 {% endif %}
 <br><br>
