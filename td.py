@@ -56,12 +56,12 @@ def favorite_rooms():
 def groups():
     username = auth.authenticate()
 
-    group_info = get_groups(username)
+    user_has_group, organized_groups, group_favorite_rooms = get_groups(username)
 
     return flask.render_template('groups.html',
-        user_has_group=group_info['user_has_group'],
-        groups=group_info['organized_groups'],
-        rooms=group_info['group_favorite_rooms'],
+        user_has_group=user_has_group,
+        groups=organized_groups,
+        rooms=group_favorite_rooms,
         username=username)
 
 @app.route('/create_group', methods=['POST'])
