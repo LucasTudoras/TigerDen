@@ -124,7 +124,7 @@ def get_groups(username):
             if sorted_by_availability:
                 group_favorite_rooms = sorted_by_availability
 
-            return user_has_group, organized_groups, group_favorite_rooms
+        return user_has_group, organized_groups, group_favorite_rooms
         
 def create_new_group(username, group_name, netids):
     
