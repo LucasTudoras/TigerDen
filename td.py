@@ -195,7 +195,7 @@ def return_sameHallFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = colleges_dict
+    colleges = colleges_dict()
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -239,7 +239,7 @@ def return_sameHallFavoritesFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = colleges_dict
+    colleges = colleges_dict()
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -283,7 +283,7 @@ def return_sameHallGroupsFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = colleges_dict
+    colleges = colleges_dict()
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -327,7 +327,7 @@ def return_sameHallBrowsingFloorPlan(hall, room):
     username = auth.authenticate()
     hallOG = hall
     hall = hall.title()
-    colleges = colleges_dict
+    colleges = colleges_dict()
     college = colleges[hall]
     directory_path = "FloorPlan/" + college + "/" + hall
     test = []
@@ -477,7 +477,7 @@ def newtab(hall, room, floor):
             hall = "Baker E"
 
     hall = hall.title()
-    colleges = colleges_dict
+    colleges = colleges_dict()
     college = colleges[hall]
     directory_path = "/static/FloorPlan/" + college + "/" + hall +"/"+floor +".pdf"
     print(directory_path)
@@ -597,7 +597,7 @@ def handle_room_query(template_name, availables_matter):
     username = auth.authenticate()
     sort_param = flask.request.args.get("sort", "Sqft DESC")  # Default sort if not provided
 
-    halls = halls_dict
+    halls = halls_dict()
 
     selected_halls = []
     selected_colleges = []
