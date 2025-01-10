@@ -7,7 +7,6 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
     # no rooms found
     if not rooms:
         return
-        rooms = []
 
     try:
         with psycopg2.connect(DATABASE_URL) as conn:

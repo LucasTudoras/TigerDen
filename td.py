@@ -19,18 +19,22 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # error handling
 @app.errorhandler(404)
 def not_found(e):
+    username = auth.authenticate()
     return flask.render_template('error.html'), 404
 
 @app.errorhandler(405)
 def invalid_route405(e):
+    username = auth.authenticate()
     return flask.render_template('error.html'), 405
 
 @app.errorhandler(415)
 def invalid_route415(e):
+    username = auth.authenticate()
     return flask.render_template('error.html'), 415
 
 @app.route('/')
 def home():
+    username = auth.authenticate()
     return flask.render_template('index.html')
 
 @app.teardown_appcontext
@@ -403,6 +407,9 @@ def return_floorplans(college, hall):
     test = []
     filepaths = []
     
+    if not os.path.exists('static/' + directory_path):
+        not_found(404)
+
     for filename in os.listdir('static/' + directory_path):
         temp_name = filename.replace(".pdf", '')
         if temp_name == 'Lower':
@@ -464,7 +471,7 @@ def toggle_favorite():
 
 @app.route('/newtab/<hall> <room> <floor>')
 def newtab(hall, room, floor):
-    print(hall, room, floor)
+    username = auth.authenticate()
     if hall == "Wendell":
         if room[0] == "B":
             hall = "Wendell B"
@@ -501,7 +508,8 @@ def rate_room():
     username = auth.authenticate()
     room_id = flask.request.form.get('room_id')
     rating = int(flask.request.form.get('rating'))
-
+    if not ( 1 <= rating <= 5):
+        return flask.jsonify({'success': False, 'message': "Please submit a rating between 1-5."}), 400
     try:
         with psycopg2.connect(DATABASE) as conn:
             cursor = conn.cursor()
