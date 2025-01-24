@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import requests
+import urllib.parse
 
 ACCESS_TOKEN_URL = 'https://api.princeton.edu:443/token'
 BASE_URL = 'https://api.princeton.edu:443/active-directory/1.0.5'
@@ -34,7 +35,8 @@ def main(netid):
     auth_header = 'Bearer ' + access_token
     print('Access token:', access_token)
     data_url = BASE_URL + ENDPOINT
-
+    netid = urllib.parse.quote_plus(netid)
+    print(netid)
     response = requests.get(
         data_url,
         params={'uid': netid},
