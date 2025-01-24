@@ -36,7 +36,6 @@ def main(netid):
     print('Access token:', access_token)
     data_url = BASE_URL + ENDPOINT
     netid = urllib.parse.quote_plus(netid)
-    print(netid)
     response = requests.get(
         data_url,
         params={'uid': netid},
