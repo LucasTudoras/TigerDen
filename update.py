@@ -12,31 +12,42 @@ def database_update(pdf_filepath, DATABASE_URL, user_id):
         with psycopg2.connect(DATABASE_URL) as conn:
             cursor = conn.cursor()
 
+            # Get all valid room IDs from the rooms table
+            cursor.execute("SELECT RoomID FROM rooms")
+            valid_room_ids = set(row[0] for row in cursor.fetchall())
+
             # wipe the availables table for the user
-            query = """
+            cursor.execute("""
                 DELETE FROM availables
-                WHERE user_id LIKE %s;
-                """
-            cursor.execute(query, (f"%{user_id}%",))
+                WHERE user_id = %s;
+            """, (user_id,))
             conn.commit()
 
-            query = """
-                INSERT INTO availables (user_id, room_id) VALUES (%s, %s) ON CONFLICT (user_id, room_id) DO NOTHING;
-                """
-            
-            # insert each room parsed from PDF.main back into the database for the user
+            insert_query = """
+                INSERT INTO availables (user_id, room_id)
+                VALUES (%s, %s)
+                ON CONFLICT (user_id, room_id) DO NOTHING;
+            """
+
+            inserted_count = 0
             for room in rooms:
-                room_id = room['RoomID']
-                if room_id is None:
+                room_id = room.get('RoomID')
+                if not room_id:
+                    continue
+                if room_id not in valid_room_ids:
+                    print(f"Skipping {room_id}: not found in rooms table")
                     continue
                 try:
-                    cursor.execute(query, (user_id, room_id))
+                    cursor.execute(insert_query, (user_id, room_id))
+                    inserted_count += 1
                 except Exception as e:
-                    print(f"error on {room_id}: {e}")
+                    print(f"Error on {room_id}: {e}")
 
-            print(f"{len(rooms)} inserted for {user_id}")
+            conn.commit()
+            print(f"{inserted_count} inserted for {user_id}")
 
     except Exception as e:
         print(f"Error: {e}")
 
     return rooms
+
